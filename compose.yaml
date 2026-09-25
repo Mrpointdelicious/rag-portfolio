@@ -1,0 +1,81 @@
+name: rag-portfolio
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: rag_portfolio
+      POSTGRES_USER: rag_portfolio
+      POSTGRES_PASSWORD: ${RAG_POSTGRES_PASSWORD:?Run tools/bootstrap.py first}
+    ports:
+      - "127.0.0.1:${RAG_POSTGRES_PORT:-5545}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U rag_portfolio -d rag_portfolio"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  qdrant:
+    image: qdrant/qdrant:v1.15.5
+    environment:
+      QDRANT__SERVICE__API_KEY: ${RAG_QDRANT_API_KEY:?Run tools/bootstrap.py first}
+      QDRANT__TELEMETRY_DISABLED: "true"
+    ports:
+      - "127.0.0.1:6534:6333"
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  migrate:
+    profiles: [app]
+    image: rag-portfolio:local
+    pull_policy: never
+    env_file: .env
+    environment: &app_environment
+      RAG_POSTGRES_HOST: postgres
+      RAG_POSTGRES_PORT: "5432"
+      RAG_QDRANT_URL: http://qdrant:6333
+    command: ["alembic", "upgrade", "head"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  api:
+    profiles: [app]
+    build: .
+    image: rag-portfolio:local
+    env_file: .env
+    environment: *app_environment
+    ports:
+      - "127.0.0.1:5052:8000"
+    volumes:
+      - assets:/app/data
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+      qdrant:
+        condition: service_started
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready', timeout=10)"]
+      interval: 15s
+      timeout: 12s
+      retries: 5
+
+  worker:
+    profiles: [app]
+    image: rag-portfolio:local
+    pull_policy: never
+    env_file: .env
+    environment: *app_environment
+    command: ["rag-worker"]
+    volumes:
+      - assets:/app/data
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+
+volumes:
+  postgres_data:
+  qdrant_data:
+  assets:

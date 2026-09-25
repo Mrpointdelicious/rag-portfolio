@@ -1,0 +1,44 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "rag-portfolio"
+version = "0.1.0"
+description = "A versioned RAG engineering portfolio with reproducible evaluation and reliable publishing."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "fastapi>=0.116,<1",
+  "uvicorn[standard]>=0.36,<1",
+  "pydantic>=2.11,<3",
+  "pydantic-settings>=2.10,<3",
+  "sqlalchemy[asyncio]>=2.0.43,<2.1",
+  "alembic>=1.16,<2",
+  "psycopg[binary]>=3.2,<4",
+  "qdrant-client>=1.15,<1.16",
+  "httpx>=0.28,<1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.4,<10", "pytest-asyncio>=1.4,<2", "ruff>=0.12,<1"]
+
+[project.scripts]
+rag-worker = "rag_portfolio.worker:main"
+rag-api = "rag_portfolio.serve:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/rag_portfolio"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = ["integration: requires an isolated PostgreSQL test database"]
+addopts = "-ra --tb=short"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
