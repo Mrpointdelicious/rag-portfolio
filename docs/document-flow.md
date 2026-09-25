@@ -66,8 +66,13 @@ from rag_portfolio.services.reviews import ReviewService
 
 
 async def approve_reviewed_version(
-    database, tenant_id, reviewer_id, version_id, reviewed_row_version,
-    reviewed_content_hash, reviewed_metadata_hash,
+    database,
+    tenant_id,
+    reviewer_id,
+    version_id,
+    reviewed_row_version,
+    reviewed_content_hash,
+    reviewed_metadata_hash,
 ):
     async with database.sessions.begin() as session:
         service = ReviewService(session, ActorContext(tenant_id, reviewer_id, uuid4()))

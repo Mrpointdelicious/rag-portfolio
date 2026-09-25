@@ -76,8 +76,8 @@ src/rag_portfolio/
   serve.py, worker.py
 migrations/            # Alembic 迁移
 tests/                 # 接口、配置、约束和并发测试
-tools/                 # 环境初始化、隔离测试、smoke
+tools/                 # 环境初始化、隔离测试、smoke、文档导入
 docs/                  # 架构、开发路线、来源及验证记录
 ```
 
-[架构说明](docs/architecture.md) · [开发路线](docs/roadmap.md) · [来源与独立化说明](docs/origin.md) · [本仓库验证记录](docs/verification.md)
+[架构说明](docs/architecture.md) · [开发路线](docs/roadmap.md) · [来源与独立化说明](docs/origin.md) · [本仓库验证记录](docs/verification.md) · [文档导入工具](docs/importing-documents.md)
