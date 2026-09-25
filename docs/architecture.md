@@ -1,6 +1,6 @@
 # RAG Portfolio 架构
 
-本项目围绕可解释、可复现的文档问答展开。当前是 M1 工程基础，图中的导入、检索、生成和界面均为后续目标。
+本项目围绕可解释、可复现的文档问答展开。已验证基础为 M1；文档版本、人工审核和 Markdown/TXT 分块服务层代码已准备，尚未测试或接入 API。图中的完整导入、检索、生成和界面均为后续目标。
 
 ```mermaid
 flowchart LR
@@ -25,6 +25,7 @@ flowchart LR
 
 ## 现有实现边界
 
+- 内容服务：新增 Document → Version → Approved → Chunk 服务层，支持 Markdown/TXT；调用契约与未验证状态见 [document-flow.md](document-flow.md)。
 - API：健康检查、知识库注册/查询、探针任务提交/查询；检索接口只提供契约，返回 501。
 - Worker：只执行 `system.probe`；长任务续租和导入/构建处理器待实现。
 - 权限：固定 tenant 的服务令牌和读取 scope；真实用户身份和不同受众验证待实现。

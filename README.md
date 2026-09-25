@@ -2,7 +2,7 @@
 
 面向简历和技术面试展示的 RAG 工程项目。目标是构建一套可复现的知识库问答系统，展示文档治理、混合检索、证据引用、可靠发布与评测能力。
 
-本仓库从 MetaKnowledgeBase 的 M1 baseline 独立创建，拥有新的 Git 历史、Python 包名、配置前缀和开发环境。当前完成的是可运行的工程基础：17 张业务表、迁移、鉴权、健康检查、知识库注册和持久任务。`POST /v1/retrieve` 仍返回 501，完整 RAG 问答按 [开发路线](docs/roadmap.md) 实现。
+本仓库从 MetaKnowledgeBase 的 M1 baseline 独立创建，拥有新的 Git 历史、Python 包名、配置前缀和开发环境。已验证的基础包含 17 张业务表、迁移、鉴权、健康检查、知识库注册和持久任务。本轮新增 [Document → Version → Approved → Chunk 服务层](docs/document-flow.md)，仅支持 Markdown/TXT；代码已准备，尚未运行测试或接入 HTTP。`POST /v1/retrieve` 仍返回 501，完整 RAG 问答按 [开发路线](docs/roadmap.md) 实现。
 
 ## 当前能力
 
