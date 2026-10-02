@@ -17,6 +17,13 @@ class Settings(BaseSettings):
     postgres_password: SecretStr = SecretStr("")
     qdrant_url: str = "http://127.0.0.1:6534"
     qdrant_api_key: SecretStr = SecretStr("")
+    embedding_provider: str = "alibaba_dashscope"
+    embedding_base_url: str = ""
+    embedding_api_key: SecretStr = SecretStr("")
+    embedding_model: str = "qwen3.7-text-embedding"
+    embedding_dimension: int = Field(default=1024, gt=0)
+    embedding_output_type: str = "dense"
+    embedding_timeout_seconds: float = Field(default=30, gt=0)
     service_token: SecretStr = SecretStr("")
     admin_token: SecretStr = SecretStr("")
     read_scope_keys: list[str] = Field(default_factory=lambda: ["shared"], min_length=1)
