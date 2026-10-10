@@ -8,3 +8,7 @@ models
 __pycache__
 .pytest_cache
 .ruff_cache
+doc/selected
+doc/unselected
+doc/backup_manifest.json
+doc/backup_index.md

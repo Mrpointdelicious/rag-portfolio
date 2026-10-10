@@ -1,0 +1,1146 @@
+{
+  "cases": [
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q01",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q02",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q03",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1241,
+              "pdf_page": 2,
+              "start_char": 1214,
+              "text_sha256": "af49b878762ea2a3d9444bd380c60f4800d2b05aa7b91c895c25fa3b66981280"
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        }
+      ],
+      "review_reason": "制定目标与GRADE方法分别定位于D003 PDF第2页；这是两个必要事实组。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q04",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 69,
+              "pdf_page": 1,
+              "start_char": 47,
+              "text_sha256": "c97707f0685bf6eecdbadd7e962073a43f07c4766b4126abde31865bcaf9e23f"
+            }
+          ],
+          "id": "old_identity",
+          "support": "old identity"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 318,
+              "pdf_page": 1,
+              "start_char": 286,
+              "text_sha256": "68c15bcaef30acbe69cf31459b43d0a2af9cedf3e49b44ed89cbc9598190e468"
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "指南版次2011与期刊发表2012分开核对；PDF第1页对应纸面301页。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q05",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 28,
+              "pdf_page": 1,
+              "start_char": 8,
+              "text_sha256": "3153724b7cdf5ddc792e47332e3d82f54e629d81716d8d751bcac516b1f036c4"
+            }
+          ],
+          "id": "koa_identity",
+          "support": "koa identity"
+        }
+      ],
+      "review_reason": "2023是版次；原文首页期刊标注为2024年，不沿用盘点表的发表年推测。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q06",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 627,
+              "pdf_page": 2,
+              "start_char": 593,
+              "text_sha256": "c2eeee6a1669f1063892b58a5f8e3ec8b4134fcbb810730192eb66dea53011d7"
+            }
+          ],
+          "id": "balance_terms",
+          "support": "balance terms"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q07",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 371,
+              "pdf_page": 1,
+              "start_char": 329,
+              "text_sha256": "672f3fe6964fdc8bfcd472faceef43354e9f414e65093f82dd4abf23f81cd340"
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        }
+      ],
+      "review_reason": "以摘要最终18项、4项评定和14项治疗为分类依据；正文20项属于后续合并前的中间过程，不能直接当最终条目数。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q08",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 921,
+              "pdf_page": 1,
+              "start_char": 885,
+              "text_sha256": "ea1c2975c3683c865aeb433b16dae3d0000c3a47958ed478688cb7850b8d45d9"
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q09",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4088,
+              "pdf_page": 2,
+              "start_char": 4001,
+              "text_sha256": "7a4c3a075ea9d67deeecc4c5d04b71a5a39149dfcb3a641eea9e1a429c76c664"
+            }
+          ],
+          "id": "exo_outcomes",
+          "support": "exo outcomes"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q10",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 4092,
+              "pdf_page": 3,
+              "start_char": 4008,
+              "text_sha256": "586c69c69e09341a5613708ddc9ccad49c990375cb2ba8b9139e7468946517c1"
+            }
+          ],
+          "id": "robot_outcomes",
+          "support": "robot outcomes"
+        }
+      ],
+      "review_reason": "纳入条件位于PDF第3页，跨页延续到第4页；候选页提示不是Gold。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q11",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 946,
+              "pdf_page": 2,
+              "start_char": 873,
+              "text_sha256": "8505dc1e4939e0940c0817be14dd203f15560972234e7130b2db8fb7f9e484dd"
+            }
+          ],
+          "id": "guideline_method",
+          "support": "guideline method"
+        }
+      ],
+      "review_reason": "D173 PDF第2页经视觉核对并按摘要与双栏分区提取；第3页复杂表格仍有异常字形，未用作Gold。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q12",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q13",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q14",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4965,
+              "pdf_page": 7,
+              "start_char": 4891,
+              "text_sha256": "d2ab493ad877dc81dc649f6645301c5e8514d0894ae37c3976ff733df231a6b1"
+            }
+          ],
+          "id": "exo_limitations",
+          "support": "exo limitations"
+        }
+      ],
+      "review_reason": "局限定位在D129 PDF第7页，不以检索结果反向挑选段落。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q15",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q16",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 371,
+              "pdf_page": 1,
+              "start_char": 329,
+              "text_sha256": "672f3fe6964fdc8bfcd472faceef43354e9f414e65093f82dd4abf23f81cd340"
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q17",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 753,
+              "pdf_page": 1,
+              "start_char": 666,
+              "text_sha256": "49e0d6636b8bb38aa7f63fe5f7765acfab1a3206905379f032a0eff6b48872eb"
+            }
+          ],
+          "id": "exo_aim",
+          "support": "exo aim"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q18",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q19",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 921,
+              "pdf_page": 1,
+              "start_char": 885,
+              "text_sha256": "ea1c2975c3683c865aeb433b16dae3d0000c3a47958ed478688cb7850b8d45d9"
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q20",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4965,
+              "pdf_page": 7,
+              "start_char": 4891,
+              "text_sha256": "d2ab493ad877dc81dc649f6645301c5e8514d0894ae37c3976ff733df231a6b1"
+            }
+          ],
+          "id": "exo_limitations",
+          "support": "exo limitations"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3453,
+              "pdf_page": 10,
+              "start_char": 3378,
+              "text_sha256": "295126f33ff3235bb8e95b1f39d3e8b1ae7252384973eb1293e7f8bacaf96baa"
+            }
+          ],
+          "id": "robot_limitations",
+          "support": "robot limitations"
+        }
+      ],
+      "review_reason": "两篇综述局限分别位于D129 PDF第7页、D161 PDF第10页，两组都需要命中。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q21",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q22",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q23",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q24",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q25",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q26",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q27",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q28",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q29",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "纳入成人卒中研究的文本只支持人群边界说明，不能推出对儿童脑瘫的临床效果。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q30",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2159,
+              "pdf_page": 2,
+              "start_char": 2139,
+              "text_sha256": "ed0e76ef22040d1b528a3e421763e522d5d878b558c234f067bcb3889c6adcee"
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "同时给出成人KOA目标人群和卒中平衡范围；相关段落不能跨病种当作处方。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q31",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        }
+      ],
+      "review_reason": "仅支持文献适用范围说明；未提供患者资料，不能据此确定个体训练。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q32",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1655,
+              "pdf_page": 2,
+              "start_char": 1621,
+              "text_sha256": "c18b91518c084224c1183db415e78413a037c41a1d548d9bd6ed434c92db7196"
+            }
+          ],
+          "id": "integrative_stage",
+          "support": "integrative stage"
+        }
+      ],
+      "review_reason": "D003明确同时涵盖急性、恢复和后遗症期，原候选的“适用阶段待核”已按原文修正。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q33",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2159,
+              "pdf_page": 2,
+              "start_char": 2139,
+              "text_sha256": "ed0e76ef22040d1b528a3e421763e522d5d878b558c234f067bcb3889c6adcee"
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q34",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "研究纳入条件是方法学范围，不能等同个体临床适应条件。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q35",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 318,
+              "pdf_page": 1,
+              "start_char": 286,
+              "text_sha256": "68c15bcaef30acbe69cf31459b43d0a2af9cedf3e49b44ed89cbc9598190e468"
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q36",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "两文标题与范围不同，仅比较时间不构成同一指南新旧版关系。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q37",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "提供主题范围比较的证据；替代关系仍需独立来源关系确认。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q38",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 1147,
+              "pdf_page": 1,
+              "start_char": 1118,
+              "text_sha256": "0fce2a9b03d9bccfdd581d2b44c16ba424a7434c9a8a902f653f6f26fd9fdeee"
+            }
+          ],
+          "id": "old_grading",
+          "support": "old grading"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "D040正文列A-D证据及I-IV推荐，D041采用牛津新五级；不将不同字母体系强行对应。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q39",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "只检索两文人群与方法的相关条件；本题不代表已确认两文存在治疗结论冲突。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "provenance_only",
+      "id": "Q40",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "这是文件身份与独立证据计数问题，排除于文本检索质量分母；原始备份保留D102用于同文副本复核。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "scored": false
+    }
+  ],
+  "clinical_approval": false,
+  "corpus_fingerprint": "c03ff07b03dd8b8d67f24527e8c90b6c0abecec7f1ddea138a795feec9c16c24",
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v1",
+  "schema_version": 1,
+  "status": "frozen_technical_review",
+  "suite_fingerprint": "b498e328531541b3676a52b1418badf1a7ae35413d8f23a29fb333d26d0312ed",
+  "test_seal": "19d3d44d50a413b57c944dad2529360a1e2463d4083a0ff4911a3294a45a5e7e"
+}

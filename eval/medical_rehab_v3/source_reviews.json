@@ -1,0 +1,2155 @@
+{
+  "cases": [
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q01",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q02",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "采用牛津大学循证医学中心新五级证据标准",
+              "document_id": "D041",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "牛津大学循证医学中心（Oxford Centre for Evidence Based Medicine，OCEBM）关于文献类型的“新五级”标准",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q03",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "本指南的制订旨在规范脑卒中中西医结合康复治疗的临床实践，以改善脑卒中患者的功能障碍和生活质量。",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "并采用评估、制订及评价（GRADE）分级",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "证据确信度（质量）采用GRADE分级",
+              "document_id": "D003",
+              "pdf_page": 3
+            },
+            {
+              "anchor": "并采用国际公认的GRADE方法进行证据质量评价和推荐强度分级",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        }
+      ],
+      "review_reason": "制定目标与GRADE方法分别定位于D003 PDF第2页；这是两个必要事实组。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q04",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "中国脑卒中康复治疗指南(2011完全版)①",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_identity",
+          "support": "old identity"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "中国康复理论与实践,2012,18(4):301-318.",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "指南版次2011与期刊发表2012分开核对；PDF第1页对应纸面301页。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q05",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "中国膝骨关节炎康复治疗指南（2023版）",
+              "document_id": "D042",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "Chinese guideline for the rehabilitation treatment of knee osteoarthritis (2023 edition)",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "koa_identity",
+          "support": "koa identity"
+        }
+      ],
+      "review_reason": "2023是版次；原文首页期刊标注为2024年，不沿用盘点表的发表年推测。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q06",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "平衡是指人体能够在静止或运动状态下，保持良好的姿势控制和重心调节",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_terms",
+          "support": "balance terms"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q07",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "最终共识纳入18项条目，包括智能康复评定技术4项、治疗技术14项",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        }
+      ],
+      "review_reason": "以摘要最终18项、4项评定和14项治疗为分类依据；正文20项属于后续合并前的中间过程，不能直接当最终条目数。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q08",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "制订康复指南最重要的目的是为康复治疗的实施和评价提供一个科学的证据基础",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q09",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "The primary outcome was mobility capac-ity measured by using an overall indicator of mobility",
+              "document_id": "D129",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "In the primary outcome, overall mobility capacity with PAGT was not superior to that with CGT at the end of the intervention.",
+              "document_id": "D129",
+              "pdf_page": 6
+            }
+          ],
+          "id": "exo_primary",
+          "support": "主要结局为整体活动能力"
+        }
+      ],
+      "review_reason": "补全primary outcome；人群与主要结局均须定位，不能用次要结局列表代替主要结局。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q10",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "balance evaluation was a primary or secondary outcome using Berg Balance Scale (BBS), Timed Up and Go test (TUG), or both",
+              "document_id": "D161",
+              "pdf_page": 3
+            },
+            {
+              "anchor": "Randomized clinical trials evaluating RAGT efficacy on post-stroke survivor balance with Berg Balance Scale (BBS) or Timed Up and Go test (TUG) were searched.",
+              "document_id": "D161",
+              "pdf_page": 2
+            }
+          ],
+          "id": "robot_outcome",
+          "support": "BBS或TUG平衡结局"
+        }
+      ],
+      "review_reason": "完整覆盖题目列明的年龄、疾病和BBS/TUG量表。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q11",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke",
+              "document_id": "D173",
+              "pdf_page": 2
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "Appraisal of Guidelines for Research and Evaluation (AGREE) II instrument",
+              "document_id": "D173",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "To evaluate the quality and methodological issues of the included guidelines we used the AGREE II.",
+              "document_id": "D173",
+              "pdf_page": 7
+            }
+          ],
+          "id": "guideline_method",
+          "support": "guideline method"
+        }
+      ],
+      "review_reason": "D173 PDF第2页经视觉核对并按摘要与双栏分区提取；第3页复杂表格仍有异常字形，未用作Gold。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q12",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q13",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "采用牛津大学循证医学中心新五级证据标准",
+              "document_id": "D041",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "牛津大学循证医学中心（Oxford Centre for Evidence Based Medicine，OCEBM）关于文献类型的“新五级”标准",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q14",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "First, the pooled sample size was small",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "small_sample",
+          "support": "small_sample"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the number of analysable studies was limited",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "few_studies",
+          "support": "few_studies"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "heterogeneity of participant characteristics",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "heterogeneity",
+          "support": "heterogeneity"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "various methodological flaws in the included stud-ies",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "methodological_flaws",
+          "support": "methodological_flaws"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "we may have excluded relevant studies that were published in languages other than English.",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "language_bias",
+          "support": "language_bias"
+        }
+      ],
+      "review_reason": "逐项核对原文五类限制；不再仅标样本量。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q15",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "investigated the training effect or orthotic effect of POWER",
+              "document_id": "D129",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "We chose reports of trials investigating the training effect of PAGT and the orthotic effect of POWER.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_intervention",
+          "support": "可穿戴外骨骼训练效果或矫形辅助效果"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "The primary outcome was mobility capac-ity measured by using an overall indicator of mobility",
+              "document_id": "D129",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "In the primary outcome, overall mobility capacity with PAGT was not superior to that with CGT at the end of the intervention.",
+              "document_id": "D129",
+              "pdf_page": 6
+            }
+          ],
+          "id": "exo_primary",
+          "support": "主要结局为整体活动能力"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the intervention was any kind of RAGT (robotic gait training on treadmill, overground exoskeleton, or end-effector)",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_intervention",
+          "support": "跑台、地面外骨骼或末端执行器机器人步态训练"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "balance evaluation was a primary or secondary outcome using Berg Balance Scale (BBS), Timed Up and Go test (TUG), or both",
+              "document_id": "D161",
+              "pdf_page": 3
+            },
+            {
+              "anchor": "Randomized clinical trials evaluating RAGT efficacy on post-stroke survivor balance with Berg Balance Scale (BBS) or Timed Up and Go test (TUG) were searched.",
+              "document_id": "D161",
+              "pdf_page": 2
+            }
+          ],
+          "id": "robot_outcome",
+          "support": "BBS或TUG平衡结局"
+        }
+      ],
+      "review_reason": "两篇各有人群、干预、结局三组；共六组均须覆盖，不能只以两篇人群段落判定完整。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q16",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "最终共识纳入18项条目，包括智能康复评定技术4项、治疗技术14项",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q17",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke",
+              "document_id": "D173",
+              "pdf_page": 2
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "The present systematic review aimed to investigate the effect of a wearable exoskeleton on post-stroke walking by considering its use in a gait training system and simply as an orthosis assisting walking.",
+              "document_id": "D129",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "The current study aimed to review the literature to date on POWER to ascertain its 2 distinct uses in stroke rehabilitation: its application in gait training systems and as an orthosis to assist walk-ing.",
+              "document_id": "D129",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "The present systematic review aimed at investigating the 2 differ-ent uses of POWER in stroke rehabilitation: as a gait training pro-gramme and as an assistive orthosis.",
+              "document_id": "D129",
+              "pdf_page": 6
+            }
+          ],
+          "id": "exo_aim",
+          "support": "研究问题同时包括训练系统用途与辅助步行矫形器用途"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q18",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "本指南的制订旨在规范脑卒中中西医结合康复治疗的临床实践，以改善脑卒中患者的功能障碍和生活质量。",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "并采用评估、制订及评价（GRADE）分级",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "证据确信度（质量）采用GRADE分级",
+              "document_id": "D003",
+              "pdf_page": 3
+            },
+            {
+              "anchor": "并采用国际公认的GRADE方法进行证据质量评价和推荐强度分级",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "制定脑卒中智能康复技术应用专家共识，为脑卒中患者的智能康复技术应用提供指导意见。",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_goal",
+          "support": "consensus_goal"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "采用牛津大学循证医学中心新五级证据标准",
+              "document_id": "D041",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "牛津大学循证医学中心（Oxford Centre for Evidence Based Medicine，OCEBM）关于文献类型的“新五级”标准",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "分别标注两篇的目的及分级方法，四组缺一不可。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q19",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "制订康复指南最重要的目的是为康复治疗的实施和评价提供一个科学的证据基础",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q20",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "First, the pooled sample size was small",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "small_sample",
+          "support": "small_sample"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the high heterogeneity between studies is a great confounder of our results",
+              "document_id": "D161",
+              "pdf_page": 10
+            },
+            {
+              "anchor": "This profound heterogeneity in robotic devices, even if not drastically, surely is a confounder when comparing the outcomes between studies.",
+              "document_id": "D161",
+              "pdf_page": 9
+            }
+          ],
+          "id": "robot_limitations",
+          "support": "robot limitations"
+        }
+      ],
+      "review_reason": "D129样本量与D161异质性分别定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q21",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q22",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q23",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q24",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q25",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q26",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q27",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q28",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q29",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "纳入成人卒中研究的文本只支持人群边界说明，不能推出对儿童脑瘫的临床效果。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q30",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "指南推荐意见的目标人群是成人KOA患者。",
+              "document_id": "D042",
+              "pdf_page": 2
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "同时给出成人KOA目标人群和卒中平衡范围；相关段落不能跨病种当作处方。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q31",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke",
+              "document_id": "D173",
+              "pdf_page": 2
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        }
+      ],
+      "review_reason": "仅支持文献适用范围说明；未提供患者资料，不能据此确定个体训练。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q32",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南推荐意见的目标人群为脑卒中急性期、恢复期和后遗症期人群。",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "integrative_stage",
+          "support": "integrative stage"
+        }
+      ],
+      "review_reason": "D003明确同时涵盖急性、恢复和后遗症期，原候选的“适用阶段待核”已按原文修正。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q33",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "指南推荐意见的目标人群是成人KOA患者。",
+              "document_id": "D042",
+              "pdf_page": 2
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q34",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "研究纳入条件是方法学范围，不能等同个体临床适应条件。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q35",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "中国康复理论与实践,2012,18(4):301-318.",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q36",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "两文标题与范围不同，仅比较时间不构成同一指南新旧版关系。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q37",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "本指南的制订旨在规范脑卒中中西医结合康复治疗的临床实践，以改善脑卒中患者的功能障碍和生活质量。",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "提供主题范围比较的证据；替代关系仍需独立来源关系确认。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q38",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "证据水平(A、B、C、D)以及推荐级别(Ⅰ、Ⅱ、Ⅲ、Ⅳ)",
+              "document_id": "D040",
+              "pdf_page": 1
+            }
+          ],
+          "id": "old_grading",
+          "support": "old grading"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "采用牛津大学循证医学中心新五级证据标准",
+              "document_id": "D041",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "牛津大学循证医学中心（Oxford Centre for Evidence Based Medicine，OCEBM）关于文献类型的“新五级”标准",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "D040正文列A-D证据及I-IV推荐，D041采用牛津新五级；不将不同字母体系强行对应。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q39",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "只检索两文人群与方法的相关条件；本题不代表已确认两文存在治疗结论冲突。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "provenance_only",
+      "id": "Q40",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "这是文件身份与独立证据计数问题，排除于文本检索质量分母；原始备份保留D102用于同文副本复核。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q41",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "GB/T 12346—2021 经穴名称与定位",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "standard",
+          "support": "standard"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q42",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南已在国际实践指南注册与透明化平台进行中英文双语注册（注册号：PREPARE-2022CN747",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "integrative_registration",
+          "support": "integrative_registration"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q43",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "以某项共识意见选择总票数超过75%视为达成共识",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "delphi_threshold",
+          "support": "delphi_threshold"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q44",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "We searched for relevant studies in PubMed, Embase, CINAHL and Scopus databases from their earliest publication record up to July 31, 2021.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "search",
+          "support": "search"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q45",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "This research has been conducted following the PRISMA 2020 guidelines.",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "reporting",
+          "support": "reporting"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the last online search was performed on 3 August 2022.",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "search_date",
+          "support": "search_date"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q46",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "From the 1219 papers screened, ten eligible guidelines were identified from seven different regions/countries.",
+              "document_id": "D173",
+              "pdf_page": 2
+            }
+          ],
+          "id": "screening",
+          "support": "screening"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q47",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "using the PEDro scale and the Cochrane Risk of Bias 2 tool.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_quality",
+          "support": "exo_quality"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "The revised Cochrane risk-of-bias tool for randomized trials (RoB 2) was used to assess the risk of bias",
+              "document_id": "D161",
+              "pdf_page": 4
+            }
+          ],
+          "id": "robot_quality",
+          "support": "robot_quality"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q48",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南已在国际实践指南注册与透明化平台进行中英文双语注册（注册号：PREPARE-2022CN747",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "integrative_registration",
+          "support": "integrative_registration"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南已在国际临床实践指南注册平台完成注册（注册号：IPGRP-2022CN008）",
+              "document_id": "D042",
+              "pdf_page": 2
+            }
+          ],
+          "id": "koa_registration",
+          "support": "koa_registration"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q49",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南适用于各级医疗机构和康复机构的康复相关从业人员，包括临床医师、康复治疗师和护理人员等。",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "users",
+          "support": "users"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q50",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南在2016、2019年版基础上进行更新",
+              "document_id": "D042",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "This guideline was updated based on the 2016 and 2019 editions",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "prior_versions",
+          "support": "prior_versions"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q51",
+      "required_groups": [],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q52",
+      "required_groups": [],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q53",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "人体或人体某一部位处于某种特定姿势，例如坐或站立等姿势时保持稳定状态的能力",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "static_balance",
+          "support": "static_balance"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "当人体运动或受到外力作用时，能自动地调整并维持姿势的能力",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "dynamic_balance",
+          "support": "dynamic_balance"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q54",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "质心（center of mass，COM）是人体整体质量分布的平均位置。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "com",
+          "support": "com"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "重心（center of gravity，CG）是总体重矢量通过的点。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "cg",
+          "support": "cg"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "稳定极限（limits of stability，LOS）是当一个人主动移动CG，并将自己身体向给定方向倾斜而不失去平衡、迈步或抓握的最大距离",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "los",
+          "support": "los"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q55",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "急性期为发病2周以内，恢复期为发病2周至6个月，后遗症期为发病6个月以上。",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "stage_definitions",
+          "support": "stage_definitions"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q56",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "最终20项共识意见纳入专家共识，包括智能康复评定技术5项，智能康复治疗技术15项。",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "intermediate_items",
+          "support": "intermediate_items"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "分别对智能康复评定技术中的2条共识意见，以及智能康复治疗技术中的2条共识意见进行合并，确定了共识的最终版。",
+              "document_id": "D041",
+              "pdf_page": 3
+            }
+          ],
+          "id": "final_merge",
+          "support": "final_merge"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "最终共识纳入18项条目，包括智能康复评定技术4项、治疗技术14项",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q57",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "we found no eligible study investigating the orthotic effects of POWER in the stroke population.",
+              "document_id": "D129",
+              "pdf_page": 7
+            }
+          ],
+          "id": "orthotic_gap",
+          "support": "orthotic_gap"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q58",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "Studies considering participants with a history of multiple strokes or using RAGT in both experimental and control groups were excluded from the study.",
+              "document_id": "D161",
+              "pdf_page": 4
+            }
+          ],
+          "id": "robot_exclusion",
+          "support": "robot_exclusion"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q59",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "All guide-lines agree that RAGT should not be used in place of con-ventional gait rehabilitation.",
+              "document_id": "D173",
+              "pdf_page": 5
+            }
+          ],
+          "id": "not_replacement",
+          "support": "not_replacement"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q60",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "以《国际功能、残疾和健康分类》（ICF）为理论架构",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "icf",
+          "support": "icf"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "同时采用GRADE从证据到决策的框架（EtD）辅助由证据向推荐意见转化",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "etd",
+          "support": "etd"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "按照国际临床实践指南报告标准（RIGHT）进行报告",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "right",
+          "support": "right"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q61",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "dose-matched CGT (i.e., identical in duration, fre-quency, number of sessions and additional physiotherapy)",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_control",
+          "support": "exo_control"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "the control group comprised of conventional treatment (physical exercises, non-robotic overground, or treadmill walking training)",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_control",
+          "support": "robot_control"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q62",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "Randomised or quasi-randomised controlled trials (parallel or crossover) published in peer-review journals in English were considered.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_language",
+          "support": "exo_language"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "Only randomized clinical trials (RCT) with full text available in English or Italian have been considered eligible.",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_language",
+          "support": "robot_language"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q63",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "若75%以上的专家同意推荐意见的强度和推荐方向，则达成德尔菲共识。",
+              "document_id": "D003",
+              "pdf_page": 3
+            }
+          ],
+          "id": "integrative_vote",
+          "support": "integrative_vote"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "以某项共识意见选择总票数超过75%视为达成共识",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_vote",
+          "support": "consensus_vote"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q64",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "并采用评估、制订及评价（GRADE）分级",
+              "document_id": "D003",
+              "pdf_page": 2
+            },
+            {
+              "anchor": "证据确信度（质量）采用GRADE分级",
+              "document_id": "D003",
+              "pdf_page": 3
+            },
+            {
+              "anchor": "并采用国际公认的GRADE方法进行证据质量评价和推荐强度分级",
+              "document_id": "D003",
+              "pdf_page": 8
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "推荐意见强度分为强推荐（1）和弱推荐（2）",
+              "document_id": "D003",
+              "pdf_page": 3
+            }
+          ],
+          "id": "integrative_strength",
+          "support": "integrative_strength"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "采用牛津大学循证医学中心新五级证据标准",
+              "document_id": "D041",
+              "pdf_page": 1
+            },
+            {
+              "anchor": "牛津大学循证医学中心（Oxford Centre for Evidence Based Medicine，OCEBM）关于文献类型的“新五级”标准",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "推荐强度分为“强”“中等”“弱”三类。",
+              "document_id": "D041",
+              "pdf_page": 2
+            }
+          ],
+          "id": "consensus_strength",
+          "support": "consensus_strength"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "采用推荐意见分级的评估、制订及评价（GRADE）方法对证据质量及推荐意见进行分级",
+              "document_id": "D042",
+              "pdf_page": 1
+            }
+          ],
+          "id": "koa_grading",
+          "support": "koa_grading"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q65",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "Two authors (THH and CLT) independently assessed the quality of the included studies by using the PEDro scale and the Cochrane Risk of Bias 2 tool.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_quality_reviewers",
+          "support": "exo_quality_reviewers"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "The revised Cochrane risk-of-bias tool for randomized trials (RoB 2) was used to assess the risk of bias associated to each experimental study included in the review by four authors independently.",
+              "document_id": "D161",
+              "pdf_page": 4
+            }
+          ],
+          "id": "robot_quality_reviewers",
+          "support": "robot_quality_reviewers"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q66",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南适用于各级医疗机构和康复机构的康复相关从业人员，包括临床医师、康复治疗师和护理人员等。",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "users",
+          "support": "users"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南推荐意见的目标人群为脑卒中急性期、恢复期和后遗症期人群。",
+              "document_id": "D003",
+              "pdf_page": 2
+            }
+          ],
+          "id": "integrative_stage",
+          "support": "integrative stage"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "本指南供康复医学科、关节外科、运动医学、风湿免疫科、疼痛科等参与KOA诊疗与康复管理的临床学科医师、治疗师、护士及相关专业人员使用。",
+              "document_id": "D042",
+              "pdf_page": 2
+            }
+          ],
+          "id": "koa_users",
+          "support": "koa_users"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "指南推荐意见的目标人群是成人KOA患者。",
+              "document_id": "D042",
+              "pdf_page": 2
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q67",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "本文件适用于康复医师、治疗师等专业人员针对脑卒中立位平衡障碍的评定与治疗。",
+              "document_id": "D001",
+              "pdf_page": 2
+            }
+          ],
+          "id": "balance_users",
+          "support": "balance_users"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "涵盖运动、认知、言语、感觉等功能障碍的康复评估与干预。",
+              "document_id": "D041",
+              "pdf_page": 1
+            }
+          ],
+          "id": "consensus_functions",
+          "support": "consensus_functions"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q68",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "anchor": "The Cochrane library and Google Scholar were searched for additional references.",
+              "document_id": "D129",
+              "pdf_page": 2
+            }
+          ],
+          "id": "exo_additional_search",
+          "support": "exo_additional_search"
+        },
+        {
+          "alternatives": [
+            {
+              "anchor": "PubMed, Cochrane Library, and PeDRO electronic databases were searched",
+              "document_id": "D161",
+              "pdf_page": 3
+            }
+          ],
+          "id": "robot_databases",
+          "support": "robot_databases"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q69",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q70",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q71",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q72",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    }
+  ],
+  "clinical_approval": false,
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v3",
+  "review_scope": "source_text_and_provenance",
+  "schema_version": 1
+}

@@ -26,6 +26,13 @@ dev = ["pytest>=8.4,<10", "pytest-asyncio>=1.4,<2", "ruff>=0.12,<1"]
 rag-worker = "rag_portfolio.worker:main"
 rag-api = "rag_portfolio.serve:main"
 
+[project.optional-dependencies]
+medical = [
+    "pypdf>=6,<7",
+    "pypdfium2>=4.30,<6",
+    "tiktoken>=0.12,<1",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/rag_portfolio"]
 

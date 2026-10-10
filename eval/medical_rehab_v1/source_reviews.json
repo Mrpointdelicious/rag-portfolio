@@ -1,0 +1,1034 @@
+{
+  "schema_version": 1,
+  "domain": "medical_knowledge",
+  "review_scope": "source_text_and_provenance",
+  "clinical_approval": false,
+  "cases": [
+    {
+      "id": "Q01",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q02",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "consensus_method",
+          "support": "consensus method",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "采用牛津大学循证医学中心新五级证据标准"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q03",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "integrative_goal",
+          "support": "integrative goal",
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "pdf_page": 2,
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为"
+            }
+          ]
+        },
+        {
+          "id": "integrative_method",
+          "support": "integrative method",
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "pdf_page": 2,
+              "anchor": "并采用评估、制订及评价（GRADE）分级"
+            }
+          ]
+        }
+      ],
+      "review_reason": "制定目标与GRADE方法分别定位于D003 PDF第2页；这是两个必要事实组。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q04",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "old_identity",
+          "support": "old identity",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "中国脑卒中康复治疗指南(2011完全版)①"
+            }
+          ]
+        },
+        {
+          "id": "old_publication",
+          "support": "old publication",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "中国康复理论与实践,2012,18(4):301-318."
+            }
+          ]
+        }
+      ],
+      "review_reason": "指南版次2011与期刊发表2012分开核对；PDF第1页对应纸面301页。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q05",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "koa_identity",
+          "support": "koa identity",
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "pdf_page": 1,
+              "anchor": "中国膝骨关节炎康复治疗指南（2023版）"
+            }
+          ]
+        }
+      ],
+      "review_reason": "2023是版次；原文首页期刊标注为2024年，不沿用盘点表的发表年推测。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q06",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "balance_terms",
+          "support": "balance terms",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "平衡是指人体能够在静止或运动状态下，保持良好的姿势控制和重心调节"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q07",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "consensus_scope",
+          "support": "consensus scope",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "最终共识纳入18项条目，包括智能康复评定技术4项、治疗技术14项"
+            }
+          ]
+        }
+      ],
+      "review_reason": "以摘要最终18项、4项评定和14项治疗为分类依据；正文20项属于后续合并前的中间过程，不能直接当最终条目数。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q08",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "old_goal",
+          "support": "old goal",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "制订康复指南最重要的目的是为康复治疗的实施和评价提供一个科学的证据基础"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q09",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "exo_outcomes",
+          "support": "exo outcomes",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "overall mobility capacity, motor functions in lower extremities, walking speed, balance"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q10",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        },
+        {
+          "id": "robot_outcomes",
+          "support": "robot outcomes",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "balance evaluation was a primary or secondary outcome using Berg Balance Scale (BBS)"
+            }
+          ]
+        }
+      ],
+      "review_reason": "纳入条件位于PDF第3页，跨页延续到第4页；候选页提示不是Gold。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q11",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "guideline_scope",
+          "support": "guideline scope",
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "pdf_page": 2,
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke"
+            }
+          ]
+        },
+        {
+          "id": "guideline_method",
+          "support": "guideline method",
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "pdf_page": 2,
+              "anchor": "Appraisal of Guidelines for Research and Evaluation (AGREE) II instrument"
+            }
+          ]
+        }
+      ],
+      "review_reason": "D173 PDF第2页经视觉核对并按摘要与双栏分区提取；第3页复杂表格仍有异常字形，未用作Gold。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q12",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q13",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "consensus_method",
+          "support": "consensus method",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "采用牛津大学循证医学中心新五级证据标准"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q14",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "exo_limitations",
+          "support": "exo limitations",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 7,
+              "anchor": "Our study has several limitations. First, the pooled sample size was small"
+            }
+          ]
+        }
+      ],
+      "review_reason": "局限定位在D129 PDF第7页，不以检索结果反向挑选段落。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q15",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q16",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "consensus_scope",
+          "support": "consensus scope",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "最终共识纳入18项条目，包括智能康复评定技术4项、治疗技术14项"
+            }
+          ]
+        },
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q17",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "guideline_scope",
+          "support": "guideline scope",
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "pdf_page": 2,
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke"
+            }
+          ]
+        },
+        {
+          "id": "exo_aim",
+          "support": "exo aim",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 1,
+              "anchor": "The present systematic review aimed to investigate the effect of a wearable exoskeleton"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q18",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "integrative_goal",
+          "support": "integrative goal",
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "pdf_page": 2,
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为"
+            }
+          ]
+        },
+        {
+          "id": "consensus_method",
+          "support": "consensus method",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "采用牛津大学循证医学中心新五级证据标准"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q19",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "old_goal",
+          "support": "old goal",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "制订康复指南最重要的目的是为康复治疗的实施和评价提供一个科学的证据基础"
+            }
+          ]
+        },
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q20",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "exo_limitations",
+          "support": "exo limitations",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 7,
+              "anchor": "Our study has several limitations. First, the pooled sample size was small"
+            }
+          ]
+        },
+        {
+          "id": "robot_limitations",
+          "support": "robot limitations",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 10,
+              "anchor": "the high heterogeneity between studies is a great confounder of our results"
+            }
+          ]
+        }
+      ],
+      "review_reason": "两篇综述局限分别位于D129 PDF第7页、D161 PDF第10页，两组都需要命中。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q21",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q22",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q23",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q24",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q25",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q26",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q27",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q28",
+      "answerable": false,
+      "scored": false,
+      "expected_behavior": "insufficient_input",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q29",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        }
+      ],
+      "review_reason": "纳入成人卒中研究的文本只支持人群边界说明，不能推出对儿童脑瘫的临床效果。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q30",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "koa_population",
+          "support": "koa population",
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "pdf_page": 2,
+              "anchor": "指南推荐意见的目标人群是成人KOA患者。"
+            }
+          ]
+        },
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "同时给出成人KOA目标人群和卒中平衡范围；相关段落不能跨病种当作处方。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q31",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        },
+        {
+          "id": "guideline_scope",
+          "support": "guideline scope",
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "pdf_page": 2,
+              "anchor": "scope, quality, and consistency of guidelines for robotic lower limb rehabilitation after stroke"
+            }
+          ]
+        }
+      ],
+      "review_reason": "仅支持文献适用范围说明；未提供患者资料，不能据此确定个体训练。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q32",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "integrative_stage",
+          "support": "integrative stage",
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "pdf_page": 2,
+              "anchor": "本指南推荐意见的目标人群为脑卒中急性期、恢复期和后遗症期人群。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "D003明确同时涵盖急性、恢复和后遗症期，原候选的“适用阶段待核”已按原文修正。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q33",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        },
+        {
+          "id": "koa_population",
+          "support": "koa population",
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "pdf_page": 2,
+              "anchor": "指南推荐意见的目标人群是成人KOA患者。"
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q34",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        }
+      ],
+      "review_reason": "研究纳入条件是方法学范围，不能等同个体临床适应条件。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q35",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "answer_from_evidence",
+      "required_groups": [
+        {
+          "id": "old_publication",
+          "support": "old publication",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "中国康复理论与实践,2012,18(4):301-318."
+            }
+          ]
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q36",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        },
+        {
+          "id": "consensus_identity",
+          "support": "consensus identity",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要"
+            }
+          ]
+        }
+      ],
+      "review_reason": "两文标题与范围不同，仅比较时间不构成同一指南新旧版关系。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q37",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "balance_scope",
+          "support": "balance scope",
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "pdf_page": 2,
+              "anchor": "本文件规定了脑卒中患者立位平衡障碍的康复评定、康复治疗及疗效评价等内容。"
+            }
+          ]
+        },
+        {
+          "id": "integrative_goal",
+          "support": "integrative goal",
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "pdf_page": 2,
+              "anchor": "以规范各级医疗机构和康复机构的康复相关从业人员的治疗行为"
+            }
+          ]
+        },
+        {
+          "id": "consensus_identity",
+          "support": "consensus identity",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要"
+            }
+          ]
+        }
+      ],
+      "review_reason": "提供主题范围比较的证据；替代关系仍需独立来源关系确认。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q38",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "old_grading",
+          "support": "old grading",
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "pdf_page": 1,
+              "anchor": "证据水平(A、B、C、D)以及推荐级别(Ⅰ、Ⅱ、Ⅲ、Ⅳ)"
+            }
+          ]
+        },
+        {
+          "id": "consensus_method",
+          "support": "consensus method",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "采用牛津大学循证医学中心新五级证据标准"
+            }
+          ]
+        }
+      ],
+      "review_reason": "D040正文列A-D证据及I-IV推荐，D041采用牛津新五级；不将不同字母体系强行对应。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q39",
+      "answerable": true,
+      "scored": true,
+      "expected_behavior": "scope_limited",
+      "required_groups": [
+        {
+          "id": "exo_population",
+          "support": "exo population",
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "pdf_page": 2,
+              "anchor": "enrolled adults ≥ 18 years old who had a diagnosis of stroke"
+            }
+          ]
+        },
+        {
+          "id": "robot_population",
+          "support": "robot population",
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "pdf_page": 3,
+              "anchor": "the participants’ age was ≥18 years; (3) they included post-stroke survivors only"
+            }
+          ]
+        }
+      ],
+      "review_reason": "只检索两文人群与方法的相关条件；本题不代表已确认两文存在治疗结论冲突。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    },
+    {
+      "id": "Q40",
+      "answerable": true,
+      "scored": false,
+      "expected_behavior": "provenance_only",
+      "required_groups": [
+        {
+          "id": "consensus_identity",
+          "support": "consensus identity",
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "pdf_page": 1,
+              "anchor": "脑卒中智能康复技术应用专家共识\n*\n摘要"
+            }
+          ]
+        }
+      ],
+      "review_reason": "这是文件身份与独立证据计数问题，排除于文本检索质量分母；原始备份保留D102用于同文副本复核。",
+      "reviewer": "Codex source-text review 2026-10-10",
+      "review_scope": "source_text_and_provenance"
+    }
+  ]
+}

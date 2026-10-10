@@ -1,0 +1,404 @@
+{
+  "suite": "hospital_dense_v1",
+  "cases": [
+    {
+      "id": "E01",
+      "query": "岳阳医院场景总共有几层？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][布局]",
+          "text_contains": "5层"
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "query": "二楼问诊中心右侧有哪些诊疗室？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][二楼] 问诊中心"
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "query": "智能步道康复室在哪一层？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][三楼] 诊疗中心",
+          "text_contains": "智能步道康复室"
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "query": "四楼能做哪些类型的评估？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][四楼] 评估中心"
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "query": "五楼数据中心的大屏会展示哪些数据？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][五楼] 数据中心"
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "query": "岳阳医院一楼主要是什么区域？",
+      "category": "exact_fact",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][一楼] 接待大厅"
+        }
+      ]
+    },
+    {
+      "id": "S01",
+      "query": "我想做记忆和认知方面的评估，应该去哪里？",
+      "category": "semantic_paraphrase",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][四楼] 评估中心",
+          "text_contains": "认知"
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "query": "我想练智能步道，应该去几楼找？",
+      "category": "semantic_paraphrase",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][三楼] 诊疗中心",
+          "text_contains": "智能步道"
+        }
+      ]
+    },
+    {
+      "id": "S03",
+      "query": "我想看患者流量、病例和诊疗数据，应该看哪一层的大屏？",
+      "category": "semantic_paraphrase",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][五楼] 数据中心",
+          "text_contains": "患者流量"
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "query": "我怎样从岳阳医院场景回到社交岛？",
+      "category": "semantic_paraphrase",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "屏幕按键功能分布与介绍",
+          "text_contains": "返回社交岛"
+        }
+      ]
+    },
+    {
+      "id": "P01",
+      "query": "患者端右上角的两个按钮是什么？",
+      "category": "patient_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "屏幕按键功能分布与介绍",
+          "text_contains": "立即挂号 训练提醒"
+        }
+      ]
+    },
+    {
+      "id": "P02",
+      "query": "患者在哪里查看当前训练安排？",
+      "category": "patient_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][按钮功能][详细介绍]",
+          "text_contains": "查看当前的训练安排"
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "query": "患者端快速通道里面有哪些入口？",
+      "category": "patient_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][患者端] 快速通道功能"
+        }
+      ]
+    },
+    {
+      "id": "P04",
+      "query": "患者怎么手动挂号？",
+      "category": "patient_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][患者端] 患者就诊挂号",
+          "text_contains": "手动操作"
+        }
+      ]
+    },
+    {
+      "id": "D01",
+      "query": "医生在哪里查看和管理设备？",
+      "category": "doctor_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-doctor-guide",
+          "section_contains": "[通用][按钮功能][详细介绍]",
+          "text_contains": "设备管理"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "query": "医生端快速通道包含哪些功能？",
+      "category": "doctor_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-doctor-guide",
+          "section_contains": "[通用][通用] 快速通道功能"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "query": "医生怎样快速进入问诊？",
+      "category": "doctor_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "general-doctor-guide",
+          "section_contains": "[通用][医生端] 快速前往问诊"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "query": "医生能不能直接用语音进入问诊？",
+      "category": "doctor_role",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "general-doctor-guide",
+          "section_contains": "[通用][医生端] 快速前往问诊",
+          "text_contains": "语音操作"
+        }
+      ]
+    },
+    {
+      "id": "R01",
+      "query": "我是患者，怎么查看自己的就诊记录和训练报告？",
+      "category": "role_disambiguation",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "general-patient-guide",
+          "section_contains": "就诊记录与训练报告查看"
+        }
+      ]
+    },
+    {
+      "id": "R02",
+      "query": "我是医生，为什么看不到患者端的立即挂号？",
+      "category": "role_disambiguation",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][患者端] 患者就诊挂号",
+          "text_contains": "医生角色无法查看到此选项"
+        }
+      ]
+    },
+    {
+      "id": "R03",
+      "query": "我是患者，能使用“立即前往问诊”这个医生入口吗？",
+      "category": "role_disambiguation",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "general-doctor-guide",
+          "section_contains": "[通用][医生端] 快速前往问诊",
+          "text_contains": "患者角色无法查看到此选项"
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "query": "我是患者，想快速就诊，应该从哪里进入？",
+      "category": "role_disambiguation",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][患者端] 快速通道功能"
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "query": "怎么去社交岛？",
+      "category": "multi_gold",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "屏幕按键功能分布与介绍",
+          "text_contains": "返回社交岛"
+        },
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "场景传送操作",
+          "text_contains": "带我去社交岛"
+        },
+        {
+          "external_key": "yueyang-doctor-guide",
+          "section_contains": "场景传送操作",
+          "text_contains": "带我去社交岛"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "query": "怎么去二楼？",
+      "category": "multi_gold",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "楼层传送操作",
+          "text_contains": "带我去二楼"
+        },
+        {
+          "external_key": "yueyang-doctor-guide",
+          "section_contains": "楼层传送操作",
+          "text_contains": "带我去二楼"
+        }
+      ]
+    },
+    {
+      "id": "B01",
+      "query": "岳阳医院有六楼吗？",
+      "category": "boundary_negative",
+      "answerable": true,
+      "scored": true,
+      "gold_refs": [
+        {
+          "external_key": "hospital-scene-guide",
+          "section_contains": "[通用][布局]",
+          "text_contains": "5层"
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "query": "怎么修改登录密码？",
+      "category": "no_answer",
+      "answerable": false,
+      "scored": false,
+      "gold_refs": []
+    },
+    {
+      "id": "N02",
+      "query": "岳阳医院停车位怎么预约？",
+      "category": "no_answer",
+      "answerable": false,
+      "scored": false,
+      "gold_refs": []
+    },
+    {
+      "id": "N03",
+      "query": "怎么把训练报告导出成 PDF？",
+      "category": "no_answer",
+      "answerable": false,
+      "scored": false,
+      "gold_refs": []
+    },
+    {
+      "id": "C01",
+      "query": "患者端用语音挂号时应该说什么？",
+      "category": "source_conflict",
+      "answerable": true,
+      "scored": false,
+      "gold_refs": [
+        {
+          "external_key": "general-patient-guide",
+          "section_contains": "[通用][患者端] 患者就诊挂号",
+          "text_contains": "语音操作"
+        },
+        {
+          "external_key": "yueyang-patient-guide",
+          "section_contains": "[通用][患者端] 患者就诊挂号",
+          "text_contains": "语音操作"
+        }
+      ]
+    }
+  ]
+}

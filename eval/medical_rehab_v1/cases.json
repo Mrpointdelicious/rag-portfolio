@@ -1,0 +1,647 @@
+{
+  "cases": [
+    {
+      "candidate_page_hint": "PDF 1-2",
+      "candidate_sources": "D001",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q01",
+      "query": "立位平衡指南的适用主题、评定与治疗范围分别是什么？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "PDF 1-2",
+      "candidate_sources": "D041",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q02",
+      "query": "智能康复专家共识采用什么证据分级方法？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "PDF 1-3",
+      "candidate_sources": "D003",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q03",
+      "query": "2024中西医结合康复指南的制定目标与证据方法是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1",
+      "candidate_sources": "D040",
+      "category": "单篇定位",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q04",
+      "query": "2011完全版脑卒中指南的版本年与期刊发表年分别是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1",
+      "candidate_sources": "D042",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "knee_osteoarthritis",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q05",
+      "query": "膝骨关节炎康复指南的疾病对象和版本是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 2-4，须逐段确认",
+      "candidate_sources": "D001",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q06",
+      "query": "立位平衡指南解释了哪些基本术语？请给出出处。",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1-6，须逐段确认",
+      "candidate_sources": "D041",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q07",
+      "query": "智能康复共识区分了哪些评定技术与治疗技术？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1",
+      "candidate_sources": "D040",
+      "category": "单篇定位",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q08",
+      "query": "2011完全版指南在前言中怎样说明其制定目的？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1-3",
+      "candidate_sources": "D129",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q09",
+      "query": "可穿戴外骨骼综述纳入的研究对象和主要结局是什么？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "PDF 2-3",
+      "candidate_sources": "D161",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q10",
+      "query": "机器人辅助步态训练和平衡综述的纳入条件是什么？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "PDF 3-7",
+      "candidate_sources": "D173",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q11",
+      "query": "机器人步态康复指南综述如何组织推荐与证据？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1-2",
+      "candidate_sources": "D001",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q12",
+      "query": "What is the scope of the Chinese standing-balance rehabilitation guideline?",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1-2",
+      "candidate_sources": "D041",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q13",
+      "query": "Which evidence grading approach is stated in the Chinese intelligent rehabilitation consensus?",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 6-8，须逐段确认",
+      "candidate_sources": "D129",
+      "category": "中英跨语言",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q14",
+      "query": "请用中文说明英文外骨骼综述对结局分析的限制。",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "D129 PDF 1-3；D161 PDF 2-3",
+      "candidate_sources": "D129 + D161",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q15",
+      "query": "可穿戴外骨骼综述与机器人平衡综述的研究对象、干预和结局有哪些差异？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "各PDF 1-3，须逐段确认",
+      "candidate_sources": "D041 + D001",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q16",
+      "query": "智能康复共识与立位平衡指南对评定问题的覆盖范围有何不同？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "各PDF 1-3",
+      "candidate_sources": "D173 + D129",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q17",
+      "query": "机器人步态指南综述与外骨骼效果综述回答的问题分别是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "各PDF 1-3",
+      "candidate_sources": "D003 + D041",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q18",
+      "query": "2024康复指南与2025智能康复共识的制定目的和方法有何不同？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "各PDF 1-3",
+      "candidate_sources": "D040 + D001",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q19",
+      "query": "2011完全版指南与2024平衡专项指南的主题覆盖范围如何区分？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "D129 PDF 6-8；D161讨论部分，待定位",
+      "candidate_sources": "D129 + D161",
+      "category": "多篇证据",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q20",
+      "query": "两篇机器人步态综述对研究局限的描述分别是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q21",
+      "query": "某位患者今天实际测得的步行速度是多少？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q22",
+      "query": "我在2026年10月10日的康复训练已经完成了几次？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q23",
+      "query": "上海某医院下周康复门诊的具体挂号时段是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q24",
+      "query": "这个系统当前的真实接口延迟和生产并发数是多少？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q25",
+      "query": "请给出我本人的最新住院影像检查结果。",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q26",
+      "query": "本地资料是否已经收录2026年更新版的所有脑卒中康复指南？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q27",
+      "query": "某未出现在文献中的设备型号的官方维修密码是什么？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "不预填页码",
+      "candidate_sources": "无可确认来源",
+      "category": "无答案或缺数据",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q28",
+      "query": "请给出某患者未提供的病历原文和当前个体化治疗处方。",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D129 / D161",
+      "category": "适用范围",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": "adult",
+        "stage": null
+      },
+      "id": "Q29",
+      "query": "能否直接把成人脑卒中机器人步态研究结论用于儿童脑瘫？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D042 + 脑卒中资料",
+      "category": "适用范围",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q30",
+      "query": "能否把膝骨关节炎指南中的方案直接当作脑卒中康复方案？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D129 / D161 / D173",
+      "category": "适用范围",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q31",
+      "query": "仅凭这几份文献，能否判断一个未提供病情的患者适合哪种机器人训练？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D003 / D040，适用阶段待核",
+      "category": "适用范围",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q32",
+      "query": "针对急性期患者的资料能否不加核对地用于任意病程阶段？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D001 + D042",
+      "category": "适用范围",
+      "filters": {
+        "disease": null,
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q33",
+      "query": "问“脑卒中立位平衡评定”时，为什么不能仅引用膝骨关节炎指南？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "先标注人群、病程与疾病字段",
+      "candidate_sources": "D129 / D161",
+      "category": "适用范围",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q34",
+      "query": "综述中的研究纳入条件和个人临床适应条件是否是同一个概念？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "PDF 1",
+      "candidate_sources": "D040",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q35",
+      "query": "2011完全版的指南在本PDF中是哪一年发表的？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "各PDF 1",
+      "candidate_sources": "D001 + D041",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q36",
+      "query": "2024平衡指南和2025智能康复共识是否属于同一份指南的新旧版？",
+      "review_status": "text_verified",
+      "split": "test"
+    },
+    {
+      "candidate_page_hint": "按标题、范围与来源关系核对",
+      "candidate_sources": "D001 + D003 + D041",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q37",
+      "query": "“年份更新”是否足以证明一篇共识替代另一篇不同主题的指南？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "各方法与分级说明，待逐段标注",
+      "candidate_sources": "D040 + D041",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q38",
+      "query": "两份资料使用不同证据分级体系时，能否直接比较等级字母？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "方法与结果，待逐段标注",
+      "candidate_sources": "D129 + D161",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q39",
+      "query": "看到不同来源的表述有差异时，应先核对哪些人群、病程与结局条件？",
+      "review_status": "text_verified",
+      "split": "dev"
+    },
+    {
+      "candidate_page_hint": "同文去空白哈希相同；D102只作别名对照",
+      "candidate_sources": "D041 + D102",
+      "category": "版本与差异",
+      "filters": {
+        "disease": "stroke",
+        "edition": null,
+        "literature_type": null,
+        "population": null,
+        "stage": null
+      },
+      "id": "Q40",
+      "query": "同一共识的两份文件内容相同，检索结果中应算作两个独立证据吗？",
+      "review_status": "text_verified",
+      "split": "dev"
+    }
+  ],
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v1",
+  "schema_version": 1
+}

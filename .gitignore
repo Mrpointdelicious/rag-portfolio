@@ -14,3 +14,7 @@ build/
 .local/
 /data/
 /models/
+/doc/selected/
+/doc/unselected/
+/doc/backup_manifest.json
+/doc/backup_index.md

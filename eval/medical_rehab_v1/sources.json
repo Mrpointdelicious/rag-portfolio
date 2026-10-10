@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v1",
+  "documents": [
+    {
+      "document_id": "D001",
+      "title": "康复临床实践指南·脑卒中患者立位平衡障碍（2024）",
+      "sha256": "3bc7a964595969246a7ed5c9770a4c435565239c3bf04af70523e2d9d1bffeca",
+      "metadata": {
+        "disease": "stroke",
+        "population": null,
+        "stage": null,
+        "literature_type": "guideline",
+        "edition": "2024",
+        "publication_year": "2024",
+        "language": "zh"
+      },
+      "printed_pages": {
+        "1": "8"
+      }
+    },
+    {
+      "document_id": "D003",
+      "title": "脑卒中中西医结合康复临床循证实践指南（2024）",
+      "sha256": "0b4a9e73ccaaccba2b7acc0ea52204238b3b92f484c6530747df90c2f3959476",
+      "metadata": {
+        "disease": "stroke",
+        "population": null,
+        "stage": [
+          "acute",
+          "recovery",
+          "sequelae"
+        ],
+        "literature_type": "guideline",
+        "edition": "2024",
+        "publication_year": "2024",
+        "language": "zh"
+      }
+    },
+    {
+      "document_id": "D041",
+      "title": "脑卒中智能康复技术应用专家共识（2025）",
+      "sha256": "8a0387606a06001f41dda253877b26ad6edc636d69c238e7eddd0516e458ac55",
+      "metadata": {
+        "disease": "stroke",
+        "population": null,
+        "stage": null,
+        "literature_type": "consensus",
+        "edition": "2025",
+        "publication_year": "2025",
+        "language": "zh"
+      }
+    },
+    {
+      "document_id": "D129",
+      "title": "Effect of wearable exoskeleton on post-stroke gait: A systematic review and meta-analysis",
+      "sha256": "c7a6c1b5dc9811e06d2e8a9cf8221e6a5099e18a4812f08b34d724b99c068546",
+      "metadata": {
+        "disease": "stroke",
+        "population": "adult",
+        "stage": null,
+        "literature_type": "systematic_review",
+        "edition": null,
+        "publication_year": "2023",
+        "language": "en"
+      }
+    },
+    {
+      "document_id": "D161",
+      "title": "Balance Rehabilitation through Robot-Assisted Gait Training in Post-Stroke Patients: A Systematic Review and Meta-Analysis",
+      "sha256": "2203df063fcb242e46bc34394f32f14be78630c2e143de9f943065fc597e278c",
+      "metadata": {
+        "disease": "stroke",
+        "population": "adult",
+        "stage": null,
+        "literature_type": "systematic_review",
+        "edition": null,
+        "publication_year": "2023",
+        "language": "en"
+      }
+    },
+    {
+      "document_id": "D173",
+      "title": "Robotic-assisted gait rehabilitation following stroke: a systematic review of current guidelines and practical clinical recommendations",
+      "sha256": "a52a567089f1a9164d465c5543aeb2664a06a8a62a5cf9c1136d9630d405d4f6",
+      "metadata": {
+        "disease": "stroke",
+        "population": null,
+        "stage": null,
+        "literature_type": "guideline_review",
+        "edition": null,
+        "publication_year": "2021",
+        "language": "en",
+        "layout_review": "title_and_method_pages_visually_checked"
+      },
+      "parser_override": "pdfium",
+      "text_regions": {
+        "2": [
+          [
+            0.09,
+            0.63,
+            0.91,
+            0.89
+          ],
+          [
+            0.09,
+            0.12,
+            0.495,
+            0.61
+          ],
+          [
+            0.505,
+            0.12,
+            0.91,
+            0.61
+          ]
+        ],
+        "3": [
+          [
+            0.09,
+            0.67,
+            0.91,
+            0.89
+          ],
+          [
+            0.09,
+            0.12,
+            0.495,
+            0.66
+          ],
+          [
+            0.505,
+            0.12,
+            0.91,
+            0.66
+          ]
+        ]
+      }
+    },
+    {
+      "document_id": "D040",
+      "title": "中国脑卒中康复治疗指南(2011完全版)",
+      "sha256": "54beab67b36ea397c7bfb166a53b3eef5f8801dc70cc83bf61fd231d9de0ccb8",
+      "metadata": {
+        "disease": "stroke",
+        "population": null,
+        "stage": null,
+        "literature_type": "guideline",
+        "edition": "2011完全版",
+        "publication_year": "2012",
+        "language": "zh"
+      },
+      "printed_pages": {
+        "1": "301"
+      }
+    },
+    {
+      "document_id": "D042",
+      "title": "中国膝骨关节炎康复治疗指南（2023版）",
+      "sha256": "3c60b047c04ce3dcedf8451a58adf64fd261d26b6b1d38a626b47a03f101df92",
+      "metadata": {
+        "disease": "knee_osteoarthritis",
+        "population": "adult",
+        "stage": null,
+        "literature_type": "guideline",
+        "edition": "2023版",
+        "publication_year": "2024",
+        "language": "zh"
+      },
+      "printed_pages": {
+        "1": "1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,747 @@
+{
+  "all_previous_scored_cases_reviewed": true,
+  "clinical_approval": false,
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v3",
+  "fact_reviews": [
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D001"
+      ],
+      "fact_id": "balance_scope",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D001",
+          2
+        ]
+      ],
+      "support": "balance scope"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D041"
+      ],
+      "fact_id": "consensus_method",
+      "prior_alternative_count": 2,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D041",
+          1
+        ],
+        [
+          "D041",
+          2
+        ]
+      ],
+      "support": "consensus method"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D003"
+      ],
+      "fact_id": "integrative_goal",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D003",
+          2
+        ],
+        [
+          "D003",
+          8
+        ]
+      ],
+      "support": "integrative goal"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D003"
+      ],
+      "fact_id": "integrative_method",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 3,
+      "reviewed_pdf_pages": [
+        [
+          "D003",
+          2
+        ],
+        [
+          "D003",
+          3
+        ],
+        [
+          "D003",
+          8
+        ]
+      ],
+      "support": "integrative method"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D040"
+      ],
+      "fact_id": "old_identity",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D040",
+          1
+        ]
+      ],
+      "support": "old identity"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D040"
+      ],
+      "fact_id": "old_publication",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D040",
+          1
+        ]
+      ],
+      "support": "old publication"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D042"
+      ],
+      "fact_id": "koa_identity",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D042",
+          1
+        ]
+      ],
+      "support": "koa identity"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D001"
+      ],
+      "fact_id": "balance_terms",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D001",
+          2
+        ]
+      ],
+      "support": "balance terms"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D041"
+      ],
+      "fact_id": "consensus_scope",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D041",
+          1
+        ]
+      ],
+      "support": "consensus scope"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D040"
+      ],
+      "fact_id": "old_goal",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D040",
+          1
+        ]
+      ],
+      "support": "old goal"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "exo_population",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          2
+        ]
+      ],
+      "support": "exo population"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "exo_primary",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          2
+        ],
+        [
+          "D129",
+          6
+        ]
+      ],
+      "support": "主要结局为整体活动能力"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "robot_population",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          3
+        ]
+      ],
+      "support": "robot population"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "robot_outcome",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          2
+        ],
+        [
+          "D161",
+          3
+        ]
+      ],
+      "support": "BBS或TUG平衡结局"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D173"
+      ],
+      "fact_id": "guideline_scope",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D173",
+          2
+        ]
+      ],
+      "support": "guideline scope"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D173"
+      ],
+      "fact_id": "guideline_method",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D173",
+          2
+        ],
+        [
+          "D173",
+          7
+        ]
+      ],
+      "support": "guideline method"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "small_sample",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          7
+        ]
+      ],
+      "support": "small_sample"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "few_studies",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          7
+        ]
+      ],
+      "support": "few_studies"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "heterogeneity",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          7
+        ]
+      ],
+      "support": "heterogeneity"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "methodological_flaws",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          7
+        ]
+      ],
+      "support": "methodological_flaws"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "language_bias",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          7
+        ]
+      ],
+      "support": "language_bias"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "exo_intervention",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          2
+        ]
+      ],
+      "support": "可穿戴外骨骼训练效果或矫形辅助效果"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "robot_intervention",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          3
+        ]
+      ],
+      "support": "跑台、地面外骨骼或末端执行器机器人步态训练"
+    },
+    {
+      "decision": "补全研究目的的两种用途，禁止只命中泛称外骨骼效果就判整组通过",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "exo_aim",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 3,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          1
+        ],
+        [
+          "D129",
+          2
+        ],
+        [
+          "D129",
+          6
+        ]
+      ],
+      "support": "研究问题同时包括训练系统用途与辅助步行矫形器用途"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D041"
+      ],
+      "fact_id": "consensus_goal",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D041",
+          1
+        ]
+      ],
+      "support": "consensus_goal"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "robot_limitations",
+      "prior_alternative_count": 2,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          9
+        ],
+        [
+          "D161",
+          10
+        ]
+      ],
+      "support": "robot limitations"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D042"
+      ],
+      "fact_id": "koa_population",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D042",
+          2
+        ]
+      ],
+      "support": "koa population"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D003"
+      ],
+      "fact_id": "integrative_stage",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D003",
+          2
+        ]
+      ],
+      "support": "integrative stage"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D041"
+      ],
+      "fact_id": "consensus_identity",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D041",
+          1
+        ]
+      ],
+      "support": "consensus identity"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D040"
+      ],
+      "fact_id": "old_grading",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D040",
+          1
+        ]
+      ],
+      "support": "old grading"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D001"
+      ],
+      "fact_id": "standard",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D001",
+          2
+        ]
+      ],
+      "support": "standard"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D003"
+      ],
+      "fact_id": "integrative_registration",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D003",
+          2
+        ]
+      ],
+      "support": "integrative_registration"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D041"
+      ],
+      "fact_id": "delphi_threshold",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D041",
+          2
+        ]
+      ],
+      "support": "delphi_threshold"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "search",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          2
+        ]
+      ],
+      "support": "search"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "reporting",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          3
+        ]
+      ],
+      "support": "reporting"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "search_date",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          3
+        ]
+      ],
+      "support": "search_date"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D173"
+      ],
+      "fact_id": "screening",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D173",
+          2
+        ]
+      ],
+      "support": "screening"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D129"
+      ],
+      "fact_id": "exo_quality",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D129",
+          2
+        ]
+      ],
+      "support": "exo_quality"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D161"
+      ],
+      "fact_id": "robot_quality",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D161",
+          4
+        ]
+      ],
+      "support": "robot_quality"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D042"
+      ],
+      "fact_id": "koa_registration",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D042",
+          2
+        ]
+      ],
+      "support": "koa_registration"
+    },
+    {
+      "decision": "保留原有位置；未发现同时满足全部限定条件的新增明确替代。年龄/主要结局/年份不能由泛称或参考文献补足。",
+      "documents": [
+        "D003"
+      ],
+      "fact_id": "users",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 1,
+      "reviewed_pdf_pages": [
+        [
+          "D003",
+          2
+        ]
+      ],
+      "support": "users"
+    },
+    {
+      "decision": "同一原始文献存在明确同义表述，补入替代",
+      "documents": [
+        "D042"
+      ],
+      "fact_id": "prior_versions",
+      "prior_alternative_count": 1,
+      "reviewed_alternative_count": 2,
+      "reviewed_pdf_pages": [
+        [
+          "D042",
+          1
+        ]
+      ],
+      "support": "prior_versions"
+    }
+  ],
+  "holdout_limitations": "同一语料、同一作者；部分事实在其他题中出现，题目并非统计独立的临床外部验证。",
+  "new_holdout_ids": [
+    "Q53",
+    "Q54",
+    "Q55",
+    "Q56",
+    "Q57",
+    "Q58",
+    "Q59",
+    "Q60",
+    "Q61",
+    "Q62",
+    "Q63",
+    "Q64",
+    "Q65",
+    "Q66",
+    "Q67",
+    "Q68",
+    "Q69",
+    "Q70",
+    "Q71",
+    "Q72"
+  ],
+  "old_cases_reviewed": 52,
+  "old_fact_groups_reviewed": 42,
+  "review_policy_fingerprint": "f4add96b9b26b499130df3b3dfbf5201c72ad2b9de68a98a8a2b2a73e3545301",
+  "review_type": "same-agent source-text technical review; previous rankings exposed"
+}

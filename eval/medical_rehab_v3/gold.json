@@ -1,0 +1,2435 @@
+{
+  "cases": [
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q01",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q02",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            },
+            {
+              "document_id": "D041",
+              "end_char": 1181,
+              "pdf_page": 2,
+              "start_char": 1097,
+              "text_sha256": "93609ba8e38e20c0355d82f679d34d042c5d31f914b2e367314f045366486e6a"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q03",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 346,
+              "pdf_page": 8,
+              "start_char": 294,
+              "text_sha256": "d58004f1bd761ab400befda3527e805efde1d5d8dad0b0504ffcd84fbb3f77fc"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1241,
+              "pdf_page": 2,
+              "start_char": 1214,
+              "text_sha256": "af49b878762ea2a3d9444bd380c60f4800d2b05aa7b91c895c25fa3b66981280"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 1625,
+              "pdf_page": 3,
+              "start_char": 1600,
+              "text_sha256": "60b94e0c3dcf9f569b255b61ba7717302c6c26bcd343c2aea66b0825f07df3d1"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 507,
+              "pdf_page": 8,
+              "start_char": 474,
+              "text_sha256": "a2fab857d08a19bf13d4027494fead14a8aed0aa931e69e07da65942881400c9"
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        }
+      ],
+      "review_reason": "制定目标与GRADE方法分别定位于D003 PDF第2页；这是两个必要事实组。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q04",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 69,
+              "pdf_page": 1,
+              "start_char": 47,
+              "text_sha256": "c97707f0685bf6eecdbadd7e962073a43f07c4766b4126abde31865bcaf9e23f"
+            }
+          ],
+          "id": "old_identity",
+          "support": "old identity"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 318,
+              "pdf_page": 1,
+              "start_char": 286,
+              "text_sha256": "68c15bcaef30acbe69cf31459b43d0a2af9cedf3e49b44ed89cbc9598190e468"
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "指南版次2011与期刊发表2012分开核对；PDF第1页对应纸面301页。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q05",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 28,
+              "pdf_page": 1,
+              "start_char": 8,
+              "text_sha256": "3153724b7cdf5ddc792e47332e3d82f54e629d81716d8d751bcac516b1f036c4"
+            },
+            {
+              "document_id": "D042",
+              "end_char": 625,
+              "pdf_page": 1,
+              "start_char": 537,
+              "text_sha256": "d762479b65fa6c629fa2d4c0d7c83eb6dc9506aea0ae8c87cafb0c40a9b093b1"
+            }
+          ],
+          "id": "koa_identity",
+          "support": "koa identity"
+        }
+      ],
+      "review_reason": "2023是版次；原文首页期刊标注为2024年，不沿用盘点表的发表年推测。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q06",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 627,
+              "pdf_page": 2,
+              "start_char": 593,
+              "text_sha256": "c2eeee6a1669f1063892b58a5f8e3ec8b4134fcbb810730192eb66dea53011d7"
+            }
+          ],
+          "id": "balance_terms",
+          "support": "balance terms"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q07",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 371,
+              "pdf_page": 1,
+              "start_char": 329,
+              "text_sha256": "672f3fe6964fdc8bfcd472faceef43354e9f414e65093f82dd4abf23f81cd340"
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        }
+      ],
+      "review_reason": "以摘要最终18项、4项评定和14项治疗为分类依据；正文20项属于后续合并前的中间过程，不能直接当最终条目数。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q08",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 921,
+              "pdf_page": 1,
+              "start_char": 885,
+              "text_sha256": "ea1c2975c3683c865aeb433b16dae3d0000c3a47958ed478688cb7850b8d45d9"
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q09",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 6394,
+              "pdf_page": 2,
+              "start_char": 6300,
+              "text_sha256": "d63c4d86df3915696d3de4a21d79def98eef6409d821a730ea8284a6e55d3569"
+            },
+            {
+              "document_id": "D129",
+              "end_char": 726,
+              "pdf_page": 6,
+              "start_char": 601,
+              "text_sha256": "808070e335cfce4392128ae8b1d2dc9e79a94107f0a43ca6560c7942c38b404d"
+            }
+          ],
+          "id": "exo_primary",
+          "support": "主要结局为整体活动能力"
+        }
+      ],
+      "review_reason": "补全primary outcome；人群与主要结局均须定位，不能用次要结局列表代替主要结局。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q10",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 4129,
+              "pdf_page": 3,
+              "start_char": 4008,
+              "text_sha256": "059caf6f304d92e76d1d34f62eb10e9abb89da474253d478704e5c74ee390515"
+            },
+            {
+              "document_id": "D161",
+              "end_char": 1101,
+              "pdf_page": 2,
+              "start_char": 943,
+              "text_sha256": "0b796076ea16b2a28e69fa69fa6529d29cefbb8b1d05dcaf685046ccbd67cf02"
+            }
+          ],
+          "id": "robot_outcome",
+          "support": "BBS或TUG平衡结局"
+        }
+      ],
+      "review_reason": "完整覆盖题目列明的年龄、疾病和BBS/TUG量表。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q11",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 946,
+              "pdf_page": 2,
+              "start_char": 873,
+              "text_sha256": "8505dc1e4939e0940c0817be14dd203f15560972234e7130b2db8fb7f9e484dd"
+            },
+            {
+              "document_id": "D173",
+              "end_char": 2368,
+              "pdf_page": 7,
+              "start_char": 2270,
+              "text_sha256": "38f92cff832ddd5cb6e7261a9891da770863ea58d359c2d7b574a3c9a4aff111"
+            }
+          ],
+          "id": "guideline_method",
+          "support": "guideline method"
+        }
+      ],
+      "review_reason": "D173 PDF第2页经视觉核对并按摘要与双栏分区提取；第3页复杂表格仍有异常字形，未用作Gold。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q12",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q13",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            },
+            {
+              "document_id": "D041",
+              "end_char": 1181,
+              "pdf_page": 2,
+              "start_char": 1097,
+              "text_sha256": "93609ba8e38e20c0355d82f679d34d042c5d31f914b2e367314f045366486e6a"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q14",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4965,
+              "pdf_page": 7,
+              "start_char": 4926,
+              "text_sha256": "cf15c9b67a5ac66fb7e5f2d6335cdeceb5abf760c1af0d4f52fb399a2083d28f"
+            }
+          ],
+          "id": "small_sample",
+          "support": "small_sample"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5076,
+              "pdf_page": 7,
+              "start_char": 5032,
+              "text_sha256": "83da7569171fe22c680f0514282daf2212dffb3203de5e4ec1065c201d3995e5"
+            }
+          ],
+          "id": "few_studies",
+          "support": "few_studies"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5204,
+              "pdf_page": 7,
+              "start_char": 5160,
+              "text_sha256": "f17294f732adf2928908907e12d04c623e84bae76380d24345ce115b44bd175a"
+            }
+          ],
+          "id": "heterogeneity",
+          "support": "heterogeneity"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5561,
+              "pdf_page": 7,
+              "start_char": 5507,
+              "text_sha256": "57975e0c4df34f05784638e1bc19840ecd98f96dbe9f0bef7e0a2fdad28d844b"
+            }
+          ],
+          "id": "methodological_flaws",
+          "support": "methodological_flaws"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5735,
+              "pdf_page": 7,
+              "start_char": 5645,
+              "text_sha256": "b19f30c3f3b05c390e76f9e03298aff9fbb0e00ba8a8e894fd997cadb620a257"
+            }
+          ],
+          "id": "language_bias",
+          "support": "language_bias"
+        }
+      ],
+      "review_reason": "逐项核对原文五类限制；不再仅标样本量。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q15",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3922,
+              "pdf_page": 2,
+              "start_char": 3862,
+              "text_sha256": "a39fc29544f86dce03571cf246d13073804b1f84eb663afc3baf49197b507dc4"
+            },
+            {
+              "document_id": "D129",
+              "end_char": 2390,
+              "pdf_page": 2,
+              "start_char": 2288,
+              "text_sha256": "f2ebcf7a3c5434b796450995cf96b24873e9fc00b47e66da19a1420047872f48"
+            }
+          ],
+          "id": "exo_intervention",
+          "support": "可穿戴外骨骼训练效果或矫形辅助效果"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 6394,
+              "pdf_page": 2,
+              "start_char": 6300,
+              "text_sha256": "d63c4d86df3915696d3de4a21d79def98eef6409d821a730ea8284a6e55d3569"
+            },
+            {
+              "document_id": "D129",
+              "end_char": 726,
+              "pdf_page": 6,
+              "start_char": 601,
+              "text_sha256": "808070e335cfce4392128ae8b1d2dc9e79a94107f0a43ca6560c7942c38b404d"
+            }
+          ],
+          "id": "exo_primary",
+          "support": "主要结局为整体活动能力"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3867,
+              "pdf_page": 3,
+              "start_char": 3752,
+              "text_sha256": "c513a64c60d10aba27aee65569bd70e872b1b3474364faa87330e5e2db4bd337"
+            }
+          ],
+          "id": "robot_intervention",
+          "support": "跑台、地面外骨骼或末端执行器机器人步态训练"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 4129,
+              "pdf_page": 3,
+              "start_char": 4008,
+              "text_sha256": "059caf6f304d92e76d1d34f62eb10e9abb89da474253d478704e5c74ee390515"
+            },
+            {
+              "document_id": "D161",
+              "end_char": 1101,
+              "pdf_page": 2,
+              "start_char": 943,
+              "text_sha256": "0b796076ea16b2a28e69fa69fa6529d29cefbb8b1d05dcaf685046ccbd67cf02"
+            }
+          ],
+          "id": "robot_outcome",
+          "support": "BBS或TUG平衡结局"
+        }
+      ],
+      "review_reason": "两篇各有人群、干预、结局三组；共六组均须覆盖，不能只以两篇人群段落判定完整。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q16",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 371,
+              "pdf_page": 1,
+              "start_char": 329,
+              "text_sha256": "672f3fe6964fdc8bfcd472faceef43354e9f414e65093f82dd4abf23f81cd340"
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q17",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 871,
+              "pdf_page": 1,
+              "start_char": 666,
+              "text_sha256": "dc47a2083ad5e5937181586610fe012d6a6acf1e51556117885f9f22d3ade23f"
+            },
+            {
+              "document_id": "D129",
+              "end_char": 1934,
+              "pdf_page": 2,
+              "start_char": 1729,
+              "text_sha256": "c875171ef0daaa72820baa5eb1b33b4b571a9f66b95941e31b6c1ae7349a4c25"
+            },
+            {
+              "document_id": "D129",
+              "end_char": 405,
+              "pdf_page": 6,
+              "start_char": 234,
+              "text_sha256": "cd1bb85e7262d1b811d8e56c5a13bdde1d4453c5e451f7c82a33a23965dab445"
+            }
+          ],
+          "id": "exo_aim",
+          "support": "研究问题同时包括训练系统用途与辅助步行矫形器用途"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q18",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 346,
+              "pdf_page": 8,
+              "start_char": 294,
+              "text_sha256": "d58004f1bd761ab400befda3527e805efde1d5d8dad0b0504ffcd84fbb3f77fc"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1241,
+              "pdf_page": 2,
+              "start_char": 1214,
+              "text_sha256": "af49b878762ea2a3d9444bd380c60f4800d2b05aa7b91c895c25fa3b66981280"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 1625,
+              "pdf_page": 3,
+              "start_char": 1600,
+              "text_sha256": "60b94e0c3dcf9f569b255b61ba7717302c6c26bcd343c2aea66b0825f07df3d1"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 507,
+              "pdf_page": 8,
+              "start_char": 474,
+              "text_sha256": "a2fab857d08a19bf13d4027494fead14a8aed0aa931e69e07da65942881400c9"
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 146,
+              "pdf_page": 1,
+              "start_char": 102,
+              "text_sha256": "faff69953cbfda941b26b71bd4130d35da8d100c01c23cc92dbbd621a32e69dd"
+            }
+          ],
+          "id": "consensus_goal",
+          "support": "consensus_goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            },
+            {
+              "document_id": "D041",
+              "end_char": 1181,
+              "pdf_page": 2,
+              "start_char": 1097,
+              "text_sha256": "93609ba8e38e20c0355d82f679d34d042c5d31f914b2e367314f045366486e6a"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "分别标注两篇的目的及分级方法，四组缺一不可。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q19",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 921,
+              "pdf_page": 1,
+              "start_char": 885,
+              "text_sha256": "ea1c2975c3683c865aeb433b16dae3d0000c3a47958ed478688cb7850b8d45d9"
+            }
+          ],
+          "id": "old_goal",
+          "support": "old goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q20",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4965,
+              "pdf_page": 7,
+              "start_char": 4926,
+              "text_sha256": "cf15c9b67a5ac66fb7e5f2d6335cdeceb5abf760c1af0d4f52fb399a2083d28f"
+            }
+          ],
+          "id": "small_sample",
+          "support": "small_sample"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3453,
+              "pdf_page": 10,
+              "start_char": 3378,
+              "text_sha256": "295126f33ff3235bb8e95b1f39d3e8b1ae7252384973eb1293e7f8bacaf96baa"
+            },
+            {
+              "document_id": "D161",
+              "end_char": 1887,
+              "pdf_page": 9,
+              "start_char": 1747,
+              "text_sha256": "3d1b85cd8a67a293a2fa433b5b10dd0817b31808398820f7cfb4a2be3f670507"
+            }
+          ],
+          "id": "robot_limitations",
+          "support": "robot limitations"
+        }
+      ],
+      "review_reason": "D129样本量与D161异质性分别定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q21",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q22",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q23",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q24",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q25",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q26",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q27",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q28",
+      "required_groups": [],
+      "review_reason": "原始文献为静态出版资料，不包含题目要求的个人病历、实时业务状态、接口实测或未收录资料；只能说明所缺输入。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q29",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "纳入成人卒中研究的文本只支持人群边界说明，不能推出对儿童脑瘫的临床效果。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q30",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2159,
+              "pdf_page": 2,
+              "start_char": 2139,
+              "text_sha256": "ed0e76ef22040d1b528a3e421763e522d5d878b558c234f067bcb3889c6adcee"
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        }
+      ],
+      "review_reason": "同时给出成人KOA目标人群和卒中平衡范围；相关段落不能跨病种当作处方。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q31",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 531,
+              "pdf_page": 2,
+              "start_char": 435,
+              "text_sha256": "86bd7d54b9ad5bdaaf46179633fc58a180288298458a20d86f6083e5e49bbd61"
+            }
+          ],
+          "id": "guideline_scope",
+          "support": "guideline scope"
+        }
+      ],
+      "review_reason": "仅支持文献适用范围说明；未提供患者资料，不能据此确定个体训练。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q32",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1655,
+              "pdf_page": 2,
+              "start_char": 1621,
+              "text_sha256": "c18b91518c084224c1183db415e78413a037c41a1d548d9bd6ed434c92db7196"
+            }
+          ],
+          "id": "integrative_stage",
+          "support": "integrative stage"
+        }
+      ],
+      "review_reason": "D003明确同时涵盖急性、恢复和后遗症期，原候选的“适用阶段待核”已按原文修正。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q33",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2159,
+              "pdf_page": 2,
+              "start_char": 2139,
+              "text_sha256": "ed0e76ef22040d1b528a3e421763e522d5d878b558c234f067bcb3889c6adcee"
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q34",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "研究纳入条件是方法学范围，不能等同个体临床适应条件。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q35",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 318,
+              "pdf_page": 1,
+              "start_char": 286,
+              "text_sha256": "68c15bcaef30acbe69cf31459b43d0a2af9cedf3e49b44ed89cbc9598190e468"
+            }
+          ],
+          "id": "old_publication",
+          "support": "old publication"
+        }
+      ],
+      "review_reason": "已核对指定原文页中的主题、方法或研究人群段落；仅用于检索证据定位。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q36",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "两文标题与范围不同，仅比较时间不构成同一指南新旧版关系。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q37",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 396,
+              "pdf_page": 2,
+              "start_char": 358,
+              "text_sha256": "d1299a5ba55ad336bd00aec185451955eb61bca6e32b3de11c7746736c8767ad"
+            }
+          ],
+          "id": "balance_scope",
+          "support": "balance scope"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1068,
+              "pdf_page": 2,
+              "start_char": 1038,
+              "text_sha256": "60c95f3840358dadfea2658e062450ddba08f4dc377ca24f9f2cb5645ec6253b"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 346,
+              "pdf_page": 8,
+              "start_char": 294,
+              "text_sha256": "d58004f1bd761ab400befda3527e805efde1d5d8dad0b0504ffcd84fbb3f77fc"
+            }
+          ],
+          "id": "integrative_goal",
+          "support": "integrative goal"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "提供主题范围比较的证据；替代关系仍需独立来源关系确认。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q38",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D040",
+              "end_char": 1147,
+              "pdf_page": 1,
+              "start_char": 1118,
+              "text_sha256": "0fce2a9b03d9bccfdd581d2b44c16ba424a7434c9a8a902f653f6f26fd9fdeee"
+            }
+          ],
+          "id": "old_grading",
+          "support": "old grading"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            },
+            {
+              "document_id": "D041",
+              "end_char": 1181,
+              "pdf_page": 2,
+              "start_char": 1097,
+              "text_sha256": "93609ba8e38e20c0355d82f679d34d042c5d31f914b2e367314f045366486e6a"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        }
+      ],
+      "review_reason": "D040正文列A-D证据及I-IV推荐，D041采用牛津新五级；不将不同字母体系强行对应。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "scope_limited",
+      "id": "Q39",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3857,
+              "pdf_page": 2,
+              "start_char": 3797,
+              "text_sha256": "952fd1bee8800d43d7b6bb9b5a1d99da3ce182949786999bed6fa88b92a7f39a"
+            }
+          ],
+          "id": "exo_population",
+          "support": "exo population"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3746,
+              "pdf_page": 3,
+              "start_char": 3665,
+              "text_sha256": "a57e77b32232000bc526c39f1fa9df784d769bb1336cd13bd41ad8db2bb6b48d"
+            }
+          ],
+          "id": "robot_population",
+          "support": "robot population"
+        }
+      ],
+      "review_reason": "只检索两文人群与方法的相关条件；本题不代表已确认两文存在治疗结论冲突。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "provenance_only",
+      "id": "Q40",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 52,
+              "pdf_page": 1,
+              "start_char": 32,
+              "text_sha256": "73c602b3a817176086aa5b7db5cd33be227e0afe3348df5a635fda4694211706"
+            }
+          ],
+          "id": "consensus_identity",
+          "support": "consensus identity"
+        }
+      ],
+      "review_reason": "这是文件身份与独立证据计数问题，排除于文本检索质量分母；原始备份保留D102用于同文副本复核。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q41",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 572,
+              "pdf_page": 2,
+              "start_char": 549,
+              "text_sha256": "b31e15b0c38fdbec61bf8ec05535a3379b7913770dc37493c7aa64a981a985a6"
+            }
+          ],
+          "id": "standard",
+          "support": "standard"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q42",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1503,
+              "pdf_page": 2,
+              "start_char": 1444,
+              "text_sha256": "c54db1a2f72ecac4821923112851fe7af09f676929b4c7dae956ee8d83f5c00f"
+            }
+          ],
+          "id": "integrative_registration",
+          "support": "integrative_registration"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q43",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 1455,
+              "pdf_page": 2,
+              "start_char": 1428,
+              "text_sha256": "7d576ca4e7c16e0d4954a9dc170bb2b613f6027e50d9d5356236ab32c35f009b"
+            }
+          ],
+          "id": "delphi_threshold",
+          "support": "delphi_threshold"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q44",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3065,
+              "pdf_page": 2,
+              "start_char": 2926,
+              "text_sha256": "86a5a52c4d194bb64e628d706f15f1fd04dc540280d82b6f975b2378665fc6d3"
+            }
+          ],
+          "id": "search",
+          "support": "search"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q45",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3459,
+              "pdf_page": 3,
+              "start_char": 3389,
+              "text_sha256": "242fe5cdbf89eec3937e794fee69c8ad6e6f4ef1ba22cef625115e31064edce4"
+            }
+          ],
+          "id": "reporting",
+          "support": "reporting"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 2941,
+              "pdf_page": 3,
+              "start_char": 2887,
+              "text_sha256": "ec73623ac67f9ce559806d3a61d391b8be674a6dce9a0910af3d8605b1f45114"
+            }
+          ],
+          "id": "search_date",
+          "support": "search_date"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q46",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 1205,
+              "pdf_page": 2,
+              "start_char": 1095,
+              "text_sha256": "2bff66ae42c75bf3c582aafd8a2186f36ba8a2c89488212da0cc1e862c6e6ef4"
+            }
+          ],
+          "id": "screening",
+          "support": "screening"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q47",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5234,
+              "pdf_page": 2,
+              "start_char": 5175,
+              "text_sha256": "9c9705ea411717130d904762c46f26460024ebcfa6a32b4ead4e10e031ef6024"
+            }
+          ],
+          "id": "exo_quality",
+          "support": "exo_quality"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 647,
+              "pdf_page": 4,
+              "start_char": 543,
+              "text_sha256": "2487436eab72722335b252ec708f3908a8a34ef3981b71c65fec0f0fe1ff938f"
+            }
+          ],
+          "id": "robot_quality",
+          "support": "robot_quality"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q48",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1503,
+              "pdf_page": 2,
+              "start_char": 1444,
+              "text_sha256": "c54db1a2f72ecac4821923112851fe7af09f676929b4c7dae956ee8d83f5c00f"
+            }
+          ],
+          "id": "integrative_registration",
+          "support": "integrative_registration"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 1440,
+              "pdf_page": 2,
+              "start_char": 1397,
+              "text_sha256": "95bffdaa2289bc3a9d337702a6046af7eeb277b74c31046f9ced151051de7fc8"
+            }
+          ],
+          "id": "koa_registration",
+          "support": "koa_registration"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q49",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1620,
+              "pdf_page": 2,
+              "start_char": 1569,
+              "text_sha256": "06a79a6c5304392e1fb82b8ad509e08bd7da096d058990dcf90578adfe2cd249"
+            }
+          ],
+          "id": "users",
+          "support": "users"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q50",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 191,
+              "pdf_page": 1,
+              "start_char": 169,
+              "text_sha256": "62dea101079698a5dd052143cbf22411190d304da9d15296a8fd733a4dada490"
+            },
+            {
+              "document_id": "D042",
+              "end_char": 1247,
+              "pdf_page": 1,
+              "start_char": 1185,
+              "text_sha256": "ba7c3b7a86d2dbe5e254087e1b8501c1ccb4c0619e79d68b2dcb832407cfa2a5"
+            }
+          ],
+          "id": "prior_versions",
+          "support": "prior_versions"
+        }
+      ],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q51",
+      "required_groups": [],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q52",
+      "required_groups": [],
+      "review_reason": "新保留题；开发运行前审阅原文并冻结；未经过独立临床专家审阅。 第三轮按统一语义规则复核；未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex full source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q53",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 729,
+              "pdf_page": 2,
+              "start_char": 689,
+              "text_sha256": "b4b75c7e959deb3185cd651b9129645f445a99625a95c381187c6e3feb5eedfb"
+            }
+          ],
+          "id": "static_balance",
+          "support": "static_balance"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 774,
+              "pdf_page": 2,
+              "start_char": 745,
+              "text_sha256": "d95e06d8a873a43ef8bf74cb7e74a8b0d5b7ddc74dfe190b9d6858cd18bf3d67"
+            }
+          ],
+          "id": "dynamic_balance",
+          "support": "dynamic_balance"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q54",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 1059,
+              "pdf_page": 2,
+              "start_char": 1017,
+              "text_sha256": "87662f23e6c856b6d1c6d1fd50c851fba3244f4dceec5e5e8ebf775c8666e712"
+            }
+          ],
+          "id": "com",
+          "support": "com"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 1131,
+              "pdf_page": 2,
+              "start_char": 1091,
+              "text_sha256": "44eee5eca1f310bfa657f4b14319ff4745113f4e3799cbcf3462cf7702a046b1"
+            }
+          ],
+          "id": "cg",
+          "support": "cg"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 1270,
+              "pdf_page": 2,
+              "start_char": 1190,
+              "text_sha256": "d4de440fb887beb989b4267fc00962088caad1e428f507765319d81559d13137"
+            }
+          ],
+          "id": "los",
+          "support": "los"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q55",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1720,
+              "pdf_page": 2,
+              "start_char": 1670,
+              "text_sha256": "8f721c21dac7c48ba22c5a147b3e984370e9c41c26208f66c12fab6dc1be2ae7"
+            }
+          ],
+          "id": "stage_definitions",
+          "support": "stage_definitions"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q56",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 1797,
+              "pdf_page": 2,
+              "start_char": 1744,
+              "text_sha256": "5951812b8be2283abc431ef9ca627bfb2f5847ff20f02a41f1d7352252983787"
+            }
+          ],
+          "id": "intermediate_items",
+          "support": "intermediate_items"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 175,
+              "pdf_page": 3,
+              "start_char": 112,
+              "text_sha256": "4972418fc041b8f4714d871f21addff9166eccfaa1a86c8da7a0a5a47c510cfa"
+            }
+          ],
+          "id": "final_merge",
+          "support": "final_merge"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 371,
+              "pdf_page": 1,
+              "start_char": 329,
+              "text_sha256": "672f3fe6964fdc8bfcd472faceef43354e9f414e65093f82dd4abf23f81cd340"
+            }
+          ],
+          "id": "consensus_scope",
+          "support": "consensus scope"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q57",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 617,
+              "pdf_page": 7,
+              "start_char": 521,
+              "text_sha256": "b6c2a811a9a1b8147a767b6a774e1cea8712b2b5fc181305db23dcc6330828cf"
+            }
+          ],
+          "id": "orthotic_gap",
+          "support": "orthotic_gap"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q58",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 198,
+              "pdf_page": 4,
+              "start_char": 47,
+              "text_sha256": "a0dde816ecb59d0401cfb2e8cf6614c340f73af5ea9efebbcf9e5cfac62850a3"
+            }
+          ],
+          "id": "robot_exclusion",
+          "support": "robot_exclusion"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q59",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D173",
+              "end_char": 2407,
+              "pdf_page": 5,
+              "start_char": 2310,
+              "text_sha256": "e4abb5352d4306bd0c1c1893823d35c4ff3782067a01ffdba917de35b871b63b"
+            }
+          ],
+          "id": "not_replacement",
+          "support": "not_replacement"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q60",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 321,
+              "pdf_page": 1,
+              "start_char": 295,
+              "text_sha256": "d4244697892ca3765b7f3c048d6c32c4a85f08f595aa0294c9c4c17f98016a1a"
+            }
+          ],
+          "id": "icf",
+          "support": "icf"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 412,
+              "pdf_page": 1,
+              "start_char": 377,
+              "text_sha256": "714bc86473b4b7716349b5156e4eb976e2ea6a5c7d3a38c07534b70c002ec2c2"
+            }
+          ],
+          "id": "etd",
+          "support": "etd"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 439,
+              "pdf_page": 1,
+              "start_char": 413,
+              "text_sha256": "1bd9e5d069cdd31f0337a32775fdfce3e669266c3af02d873bdc9908f5b1a2ab"
+            }
+          ],
+          "id": "right",
+          "support": "right"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q61",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 4427,
+              "pdf_page": 2,
+              "start_char": 4319,
+              "text_sha256": "9a6afc257bbd9a4c238f63b469c51ddf3afa880ae251218c8112796922f4c00a"
+            }
+          ],
+          "id": "exo_control",
+          "support": "exo_control"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 4002,
+              "pdf_page": 3,
+              "start_char": 3873,
+              "text_sha256": "6c96795b3d0bcb93a11a1fc5a27ac355170d1bef41fb24c6c96455f58cc20fa4"
+            }
+          ],
+          "id": "robot_control",
+          "support": "robot_control"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q62",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3763,
+              "pdf_page": 2,
+              "start_char": 3629,
+              "text_sha256": "508e4cbee5edc2e818888835c8cc1d2873ef136f4188ac924de1cdba246d0148"
+            }
+          ],
+          "id": "exo_language",
+          "support": "exo_language"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 3057,
+              "pdf_page": 3,
+              "start_char": 2942,
+              "text_sha256": "6f5a0b95287915410d9a62132236ddc7e15fb56ad2b71f86464e8c89f67e80a9"
+            }
+          ],
+          "id": "robot_language",
+          "support": "robot_language"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q63",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 2142,
+              "pdf_page": 3,
+              "start_char": 2102,
+              "text_sha256": "6d591c2071fe9929abcc68dd9f72377cf7b255aac13250608bd1562477298487"
+            }
+          ],
+          "id": "integrative_vote",
+          "support": "integrative_vote"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 1455,
+              "pdf_page": 2,
+              "start_char": 1428,
+              "text_sha256": "7d576ca4e7c16e0d4954a9dc170bb2b613f6027e50d9d5356236ab32c35f009b"
+            }
+          ],
+          "id": "consensus_vote",
+          "support": "consensus_vote"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q64",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1241,
+              "pdf_page": 2,
+              "start_char": 1214,
+              "text_sha256": "af49b878762ea2a3d9444bd380c60f4800d2b05aa7b91c895c25fa3b66981280"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 1625,
+              "pdf_page": 3,
+              "start_char": 1600,
+              "text_sha256": "60b94e0c3dcf9f569b255b61ba7717302c6c26bcd343c2aea66b0825f07df3d1"
+            },
+            {
+              "document_id": "D003",
+              "end_char": 507,
+              "pdf_page": 8,
+              "start_char": 474,
+              "text_sha256": "a2fab857d08a19bf13d4027494fead14a8aed0aa931e69e07da65942881400c9"
+            }
+          ],
+          "id": "integrative_method",
+          "support": "integrative method"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1794,
+              "pdf_page": 3,
+              "start_char": 1768,
+              "text_sha256": "cbb4925f84e7d92385c1340d382b2291a86f206a34edd01d47fcbfb4f9c27e95"
+            }
+          ],
+          "id": "integrative_strength",
+          "support": "integrative_strength"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 275,
+              "pdf_page": 1,
+              "start_char": 256,
+              "text_sha256": "a60695c91fea4385de246ba2a7ba8ce95a791aeef864f209618c49fd393d1aa8"
+            },
+            {
+              "document_id": "D041",
+              "end_char": 1181,
+              "pdf_page": 2,
+              "start_char": 1097,
+              "text_sha256": "93609ba8e38e20c0355d82f679d34d042c5d31f914b2e367314f045366486e6a"
+            }
+          ],
+          "id": "consensus_method",
+          "support": "consensus method"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 1246,
+              "pdf_page": 2,
+              "start_char": 1216,
+              "text_sha256": "2d1df842679d696df0ef08a9412b1fa0e1a7bd59f13443b84b68933349ee09b8"
+            }
+          ],
+          "id": "consensus_strength",
+          "support": "consensus_strength"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 376,
+              "pdf_page": 1,
+              "start_char": 335,
+              "text_sha256": "bf2c2f18e1d224e1b7727edccbb561224ac4722773c7dbd9110d50c92b16b4fe"
+            }
+          ],
+          "id": "koa_grading",
+          "support": "koa_grading"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q65",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 5234,
+              "pdf_page": 2,
+              "start_char": 5087,
+              "text_sha256": "04cf63ab53933dff52e95485745c627db245e8cca2c88805e69282d600ff1669"
+            }
+          ],
+          "id": "exo_quality_reviewers",
+          "support": "exo_quality_reviewers"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 739,
+              "pdf_page": 4,
+              "start_char": 543,
+              "text_sha256": "6065c7b7b5c55fd4dd3a06fa11b23b24616ad04ba6d057f4d8570fa275f5a607"
+            }
+          ],
+          "id": "robot_quality_reviewers",
+          "support": "robot_quality_reviewers"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q66",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1620,
+              "pdf_page": 2,
+              "start_char": 1569,
+              "text_sha256": "06a79a6c5304392e1fb82b8ad509e08bd7da096d058990dcf90578adfe2cd249"
+            }
+          ],
+          "id": "users",
+          "support": "users"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D003",
+              "end_char": 1655,
+              "pdf_page": 2,
+              "start_char": 1621,
+              "text_sha256": "c18b91518c084224c1183db415e78413a037c41a1d548d9bd6ed434c92db7196"
+            }
+          ],
+          "id": "integrative_stage",
+          "support": "integrative stage"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2139,
+              "pdf_page": 2,
+              "start_char": 2070,
+              "text_sha256": "f93d9b2cc5f1b134d57ff4283732625fd2736f746b53b1a5626fafd32ffcbee8"
+            }
+          ],
+          "id": "koa_users",
+          "support": "koa_users"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D042",
+              "end_char": 2159,
+              "pdf_page": 2,
+              "start_char": 2139,
+              "text_sha256": "ed0e76ef22040d1b528a3e421763e522d5d878b558c234f067bcb3889c6adcee"
+            }
+          ],
+          "id": "koa_population",
+          "support": "koa population"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q67",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D001",
+              "end_char": 436,
+              "pdf_page": 2,
+              "start_char": 397,
+              "text_sha256": "630e3b9c0b26d8199d0ef919e31edb075eca4548e613fd67c210ee41027c53e9"
+            }
+          ],
+          "id": "balance_users",
+          "support": "balance_users"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D041",
+              "end_char": 409,
+              "pdf_page": 1,
+              "start_char": 374,
+              "text_sha256": "3aac5bc4d6572f76f71bb02a9bb602de4676313b50611199a1a94c5e8deff5c0"
+            }
+          ],
+          "id": "consensus_functions",
+          "support": "consensus_functions"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": true,
+      "expected_behavior": "answer_from_evidence",
+      "id": "Q68",
+      "required_groups": [
+        {
+          "alternatives": [
+            {
+              "document_id": "D129",
+              "end_char": 3146,
+              "pdf_page": 2,
+              "start_char": 3066,
+              "text_sha256": "b194d2082dcd54d34d2a7d561001f995aa27eb343ad4f4a3e74a43f664eb0737"
+            }
+          ],
+          "id": "exo_additional_search",
+          "support": "exo_additional_search"
+        },
+        {
+          "alternatives": [
+            {
+              "document_id": "D161",
+              "end_char": 2885,
+              "pdf_page": 3,
+              "start_char": 2815,
+              "text_sha256": "4de47568814ae23e5a8272906487b502310554527eac33fc28128bb854fc4ac9"
+            }
+          ],
+          "id": "robot_databases",
+          "support": "robot_databases"
+        }
+      ],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": true
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q69",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q70",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q71",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    },
+    {
+      "answerable": false,
+      "expected_behavior": "insufficient_input",
+      "id": "Q72",
+      "required_groups": [],
+      "review_reason": "新保留题，运行第三轮开发集之前查证并冻结；同一代理同一语料，未独立临床审批。",
+      "review_scope": "source_text_and_provenance",
+      "reviewer": "Codex source-fact technical review 2026-10-10; before v3 retrieval",
+      "scored": false
+    }
+  ],
+  "clinical_approval": false,
+  "corpus_fingerprint": "c03ff07b03dd8b8d67f24527e8c90b6c0abecec7f1ddea138a795feec9c16c24",
+  "domain": "medical_knowledge",
+  "experiment_id": "medical_rehab_v3",
+  "review_policy_fingerprint": "f4add96b9b26b499130df3b3dfbf5201c72ad2b9de68a98a8a2b2a73e3545301",
+  "schema_version": 1,
+  "status": "frozen_technical_review",
+  "suite_fingerprint": "04d4f639fc4707c7f9c9c2c99ff822cc0f19fece5c81788669be3676af16d691",
+  "test_seal": "b1497ddc068cb6bed7f19628d5a782a22ee20f6a04e631577dd266722c4b0c66"
+}
