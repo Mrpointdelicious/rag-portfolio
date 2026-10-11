@@ -31,9 +31,26 @@ class Settings(BaseSettings):
     worker_lease_seconds: int = Field(default=60, ge=10, le=3600)
     worker_max_attempts: int = Field(default=3, ge=1, le=20)
     dependency_timeout_seconds: float = Field(default=3, ge=0.1, le=30)
+    demo_retrieval_enabled: bool = False
+    demo_token: SecretStr = SecretStr("")
+    demo_tenant_id: str = "integration-demo"
+    demo_scope_key: str = "integration-demo"
+    demo_corpus_path: str = ""
+    demo_corpus_sha256: str = ""
 
     @model_validator(mode="after")
     def validate_credentials(self) -> "Settings":
+        if self.demo_retrieval_enabled:
+            if self.environment == "production":
+                raise ValueError("Demo retrieval is prohibited in production")
+            demo = self.demo_token.get_secret_value()
+            if len(demo) < 32 or demo in {
+                self.service_token.get_secret_value(),
+                self.admin_token.get_secret_value(),
+            }:
+                raise ValueError("Demo requires a distinct token of at least 32 characters")
+            if not self.demo_corpus_path or len(self.demo_corpus_sha256) != 64:
+                raise ValueError("Demo requires an explicit corpus path and SHA256 pin")
         tokens = [self.service_token.get_secret_value(), self.admin_token.get_secret_value()]
         if any(token and len(token) < 32 for token in tokens):
             raise ValueError("Service tokens must contain at least 32 characters")

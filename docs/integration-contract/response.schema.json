@@ -1,0 +1,190 @@
+{
+  "$defs": {
+    "DemoEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "format": "uuid",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "chunk_id": {
+          "format": "uuid",
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "doc_ref": {
+          "maxLength": 200,
+          "title": "Doc Ref",
+          "type": "string"
+        },
+        "document_version": {
+          "maxLength": 80,
+          "title": "Document Version",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 200,
+          "title": "Title",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 200,
+          "title": "Source",
+          "type": "string"
+        },
+        "section": {
+          "maxLength": 200,
+          "title": "Section",
+          "type": "string"
+        },
+        "section_id": {
+          "maxLength": 80,
+          "title": "Section Id",
+          "type": "string"
+        },
+        "page": {
+          "default": null,
+          "title": "Page",
+          "type": "null"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "text": {
+          "maxLength": 1600,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "text_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Text Sha256",
+          "type": "string"
+        },
+        "score": {
+          "exclusiveMinimum": 0,
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id",
+        "doc_ref",
+        "document_version",
+        "title",
+        "source",
+        "section",
+        "section_id",
+        "start",
+        "end",
+        "text",
+        "text_sha256",
+        "score"
+      ],
+      "title": "DemoEvidence",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "demo-1",
+      "default": "demo-1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "format": "uuid",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "retrieval_run_id": {
+      "format": "uuid",
+      "title": "Retrieval Run Id",
+      "type": "string"
+    },
+    "backend": {
+      "const": "portfolio_demo_bm25",
+      "default": "portfolio_demo_bm25",
+      "title": "Backend",
+      "type": "string"
+    },
+    "strategy": {
+      "const": "bm25-k1-1.2-b-0.75",
+      "default": "bm25-k1-1.2-b-0.75",
+      "title": "Strategy",
+      "type": "string"
+    },
+    "approval": {
+      "const": "technical_demo_only",
+      "default": "technical_demo_only",
+      "title": "Approval",
+      "type": "string"
+    },
+    "clinical_approval": {
+      "const": false,
+      "default": false,
+      "title": "Clinical Approval",
+      "type": "boolean"
+    },
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "corpus_sha256": {
+      "title": "Corpus Sha256",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "ok",
+        "no_evidence"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "elapsed_ms": {
+      "minimum": 0,
+      "title": "Elapsed Ms",
+      "type": "number"
+    },
+    "budget_truncated": {
+      "title": "Budget Truncated",
+      "type": "boolean"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/DemoEvidence"
+      },
+      "maxItems": 6,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "signature": {
+      "default": "",
+      "title": "Signature",
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_id",
+    "retrieval_run_id",
+    "corpus_version",
+    "corpus_sha256",
+    "status",
+    "elapsed_ms",
+    "budget_truncated",
+    "evidence"
+  ],
+  "title": "DemoResponse",
+  "type": "object"
+}

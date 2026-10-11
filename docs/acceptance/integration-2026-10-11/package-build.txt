@@ -1,0 +1,6 @@
+Building source distribution...
+Building wheel from source distribution...
+Successfully built dist\rag_portfolio-0.1.0.tar.gz
+Successfully built dist\rag_portfolio-0.1.0-py3-none-any.whl
+
+Archive path check: True

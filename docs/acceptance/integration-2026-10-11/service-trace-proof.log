@@ -1,0 +1,8 @@
+INFO:     Started server process [31916]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:21662 (Press CTRL+C to quit)
+INFO:     127.0.0.1:21666 - "GET /health/live HTTP/1.1" 200 OK
+INFO rag_portfolio.api.demo demo_retrieve request=3604d73f-6213-4f2a-824c-1e4b215659ea run=30de4fee-ec4c-4939-bd10-4d98170d672b status=ok hits=3 elapsed_ms=0.0
+INFO rag_portfolio.main demo_http request=3604d73f-6213-4f2a-824c-1e4b215659ea status=200
+INFO:     127.0.0.1:21670 - "POST /v1/experimental/demo/retrieve HTTP/1.1" 200 OK

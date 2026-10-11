@@ -36,6 +36,9 @@ medical = [
 [tool.hatch.build.targets.wheel]
 packages = ["src/rag_portfolio"]
 
+[tool.hatch.build.targets.sdist]
+exclude = ["/outputs/**"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"

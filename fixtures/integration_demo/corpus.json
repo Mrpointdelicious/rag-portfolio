@@ -1,0 +1,74 @@
+{
+  "schema_version": "demo-1",
+  "corpus_version": "demo-rehab-protocols-v1",
+  "tenant_id": "integration-demo",
+  "scope_key": "integration-demo",
+  "approval": "technical_demo_only",
+  "clinical_approval": false,
+  "documents": [
+    {
+      "code": "protocol-a",
+      "version": "v1",
+      "title": "合成康复研究方案甲",
+      "domain": "health",
+      "source": "repo://demo/protocol-a",
+      "license": "CC0-1.0",
+      "approved": true,
+      "approved_by": "self-authored-technical-demo-review",
+      "text": "方案甲为自建合成康复研究方案，仅用于软件联调。拟纳入40名成年卒中后步行障碍参与者；这不是已开展的试验，也不包含真实患者记录。\n\n方案甲拟比较步行训练联合常规康复与单独常规康复，计划每周3次、持续6周。此为虚构方案，不是个体治疗建议。\n\n方案甲计划以六分钟步行距离为主要结局，步行速度为次要结局；未提供试验结果、效应量或患者实际测量值。",
+      "text_sha256": "af3bb358ffdd066f0fad1f4bc8bef0eaa88b1142e11c9f5f389ed90ce912b64d",
+      "sections": [
+        {
+          "section_id": "population",
+          "title": "研究人群",
+          "start": 0,
+          "end": 63
+        },
+        {
+          "section_id": "intervention",
+          "title": "干预方式",
+          "start": 65,
+          "end": 117
+        },
+        {
+          "section_id": "outcomes",
+          "title": "主要结局",
+          "start": 119,
+          "end": 168
+        }
+      ]
+    },
+    {
+      "code": "protocol-b",
+      "version": "v1",
+      "title": "合成康复研究方案乙",
+      "domain": "health",
+      "source": "repo://demo/protocol-b",
+      "license": "CC0-1.0",
+      "approved": true,
+      "approved_by": "self-authored-technical-demo-review",
+      "text": "方案乙为自建合成康复研究方案，仅用于软件联调。拟纳入30名成年骨折术后平衡障碍参与者；这不是已开展的试验，也不包含真实患者记录。\n\n方案乙拟比较平衡训练联合常规康复与单独常规康复，计划每周2次、持续8周。此为虚构方案，不是个体治疗建议。\n\n方案乙计划以Berg平衡量表为主要结局，日常活动能力为次要结局；未提供试验结果、效应量或患者实际测量值。",
+      "text_sha256": "dac74015629454f430573b7b9c8166defa17b66857994f00a00d7f9d955d745f",
+      "sections": [
+        {
+          "section_id": "population",
+          "title": "研究人群",
+          "start": 0,
+          "end": 64
+        },
+        {
+          "section_id": "intervention",
+          "title": "干预方式",
+          "start": 66,
+          "end": 118
+        },
+        {
+          "section_id": "outcomes",
+          "title": "主要结局",
+          "start": 120,
+          "end": 172
+        }
+      ]
+    }
+  ]
+}

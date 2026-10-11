@@ -10,6 +10,7 @@ from starlette.exceptions import HTTPException
 
 from rag_portfolio import __version__
 from rag_portfolio.adapters.vector import QdrantConnection
+from rag_portfolio.api.demo import router as demo_router
 from rag_portfolio.api.routes import health, router
 from rag_portfolio.config import Settings
 from rag_portfolio.db.session import Database
@@ -47,6 +48,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             request.state.request_id = uuid4()
         response = await call_next(request)
         response.headers["X-Request-ID"] = str(request.state.request_id)
+        if request.url.path.startswith("/v1/experimental/demo/"):
+            logger.info(
+                "demo_http request=%s status=%s", request.state.request_id, response.status_code
+            )
         return response
 
     def error(request: Request, status: int, code: str, **extra):
@@ -75,4 +80,5 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     app.include_router(health)
     app.include_router(router)
+    app.include_router(demo_router)
     return app

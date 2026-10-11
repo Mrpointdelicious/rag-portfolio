@@ -1,0 +1,26 @@
+Repository: D:/Project/rag-portfolio
+"outputs/20261011-medical-rag-three-rounds/\345\272\267\345\244\215\346\226\207\347\214\256RAG\344\270\211\350\275\256\350\277\255\344\273\243\346\261\207\346\200\273.docx"
+.env.example
+README.md
+compose.integration.yaml
+docs/acceptance/integration-2026-10-11/changed-files.txt
+docs/acceptance/integration-2026-10-11/format-check.txt
+docs/acceptance/integration-2026-10-11/lint.txt
+docs/acceptance/integration-2026-10-11/package-build.txt
+docs/acceptance/integration-2026-10-11/service-trace-proof.json
+docs/acceptance/integration-2026-10-11/service-trace-proof.log
+docs/acceptance/integration-2026-10-11/unit-tests.txt
+docs/integration-contract/request.schema.json
+docs/integration-contract/response.schema.json
+docs/integration-spike-design.md
+docs/integration-spike-validation.md
+fixtures/integration_demo/README.md
+fixtures/integration_demo/corpus.json
+fixtures/integration_demo/corpus.sha256
+pyproject.toml
+src/rag_portfolio/api/demo.py
+src/rag_portfolio/config.py
+src/rag_portfolio/main.py
+src/rag_portfolio/services/demo_retrieval.py
+tests/test_demo_retrieval.py
+tools/demo_server.py

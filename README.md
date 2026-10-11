@@ -1,5 +1,7 @@
 # RAG Portfolio
 
+新增 [MetaAgent Integration Spike](docs/integration-spike-validation.md)：默认关闭的隔离只读演示检索，已完成真实模型→RAG→Evidence→引用回答验证；保留部分失败、审批边界和未验证项。正式 `/v1/retrieve` 仍为501，不代表P2-E或医学生产发布完成。
+
 面向简历和技术面试展示的 RAG 工程项目。目标是构建一套可复现的知识库问答系统，展示文档治理、混合检索、证据引用、可靠发布与评测能力。
 
 本仓库从 MetaKnowledgeBase 的 M1 baseline 独立创建，拥有新的 Git 历史、Python 包名、配置前缀和开发环境。基础工程、[最小内容治理闭环](docs/document-flow.md)与[单文档 Dense Retrieval baseline](docs/dense-retrieval-baseline.md)已完成并验证。[Multi-document Dense Evaluation v1](docs/multi-document-dense-eval-v1.md)已完成两次真实运行：固定 5 文档、43 chunks、29 queries，其中 25 个计分，Recall@1=0.76、Recall@5=1.00、MRR@5=0.863333。`POST /v1/retrieve` 仍返回 501，完整 RAG 问答按 [开发路线](docs/roadmap.md) 实现。

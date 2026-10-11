@@ -1,0 +1,54 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "query": {
+      "maxLength": 4000,
+      "minLength": 1,
+      "title": "Query",
+      "type": "string"
+    },
+    "domain": {
+      "default": "health",
+      "enum": [
+        "health",
+        "product",
+        "help"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "scope_key": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Scope Key",
+      "type": "string"
+    },
+    "corpus_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "top_k": {
+      "default": 6,
+      "maximum": 6,
+      "minimum": 1,
+      "title": "Top K",
+      "type": "integer"
+    },
+    "max_chars": {
+      "default": 6000,
+      "maximum": 6000,
+      "minimum": 600,
+      "title": "Max Chars",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "query",
+    "scope_key",
+    "corpus_version"
+  ],
+  "title": "DemoQuery",
+  "type": "object"
+}
