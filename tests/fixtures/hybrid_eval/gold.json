@@ -1,0 +1,173 @@
+{
+  "schema_version": "technical-gold-v1",
+  "license": "CC0-1.0",
+  "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+  "approval": "technical_demo_only",
+  "cases": [
+    {
+      "id": "H01",
+      "query": "索引方案甲采用什么检索方法？",
+      "domain": "help",
+      "groups": [
+        [
+          "index-a@v1#intervention"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H02",
+      "query": "比较索引方案甲和索引方案乙的使用范围、构建方法和计划指标。",
+      "domain": "help",
+      "groups": [
+        [
+          "index-a@v1#population"
+        ],
+        [
+          "index-a@v1#intervention"
+        ],
+        [
+          "index-a@v1#outcomes"
+        ],
+        [
+          "index-b@v1#population"
+        ],
+        [
+          "index-b@v1#intervention"
+        ],
+        [
+          "index-b@v1#outcomes"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H03",
+      "query": "保留规范甲与保留规范乙规定的记录保存天数是否一致？",
+      "domain": "help",
+      "groups": [
+        [
+          "retention-a@v1#retention"
+        ],
+        [
+          "retention-b@v1#retention"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H04",
+      "query": "消息系统如何通过背压避免消费端被压垮？",
+      "domain": "help",
+      "groups": [
+        [
+          "queue-guide@v1#flow"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H05",
+      "query": "上下文放不下完整片段时如何处理？过期证据能继续引用吗？",
+      "domain": "help",
+      "groups": [
+        [
+          "context-guide@v1#packing"
+        ],
+        [
+          "context-guide@v1#ttl"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H06",
+      "query": "混合检索允许哪些身份？来源指纹不一致怎么办？",
+      "domain": "help",
+      "groups": [
+        [
+          "auth-guide@v1#authority"
+        ],
+        [
+          "auth-guide@v1#integrity"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H07",
+      "query": "Dense失败但BM25成功和重排失败分别是什么状态？",
+      "domain": "help",
+      "groups": [
+        [
+          "client-guide@v1#errors"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "H08",
+      "query": "索引方案乙公布的实测吞吐量是多少？",
+      "domain": "help",
+      "groups": [
+        [
+          "index-b@v1#outcomes"
+        ]
+      ],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": false
+    },
+    {
+      "id": "N01",
+      "query": "zznonexistentquasar 的恒星核聚变温度是多少？",
+      "domain": "help",
+      "groups": [],
+      "context_budget": 10000,
+      "top_k": 6,
+      "no_answer": true
+    },
+    {
+      "id": "B01",
+      "query": "比较索引方案甲和索引方案乙的使用范围、构建方法和计划指标。",
+      "domain": "help",
+      "groups": [
+        [
+          "index-a@v1#population"
+        ],
+        [
+          "index-a@v1#intervention"
+        ],
+        [
+          "index-a@v1#outcomes"
+        ],
+        [
+          "index-b@v1#population"
+        ],
+        [
+          "index-b@v1#intervention"
+        ],
+        [
+          "index-b@v1#outcomes"
+        ]
+      ],
+      "context_budget": 1500,
+      "top_k": 6,
+      "no_answer": false
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: rag-hybrid-isolated
+services:
+  rag-hybrid:
+    profiles: [hybrid-demo]
+    image: rag-portfolio:hybrid-isolated
+    build:
+      context: .
+      dockerfile: Dockerfile.hybrid
+    ports: ["127.0.0.1:18102:8000"]
+    read_only: true
+    tmpfs: ["/tmp"]
+    cap_drop: [ALL]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      RAG_ENVIRONMENT: test
+      RAG_HYBRID_ENABLED: "true"
+      RAG_HYBRID_ENVIRONMENT: test
+      RAG_HYBRID_TOKEN: ${HYBRID_DEMO_TOKEN:?fresh isolated demo token required}
+      RAG_HYBRID_CORPUS_PATH: /app/demo/corpus.json
+      RAG_HYBRID_CORPUS_SHA256: b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d
+      RAG_HYBRID_INDEX_PATH: /app/demo/index.json
+      RAG_HYBRID_INDEX_SHA256: 5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd
+      RAG_EMBEDDING_PROVIDER: alibaba_dashscope
+      RAG_EMBEDDING_API_KEY: ${RAG_EMBEDDING_API_KEY:?provider credential required}
+      RAG_EMBEDDING_BASE_URL: ${RAG_EMBEDDING_BASE_URL:?provider origin required}
+      RAG_EMBEDDING_MODEL: qwen3.7-text-embedding
+      RAG_EMBEDDING_DIMENSION: "1024"
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=3)"]
+      interval: 5s
+      timeout: 4s
+      retries: 10
+  network-probe:
+    profiles: [probe]
+    image: rag-portfolio:hybrid-isolated
+    depends_on:
+      rag-hybrid:
+        condition: service_healthy
+    entrypoint: [python, -c]
+    command: ["import socket,urllib.request; print(socket.gethostbyname('rag-hybrid')); print(urllib.request.urlopen('http://rag-hybrid:8000/health/live',timeout=3).status)"]

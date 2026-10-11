@@ -30,6 +30,7 @@ class EmbeddingAdapter:
         self.dimension = settings.embedding_dimension
         self.output_type = settings.embedding_output_type
         self.timeout = settings.embedding_timeout_seconds
+        self.last_metadata: dict = {}
         self.url = settings.embedding_base_url.rstrip("/") + ENDPOINT
         self.client = httpx.AsyncClient(
             headers={"Authorization": f"Bearer {settings.embedding_api_key.get_secret_value()}"},
@@ -73,7 +74,12 @@ class EmbeddingAdapter:
             body = response.json()
         except ValueError:
             raise EmbeddingAdapterError("DashScope returned invalid JSON") from None
-        return self._parse_embeddings(body, len(texts))
+        vectors = self._parse_embeddings(body, len(texts))
+        self.last_metadata = {
+            "request_id": body.get("request_id"),
+            "usage": body.get("usage", {}),
+        }
+        return vectors
 
     def _parse_embeddings(self, body: object, expected_count: int) -> list[list[float]]:
         output = body.get("output") if isinstance(body, dict) else None

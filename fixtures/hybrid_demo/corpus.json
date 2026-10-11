@@ -1,0 +1,227 @@
+{
+  "schema_version": "hybrid-corpus-v1",
+  "corpus_version": "technical-hybrid-v1",
+  "tenant_id": "hybrid-demo",
+  "scope_key": "hybrid-demo",
+  "approval": "technical_demo_only",
+  "clinical_approval": false,
+  "documents": [
+    {
+      "code": "index-a",
+      "title": "索引方案甲",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/index-a",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "索引方案甲面向单机演示，保存静态文本片段，只读查询，不支持在线发布、删除或患者数据。\n索引方案甲在构建时批量生成文档向量；查询时实时生成问题向量，使用余弦相似度检索，再用BM25和RRF融合。\n索引方案甲计划评估完整证据覆盖率和查询延迟；尚未报告实测延迟，也没有证明答案准确率。",
+      "text_sha256": "e7021a2c28aaa4c313e65481ec5a96e787604d3b55fae2bf24802165d8430889",
+      "sections": [
+        {
+          "section_id": "population",
+          "title": "使用范围",
+          "start": 0,
+          "end": 42,
+          "page": null
+        },
+        {
+          "section_id": "intervention",
+          "title": "构建方法",
+          "start": 43,
+          "end": 96,
+          "page": null
+        },
+        {
+          "section_id": "outcomes",
+          "title": "计划指标",
+          "start": 97,
+          "end": 139,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "index-b",
+      "title": "索引方案乙",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/index-b",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "索引方案乙面向隔离容器演示，保存静态文本片段，只读查询，不支持正式环境发布或患者数据。\n索引方案乙使用独立向量集合；查询时实时生成问题向量，再与BM25排名做RRF融合，可调用远程重排模型。\n索引方案乙计划评估多来源证据覆盖率和上下文预算内完成率；尚未报告实测吞吐量，也没有证明答案准确率。",
+      "text_sha256": "ad5a223adec5f479a3ec9ff6d196aae68a7882c7e846968d1f3e79ec08edd1ea",
+      "sections": [
+        {
+          "section_id": "population",
+          "title": "使用范围",
+          "start": 0,
+          "end": 43,
+          "page": null
+        },
+        {
+          "section_id": "intervention",
+          "title": "构建方法",
+          "start": 44,
+          "end": 95,
+          "page": null
+        },
+        {
+          "section_id": "outcomes",
+          "title": "计划指标",
+          "start": 96,
+          "end": 145,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "retention-a",
+      "title": "保留规范甲",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/retention-a",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "保留规范甲规定：演示检索记录保留7天，随后删除；这是甲团队的技术建议，不是全公司的统一规则。",
+      "text_sha256": "56b32343a2119d94cfe76d2baabc480e2bfc03ab0b004c37a3af32596421c7e5",
+      "sections": [
+        {
+          "section_id": "retention",
+          "title": "保留时限",
+          "start": 0,
+          "end": 46,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "retention-b",
+      "title": "保留规范乙",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/retention-b",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "保留规范乙规定：演示检索记录保留30天，随后删除；这是乙团队的技术建议，与甲团队的7天建议存在冲突。两份建议没有给出统一优先级。",
+      "text_sha256": "f67714f506fa316c14301e16fadd9a137ac0868d4e0047955382423520f41beb",
+      "sections": [
+        {
+          "section_id": "retention",
+          "title": "保留时限",
+          "start": 0,
+          "end": 64,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "auth-guide",
+      "title": "访问边界说明",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/auth-guide",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "混合检索只允许hybrid-demo范围的operator访问，禁止患者身份与production模式。域和语料版本由可信服务配置限制，模型不得自行扩大权限。\n来源指纹、原文哈希或索引版本不匹配时拒绝检索。引用成员合法只说明来源存在，不保证解释由证据支持，也不保证临床正确。",
+      "text_sha256": "4b1e0f61ff224e376418912d4cabffafbe260d1b60106238edf43321fc387566",
+      "sections": [
+        {
+          "section_id": "authority",
+          "title": "权限",
+          "start": 0,
+          "end": 79,
+          "page": null
+        },
+        {
+          "section_id": "integrity",
+          "title": "完整性",
+          "start": 80,
+          "end": 137,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "queue-guide",
+      "title": "排队调节说明",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/queue-guide",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+      "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+      "sections": [
+        {
+          "section_id": "flow",
+          "title": "过载调节",
+          "start": 0,
+          "end": 65,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "context-guide",
+      "title": "上下文打包说明",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/context-guide",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "上下文打包按完整片段及其引用元数据计算预算，不能在句中剪掉否定词或数字；放不下则省略整个片段，设置budget_truncated，并提示证据不足。\nEvidence具有有效期。过期的工具结果应从当前模型上下文失效，再次追问应重新查询。旧回答保留并不代表旧证据仍可引用。",
+      "text_sha256": "2addd7313ba33a6c45e12102f99bca11d86f900c327aacf13908919bb18ef96e",
+      "sections": [
+        {
+          "section_id": "packing",
+          "title": "预算打包",
+          "start": 0,
+          "end": 74,
+          "page": null
+        },
+        {
+          "section_id": "ttl",
+          "title": "证据时效",
+          "start": 75,
+          "end": 135,
+          "page": null
+        }
+      ]
+    },
+    {
+      "code": "client-guide",
+      "title": "客户端故障说明",
+      "version": "v1",
+      "domain": "help",
+      "source": "repo://hybrid-demo/client-guide",
+      "license": "CC0-1.0",
+      "approved_by": "task-author-technical-demo-2026-10-11",
+      "approved": true,
+      "text": "Dense或BM25其中一路失败而另一路提供证据时为partial；重排失败可显式降级并标记rerank_applied=false。没有可用证据时为unavailable，响应被篡改或内部证据不一致时为failed。\n演示客户端单次最多调用一次Embedding和一次Reranker，不自动重试；限制请求时限、响应字节数和工具调用次数。预算不是模型收费token数。",
+      "text_sha256": "6ee5c3583473d3a0fd458197e94a1be351acce86242fe8352613740427d4e958",
+      "sections": [
+        {
+          "section_id": "errors",
+          "title": "故障",
+          "start": 0,
+          "end": 109,
+          "page": null
+        },
+        {
+          "section_id": "budget",
+          "title": "调用上限",
+          "start": 110,
+          "end": 185,
+          "page": null
+        }
+      ]
+    }
+  ]
+}

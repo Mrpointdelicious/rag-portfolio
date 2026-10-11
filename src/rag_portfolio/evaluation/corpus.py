@@ -14,6 +14,7 @@ from rag_portfolio.db.models import DocumentChunk, DocumentVersion, KnowledgeBas
 from rag_portfolio.services.chunking import text_hash
 from rag_portfolio.services.dense_retrieval import ApprovedCorpus
 from rag_portfolio.services.documents import DocumentServiceError, verify_version_hashes
+from rag_portfolio.services.errors import EvaluationError as EvaluationError
 
 CORPUS_ID = "yueyang-multidoc-dense-v1"
 HOSPITAL_VERSION_ID = UUID("cc725d7d-f8a9-455d-a613-3ccf71705fae")
@@ -28,10 +29,6 @@ DOCUMENT_AUDIENCES = {
 DEFAULT_CORPUS_PATH = Path(".local/eval/hospital_dense_v1/corpus.json")
 Hash = Annotated[str, Field(pattern=r"^[0-9a-f]{64}$")]
 Nonempty = Annotated[str, Field(min_length=1)]
-
-
-class EvaluationError(RuntimeError):
-    """An invalid experiment must fail rather than silently change corpus or Gold."""
 
 
 class FrozenModel(BaseModel):
