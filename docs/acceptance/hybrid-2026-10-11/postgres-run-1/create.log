@@ -1,0 +1,25 @@
+Unable to find image 'postgres:16' locally
+16: Pulling from library/postgres
+9731e27f2541: Pulling fs layer
+c49864c27f35: Pulling fs layer
+79faf13a8736: Pulling fs layer
+770ef8b308ea: Pulling fs layer
+486e8305f56f: Pulling fs layer
+e7d675f11ded: Pulling fs layer
+50c25daa0302: Pulling fs layer
+6456bfbf35e7: Pulling fs layer
+8309db3ae5b6: Pulling fs layer
+99f49de4fe2b: Pulling fs layer
+ecc510c1e359: Pulling fs layer
+b353db459ed1: Pulling fs layer
+83d1a2a3917c: Pulling fs layer
+715ea0948cb1: Pulling fs layer
+64b26645b0da: Download complete
+9731e27f2541: Download complete
+c49864c27f35: Download complete
+486e8305f56f: Download complete
+79faf13a8736: Download complete
+7940de88f6c7: Download complete
+docker: failed to copy: httpReadSeeker: failed open: failed to do request: Get "https://registry-1.docker.io/v2/library/postgres/blobs/sha256:99f49de4fe2b8389931fd8794183304b30e526405bf90b10cbb9bc5db890f177": net/http: timeout awaiting response headers
+
+Run 'docker run --help' for more information

@@ -1,0 +1,23 @@
+{
+  "execution": "real owned ephemeral PostgreSQL; no existing DB contacted",
+  "port": 52986,
+  "steps": [
+    {
+      "step": "create",
+      "exit": 0
+    },
+    {
+      "step": "rag-isolated-suite",
+      "exit": 0
+    },
+    {
+      "step": "meta-isolated-suite",
+      "exit": 0
+    },
+    {
+      "step": "remove-owned-container",
+      "exit": 0
+    }
+  ],
+  "cleanup_complete": true
+}

@@ -1,0 +1,754 @@
+{
+  "bm25": {
+    "hit": 1.0,
+    "recall": 0.9629629629629629,
+    "mrr": 1.0,
+    "n": 9,
+    "ranking_complete": 7,
+    "context_complete": 7,
+    "ordinary_context_complete": 7,
+    "no_answer_correct": 1,
+    "p50_ms": 0.0,
+    "p95_ms": 16.00000000325963,
+    "latency_n": 10,
+    "embedding_calls": 0,
+    "rerank_calls": 0,
+    "degradation_count": 1,
+    "budget_exceeded": 0
+  },
+  "dense": {
+    "hit": 1.0,
+    "recall": 1.0,
+    "mrr": 1.0,
+    "n": 9,
+    "ranking_complete": 9,
+    "context_complete": 8,
+    "ordinary_context_complete": 8,
+    "no_answer_correct": 1,
+    "p50_ms": 125.0,
+    "p95_ms": 296.0000000020955,
+    "latency_n": 10,
+    "embedding_calls": 10,
+    "rerank_calls": 0,
+    "degradation_count": 1,
+    "budget_exceeded": 0
+  },
+  "hybrid": {
+    "hit": 1.0,
+    "recall": 1.0,
+    "mrr": 1.0,
+    "n": 9,
+    "ranking_complete": 9,
+    "context_complete": 8,
+    "ordinary_context_complete": 8,
+    "no_answer_correct": 1,
+    "p50_ms": 139.99999999941792,
+    "p95_ms": 281.00000000267755,
+    "latency_n": 10,
+    "embedding_calls": 10,
+    "rerank_calls": 0,
+    "degradation_count": 1,
+    "budget_exceeded": 0
+  },
+  "hybrid_rerank": {
+    "hit": 1.0,
+    "recall": 1.0,
+    "mrr": 1.0,
+    "n": 9,
+    "ranking_complete": 9,
+    "context_complete": 8,
+    "ordinary_context_complete": 8,
+    "no_answer_correct": 1,
+    "p50_ms": 281.00000000267755,
+    "p95_ms": 656.0000000026776,
+    "latency_n": 10,
+    "embedding_calls": 10,
+    "rerank_calls": 9,
+    "degradation_count": 1,
+    "budget_exceeded": 0
+  },
+  "hybrid_selection": {
+    "hit": 1.0,
+    "recall": 1.0,
+    "mrr": 1.0,
+    "n": 9,
+    "ranking_complete": 9,
+    "context_complete": 8,
+    "ordinary_context_complete": 8,
+    "no_answer_correct": 1,
+    "p50_ms": 218.99999999732245,
+    "p95_ms": 437.0000000053551,
+    "latency_n": 10,
+    "embedding_calls": 10,
+    "rerank_calls": 9,
+    "degradation_count": 1,
+    "budget_exceeded": 0
+  },
+  "fresh_queries": [
+    {
+      "case": "new-input-1",
+      "query": "方案乙离线建向量以后，在线收到一个陌生提问会怎样寻找原文？",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "f91c0470-8d97-4a4d-a4ee-50711db4c449",
+        "retrieval_run_id": "268e8668-8766-48ed-8f8c-77268dc23e29",
+        "backend": "portfolio_hybrid",
+        "strategy": "hybrid_selection",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 250.0,
+        "reranker_used": "qwen3.7-text-rerank",
+        "rerank_applied": true,
+        "degradation": [],
+        "candidate_count": 12,
+        "post_rerank_count": 12,
+        "selected_count": 6,
+        "budget_truncated": false,
+        "context_tokens_estimated": 3516,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 1
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "4ea1dd2508e2214c7e24dbe64a0c8019b0a3672676f33953f00529efaab95f89",
+          "embedding_provider": {
+            "request_id": "c45d8968-d1e2-9b04-976e-0d7dcac98b55",
+            "usage": {
+              "total_tokens": 33
+            }
+          },
+          "bm25_rejected_weak_overlap": [
+            "2061e445-58b3-57d7-a9d8-e5aea9793400",
+            "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+            "15275e38-55bc-59f0-a822-4d575b5c2176",
+            "f67257ef-c554-50e1-901f-d7390b8fc607",
+            "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+            "7089f699-73af-5993-a4f8-bb2517ac20b7",
+            "409dd54d-6269-5fbf-8fb1-335702007b5e"
+          ],
+          "dense": [
+            {
+              "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+              "score": 0.7312604610997866
+            },
+            {
+              "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+              "score": 0.6896761074670857
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.5600242257391047
+            },
+            {
+              "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+              "score": 0.5545279035605121
+            },
+            {
+              "chunk_id": "2c539747-3629-597b-80fa-b689eed53ef5",
+              "score": 0.5347154746241541
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.534368957162937
+            },
+            {
+              "chunk_id": "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+              "score": 0.5046492222864504
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.4679380226261794
+            },
+            {
+              "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+              "score": 0.46238439388884023
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.4518304927329464
+            },
+            {
+              "chunk_id": "409dd54d-6269-5fbf-8fb1-335702007b5e",
+              "score": 0.44028285348597374
+            },
+            {
+              "chunk_id": "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+              "score": 0.4068949046698292
+            }
+          ],
+          "bm25": [
+            {
+              "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+              "score": 16.250340822475653
+            },
+            {
+              "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+              "score": 15.112057116543133
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 11.602801092060291
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 10.621770725385847
+            },
+            {
+              "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+              "score": 7.85926123883738
+            },
+            {
+              "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+              "score": 6.2755864012465175
+            },
+            {
+              "chunk_id": "2c539747-3629-597b-80fa-b689eed53ef5",
+              "score": 3.222937947560189
+            }
+          ],
+          "rrf": [
+            {
+              "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+              "score": 0.03252247488101534
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.03149801587301587
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.031024531024531024
+            },
+            {
+              "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+              "score": 0.031009615384615385
+            },
+            {
+              "chunk_id": "2c539747-3629-597b-80fa-b689eed53ef5",
+              "score": 0.030309988518943745
+            },
+            {
+              "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+              "score": 0.02964426877470356
+            },
+            {
+              "chunk_id": "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+              "score": 0.014925373134328358
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.014705882352941176
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.014285714285714285
+            },
+            {
+              "chunk_id": "409dd54d-6269-5fbf-8fb1-335702007b5e",
+              "score": 0.014084507042253521
+            },
+            {
+              "chunk_id": "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+              "score": 0.013888888888888888
+            }
+          ],
+          "rerank": [
+            {
+              "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+              "score": 0.7976501045819896
+            },
+            {
+              "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+              "score": 0.49086841761071476
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.4417346479951422
+            },
+            {
+              "chunk_id": "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+              "score": 0.42916247056593493
+            },
+            {
+              "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+              "score": 0.40805429245347974
+            },
+            {
+              "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+              "score": 0.3604645038867121
+            },
+            {
+              "chunk_id": "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+              "score": 0.3061324317818025
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.18576678563380639
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.1798157200046246
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.13520559868974258
+            },
+            {
+              "chunk_id": "409dd54d-6269-5fbf-8fb1-335702007b5e",
+              "score": 0.062350987316632855
+            },
+            {
+              "chunk_id": "2c539747-3629-597b-80fa-b689eed53ef5",
+              "score": 0.06090310152065892
+            }
+          ],
+          "rerank_provider": {
+            "request_id": "a8aa56dc-887b-9250-8a78-27fe730710de",
+            "usage": {
+              "prompt_tokens": 1494,
+              "total_tokens": 1494
+            }
+          },
+          "selection": [
+            {
+              "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+              "score": 0.7976501045819896
+            },
+            {
+              "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+              "score": 0.49086841761071476
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.4417346479951422
+            },
+            {
+              "chunk_id": "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+              "score": 0.42916247056593493
+            },
+            {
+              "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+              "score": 0.40805429245347974
+            },
+            {
+              "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+              "score": 0.3604645038867121
+            },
+            {
+              "chunk_id": "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+              "score": 0.3061324317818025
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.18576678563380639
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.1798157200046246
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.13520559868974258
+            },
+            {
+              "chunk_id": "409dd54d-6269-5fbf-8fb1-335702007b5e",
+              "score": 0.062350987316632855
+            },
+            {
+              "chunk_id": "2c539747-3629-597b-80fa-b689eed53ef5",
+              "score": 0.06090310152065892
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "829226c0-1415-583b-a024-3e7ba0a1fefd",
+            "chunk_id": "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+            "doc_ref": "index-b@v1#intervention",
+            "document_version": "v1",
+            "title": "索引方案乙",
+            "source": "repo://hybrid-demo/index-b",
+            "section": "构建方法",
+            "section_id": "intervention",
+            "page": null,
+            "start": 44,
+            "end": 95,
+            "text": "索引方案乙使用独立向量集合；查询时实时生成问题向量，再与BM25排名做RRF融合，可调用远程重排模型。",
+            "text_sha256": "6b4842c60861bea5f1e45296e257edfa4a6f6fa9eebd7dc83c85d3ec25af0cba",
+            "score": 0.7976501045819896
+          },
+          {
+            "source_id": "11540a64-b326-5be4-acfb-2f355c70ae24",
+            "chunk_id": "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+            "doc_ref": "auth-guide@v1#integrity",
+            "document_version": "v1",
+            "title": "访问边界说明",
+            "source": "repo://hybrid-demo/auth-guide",
+            "section": "完整性",
+            "section_id": "integrity",
+            "page": null,
+            "start": 80,
+            "end": 137,
+            "text": "来源指纹、原文哈希或索引版本不匹配时拒绝检索。引用成员合法只说明来源存在，不保证解释由证据支持，也不保证临床正确。",
+            "text_sha256": "8857225901225b9d494d5fc87ce2367c944f65de739d7a8579365b22bd6a6559",
+            "score": 0.49086841761071476
+          },
+          {
+            "source_id": "829226c0-1415-583b-a024-3e7ba0a1fefd",
+            "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+            "doc_ref": "index-b@v1#population",
+            "document_version": "v1",
+            "title": "索引方案乙",
+            "source": "repo://hybrid-demo/index-b",
+            "section": "使用范围",
+            "section_id": "population",
+            "page": null,
+            "start": 0,
+            "end": 43,
+            "text": "索引方案乙面向隔离容器演示，保存静态文本片段，只读查询，不支持正式环境发布或患者数据。",
+            "text_sha256": "28c35d76579418f75943d6130cda349e04817ba18ef9bdb2b4465ed95f035d51",
+            "score": 0.4417346479951422
+          },
+          {
+            "source_id": "09d375f7-6b2c-5820-8132-205df597a553",
+            "chunk_id": "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+            "doc_ref": "client-guide@v1#errors",
+            "document_version": "v1",
+            "title": "客户端故障说明",
+            "source": "repo://hybrid-demo/client-guide",
+            "section": "故障",
+            "section_id": "errors",
+            "page": null,
+            "start": 0,
+            "end": 109,
+            "text": "Dense或BM25其中一路失败而另一路提供证据时为partial；重排失败可显式降级并标记rerank_applied=false。没有可用证据时为unavailable，响应被篡改或内部证据不一致时为failed。",
+            "text_sha256": "f7c6e239366509acc7a3390b19a0578ca6212d19162b03506b281692cba1ab8e",
+            "score": 0.42916247056593493
+          },
+          {
+            "source_id": "3c69ea04-024e-5633-b4d1-0db02f0dfa8d",
+            "chunk_id": "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+            "doc_ref": "index-a@v1#intervention",
+            "document_version": "v1",
+            "title": "索引方案甲",
+            "source": "repo://hybrid-demo/index-a",
+            "section": "构建方法",
+            "section_id": "intervention",
+            "page": null,
+            "start": 43,
+            "end": 96,
+            "text": "索引方案甲在构建时批量生成文档向量；查询时实时生成问题向量，使用余弦相似度检索，再用BM25和RRF融合。",
+            "text_sha256": "f4dcce606b47878514dc767a5fe57a39c654a28f00e6d1622efb43f1c60c2a04",
+            "score": 0.40805429245347974
+          },
+          {
+            "source_id": "829226c0-1415-583b-a024-3e7ba0a1fefd",
+            "chunk_id": "56420807-abfd-5b83-b92e-e7b698e1398c",
+            "doc_ref": "index-b@v1#outcomes",
+            "document_version": "v1",
+            "title": "索引方案乙",
+            "source": "repo://hybrid-demo/index-b",
+            "section": "计划指标",
+            "section_id": "outcomes",
+            "page": null,
+            "start": 96,
+            "end": 145,
+            "text": "索引方案乙计划评估多来源证据覆盖率和上下文预算内完成率；尚未报告实测吞吐量，也没有证明答案准确率。",
+            "text_sha256": "ac994b4f8114bad3cf52581b2dad624e8b1ae8e292a321f0b8a3d08250e50574",
+            "score": 0.3604645038867121
+          }
+        ]
+      }
+    },
+    {
+      "case": "new-input-2",
+      "query": "如果演示消息队列的写入方把读取方甩在后面，应如何约束写入速度？",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "1a7389f9-7383-47c1-87f8-8de813497032",
+        "retrieval_run_id": "c63acf05-0cb3-4dfe-bd0d-49cf8b6383bd",
+        "backend": "portfolio_hybrid",
+        "strategy": "hybrid_selection",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 203.00000000861473,
+        "reranker_used": "qwen3.7-text-rerank",
+        "rerank_applied": true,
+        "degradation": [],
+        "candidate_count": 6,
+        "post_rerank_count": 6,
+        "selected_count": 6,
+        "budget_truncated": false,
+        "context_tokens_estimated": 3525,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 1
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "0cce130bc387732ab3f6b92f0238db2f5251f5d7635a0ce7b314fd4eeaa5fd09",
+          "embedding_provider": {
+            "request_id": "9a497963-ce26-9186-b28c-be2fa1232c49",
+            "usage": {
+              "total_tokens": 35
+            }
+          },
+          "bm25_rejected_weak_overlap": [
+            "7089f699-73af-5993-a4f8-bb2517ac20b7",
+            "13c64c77-3aa9-5a41-a819-9e08f74a8736",
+            "da55d331-87ec-5189-b7c6-2a4f3787caa8",
+            "409dd54d-6269-5fbf-8fb1-335702007b5e",
+            "63b932e5-559b-5ff2-a7e3-56eeb0a96cd5",
+            "bbacac03-4269-5b58-8b2d-bc72c5b55976",
+            "2c539747-3629-597b-80fa-b689eed53ef5",
+            "d995b0d6-af06-5d76-8ba3-8b26f0614f74",
+            "56420807-abfd-5b83-b92e-e7b698e1398c"
+          ],
+          "dense": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7695438109192827
+            }
+          ],
+          "bm25": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 18.12457231379438
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 9.079470183980831
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 8.795319091761671
+            },
+            {
+              "chunk_id": "15275e38-55bc-59f0-a822-4d575b5c2176",
+              "score": 8.172718899028471
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 7.708014750673791
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 3.7780621538226704
+            }
+          ],
+          "rrf": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.03278688524590164
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.016129032258064516
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.015873015873015872
+            },
+            {
+              "chunk_id": "15275e38-55bc-59f0-a822-4d575b5c2176",
+              "score": 0.015625
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.015384615384615385
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.015151515151515152
+            }
+          ],
+          "rerank": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.9699369453864503
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.12674034793850514
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.06304727788210002
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.05959284225241279
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.05105236141300745
+            },
+            {
+              "chunk_id": "15275e38-55bc-59f0-a822-4d575b5c2176",
+              "score": 0.050028730673966904
+            }
+          ],
+          "rerank_provider": {
+            "request_id": "683b3d15-2a76-98df-b5be-baa40bd2f261",
+            "usage": {
+              "prompt_tokens": 750,
+              "total_tokens": 750
+            }
+          },
+          "selection": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.9699369453864503
+            },
+            {
+              "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+              "score": 0.12674034793850514
+            },
+            {
+              "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+              "score": 0.06304727788210002
+            },
+            {
+              "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+              "score": 0.05959284225241279
+            },
+            {
+              "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+              "score": 0.05105236141300745
+            },
+            {
+              "chunk_id": "15275e38-55bc-59f0-a822-4d575b5c2176",
+              "score": 0.050028730673966904
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "f95602ed-6aea-57a0-a007-3ffbf57aca6f",
+            "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "doc_ref": "queue-guide@v1#flow",
+            "document_version": "v1",
+            "title": "排队调节说明",
+            "source": "repo://hybrid-demo/queue-guide",
+            "section": "过载调节",
+            "section_id": "flow",
+            "page": null,
+            "start": 0,
+            "end": 65,
+            "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+            "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+            "score": 0.9699369453864503
+          },
+          {
+            "source_id": "09d375f7-6b2c-5820-8132-205df597a553",
+            "chunk_id": "f67257ef-c554-50e1-901f-d7390b8fc607",
+            "doc_ref": "client-guide@v1#budget",
+            "document_version": "v1",
+            "title": "客户端故障说明",
+            "source": "repo://hybrid-demo/client-guide",
+            "section": "调用上限",
+            "section_id": "budget",
+            "page": null,
+            "start": 110,
+            "end": 185,
+            "text": "演示客户端单次最多调用一次Embedding和一次Reranker，不自动重试；限制请求时限、响应字节数和工具调用次数。预算不是模型收费token数。",
+            "text_sha256": "f778ccb233fa4db6bfe8e3a4cc695ef3ab388633e47b127bdbd78f207bb67ae6",
+            "score": 0.12674034793850514
+          },
+          {
+            "source_id": "829226c0-1415-583b-a024-3e7ba0a1fefd",
+            "chunk_id": "a62c33bb-0a13-5398-a4d2-c73f9cab779c",
+            "doc_ref": "index-b@v1#population",
+            "document_version": "v1",
+            "title": "索引方案乙",
+            "source": "repo://hybrid-demo/index-b",
+            "section": "使用范围",
+            "section_id": "population",
+            "page": null,
+            "start": 0,
+            "end": 43,
+            "text": "索引方案乙面向隔离容器演示，保存静态文本片段，只读查询，不支持正式环境发布或患者数据。",
+            "text_sha256": "28c35d76579418f75943d6130cda349e04817ba18ef9bdb2b4465ed95f035d51",
+            "score": 0.06304727788210002
+          },
+          {
+            "source_id": "3c69ea04-024e-5633-b4d1-0db02f0dfa8d",
+            "chunk_id": "113b5fbe-8718-5a16-9332-f4a4c223ed35",
+            "doc_ref": "index-a@v1#population",
+            "document_version": "v1",
+            "title": "索引方案甲",
+            "source": "repo://hybrid-demo/index-a",
+            "section": "使用范围",
+            "section_id": "population",
+            "page": null,
+            "start": 0,
+            "end": 42,
+            "text": "索引方案甲面向单机演示，保存静态文本片段，只读查询，不支持在线发布、删除或患者数据。",
+            "text_sha256": "dfd8054358a097fb45be21c93439ded61cc2ff648b7305e8457b36079e05c68e",
+            "score": 0.05959284225241279
+          },
+          {
+            "source_id": "d251b3cf-bcf3-56f7-ab0e-bbeeaddf0e4d",
+            "chunk_id": "2061e445-58b3-57d7-a9d8-e5aea9793400",
+            "doc_ref": "retention-b@v1#retention",
+            "document_version": "v1",
+            "title": "保留规范乙",
+            "source": "repo://hybrid-demo/retention-b",
+            "section": "保留时限",
+            "section_id": "retention",
+            "page": null,
+            "start": 0,
+            "end": 64,
+            "text": "保留规范乙规定：演示检索记录保留30天，随后删除；这是乙团队的技术建议，与甲团队的7天建议存在冲突。两份建议没有给出统一优先级。",
+            "text_sha256": "f67714f506fa316c14301e16fadd9a137ac0868d4e0047955382423520f41beb",
+            "score": 0.05105236141300745
+          },
+          {
+            "source_id": "4699732e-a8b3-5554-89ed-2679b706f01d",
+            "chunk_id": "15275e38-55bc-59f0-a822-4d575b5c2176",
+            "doc_ref": "retention-a@v1#retention",
+            "document_version": "v1",
+            "title": "保留规范甲",
+            "source": "repo://hybrid-demo/retention-a",
+            "section": "保留时限",
+            "section_id": "retention",
+            "page": null,
+            "start": 0,
+            "end": 46,
+            "text": "保留规范甲规定：演示检索记录保留7天，随后删除；这是甲团队的技术建议，不是全公司的统一规则。",
+            "text_sha256": "56b32343a2119d94cfe76d2baabc480e2bfc03ab0b004c37a3af32596421c7e5",
+            "score": 0.050028730673966904
+          }
+        ]
+      }
+    }
+  ],
+  "total_embedding_calls": 42,
+  "total_rerank_calls": 20
+}

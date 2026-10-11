@@ -1,0 +1,59 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.13, pytest-9.1.1, pluggy-1.6.0
+rootdir: D:\Project\rag-portfolio
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.15.1, asyncio-1.4.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collected 251 items
+
+tests\test_api.py ........                                               [  3%]
+tests\test_config.py ....                                                [  4%]
+tests\test_demo_retrieval.py ........................                    [ 14%]
+tests\test_dense_retrieval.py ...sssss                                   [ 17%]
+tests\test_embedding.py .....................................            [ 32%]
+tests\test_evaluation.py ...........sssssssss...........                 [ 44%]
+tests\test_evaluation_v2.py ...................................          [ 58%]
+tests\test_hybrid_retrieval.py .........................                 [ 68%]
+tests\test_import_documents.py ..............ssssss                      [ 76%]
+tests\test_jobs.py ssssss                                                [ 78%]
+tests\test_medical_experiment.py .........                               [ 82%]
+tests\test_medical_v2.py ............                                    [ 87%]
+tests\test_medical_v3.py ...............                                 [ 93%]
+tests\test_schema.py sssssss                                             [ 96%]
+tests\test_vector.py ..........                                          [100%]
+
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  D:\Project\rag-portfolio\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+.venv\Lib\site-packages\starlette\testclient.py:53
+  D:\Project\rag-portfolio\.venv\Lib\site-packages\starlette\testclient.py:53: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = Callable[[], AbstractContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_dense_retrieval.py:125: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [4] tests\test_dense_retrieval.py:143: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_evaluation.py:204: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [8] tests\test_evaluation.py:216: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:276: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:297: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:316: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:346: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:390: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_import_documents.py:413: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:31: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:49: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:58: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:71: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:82: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_jobs.py:95: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_schema.py:72: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_schema.py:86: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_schema.py:94: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [2] tests\test_schema.py:120: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_schema.py:144: Use uv run python tools/test.py for isolated PostgreSQL tests
+SKIPPED [1] tests\test_schema.py:161: Use uv run python tools/test.py for isolated PostgreSQL tests
+================= 218 passed, 33 skipped, 2 warnings in 4.96s =================

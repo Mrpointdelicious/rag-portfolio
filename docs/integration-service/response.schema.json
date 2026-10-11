@@ -1,0 +1,310 @@
+{
+  "$defs": {
+    "Snippet": {
+      "additionalProperties": false,
+      "properties": {
+        "source_id": {
+          "format": "uuid",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "chunk_id": {
+          "format": "uuid",
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "doc_ref": {
+          "maxLength": 200,
+          "pattern": "^[a-z0-9-]+@[a-z0-9-]+#[a-z0-9-]+$",
+          "title": "Doc Ref",
+          "type": "string"
+        },
+        "document_version": {
+          "maxLength": 80,
+          "pattern": "^[a-z0-9-]+$",
+          "title": "Document Version",
+          "type": "string"
+        },
+        "title": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "source": {
+          "maxLength": 500,
+          "pattern": "^(?:repo|https)://[^\\s]+$",
+          "title": "Source",
+          "type": "string"
+        },
+        "section": {
+          "maxLength": 200,
+          "minLength": 1,
+          "title": "Section",
+          "type": "string"
+        },
+        "section_id": {
+          "maxLength": 80,
+          "pattern": "^[a-z0-9-]+$",
+          "title": "Section Id",
+          "type": "string"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "integer"
+        },
+        "text": {
+          "maxLength": 1600,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "text_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Text Sha256",
+          "type": "string"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id",
+        "doc_ref",
+        "document_version",
+        "title",
+        "source",
+        "section",
+        "section_id",
+        "start",
+        "end",
+        "text",
+        "text_sha256",
+        "score"
+      ],
+      "title": "Snippet",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "retrieval-v1",
+      "default": "retrieval-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "format": "uuid",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "retrieval_run_id": {
+      "format": "uuid",
+      "title": "Retrieval Run Id",
+      "type": "string"
+    },
+    "backend": {
+      "const": "portfolio_hybrid",
+      "default": "portfolio_hybrid",
+      "title": "Backend",
+      "type": "string"
+    },
+    "strategy": {
+      "enum": [
+        "bm25",
+        "dense",
+        "hybrid",
+        "hybrid_rerank",
+        "hybrid_selection"
+      ],
+      "title": "Strategy",
+      "type": "string"
+    },
+    "approval": {
+      "const": "technical_demo_only",
+      "default": "technical_demo_only",
+      "title": "Approval",
+      "type": "string"
+    },
+    "clinical_approval": {
+      "const": false,
+      "default": false,
+      "title": "Clinical Approval",
+      "type": "boolean"
+    },
+    "scope_key": {
+      "title": "Scope Key",
+      "type": "string"
+    },
+    "domain": {
+      "enum": [
+        "health",
+        "product",
+        "help"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "corpus_version": {
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "corpus_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Corpus Sha256",
+      "type": "string"
+    },
+    "index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Index Sha256",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "success",
+        "partial",
+        "unavailable",
+        "failed"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "code": {
+      "title": "Code",
+      "type": "string"
+    },
+    "elapsed_ms": {
+      "minimum": 0,
+      "title": "Elapsed Ms",
+      "type": "number"
+    },
+    "reranker_used": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Reranker Used"
+    },
+    "rerank_applied": {
+      "title": "Rerank Applied",
+      "type": "boolean"
+    },
+    "degradation": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Degradation",
+      "type": "array"
+    },
+    "candidate_count": {
+      "maximum": 80,
+      "minimum": 0,
+      "title": "Candidate Count",
+      "type": "integer"
+    },
+    "post_rerank_count": {
+      "maximum": 80,
+      "minimum": 0,
+      "title": "Post Rerank Count",
+      "type": "integer"
+    },
+    "selected_count": {
+      "maximum": 6,
+      "minimum": 0,
+      "title": "Selected Count",
+      "type": "integer"
+    },
+    "budget_truncated": {
+      "title": "Budget Truncated",
+      "type": "boolean"
+    },
+    "context_tokens_estimated": {
+      "minimum": 0,
+      "title": "Context Tokens Estimated",
+      "type": "integer"
+    },
+    "token_estimator": {
+      "const": "utf8-bytes-upper-bound-v1",
+      "default": "utf8-bytes-upper-bound-v1",
+      "title": "Token Estimator",
+      "type": "string"
+    },
+    "model_calls": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "title": "Model Calls",
+      "type": "object"
+    },
+    "stages": {
+      "additionalProperties": true,
+      "title": "Stages",
+      "type": "object"
+    },
+    "evidence": {
+      "items": {
+        "$ref": "#/$defs/Snippet"
+      },
+      "maxItems": 6,
+      "title": "Evidence",
+      "type": "array"
+    },
+    "signature": {
+      "default": "",
+      "title": "Signature",
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_id",
+    "retrieval_run_id",
+    "strategy",
+    "scope_key",
+    "domain",
+    "corpus_version",
+    "corpus_sha256",
+    "index_sha256",
+    "status",
+    "code",
+    "elapsed_ms",
+    "reranker_used",
+    "rerank_applied",
+    "degradation",
+    "candidate_count",
+    "post_rerank_count",
+    "selected_count",
+    "budget_truncated",
+    "context_tokens_estimated",
+    "model_calls",
+    "stages",
+    "evidence"
+  ],
+  "title": "RetrievalResponse",
+  "type": "object"
+}

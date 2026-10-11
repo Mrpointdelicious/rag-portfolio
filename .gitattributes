@@ -1,4 +1,4 @@
 # These byte-pinned artifacts must survive Windows checkout without newline conversion.
-fixtures/hybrid_demo/*.json -text
-tests/fixtures/hybrid_eval/*.json -text
-docs/acceptance/hybrid-2026-10-11/** -text
+fixtures/hybrid_demo/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+tests/fixtures/hybrid_eval/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+docs/acceptance/hybrid-2026-10-11/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

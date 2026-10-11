@@ -1,0 +1,11 @@
+{
+  "execution": "real owned ephemeral PostgreSQL; no existing DB contacted",
+  "port": 5496,
+  "steps": [
+    {
+      "step": "create",
+      "exit": 125
+    }
+  ],
+  "cleanup_complete": false
+}

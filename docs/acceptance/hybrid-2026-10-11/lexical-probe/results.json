@@ -1,0 +1,426 @@
+{
+  "execution": "real provider + real TCP; supplementary probe, original Gold unchanged",
+  "probe_sha256": "a6d42de835a9bd6869ab95f5c9e06682ccd282b5a3f29f5381ff2dbc41413c3e",
+  "probe": {
+    "schema_version": "supplementary-lexical-probe-v1",
+    "license": "CC0-1.0",
+    "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+    "query": "How can backpressure slow a producer before its consumer is overwhelmed?",
+    "expected_ref": "queue-guide@v1#flow",
+    "scope": "independent supplementary sample; never combined with original suite metrics"
+  },
+  "cases": [
+    {
+      "strategy": "bm25",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "98cb86e1-daa4-4742-8451-e80bbae5c5d4",
+        "retrieval_run_id": "6a552bdd-dc23-4a38-9f16-cdb214540d5c",
+        "backend": "portfolio_hybrid",
+        "strategy": "bm25",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "unavailable",
+        "code": "no_evidence",
+        "elapsed_ms": 0.0,
+        "reranker_used": null,
+        "rerank_applied": false,
+        "degradation": [],
+        "candidate_count": 0,
+        "post_rerank_count": 0,
+        "selected_count": 0,
+        "budget_truncated": false,
+        "context_tokens_estimated": 0,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 0,
+          "rerank": 0
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "bm25_rejected_weak_overlap": [],
+          "dense": [],
+          "bm25": [],
+          "rrf": [],
+          "rerank": [],
+          "rerank_provider": {},
+          "selection": []
+        },
+        "evidence": []
+      },
+      "expected_ref_present": false
+    },
+    {
+      "strategy": "dense",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "8223cb0a-5646-461e-a553-4dca348f20f5",
+        "retrieval_run_id": "d2899a88-d355-4f35-a829-67ed51414d40",
+        "backend": "portfolio_hybrid",
+        "strategy": "dense",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 562.0000000053551,
+        "reranker_used": null,
+        "rerank_applied": false,
+        "degradation": [],
+        "candidate_count": 1,
+        "post_rerank_count": 1,
+        "selected_count": 1,
+        "budget_truncated": false,
+        "context_tokens_estimated": 618,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 0
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "1ed537214bf7e193068b5a46aa1acfc5bf85e07d7b218a775d2b4470d27b2343",
+          "embedding_provider": {
+            "request_id": "88e2d85c-905b-9393-bd5e-de84c7057ea8",
+            "usage": {
+              "total_tokens": 29
+            }
+          },
+          "dense": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ],
+          "bm25": [],
+          "rrf": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ],
+          "rerank": [],
+          "rerank_provider": {},
+          "selection": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "f95602ed-6aea-57a0-a007-3ffbf57aca6f",
+            "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "doc_ref": "queue-guide@v1#flow",
+            "document_version": "v1",
+            "title": "排队调节说明",
+            "source": "repo://hybrid-demo/queue-guide",
+            "section": "过载调节",
+            "section_id": "flow",
+            "page": null,
+            "start": 0,
+            "end": 65,
+            "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+            "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+            "score": 0.7520684025953978
+          }
+        ]
+      },
+      "expected_ref_present": true
+    },
+    {
+      "strategy": "hybrid",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "deccb3ff-266f-4efa-9449-122d4f2400df",
+        "retrieval_run_id": "4453438b-82df-40bb-b74c-05da7eefb2df",
+        "backend": "portfolio_hybrid",
+        "strategy": "hybrid",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 125.0,
+        "reranker_used": null,
+        "rerank_applied": false,
+        "degradation": [],
+        "candidate_count": 1,
+        "post_rerank_count": 1,
+        "selected_count": 1,
+        "budget_truncated": false,
+        "context_tokens_estimated": 619,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 0
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "1ed537214bf7e193068b5a46aa1acfc5bf85e07d7b218a775d2b4470d27b2343",
+          "embedding_provider": {
+            "request_id": "e28cd178-b18b-9451-bd23-3f0dc0ac3e2a",
+            "usage": {
+              "total_tokens": 29
+            }
+          },
+          "bm25_rejected_weak_overlap": [],
+          "dense": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ],
+          "bm25": [],
+          "rrf": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.01639344262295082
+            }
+          ],
+          "rerank": [],
+          "rerank_provider": {},
+          "selection": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.01639344262295082
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "f95602ed-6aea-57a0-a007-3ffbf57aca6f",
+            "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "doc_ref": "queue-guide@v1#flow",
+            "document_version": "v1",
+            "title": "排队调节说明",
+            "source": "repo://hybrid-demo/queue-guide",
+            "section": "过载调节",
+            "section_id": "flow",
+            "page": null,
+            "start": 0,
+            "end": 65,
+            "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+            "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+            "score": 0.01639344262295082
+          }
+        ]
+      },
+      "expected_ref_present": true
+    },
+    {
+      "strategy": "hybrid_rerank",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "17a403ea-8343-4790-87ea-4d3726e45399",
+        "retrieval_run_id": "cfcafc00-319f-4d73-9d5f-002bd8506737",
+        "backend": "portfolio_hybrid",
+        "strategy": "hybrid_rerank",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 343.99999999732245,
+        "reranker_used": "qwen3.7-text-rerank",
+        "rerank_applied": true,
+        "degradation": [],
+        "candidate_count": 1,
+        "post_rerank_count": 1,
+        "selected_count": 1,
+        "budget_truncated": false,
+        "context_tokens_estimated": 618,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 1
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "1ed537214bf7e193068b5a46aa1acfc5bf85e07d7b218a775d2b4470d27b2343",
+          "embedding_provider": {
+            "request_id": "87b6f107-934c-919d-8dd7-64067d6760e2",
+            "usage": {
+              "total_tokens": 29
+            }
+          },
+          "bm25_rejected_weak_overlap": [],
+          "dense": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ],
+          "bm25": [],
+          "rrf": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.01639344262295082
+            }
+          ],
+          "rerank": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.8473362305809964
+            }
+          ],
+          "rerank_provider": {
+            "request_id": "c410b917-cfdb-92c1-bd82-4ee529b26af6",
+            "usage": {
+              "prompt_tokens": 122,
+              "total_tokens": 122
+            }
+          },
+          "selection": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.8473362305809964
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "f95602ed-6aea-57a0-a007-3ffbf57aca6f",
+            "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "doc_ref": "queue-guide@v1#flow",
+            "document_version": "v1",
+            "title": "排队调节说明",
+            "source": "repo://hybrid-demo/queue-guide",
+            "section": "过载调节",
+            "section_id": "flow",
+            "page": null,
+            "start": 0,
+            "end": 65,
+            "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+            "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+            "score": 0.8473362305809964
+          }
+        ]
+      },
+      "expected_ref_present": true
+    },
+    {
+      "strategy": "hybrid_selection",
+      "http": 200,
+      "response": {
+        "schema_version": "retrieval-v1",
+        "request_id": "9a7ff93a-5d93-48f4-9769-6fb97e03977e",
+        "retrieval_run_id": "7ac15fa4-244a-415f-af0c-5debfc68fae8",
+        "backend": "portfolio_hybrid",
+        "strategy": "hybrid_selection",
+        "approval": "technical_demo_only",
+        "clinical_approval": false,
+        "scope_key": "hybrid-demo",
+        "domain": "help",
+        "corpus_version": "technical-hybrid-v1",
+        "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+        "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+        "status": "success",
+        "code": "ok",
+        "elapsed_ms": 187.0000000053551,
+        "reranker_used": "qwen3.7-text-rerank",
+        "rerank_applied": true,
+        "degradation": [],
+        "candidate_count": 1,
+        "post_rerank_count": 1,
+        "selected_count": 1,
+        "budget_truncated": false,
+        "context_tokens_estimated": 618,
+        "token_estimator": "utf8-bytes-upper-bound-v1",
+        "model_calls": {
+          "embedding": 1,
+          "rerank": 1
+        },
+        "stages": {
+          "embedding_model": "qwen3.7-text-embedding",
+          "dimension": 1024,
+          "query_vector_sha256": "1ed537214bf7e193068b5a46aa1acfc5bf85e07d7b218a775d2b4470d27b2343",
+          "embedding_provider": {
+            "request_id": "1e6771f3-a03f-9dae-a94c-c6d8c55b6bc8",
+            "usage": {
+              "total_tokens": 29
+            }
+          },
+          "bm25_rejected_weak_overlap": [],
+          "dense": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.7520684025953978
+            }
+          ],
+          "bm25": [],
+          "rrf": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.01639344262295082
+            }
+          ],
+          "rerank": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.8473362305809964
+            }
+          ],
+          "rerank_provider": {
+            "request_id": "0e38b0fd-abc9-94f9-aac0-efe867c5a504",
+            "usage": {
+              "prompt_tokens": 122,
+              "total_tokens": 122
+            }
+          },
+          "selection": [
+            {
+              "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+              "score": 0.8473362305809964
+            }
+          ]
+        },
+        "evidence": [
+          {
+            "source_id": "f95602ed-6aea-57a0-a007-3ffbf57aca6f",
+            "chunk_id": "d5b2d642-557e-5661-a4fb-aab725d614f7",
+            "doc_ref": "queue-guide@v1#flow",
+            "document_version": "v1",
+            "title": "排队调节说明",
+            "source": "repo://hybrid-demo/queue-guide",
+            "section": "过载调节",
+            "section_id": "flow",
+            "page": null,
+            "start": 0,
+            "end": 65,
+            "text": "生产者速度持续超过消费者时，应让生产者暂缓投递，直到队列恢复空闲容量；该机制保护消费者，防止积压无限增长。演示没有给出具体吞吐量。",
+            "text_sha256": "e3cc8f1476ea10652026350e81d8c8d320b5d86dfa95b17db0d512a8cad09f99",
+            "score": 0.8473362305809964
+          }
+        ]
+      },
+      "expected_ref_present": true
+    }
+  ]
+}

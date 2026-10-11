@@ -107,3 +107,8 @@ docs/                  # 架构、开发路线、来源及验证记录
 ```
 
 [架构说明](docs/architecture.md) · [开发路线](docs/roadmap.md) · [来源与独立化说明](docs/origin.md) · [本仓库验证记录](docs/verification.md) · [文档导入工具](docs/importing-documents.md)
+
+
+## 隔离只读 Hybrid 服务
+
+新增独立 `POST /v1/experimental/hybrid/retrieve`（retrieval-v1），实时 query Embedding + cosine Dense、BM25/RRF、真实 Qwen 重排、整段来源预算打包。静态8份CC0文档/15chunks，Gold与运行时分离；默认关闭，非生产/无患者，双pin与签名校验。旧demo和正式501接口兼容。见[验收结论](docs/integration-service/00-executive-summary.md)、[运行方法](docs/integration-service/05-runtime-and-deployment.md)、[五个 Review 问题](docs/integration-service/06-review-guide.md)。答案语义仍为PARTIAL。

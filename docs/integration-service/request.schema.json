@@ -1,0 +1,90 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "retrieval-v1",
+      "default": "retrieval-v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "format": "uuid",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "query": {
+      "maxLength": 4000,
+      "minLength": 1,
+      "title": "Query",
+      "type": "string"
+    },
+    "domain": {
+      "default": "health",
+      "enum": [
+        "health",
+        "product",
+        "help"
+      ],
+      "title": "Domain",
+      "type": "string"
+    },
+    "scope_key": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Scope Key",
+      "type": "string"
+    },
+    "corpus_version": {
+      "maxLength": 100,
+      "minLength": 1,
+      "title": "Corpus Version",
+      "type": "string"
+    },
+    "corpus_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Corpus Sha256",
+      "type": "string"
+    },
+    "index_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Index Sha256",
+      "type": "string"
+    },
+    "strategy": {
+      "default": "hybrid_selection",
+      "enum": [
+        "bm25",
+        "dense",
+        "hybrid",
+        "hybrid_rerank",
+        "hybrid_selection"
+      ],
+      "title": "Strategy",
+      "type": "string"
+    },
+    "top_k": {
+      "default": 6,
+      "maximum": 6,
+      "minimum": 1,
+      "title": "Top K",
+      "type": "integer"
+    },
+    "context_budget": {
+      "default": 6000,
+      "maximum": 12000,
+      "minimum": 100,
+      "title": "Context Budget",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "request_id",
+    "query",
+    "scope_key",
+    "corpus_version",
+    "corpus_sha256",
+    "index_sha256"
+  ],
+  "title": "RetrievalQuery",
+  "type": "object"
+}

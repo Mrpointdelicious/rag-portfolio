@@ -1,0 +1,8 @@
+{
+  "schema_version": "supplementary-lexical-probe-v1",
+  "license": "CC0-1.0",
+  "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+  "query": "How can backpressure slow a producer before its consumer is overwhelmed?",
+  "expected_ref": "queue-guide@v1#flow",
+  "scope": "independent supplementary sample; never combined with original suite metrics"
+}

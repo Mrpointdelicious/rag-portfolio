@@ -1,0 +1,13 @@
+{
+  "schema_version": "retrieval-v1",
+  "request_id": "f91c0470-8d97-4a4d-a4ee-50711db4c449",
+  "query": "方案乙离线建向量以后，在线收到一个陌生提问会怎样寻找原文？",
+  "domain": "help",
+  "scope_key": "hybrid-demo",
+  "corpus_version": "technical-hybrid-v1",
+  "corpus_sha256": "b312a323511dda3905f01b8f7c7cb6987ecf096ea17620532355e22552eb022d",
+  "index_sha256": "5dfb67dad10579dded584d9b846fe7c87da47ff1820f58e51bfa56c333cc5edd",
+  "strategy": "hybrid_selection",
+  "top_k": 6,
+  "context_budget": 10000
+}
