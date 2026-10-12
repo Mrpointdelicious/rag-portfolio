@@ -126,3 +126,5 @@ docs/                  # 架构、开发路线、来源及验证记录
 [合成患者预发v1](docs/synthetic-preproduction-v1-results.md)已实现专用授权/出口/撤销契约原型：冻结60项工程条件通过，另有真实Hybrid/Reranker/生成链路检查。原生Agent与既有患者后端尚未接通这些新策略，真实患者和生产仍不接入；此前业务问题与待审集合继续保留。
 
 [原生单Agent合成接入v2](docs/synthetic-native-v2-results.md)把策略接入原生工具循环、缓存、模型与发布检查，验证IReGo/IReTour响应映射；专用入口不自动挂载到默认应用。真实患者和生产仍为NOT_READY，原业务待改进集合继续保留。
+
+[共享授权与.NET合成联调v3](docs/shared-authority-v3-results.md)完成实际.NET控制器主体契约、共享PostgreSQL授权、原生患者运行的进程恢复及物理清理验证，41项固定条件通过。真实登录、租户/跨库映射、实际业务Repository和独立临床审核仍待完成，生产接入继续NOT_READY。

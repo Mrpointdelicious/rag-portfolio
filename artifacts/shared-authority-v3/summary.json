@@ -1,0 +1,500 @@
+{
+  "schema": "shared-authority-v3-results",
+  "engineering": "PASS",
+  "business": "PARTIAL",
+  "promotion": "NOT_PROMOTED",
+  "real_patient": "NOT_READY",
+  "synthetic_only": true,
+  "clinical_approval": false,
+  "actual_supplier_requests": 0,
+  "contract": {
+    "total": 41,
+    "passed": 41,
+    "seal": {
+      "schema": "shared-authority-v3",
+      "frozen_at": "2026-10-12T10:42:59.223922+00:00",
+      "cases_sha256": "f19fb78cd03aa326a8864cf665b76ef3299ce63dbf1b3f347c5288503506d88a",
+      "case_count": 36,
+      "engineering_only": true,
+      "synthetic_only": true,
+      "clinical_approval": false,
+      "acceptance": "All conditions actually exercised and pass; all failed attempts retained"
+    },
+    "addendum_seal": {
+      "frozen_at": "2026-10-12T10:54:16.625816+00:00",
+      "cases_sha256": "86d16da913b37dd6e09a023f9dd1cdfdf01a12d78ef0242030eeccd43a0035a3",
+      "case_count": 4,
+      "engineering_only": true,
+      "synthetic_only": true,
+      "clinical_approval": false
+    },
+    "recovery_seal": {
+      "frozen_at": "2026-10-12T11:07:15.515787+00:00",
+      "cases_sha256": "60e25c7eea144ae60275370d5ea716404ad5af55769a0b9eccc706151e4bad37",
+      "case_count": 1,
+      "engineering_only": true,
+      "synthetic_only": true,
+      "clinical_approval": false
+    },
+    "cases": [
+      {
+        "id": "A01",
+        "condition": "patient session derives actor and role from server login fixture",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A02",
+        "condition": "clinician with relationship obtains session",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A03",
+        "condition": "operator cannot obtain patient session",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "A04",
+        "condition": "unlinked actor denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "A05",
+        "condition": "different tenant denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "A06",
+        "condition": "client role injection rejected",
+        "passed": true,
+        "evidence": {
+          "http_status": 422
+        }
+      },
+      {
+        "id": "A07",
+        "condition": "wrong issuer rejected by shared authority",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "A08",
+        "condition": "wrong audience rejected by .NET",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "A09",
+        "condition": "tampered signature rejected by .NET",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "A10",
+        "condition": "expired subject rejected by .NET",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "A11",
+        "condition": ".NET body user conflict rejected",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "A12",
+        "condition": ".NET body session conflict rejected",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "A13",
+        "condition": "actual .NET profile controller returns bound synthetic DTO",
+        "passed": true,
+        "evidence": {
+          "http_status": 200
+        }
+      },
+      {
+        "id": "A14",
+        "condition": "native combined run completes using .NET and PostgreSQL",
+        "passed": true,
+        "evidence": {
+          "native_status": "succeeded"
+        }
+      },
+      {
+        "id": "A15",
+        "condition": "native record run completes with zero model calls",
+        "passed": true,
+        "evidence": {
+          "http_status": 200
+        }
+      },
+      {
+        "id": "A29",
+        "condition": "cross actor snapshot denied",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A16",
+        "condition": "OS agent process restart preserves authorized snapshot",
+        "passed": true,
+        "evidence": {
+          "process_restarted": true,
+          "http_status": 200
+        }
+      },
+      {
+        "id": "A17",
+        "condition": "second native worker on same DB refused",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A18",
+        "condition": "revocation immediately blocks .NET process",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A19",
+        "condition": "revocation blocks native snapshot",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A20",
+        "condition": "revocation blocks knowledge process",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A30",
+        "condition": "revoked citation replay denied",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A35",
+        "condition": "revoked event replay denied",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A32",
+        "condition": "OS authority restart preserves revocation",
+        "passed": true,
+        "evidence": {
+          "process_restarted": true
+        }
+      },
+      {
+        "id": "A21",
+        "condition": "regrant does not revive old token",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A22",
+        "condition": "same session cannot change grant generation",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A23",
+        "condition": "new generation and new session complete",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A26",
+        "condition": "old generation and different actor cannot read new run",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A36",
+        "condition": "OS .NET process restart retains current shared authorization",
+        "passed": true,
+        "evidence": {
+          "process_restarted": true
+        }
+      },
+      {
+        "id": "A24",
+        "condition": "authority offline .NET fails closed",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A25",
+        "condition": "authority offline native snapshot fails closed",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A34",
+        "condition": "missing .NET subject rejected",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "A31",
+        "condition": "actual native model messages contain no patient canaries or values",
+        "passed": true,
+        "evidence": {
+          "captured_model_calls": 4,
+          "supplier_requests": 0
+        }
+      },
+      {
+        "id": "A33",
+        "condition": "linked backend source files remain byte identical",
+        "passed": true,
+        "evidence": {
+          "linked_sources": 3
+        }
+      },
+      {
+        "id": "A37",
+        "condition": "concurrent grants have unique monotonically increasing generations",
+        "passed": true,
+        "evidence": {
+          "committed_generations": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      },
+      {
+        "id": "A38",
+        "condition": "concurrent session binding cannot select two patients",
+        "passed": true,
+        "evidence": {
+          "successful_bindings": 1
+        }
+      },
+      {
+        "id": "A40",
+        "condition": ".NET revocation during controller execution blocks result serialization",
+        "passed": true,
+        "evidence": {
+          "controller_entered": true,
+          "final_http_status": 403
+        }
+      },
+      {
+        "id": "A27",
+        "condition": "expired wrapper cleanup removes all scoped store entries",
+        "passed": true,
+        "evidence": {
+          "physical_rows_before": {
+            "checkpoints": 10,
+            "checkpoint_blobs": 14,
+            "checkpoint_writes": 14,
+            "store": 172
+          },
+          "physical_rows_after": {
+            "checkpoints": 0,
+            "checkpoint_blobs": 0,
+            "checkpoint_writes": 0,
+            "store": 1
+          },
+          "wrappers_after": 0
+        }
+      },
+      {
+        "id": "A28",
+        "condition": "expired wrapper cleanup physically removes checkpoint rows and blobs",
+        "passed": true,
+        "evidence": {
+          "physical_rows_before": {
+            "checkpoints": 10,
+            "checkpoint_blobs": 14,
+            "checkpoint_writes": 14,
+            "store": 172
+          },
+          "physical_rows_after": {
+            "checkpoints": 0,
+            "checkpoint_blobs": 0,
+            "checkpoint_writes": 0,
+            "store": 1
+          }
+        }
+      },
+      {
+        "id": "A39",
+        "condition": "cleanup across multiple pages preserves adjacent live scope and is idempotent",
+        "passed": true,
+        "evidence": {
+          "pagination_rows": 151,
+          "retained_live_rows": 1,
+          "second_cleanup_exit": 0
+        }
+      },
+      {
+        "id": "A41",
+        "condition": "expired wrapper cleanup removes conversation after regular run TTL has already deleted its run row",
+        "passed": true,
+        "evidence": {
+          "prior_run_deleted": true,
+          "orphan_conversation_existed": true,
+          "retained_live_rows": 1
+        }
+      }
+    ],
+    "cleanup_complete": true
+  },
+  "attempts": {
+    "contracts-run-1": {
+      "status": "FAIL",
+      "passed": 34,
+      "total": 36
+    },
+    "contracts-run-2": {
+      "status": "PASS",
+      "passed": 36,
+      "total": 36
+    },
+    "contracts-run-3": {
+      "status": "PASS",
+      "passed": 40,
+      "total": 40
+    },
+    "contracts-run-4": {
+      "status": "PASS",
+      "passed": 40,
+      "total": 40
+    },
+    "contracts-run-5": {
+      "status": "PASS",
+      "passed": 41,
+      "total": 41
+    },
+    "contracts-run-6": {
+      "status": "PASS",
+      "passed": 41,
+      "total": 41
+    }
+  },
+  "regressions": {
+    "v1-security-regression": {
+      "total": 60,
+      "passed": 60,
+      "semantic": "NOT_ASSESSED"
+    },
+    "v2-native-regression-2": {
+      "total": 42,
+      "passed": 42,
+      "semantic": "NOT_ASSESSED"
+    }
+  },
+  "full_suite": {
+    "passed": {
+      "rag": 284,
+      "meta": 372
+    },
+    "result": {
+      "execution": "real owned ephemeral PostgreSQL; no existing DB contacted",
+      "port": 56034,
+      "steps": [
+        {
+          "step": "create",
+          "exit": 0
+        },
+        {
+          "step": "rag-isolated-suite",
+          "exit": 0
+        },
+        {
+          "step": "meta-isolated-suite",
+          "exit": 0
+        },
+        {
+          "step": "remove-owned-container",
+          "exit": 0
+        }
+      ],
+      "cleanup_complete": true
+    }
+  },
+  "new_review": {
+    "records": 2,
+    "independent_review": "NOT_ASSESSED",
+    "controlled_model": true,
+    "private_sha256": "7b3daa6307d25d75108896bdc288ec784bbdca2ce5f28625b3505ddc80226909"
+  },
+  "preserved_issues": [
+    "original_12_incomplete",
+    "E09_unstable",
+    "B07_independent_history_analysis_missing",
+    "partial-heldout-positive_anchor_missing",
+    "support-heldout-positive_anchor_missing"
+  ],
+  "historical_review_queues": [
+    {
+      "records": 297,
+      "units": 1924,
+      "status": "NOT_ASSESSED"
+    },
+    {
+      "records": 125,
+      "units": 1097,
+      "status": "NOT_ASSESSED"
+    }
+  ],
+  "limitations": [
+    "synthetic server login only; no production SSO",
+    "linked actual controllers with fixture services; no real repository calls",
+    "net10 fixture host does not prove net6 production deployment",
+    "completed snapshot restart only; no interrupted native task resume",
+    "single native worker; no multi-replica claim",
+    "maintenance deletion while worker stopped; no backup/WAL erasure claim",
+    "no new supplier calls or clinical/business semantics acceptance",
+    "current backend dependency NU1903 warning remains"
+  ],
+  "delivery_audit": {
+    "status": "PASS",
+    "sha256": "674136e2df6c1f2c3d29ff1a2e80e968a4f09a85ea0835741b3d083fff7d250e",
+    "packages": 4,
+    "contexts": 2
+  }
+}

@@ -1,0 +1,36 @@
+{"id": "A01", "condition": "patient session derives actor and role from server login fixture"}
+{"id": "A02", "condition": "clinician with relationship obtains session"}
+{"id": "A03", "condition": "operator cannot obtain patient session"}
+{"id": "A04", "condition": "unlinked actor denied"}
+{"id": "A05", "condition": "different tenant denied"}
+{"id": "A06", "condition": "client role injection rejected"}
+{"id": "A07", "condition": "wrong issuer rejected by shared authority"}
+{"id": "A08", "condition": "wrong audience rejected by .NET"}
+{"id": "A09", "condition": "tampered signature rejected by .NET"}
+{"id": "A10", "condition": "expired subject rejected by .NET"}
+{"id": "A11", "condition": ".NET body user conflict rejected"}
+{"id": "A12", "condition": ".NET body session conflict rejected"}
+{"id": "A13", "condition": "actual .NET profile controller returns bound synthetic DTO"}
+{"id": "A14", "condition": "native combined run completes using .NET and PostgreSQL"}
+{"id": "A15", "condition": "native record run completes with zero model calls"}
+{"id": "A16", "condition": "OS agent process restart preserves authorized snapshot"}
+{"id": "A17", "condition": "second native worker on same DB refused"}
+{"id": "A18", "condition": "revocation immediately blocks .NET process"}
+{"id": "A19", "condition": "revocation blocks native snapshot"}
+{"id": "A20", "condition": "revocation blocks knowledge process"}
+{"id": "A21", "condition": "regrant does not revive old token"}
+{"id": "A22", "condition": "same session cannot change grant generation"}
+{"id": "A23", "condition": "new generation and new session complete"}
+{"id": "A24", "condition": "authority offline .NET fails closed"}
+{"id": "A25", "condition": "authority offline native snapshot fails closed"}
+{"id": "A26", "condition": "old generation and different actor cannot read new run"}
+{"id": "A27", "condition": "expired wrapper cleanup removes all scoped store entries"}
+{"id": "A28", "condition": "expired wrapper cleanup physically removes checkpoint rows and blobs"}
+{"id": "A29", "condition": "cross actor snapshot denied"}
+{"id": "A30", "condition": "revoked citation replay denied"}
+{"id": "A31", "condition": "actual native model messages contain no patient canaries or values"}
+{"id": "A32", "condition": "OS authority restart preserves revocation"}
+{"id": "A33", "condition": "linked backend source files remain byte identical"}
+{"id": "A34", "condition": "missing .NET subject rejected"}
+{"id": "A35", "condition": "revoked event replay denied"}
+{"id": "A36", "condition": "OS .NET process restart retains current shared authorization"}

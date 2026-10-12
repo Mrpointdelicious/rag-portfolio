@@ -1,0 +1,10 @@
+{
+  "schema": "shared-authority-v3",
+  "frozen_at": "2026-10-12T10:42:59.223922+00:00",
+  "cases_sha256": "f19fb78cd03aa326a8864cf665b76ef3299ce63dbf1b3f347c5288503506d88a",
+  "case_count": 36,
+  "engineering_only": true,
+  "synthetic_only": true,
+  "clinical_approval": false,
+  "acceptance": "All conditions actually exercised and pass; all failed attempts retained"
+}

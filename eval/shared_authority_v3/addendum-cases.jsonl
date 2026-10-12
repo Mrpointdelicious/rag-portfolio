@@ -1,0 +1,4 @@
+{"id": "A37", "condition": "concurrent grants have unique monotonically increasing generations"}
+{"id": "A38", "condition": "concurrent session binding cannot select two patients"}
+{"id": "A39", "condition": "cleanup across multiple pages preserves adjacent live scope and is idempotent"}
+{"id": "A40", "condition": ".NET revocation during controller execution blocks result serialization"}

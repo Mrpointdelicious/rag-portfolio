@@ -17,3 +17,6 @@ artifacts/synthetic-preproduction-v1/*.json -text
 eval/synthetic_native_v2/*.json -text
 eval/synthetic_native_v2/*.jsonl -text
 artifacts/synthetic-native-v2/*.json -text
+eval/shared_authority_v3/*.json -text
+eval/shared_authority_v3/*.jsonl -text
+artifacts/shared-authority-v3/*.json -text

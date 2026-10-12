@@ -1,0 +1,74 @@
+{
+  "packages": [
+    {
+      "repo": "rag",
+      "file": "rag_portfolio-0.1.0-py3-none-any.whl",
+      "sha256": "6892393292dd70c196684d9781968c14e10bb66bacd9608f5642a6c485d7966c",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "rag",
+      "file": "rag_portfolio-0.1.0.tar.gz",
+      "sha256": "ed56e806d601c8b69d03ef4f51ced8f9e649a17710015508ec4fc4b6d11ad41d",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "meta",
+      "file": "meta_agent-1.0.0-py3-none-any.whl",
+      "sha256": "a78005da68fa3e20b4ad7a6d85c616290165c72e6921745c52f3e54a714210bc",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "meta",
+      "file": "meta_agent-1.0.0.tar.gz",
+      "sha256": "fdf54403cde188a576bbac827ed6739ec3649ca0431f60db4d7ff4931f5b5146",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    }
+  ],
+  "contexts": [
+    {
+      "repo": "rag",
+      "forbidden": [],
+      "credential_matches": [],
+      "built": true,
+      "removed": true,
+      "files": 373
+    },
+    {
+      "repo": "meta",
+      "forbidden": [],
+      "credential_matches": [],
+      "built": true,
+      "removed": true,
+      "files": 353
+    }
+  ],
+  "preservation": {
+    "rag": {
+      "files": 335,
+      "changed": []
+    },
+    "meta": {
+      "files": 385,
+      "changed": []
+    },
+    "backend": {
+      "files": 189,
+      "changed": []
+    }
+  },
+  "credential_matches": [],
+  "clinical_approval": false,
+  "configured_values_logged": false,
+  "v2_review_queue_preserved": true,
+  "private_evidence_existing_key_matches": [],
+  "status": "PASS"
+}

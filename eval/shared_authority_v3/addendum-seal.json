@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-10-12T10:54:16.625816+00:00",
+  "cases_sha256": "86d16da913b37dd6e09a023f9dd1cdfdf01a12d78ef0242030eeccd43a0035a3",
+  "case_count": 4,
+  "engineering_only": true,
+  "synthetic_only": true,
+  "clinical_approval": false
+}
