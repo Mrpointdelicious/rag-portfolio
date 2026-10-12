@@ -1,0 +1,8 @@
+{
+  ".local/medical_business_v1/retrieval/dev-run-1/results.json": "54df0416534d5ad5d7f594e8e89a1ea111dfc24cf637c5e52b43a11c72a6e3d0",
+  ".local/medical_business_v1/retrieval/heldout-run-1/results.json": "fa2ab1c0623502827c3d2c33577a7b414627556824cd5eafdc53a952bcee92fa",
+  ".local/medical_business_v1/agent/dev-run-1/cases.json": "ef68e2a653acd0894076127de7a031bb5323d59b755577263423c131f2dfdc29",
+  ".local/medical_business_v1/agent/heldout-run-1/cases.json": "558bc33453078e40dfde436d8b40e9204bcc2261383e088d7f3c3520b6c8595e",
+  ".local/medical_business_v1/regressions/run-1/results.json": "ef05eac8488c7c9bfe7ffcab42160a7e0cb862b41cfd1e55af637fb8946a688f",
+  "eval/medical_business_v1/seal.json": "a9340e1f2016085d19d4d09a222d690c146ba235629a2473bd5b05fdd1c2c27f"
+}

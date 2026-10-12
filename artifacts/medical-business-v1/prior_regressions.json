@@ -1,0 +1,126 @@
+{
+  "execution": "existing unchanged MetaAgent tools; real models; all attempts retained",
+  "C_B": {
+    "repeats": 1,
+    "groups": {
+      "C": {
+        "turns": 19,
+        "original_pass": 17,
+        "original_failed_cases": [
+          "C09",
+          "C10"
+        ]
+      },
+      "B": {
+        "turns": 17,
+        "original_pass": 17,
+        "original_failed_cases": []
+      }
+    },
+    "existing_route_review": {
+      "turns": 36,
+      "original_pass": 34,
+      "route_corrected_pass": 36,
+      "lexical_alert_counts": {
+        "absence_wording": 5,
+        "plan_wording": 2
+      },
+      "c13_extra_calls": 1
+    },
+    "rubric": {
+      "version": "contract-route-review-v2",
+      "reason": "C09 disabled report needs no session read; C10 may use a queried history anchor.",
+      "frozen_inputs_unchanged": true,
+      "semantics": "NOT_ASSESSED; lexical alerts require review, not automatic error labels"
+    },
+    "not_comparable_to_historical_three_run_mean": true
+  },
+  "E02_E09": {
+    "repeats_each": 3,
+    "overall": "PARTIAL",
+    "rows": [
+      {
+        "case": "E02-1",
+        "runtime_status": "succeeded",
+        "returned_refs": [
+          "protocol-a@v1#intervention",
+          "protocol-a@v1#outcomes",
+          "protocol-a@v1#population",
+          "protocol-b@v1#intervention",
+          "protocol-b@v1#outcomes",
+          "protocol-b@v1#population"
+        ],
+        "model_calls": 2,
+        "answer_sha256": "4cc26cd49025e245a7e20eb048e48e9efdb4da783886c60d9a6932c8298e5052",
+        "bounded_manual_technical_annotation": "necessary multi-source evidence returned; not a full semantic score"
+      },
+      {
+        "case": "E09-1",
+        "runtime_status": "succeeded",
+        "returned_refs": [],
+        "model_calls": 1,
+        "answer_sha256": "50f14210809b7fc19b591a85e76f0de6165ad947f6dc8097aa76c84a031f31c5",
+        "bounded_manual_technical_annotation": "unfilled: asked clarification before any retrieval"
+      },
+      {
+        "case": "E02-2",
+        "runtime_status": "succeeded",
+        "returned_refs": [
+          "protocol-a@v1#intervention",
+          "protocol-a@v1#outcomes",
+          "protocol-a@v1#population",
+          "protocol-b@v1#intervention",
+          "protocol-b@v1#outcomes",
+          "protocol-b@v1#population"
+        ],
+        "model_calls": 2,
+        "answer_sha256": "03880f591d603a5da561684aecafb83c02f3041364eaeefe3c66e984400642a5",
+        "bounded_manual_technical_annotation": "necessary multi-source evidence returned; not a full semantic score"
+      },
+      {
+        "case": "E09-2",
+        "runtime_status": "succeeded",
+        "returned_refs": [
+          "protocol-a@v1#outcomes",
+          "protocol-b@v1#outcomes"
+        ],
+        "model_calls": 2,
+        "answer_sha256": "980cc6a202f957f3ff49b06a418f00dfa5f5643b58374c4eb86eb30e35b5ff5f",
+        "bounded_manual_technical_annotation": "partial: planned endpoints supported; overall inability to compare too broad"
+      },
+      {
+        "case": "E02-3",
+        "runtime_status": "succeeded",
+        "returned_refs": [
+          "protocol-a@v1#intervention",
+          "protocol-a@v1#outcomes",
+          "protocol-a@v1#population",
+          "protocol-b@v1#intervention",
+          "protocol-b@v1#outcomes",
+          "protocol-b@v1#population"
+        ],
+        "model_calls": 2,
+        "answer_sha256": "ac869f196b2f7644e4f4dc15a2325b8feb934595b2561bbaf952db5b6394b096",
+        "bounded_manual_technical_annotation": "necessary multi-source evidence returned; not a full semantic score"
+      },
+      {
+        "case": "E09-3",
+        "runtime_status": "succeeded",
+        "returned_refs": [
+          "protocol-a@v1#outcomes",
+          "protocol-b@v1#outcomes"
+        ],
+        "model_calls": 2,
+        "answer_sha256": "d3d96da651fe47a99101bdf9ff06050e01b8eae65ae272b95ff1b7a9cbd46a31",
+        "bounded_manual_technical_annotation": "partial: planned endpoints supported; overall inability to compare too broad"
+      }
+    ]
+  },
+  "clinical_approval": false,
+  "independent_human_review": "pending",
+  "raw_run_sha256": {
+    ".local/medical_business_v1/prior-regressions/contract-run-1/results.json": "3b55e205f466776d4f3045e8572fd6db6e5220f06c07b09e7464aaf0aa5646c7",
+    ".local/medical_business_v1/prior-regressions/contract-review-1.json": "66cd477e0e82b6cfca7649cdf4de70139cbe46b8ae31eeec904613a1a94bf097",
+    ".local/medical_business_v1/prior-regressions/remote-run-1/cases.json": "64b133effceeedd7d7380d617711bce39dcc494e488f2e814df8600a0dbf0916"
+  }
+}

@@ -1,5 +1,6 @@
 """Inspect real built packages and an owned Docker build-context snapshot; no push."""
 
+import argparse
 import json
 import subprocess
 import tarfile
@@ -46,7 +47,11 @@ def run(cmd, log):
     return completed.stdout.strip()
 
 
-def main():
+def main(*, local=LOCAL, output=None):
+    global LOCAL
+    LOCAL = local
+    output = output or ROOT / "artifacts/public-medical-corpus-v1/package_audit.json"
+    (LOCAL / "verification").mkdir(parents=True, exist_ok=True)
     dist = LOCAL / "dist-final"
     dist.mkdir(exist_ok=True)
     run(["uv", "build", "--out-dir", str(dist)], LOCAL / "verification/package-build.log")
@@ -66,7 +71,14 @@ def main():
                 "sha256": sha(file.read_bytes()),
                 "file_count": len(names),
                 "forbidden": [n for n in names if forbidden(n)],
-                "medical_modules": [n for n in names if "public_medical" in n],
+                "medical_modules": [
+                    n for n in names if "public_medical" in n or "medical_release" in n
+                ],
+                "missing_release_modules": [
+                    module
+                    for module in ["medical_release.py", "medical_release_service.py"]
+                    if not any(n.endswith("rag_portfolio/" + module) for n in names)
+                ],
             }
         )
     tag = "codex-public-medical-context-" + uuid4().hex[:12]
@@ -121,11 +133,20 @@ def main():
         ROOT / ".gitignore",
         ROOT / ".dockerignore",
     ]
-    for directory in ["artifacts/public-medical-corpus-v1", "eval/public_medical_corpus_v1"]:
+    for directory in [
+        "artifacts/public-medical-corpus-v1",
+        "eval/public_medical_corpus_v1",
+        "artifacts/medical-business-v1",
+        "eval/medical_business_v1",
+    ]:
         paths.extend(p for p in (ROOT / directory).rglob("*") if p.is_file())
     paths.extend((ROOT / "src/rag_portfolio").glob("public_medical*.py"))
     paths.extend((ROOT / "tools").glob("*public_medical*.py"))
     paths.extend((ROOT / "docs").glob("public-medical-corpus-v1*.md"))
+    paths.extend((ROOT / "src/rag_portfolio").glob("medical_release*.py"))
+    paths.extend((ROOT / "tools").glob("*medical_business*.py"))
+    paths.extend((ROOT / "tools").glob("*medical_release*.py"))
+    paths.extend((ROOT / "docs").glob("medical-business*.md"))
     hits = [
         str(p.relative_to(ROOT))
         for p in paths
@@ -141,10 +162,15 @@ def main():
         },
         "clinical_approval": False,
         "status": "PASS"
-        if not hits and all(not p["forbidden"] for p in packages) and not docker["forbidden"]
+        if (
+            not hits
+            and len(packages) == 2
+            and all(not p["forbidden"] and not p["missing_release_modules"] for p in packages)
+            and not docker["forbidden"]
+        )
         else "FAIL",
     }
-    write_json(ROOT / "artifacts/public-medical-corpus-v1/package_audit.json", report)
+    write_json(output, report)
     print(
         json.dumps(
             {
@@ -160,4 +186,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--local", type=Path, default=LOCAL)
+    parser.add_argument("--output", type=Path)
+    args = parser.parse_args()
+    main(local=args.local.resolve(), output=args.output)

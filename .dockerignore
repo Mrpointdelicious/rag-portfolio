@@ -15,3 +15,5 @@ doc/backup_index.md
 medical_corpus_v1
 artifacts/public-medical-corpus-v1
 eval/public_medical_corpus_v1
+eval/medical_business_v1
+artifacts/medical-business-v1

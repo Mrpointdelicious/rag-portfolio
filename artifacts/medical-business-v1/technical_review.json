@@ -1,0 +1,252 @@
+{
+  "reviewer": "Codex reading of selected requested units and failure traces",
+  "selection": "post-run bounded annotation; excludes unreviewed extra prose",
+  "not_a_clinical_accuracy_score": true,
+  "independent_human_review": "pending",
+  "clinical_approval": false,
+  "rows": [
+    {
+      "case_id": "mbv1-version-01",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "requested_units_supported",
+      "rationale": "D042版次2023与发表年2024分开说明，均有可见原文。",
+      "valid_source_pool": [
+        "d042@combined-v1-pdf-3c60b047c04c#s0000-c000",
+        "d042@combined-v1-pdf-3c60b047c04c#s0000-c003",
+        "d042@combined-v1-pdf-3c60b047c04c#s0001-c000",
+        "d042@combined-v1-pdf-3c60b047c04c#s0009-c002",
+        "d042@combined-v1-pdf-3c60b047c04c#s0013-c003"
+      ],
+      "answer_sha256": "e0cc29c9feb70f411a7fb4f0422dda27a53c6a24a8c87d6128407165364e0d2e",
+      "runtime_status": "partial",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-measurement-03",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "requested_units_supported",
+      "rationale": "活动监测设备及心率储备门槛的请求核心内容有可见原文；额外背景未全面标注。",
+      "valid_source_pool": [
+        "new05@combined-v1-xml-9c12e447cd4c#s0001-c000",
+        "new05@combined-v1-xml-9c12e447cd4c#s0009-c000",
+        "new05@combined-v1-xml-9c12e447cd4c#s0010-c000",
+        "new05@combined-v1-xml-9c12e447cd4c#s0022-c000",
+        "new05@combined-v1-xml-9c12e447cd4c#s0022-c001"
+      ],
+      "answer_sha256": "bbcd80c3e677a85cfdeb02efd0641cdbe20014be21fcd1709fa97f4d475bc0d9",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-applicability-01",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "requested_units_supported",
+      "rationale": "HAL病程、FAC与坐位条件有可见原文，并区分研究条件和通用适应证。",
+      "valid_source_pool": [
+        "new02@combined-v1-xml-b1089df79bef#s0005-c000",
+        "new03@combined-v1-xml-5209c949417d#s0000-c000",
+        "new03@combined-v1-xml-5209c949417d#s0008-c000",
+        "new03@combined-v1-xml-5209c949417d#s0028-c000",
+        "new05@combined-v1-xml-9c12e447cd4c#s0021-c000"
+      ],
+      "answer_sha256": "173787061447329abcaa595bd644abc77a736a54ecab27d9dba528420d5ed6be",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-applicability-04",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "requested_units_supported",
+      "rationale": "区分训练试验证据与直接穿戴助行的证据缺口；额外其他试验内容不计入本标注。",
+      "valid_source_pool": [
+        "d041@combined-v1-pdf-8a0387606a06#s0003-c000",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0000-c000",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0000-c001",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0001-c002",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0003-c000",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0003-c001",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0003-c002",
+        "new02@combined-v1-xml-b1089df79bef#s0017-c000",
+        "new02@combined-v1-xml-b1089df79bef#s0018-c001",
+        "new02@combined-v1-xml-b1089df79bef#s0026-c000"
+      ],
+      "answer_sha256": "8e4834e8a993e971d703903f5d680744159d68648447517a67dfe8aca391af73",
+      "runtime_status": "partial",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-version-04",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "requested_units_supported_with_extra_content",
+      "rationale": "所问收稿和接受日期有来源；额外引入另一篇综述的日期，未请求的扩展应另审。",
+      "valid_source_pool": [
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0000-c000",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0000-c005",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0001-c003",
+        "d129@combined-v1-pdf-c7a6c1b5dc98#s0007-c004",
+        "d173@combined-v1-pdf-a52a567089f1#s0011-c002"
+      ],
+      "answer_sha256": "c9298d38285549d5bc9b5e95b2e2d03e4a537f141e77ed040d239352ecbaba34",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-unavailable-03",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "failure_reason_supported",
+      "rationale": "受控503后明确远程检索未成功，没有断言知识库不存在相关文献。",
+      "valid_source_pool": [],
+      "answer_sha256": "99a79ad674e451dcb12c26c23f6396d619b5a8eca08496c54889658c58e882ae",
+      "runtime_status": "unavailable",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-unavailable-04",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "failure_reason_supported",
+      "rationale": "受控TCP超时后明确说明超时和未取得原文；不是对真实文献覆盖的判定。",
+      "valid_source_pool": [],
+      "answer_sha256": "6d8c13200a7169e53ae58aa7df9257cfdca1bc441dc1621a71418ac19b2a0b3b",
+      "runtime_status": "unavailable",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-unavailable-01",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "personal_value_not_fabricated",
+      "rationale": "没有按要求把论文数值填写为自建记录中的患者FAC实测。",
+      "valid_source_pool": [],
+      "answer_sha256": "07ba128e380b6ffce68c2e156082600b2b23d2987367f259aba522015e5ddc86",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-unavailable-05",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "personal_value_not_fabricated",
+      "rationale": "没有把论文数值填写为缺失的患者ROM实测。",
+      "valid_source_pool": [],
+      "answer_sha256": "141565b0d681b7e91ec21fbfe9de0bff2fb82d22e7753d6caea6ebf0c58e4f29",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-version-02",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "unfilled_with_incorrect_capability_statement",
+      "rationale": "未发起检索便称候选范围不含书目信息；候选实际含D040题名和期刊页，不能据此拒绝可查问题。",
+      "valid_source_pool": [],
+      "answer_sha256": "2e02e62f8eda2422364eef6f090ca570e28c7debbd37999b73ce1eb06b1aca60",
+      "runtime_status": "succeeded",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-followup-01",
+      "turn": 2,
+      "split": "dev",
+      "manual_technical_label": "terminology_requires_review",
+      "rationale": "稳定极限原文用重心CG，回答改成质心COM；同文另述两者通常共点，仍需专业复核该替换。",
+      "valid_source_pool": [
+        "d001@combined-v1-pdf-3bc7a9645959#s0000-c000",
+        "d001@combined-v1-pdf-3bc7a9645959#s0001-c000",
+        "d001@combined-v1-pdf-3bc7a9645959#s0001-c001",
+        "d001@combined-v1-pdf-3bc7a9645959#s0002-c000",
+        "d001@combined-v1-pdf-3bc7a9645959#s0004-c001"
+      ],
+      "answer_sha256": "2c52be1b6ef3f456ab1d86abfa2d47a951f88c61a84f1a11341979537d1b180e",
+      "runtime_status": "partial",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-routing-01",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "scope_reason_mismatch",
+      "rationale": "服务返回out_of_domain_scope，最终却称操作帮助没有检索命中。",
+      "valid_source_pool": [],
+      "answer_sha256": "9ff3493cba388ce7047dd11ba1f00994775318d95dc1898bec52c5f4658ba752",
+      "runtime_status": "unavailable",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-routing-02",
+      "turn": 1,
+      "split": "dev",
+      "manual_technical_label": "partial_scope_reason_mismatch",
+      "rationale": "医学水中运动部分有来源；操作帮助的范围限制仍被转述为未检索到资料。",
+      "valid_source_pool": [
+        "d042@combined-v1-pdf-3c60b047c04c#s0003-c000",
+        "d042@combined-v1-pdf-3c60b047c04c#s0006-c000",
+        "d042@combined-v1-pdf-3c60b047c04c#s0006-c001",
+        "d042@combined-v1-pdf-3c60b047c04c#s0011-c004"
+      ],
+      "answer_sha256": "549ae31903b5f150e5bf588cdeaa18aa08d6d87132091184e81203c1493cd805",
+      "runtime_status": "partial",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-routing-04",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "scope_reason_mismatch",
+      "rationale": "操作帮助未装载与产品域未授权分别存在；帮助部分仍说成没有命中。",
+      "valid_source_pool": [],
+      "answer_sha256": "e43e6f8a52e435f573e80dbd076116d5ac327023ab4d40bb9ad69a18daa8487e",
+      "runtime_status": "unavailable",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-followup-04",
+      "turn": 2,
+      "split": "heldout",
+      "manual_technical_label": "expired_citation_blocked_task_unfinished",
+      "rationale": "受控删除证据后没有重新检索，草稿引用失效来源；发布审计阻断，最终回答为空，任务未完成。",
+      "valid_source_pool": [],
+      "answer_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "runtime_status": "failed",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    },
+    {
+      "case_id": "mbv1-discovery-04",
+      "turn": 1,
+      "split": "heldout",
+      "manual_technical_label": "valid_alternate_passage_outside_frozen_anchor",
+      "rationale": "回答使用另一处可见GRADE方法段落；精确冻结锚点不在该位置，分数保留，不补Gold加分。",
+      "valid_source_pool": [
+        "d003@combined-v1-pdf-0b4a9e73ccaa#s0001-c001",
+        "d003@combined-v1-pdf-0b4a9e73ccaa#s0002-c001",
+        "d003@combined-v1-pdf-0b4a9e73ccaa#s0002-c002",
+        "d003@combined-v1-pdf-0b4a9e73ccaa#s0007-c000"
+      ],
+      "answer_sha256": "9c8c1f21f81429739b0979d593b6245fb46f4dca06839567ea03276ce0693f42",
+      "runtime_status": "partial",
+      "clinical_review": "NOT_ASSESSED",
+      "independent_human_review": "pending"
+    }
+  ]
+}

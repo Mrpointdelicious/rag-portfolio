@@ -1,0 +1,195 @@
+{
+  "execution": "real Embedding + real Reranker through owned ASGI service",
+  "production_changed": false,
+  "checks": [
+    {
+      "label": "patient_scope_denied",
+      "http": 403,
+      "code": "scope_denied"
+    },
+    {
+      "label": "stale_public_pins_denied",
+      "http": 409,
+      "code": "version_or_scope_unavailable"
+    },
+    {
+      "label": "rollback_returns_public_versions",
+      "http": 200,
+      "code": "ok",
+      "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+      "index_sha256": "b3c83b4d8087b087f41926383c10bed19487aed067fd51599b02ac2f6c1ab8f9",
+      "corpus_version": "medical_public_v1-prose-1",
+      "refs": [
+        "new01@public-v1-xml-ec3c8d32c1c5#s0030-c000",
+        "new01@public-v1-xml-ec3c8d32c1c5#s0023-c000",
+        "new02@public-v1-xml-b1089df79bef#s0002-c001",
+        "new02@public-v1-xml-b1089df79bef#s0026-c000",
+        "new01@public-v1-xml-ec3c8d32c1c5#s0000-c000"
+      ],
+      "model_calls": {
+        "embedding": 1,
+        "rerank": 1
+      },
+      "stages": {
+        "scope": "technical_evaluation_nonclinical",
+        "boundary": "retrieve",
+        "release_id": "public-baseline",
+        "generation": 9,
+        "public_prose_only": true,
+        "injected_fault": "none"
+      }
+    },
+    {
+      "label": "combined_returns_combined_versions",
+      "http": 200,
+      "code": "ok",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "corpus_version": "medical_combined_v1-prose-2",
+      "refs": [
+        "new01@combined-v1-xml-ec3c8d32c1c5#s0023-c000",
+        "new02@combined-v1-xml-b1089df79bef#s0002-c001",
+        "new02@combined-v1-xml-b1089df79bef#s0026-c000",
+        "new02@combined-v1-xml-b1089df79bef#s0000-c000",
+        "d173@combined-v1-pdf-a52a567089f1#s0005-c001"
+      ],
+      "model_calls": {
+        "embedding": 1,
+        "rerank": 1
+      },
+      "stages": {
+        "scope": "technical_evaluation_nonclinical",
+        "boundary": "retrieve",
+        "release_id": "combined-business-v1",
+        "generation": 10,
+        "public_prose_only": false,
+        "injected_fault": "none"
+      }
+    },
+    {
+      "label": "revocation_stops_serving",
+      "http": 409,
+      "code": "release_unavailable"
+    },
+    {
+      "label": "revoked_pins_not_silently_redirected",
+      "http": 409,
+      "code": "version_or_scope_unavailable"
+    },
+    {
+      "label": "final_candidate_restored",
+      "http": 200,
+      "code": "ok",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "corpus_version": "medical_combined_v1-prose-2",
+      "refs": [
+        "new01@combined-v1-xml-ec3c8d32c1c5#s0023-c000",
+        "new02@combined-v1-xml-b1089df79bef#s0002-c001",
+        "new02@combined-v1-xml-b1089df79bef#s0026-c000",
+        "new02@combined-v1-xml-b1089df79bef#s0000-c000",
+        "d173@combined-v1-pdf-a52a567089f1#s0005-c001"
+      ],
+      "model_calls": {
+        "embedding": 1,
+        "rerank": 1
+      },
+      "stages": {
+        "scope": "technical_evaluation_nonclinical",
+        "boundary": "retrieve",
+        "release_id": "combined-business-v1",
+        "generation": 14,
+        "public_prose_only": false,
+        "injected_fault": "none"
+      }
+    }
+  ],
+  "status": "PASS",
+  "registry_history": [
+    {
+      "action": "register",
+      "at": "2026-10-12T02:49:58.104206+00:00",
+      "generation": 1,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:49:59.879291+00:00",
+      "generation": 2,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:50:01.769054+00:00",
+      "generation": 3,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "register",
+      "at": "2026-10-12T02:50:03.948297+00:00",
+      "generation": 4,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:50:06.258494+00:00",
+      "generation": 5,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:50:08.631055+00:00",
+      "generation": 6,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "register",
+      "at": "2026-10-12T02:51:17.715204+00:00",
+      "generation": 7,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:51:18.394418+00:00",
+      "generation": 8,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:19.440641+00:00",
+      "generation": 9,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:51:22.385559+00:00",
+      "generation": 10,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:51:28.204402+00:00",
+      "generation": 11,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "revoke",
+      "at": "2026-10-12T02:51:28.212736+00:00",
+      "generation": 12,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:28.607458+00:00",
+      "generation": 13,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:29.945277+00:00",
+      "generation": 14,
+      "release_id": "combined-business-v1"
+    }
+  ],
+  "final_active": "combined-business-v1"
+}

@@ -1,0 +1,964 @@
+{
+  "scope": "operator nonclinical isolated candidate",
+  "active": "combined-business-v1",
+  "clinical_approval": false,
+  "public_redistribution": false,
+  "releases": [
+    {
+      "approval_sha256": "94ea7b2c8fdccb69b885bcd7152d870ce54c1ec1f8c2c91ce478adfd6507a646",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "corpus_version": "medical_combined_v1-prose-2",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "release_id": "combined-business-v1",
+      "status": "validated",
+      "work_versions": [
+        {
+          "document_id": "D001",
+          "edition": "2024",
+          "publication_year": "2024",
+          "source_sha256": "3bc7a964595969246a7ed5c9770a4c435565239c3bf04af70523e2d9d1bffeca",
+          "work_id": "doi:10.3724/sp.j.1329.2024.03001"
+        },
+        {
+          "document_id": "D003",
+          "edition": "2024",
+          "publication_year": "2024",
+          "source_sha256": "0b4a9e73ccaaccba2b7acc0ea52204238b3b92f484c6530747df90c2f3959476",
+          "work_id": "doi:10.16305/j.1007-1334.2024.2401120"
+        },
+        {
+          "document_id": "D040",
+          "edition": "2011",
+          "publication_year": "2012",
+          "source_sha256": "54beab67b36ea397c7bfb166a53b3eef5f8801dc70cc83bf61fd231d9de0ccb8",
+          "work_id": "doi:10.3969/j.issn.1006-9771.2012.04.001"
+        },
+        {
+          "document_id": "D041",
+          "edition": "2025",
+          "publication_year": "2025",
+          "source_sha256": "8a0387606a06001f41dda253877b26ad6edc636d69c238e7eddd0516e458ac55",
+          "work_id": "doi:10.3969/j.issn.1001-1242.2025.09.001"
+        },
+        {
+          "document_id": "D042",
+          "edition": "2023",
+          "publication_year": "2024",
+          "source_sha256": "3c60b047c04ce3dcedf8451a58adf64fd261d26b6b1d38a626b47a03f101df92",
+          "work_id": "doi:10.7507/1672-2531.202306145"
+        },
+        {
+          "document_id": "D129",
+          "edition": null,
+          "publication_year": "2023",
+          "source_sha256": "c7a6c1b5dc9811e06d2e8a9cf8221e6a5099e18a4812f08b34d724b99c068546",
+          "work_id": "doi:10.1016/j.rehab.2022.101674"
+        },
+        {
+          "document_id": "D161",
+          "edition": null,
+          "publication_year": "2023",
+          "source_sha256": "2203df063fcb242e46bc34394f32f14be78630c2e143de9f943065fc597e278c",
+          "work_id": "doi:10.3390/brainsci13010092"
+        },
+        {
+          "document_id": "D173",
+          "edition": null,
+          "publication_year": "2021",
+          "source_sha256": "a52a567089f1a9164d465c5543aeb2664a06a8a62a5cf9c1136d9630d405d4f6",
+          "work_id": "doi:10.23736/s1973-9087.21.06887-8"
+        },
+        {
+          "document_id": "NEW01",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "ec3c8d32c1c54b192cd59f2192de548b72e8391f778e5b6ca10597119425b2c4",
+          "work_id": "doi:10.3390/medicina60040620"
+        },
+        {
+          "document_id": "NEW02",
+          "edition": null,
+          "publication_year": 2023,
+          "source_sha256": "b1089df79bef0aeda5866d946fb87a86b663bfc0ec52b219fed2f192329ee7b4",
+          "work_id": "doi:10.3390/bioengineering10050585"
+        },
+        {
+          "document_id": "NEW03",
+          "edition": null,
+          "publication_year": 2020,
+          "source_sha256": "5209c949417d36a76b2c3b46f9a2001fcf50fa036b254cd3f14d9ad22243586f",
+          "work_id": "doi:10.1371/journal.pone.0229707"
+        },
+        {
+          "document_id": "NEW04",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "43e2b4a8cdc2aba3a23c47e44eb16384f47f4b1baaa9419bc31cae7c34064a8a",
+          "work_id": "doi:10.1371/journal.pone.0297074"
+        },
+        {
+          "document_id": "NEW05",
+          "edition": null,
+          "publication_year": 2025,
+          "source_sha256": "9c12e447cd4c3ebf85883d0225889ece1c2ea4acb6e30b987c445c25909a025e",
+          "work_id": "doi:10.1371/journal.pone.0328930"
+        },
+        {
+          "document_id": "NEW06",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "afe39def1eeefea5ffc2459743f52179b7dbb48c30aed0c100c6c8299a99c779",
+          "work_id": "doi:10.3390/jcm13216616"
+        }
+      ]
+    },
+    {
+      "approval_sha256": "94ea7b2c8fdccb69b885bcd7152d870ce54c1ec1f8c2c91ce478adfd6507a646",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "corpus_version": "medical_combined_v1-prose-2",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "release_id": "combined-revocation-probe",
+      "status": "revoked",
+      "work_versions": [
+        {
+          "document_id": "D001",
+          "edition": "2024",
+          "publication_year": "2024",
+          "source_sha256": "3bc7a964595969246a7ed5c9770a4c435565239c3bf04af70523e2d9d1bffeca",
+          "work_id": "doi:10.3724/sp.j.1329.2024.03001"
+        },
+        {
+          "document_id": "D003",
+          "edition": "2024",
+          "publication_year": "2024",
+          "source_sha256": "0b4a9e73ccaaccba2b7acc0ea52204238b3b92f484c6530747df90c2f3959476",
+          "work_id": "doi:10.16305/j.1007-1334.2024.2401120"
+        },
+        {
+          "document_id": "D040",
+          "edition": "2011",
+          "publication_year": "2012",
+          "source_sha256": "54beab67b36ea397c7bfb166a53b3eef5f8801dc70cc83bf61fd231d9de0ccb8",
+          "work_id": "doi:10.3969/j.issn.1006-9771.2012.04.001"
+        },
+        {
+          "document_id": "D041",
+          "edition": "2025",
+          "publication_year": "2025",
+          "source_sha256": "8a0387606a06001f41dda253877b26ad6edc636d69c238e7eddd0516e458ac55",
+          "work_id": "doi:10.3969/j.issn.1001-1242.2025.09.001"
+        },
+        {
+          "document_id": "D042",
+          "edition": "2023",
+          "publication_year": "2024",
+          "source_sha256": "3c60b047c04ce3dcedf8451a58adf64fd261d26b6b1d38a626b47a03f101df92",
+          "work_id": "doi:10.7507/1672-2531.202306145"
+        },
+        {
+          "document_id": "D129",
+          "edition": null,
+          "publication_year": "2023",
+          "source_sha256": "c7a6c1b5dc9811e06d2e8a9cf8221e6a5099e18a4812f08b34d724b99c068546",
+          "work_id": "doi:10.1016/j.rehab.2022.101674"
+        },
+        {
+          "document_id": "D161",
+          "edition": null,
+          "publication_year": "2023",
+          "source_sha256": "2203df063fcb242e46bc34394f32f14be78630c2e143de9f943065fc597e278c",
+          "work_id": "doi:10.3390/brainsci13010092"
+        },
+        {
+          "document_id": "D173",
+          "edition": null,
+          "publication_year": "2021",
+          "source_sha256": "a52a567089f1a9164d465c5543aeb2664a06a8a62a5cf9c1136d9630d405d4f6",
+          "work_id": "doi:10.23736/s1973-9087.21.06887-8"
+        },
+        {
+          "document_id": "NEW01",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "ec3c8d32c1c54b192cd59f2192de548b72e8391f778e5b6ca10597119425b2c4",
+          "work_id": "doi:10.3390/medicina60040620"
+        },
+        {
+          "document_id": "NEW02",
+          "edition": null,
+          "publication_year": 2023,
+          "source_sha256": "b1089df79bef0aeda5866d946fb87a86b663bfc0ec52b219fed2f192329ee7b4",
+          "work_id": "doi:10.3390/bioengineering10050585"
+        },
+        {
+          "document_id": "NEW03",
+          "edition": null,
+          "publication_year": 2020,
+          "source_sha256": "5209c949417d36a76b2c3b46f9a2001fcf50fa036b254cd3f14d9ad22243586f",
+          "work_id": "doi:10.1371/journal.pone.0229707"
+        },
+        {
+          "document_id": "NEW04",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "43e2b4a8cdc2aba3a23c47e44eb16384f47f4b1baaa9419bc31cae7c34064a8a",
+          "work_id": "doi:10.1371/journal.pone.0297074"
+        },
+        {
+          "document_id": "NEW05",
+          "edition": null,
+          "publication_year": 2025,
+          "source_sha256": "9c12e447cd4c3ebf85883d0225889ece1c2ea4acb6e30b987c445c25909a025e",
+          "work_id": "doi:10.1371/journal.pone.0328930"
+        },
+        {
+          "document_id": "NEW06",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "afe39def1eeefea5ffc2459743f52179b7dbb48c30aed0c100c6c8299a99c779",
+          "work_id": "doi:10.3390/jcm13216616"
+        }
+      ]
+    },
+    {
+      "approval_sha256": null,
+      "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+      "corpus_version": "medical_public_v1-prose-1",
+      "index_sha256": "b3c83b4d8087b087f41926383c10bed19487aed067fd51599b02ac2f6c1ab8f9",
+      "release_id": "public-baseline",
+      "status": "validated",
+      "work_versions": [
+        {
+          "document_id": "NEW01",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "ec3c8d32c1c54b192cd59f2192de548b72e8391f778e5b6ca10597119425b2c4",
+          "work_id": "doi:10.3390/medicina60040620"
+        },
+        {
+          "document_id": "NEW02",
+          "edition": null,
+          "publication_year": 2023,
+          "source_sha256": "b1089df79bef0aeda5866d946fb87a86b663bfc0ec52b219fed2f192329ee7b4",
+          "work_id": "doi:10.3390/bioengineering10050585"
+        },
+        {
+          "document_id": "NEW03",
+          "edition": null,
+          "publication_year": 2020,
+          "source_sha256": "5209c949417d36a76b2c3b46f9a2001fcf50fa036b254cd3f14d9ad22243586f",
+          "work_id": "doi:10.1371/journal.pone.0229707"
+        },
+        {
+          "document_id": "NEW04",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "43e2b4a8cdc2aba3a23c47e44eb16384f47f4b1baaa9419bc31cae7c34064a8a",
+          "work_id": "doi:10.1371/journal.pone.0297074"
+        },
+        {
+          "document_id": "NEW05",
+          "edition": null,
+          "publication_year": 2025,
+          "source_sha256": "9c12e447cd4c3ebf85883d0225889ece1c2ea4acb6e30b987c445c25909a025e",
+          "work_id": "doi:10.1371/journal.pone.0328930"
+        },
+        {
+          "document_id": "NEW06",
+          "edition": null,
+          "publication_year": 2024,
+          "source_sha256": "afe39def1eeefea5ffc2459743f52179b7dbb48c30aed0c100c6c8299a99c779",
+          "work_id": "doi:10.3390/jcm13216616"
+        },
+        {
+          "document_id": "D161",
+          "edition": null,
+          "publication_year": 2023,
+          "source_sha256": "99844e1c9bb436ba558bf35dd24b372c56ae2f0672fb7f019a3114fc46b52ce7",
+          "work_id": "doi:10.3390/brainsci13010092"
+        }
+      ]
+    }
+  ],
+  "history": [
+    {
+      "action": "register",
+      "at": "2026-10-12T02:49:58.104206+00:00",
+      "generation": 1,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:49:59.879291+00:00",
+      "generation": 2,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:50:01.769054+00:00",
+      "generation": 3,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "register",
+      "at": "2026-10-12T02:50:03.948297+00:00",
+      "generation": 4,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:50:06.258494+00:00",
+      "generation": 5,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:50:08.631055+00:00",
+      "generation": 6,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "register",
+      "at": "2026-10-12T02:51:17.715204+00:00",
+      "generation": 7,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "validate",
+      "at": "2026-10-12T02:51:18.394418+00:00",
+      "generation": 8,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:19.440641+00:00",
+      "generation": 9,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:51:22.385559+00:00",
+      "generation": 10,
+      "release_id": "combined-business-v1"
+    },
+    {
+      "action": "activate",
+      "at": "2026-10-12T02:51:28.204402+00:00",
+      "generation": 11,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "revoke",
+      "at": "2026-10-12T02:51:28.212736+00:00",
+      "generation": 12,
+      "release_id": "combined-revocation-probe"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:28.607458+00:00",
+      "generation": 13,
+      "release_id": "public-baseline"
+    },
+    {
+      "action": "rollback",
+      "at": "2026-10-12T02:51:29.945277+00:00",
+      "generation": 14,
+      "release_id": "combined-business-v1"
+    }
+  ],
+  "combined": {
+    "works": 14,
+    "segments": 318,
+    "chunks": 713,
+    "index": {
+      "schema_version": "public-medical-index-v1",
+      "index_version": "combined-business-dense-1",
+      "corpus_id": "medical_combined_v1",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "model": "qwen3.7-text-embedding",
+      "dimension": 1024,
+      "distance": "cosine",
+      "input": "document_id|title|section|text-v1",
+      "provider_calls": [
+        {
+          "batch_start": 0,
+          "count": 10,
+          "request_id": "144ddbb6-c595-9234-adfc-6bcfc1c9d63c",
+          "usage": {
+            "total_tokens": 6131
+          }
+        },
+        {
+          "batch_start": 10,
+          "count": 10,
+          "request_id": "13477a2d-b036-94fb-92ef-40f45f2956b0",
+          "usage": {
+            "total_tokens": 6492
+          }
+        },
+        {
+          "batch_start": 20,
+          "count": 10,
+          "request_id": "125ec815-bb5e-916c-a24f-cfc27b49a4e4",
+          "usage": {
+            "total_tokens": 6399
+          }
+        },
+        {
+          "batch_start": 30,
+          "count": 10,
+          "request_id": "47b0a990-ff8d-94f0-8dfb-a1b13bcc4fe4",
+          "usage": {
+            "total_tokens": 5446
+          }
+        },
+        {
+          "batch_start": 40,
+          "count": 10,
+          "request_id": "741fd440-8444-920f-a20f-ac704778c523",
+          "usage": {
+            "total_tokens": 5140
+          }
+        },
+        {
+          "batch_start": 50,
+          "count": 10,
+          "request_id": "e3c8529a-68de-9ebf-8c5b-5e3d8811174d",
+          "usage": {
+            "total_tokens": 5178
+          }
+        },
+        {
+          "batch_start": 60,
+          "count": 10,
+          "request_id": "30a8173c-945b-98e0-ae5f-7cacabcbb2f0",
+          "usage": {
+            "total_tokens": 5799
+          }
+        },
+        {
+          "batch_start": 70,
+          "count": 10,
+          "request_id": "e0479372-1977-94da-8d31-40da91a21c83",
+          "usage": {
+            "total_tokens": 8062
+          }
+        },
+        {
+          "batch_start": 80,
+          "count": 10,
+          "request_id": "8667bee5-5a0e-93cb-ace9-a352ed1e1dfe",
+          "usage": {
+            "total_tokens": 5012
+          }
+        },
+        {
+          "batch_start": 90,
+          "count": 10,
+          "request_id": "fa8056c2-ee0d-9fa7-98e9-432fd956f9a3",
+          "usage": {
+            "total_tokens": 6497
+          }
+        },
+        {
+          "batch_start": 100,
+          "count": 10,
+          "request_id": "0d1f7446-5b6f-976e-b12f-dc0fc745b90c",
+          "usage": {
+            "total_tokens": 5674
+          }
+        },
+        {
+          "batch_start": 110,
+          "count": 10,
+          "request_id": "028c7abf-f02a-9c79-bb03-a3191409b755",
+          "usage": {
+            "total_tokens": 5906
+          }
+        },
+        {
+          "batch_start": 120,
+          "count": 10,
+          "request_id": "a6ebc230-b8c3-9b03-9d69-72ffa8cafcf6",
+          "usage": {
+            "total_tokens": 6304
+          }
+        },
+        {
+          "batch_start": 130,
+          "count": 10,
+          "request_id": "67a91dc4-88df-9792-9819-562fe94c1e3d",
+          "usage": {
+            "total_tokens": 4662
+          }
+        },
+        {
+          "batch_start": 140,
+          "count": 10,
+          "request_id": "58b0e1bc-e539-9dfb-8857-d625693d9950",
+          "usage": {
+            "total_tokens": 4462
+          }
+        },
+        {
+          "batch_start": 150,
+          "count": 10,
+          "request_id": "a3d4db9e-f11a-940e-b3fe-b631b11c678f",
+          "usage": {
+            "total_tokens": 3967
+          }
+        },
+        {
+          "batch_start": 160,
+          "count": 10,
+          "request_id": "11c1bb1b-836e-9dfa-8094-65a8c57d775c",
+          "usage": {
+            "total_tokens": 4974
+          }
+        },
+        {
+          "batch_start": 170,
+          "count": 10,
+          "request_id": "96c9621d-28c2-9d7e-acd3-bc7b3c99140e",
+          "usage": {
+            "total_tokens": 4618
+          }
+        },
+        {
+          "batch_start": 180,
+          "count": 10,
+          "request_id": "a847a562-7bb5-9b0c-8596-dc235d381bcf",
+          "usage": {
+            "total_tokens": 3769
+          }
+        },
+        {
+          "batch_start": 190,
+          "count": 10,
+          "request_id": "2e13ee5a-e0b4-9e6b-b349-6edab18493e7",
+          "usage": {
+            "total_tokens": 4120
+          }
+        },
+        {
+          "batch_start": 200,
+          "count": 10,
+          "request_id": "402528ce-7191-9460-a414-3333e9e70cf3",
+          "usage": {
+            "total_tokens": 5812
+          }
+        },
+        {
+          "batch_start": 210,
+          "count": 10,
+          "request_id": "476e2f03-e670-9c41-9917-917234d1575c",
+          "usage": {
+            "total_tokens": 6392
+          }
+        },
+        {
+          "batch_start": 220,
+          "count": 10,
+          "request_id": "cabfc3ff-ec62-9d17-9830-73069b148892",
+          "usage": {
+            "total_tokens": 4809
+          }
+        },
+        {
+          "batch_start": 230,
+          "count": 10,
+          "request_id": "e8251502-eec0-902f-9c8b-1b32aca84e77",
+          "usage": {
+            "total_tokens": 4139
+          }
+        },
+        {
+          "batch_start": 240,
+          "count": 10,
+          "request_id": "0304936d-8138-9c12-a425-8e7dc4b25855",
+          "usage": {
+            "total_tokens": 3556
+          }
+        },
+        {
+          "batch_start": 250,
+          "count": 10,
+          "request_id": "f7ac0476-95dc-9065-b10d-d28309a2ef3e",
+          "usage": {
+            "total_tokens": 2802
+          }
+        },
+        {
+          "batch_start": 260,
+          "count": 10,
+          "request_id": "8dc7b7ed-57b1-98d1-8952-8e2300a5f908",
+          "usage": {
+            "total_tokens": 4044
+          }
+        },
+        {
+          "batch_start": 270,
+          "count": 10,
+          "request_id": "01531464-e3f4-9408-805e-0e4c2d9d25e6",
+          "usage": {
+            "total_tokens": 3077
+          }
+        },
+        {
+          "batch_start": 280,
+          "count": 10,
+          "request_id": "6abae568-f2b1-9e20-ba52-352ea1ec6bd2",
+          "usage": {
+            "total_tokens": 3650
+          }
+        },
+        {
+          "batch_start": 290,
+          "count": 10,
+          "request_id": "e06837c4-8af6-9982-b65a-61cc770c4a9c",
+          "usage": {
+            "total_tokens": 3486
+          }
+        },
+        {
+          "batch_start": 300,
+          "count": 10,
+          "request_id": "92783ec5-b291-99d0-ad9d-13ad56d75a02",
+          "usage": {
+            "total_tokens": 2666
+          }
+        },
+        {
+          "batch_start": 310,
+          "count": 10,
+          "request_id": "331b1d85-168a-9a98-80dd-38687b15c1e7",
+          "usage": {
+            "total_tokens": 2683
+          }
+        },
+        {
+          "batch_start": 320,
+          "count": 10,
+          "request_id": "e1198259-32f7-9c83-8da7-039c88687d6a",
+          "usage": {
+            "total_tokens": 3772
+          }
+        },
+        {
+          "batch_start": 330,
+          "count": 10,
+          "request_id": "6de87e6a-7106-9a54-bf50-f727a55a9061",
+          "usage": {
+            "total_tokens": 2889
+          }
+        },
+        {
+          "batch_start": 340,
+          "count": 10,
+          "request_id": "bffb6049-b330-9329-9bc4-87122f25d644",
+          "usage": {
+            "total_tokens": 3277
+          }
+        },
+        {
+          "batch_start": 350,
+          "count": 10,
+          "request_id": "0d6dead0-fa8d-9641-954e-ba6642149653",
+          "usage": {
+            "total_tokens": 4105
+          }
+        },
+        {
+          "batch_start": 360,
+          "count": 10,
+          "request_id": "73e13ba6-ebe7-92bd-9294-af828a336b8f",
+          "usage": {
+            "total_tokens": 3780
+          }
+        },
+        {
+          "batch_start": 370,
+          "count": 10,
+          "request_id": "27cce1a7-0da8-9bb5-9971-b717b9795298",
+          "usage": {
+            "total_tokens": 3006
+          }
+        },
+        {
+          "batch_start": 380,
+          "count": 10,
+          "request_id": "4bc287b8-6558-999b-a8d1-f23c847a867b",
+          "usage": {
+            "total_tokens": 2825
+          }
+        },
+        {
+          "batch_start": 390,
+          "count": 10,
+          "request_id": "8ddbc17b-6eb9-9320-bf4e-3cf56ee66f1a",
+          "usage": {
+            "total_tokens": 2503
+          }
+        },
+        {
+          "batch_start": 400,
+          "count": 10,
+          "request_id": "884c0f53-502c-9494-9d58-68c67cb7c43b",
+          "usage": {
+            "total_tokens": 2954
+          }
+        },
+        {
+          "batch_start": 410,
+          "count": 10,
+          "request_id": "89ea584a-48ec-9d6c-974a-a831012560b0",
+          "usage": {
+            "total_tokens": 3150
+          }
+        },
+        {
+          "batch_start": 420,
+          "count": 10,
+          "request_id": "17afc260-8da2-94ff-92a5-6f1554221c22",
+          "usage": {
+            "total_tokens": 3656
+          }
+        },
+        {
+          "batch_start": 430,
+          "count": 10,
+          "request_id": "20bef6cc-97bb-9425-9af1-958782a091a0",
+          "usage": {
+            "total_tokens": 2001
+          }
+        },
+        {
+          "batch_start": 440,
+          "count": 10,
+          "request_id": "a17294d9-34ed-9d32-9523-d0dcd6e453d1",
+          "usage": {
+            "total_tokens": 1699
+          }
+        },
+        {
+          "batch_start": 450,
+          "count": 10,
+          "request_id": "4019ce9f-0aaf-9b6c-bd8f-f6c62049e18b",
+          "usage": {
+            "total_tokens": 1584
+          }
+        },
+        {
+          "batch_start": 460,
+          "count": 10,
+          "request_id": "4bf0333b-311c-9441-b979-95f139653999",
+          "usage": {
+            "total_tokens": 2035
+          }
+        },
+        {
+          "batch_start": 470,
+          "count": 10,
+          "request_id": "8e1657e0-2147-9f31-9f75-a59a56fee009",
+          "usage": {
+            "total_tokens": 1953
+          }
+        },
+        {
+          "batch_start": 480,
+          "count": 10,
+          "request_id": "b3863c9e-d221-9758-baf8-11c8eb3c2b43",
+          "usage": {
+            "total_tokens": 1889
+          }
+        },
+        {
+          "batch_start": 490,
+          "count": 10,
+          "request_id": "1f426556-37f3-9da9-b08e-440d988258aa",
+          "usage": {
+            "total_tokens": 2233
+          }
+        },
+        {
+          "batch_start": 500,
+          "count": 10,
+          "request_id": "b58ece84-20ff-9786-90ff-3381eed7390a",
+          "usage": {
+            "total_tokens": 2137
+          }
+        },
+        {
+          "batch_start": 510,
+          "count": 10,
+          "request_id": "cef6dc32-7c40-9d37-a3c8-33205105454a",
+          "usage": {
+            "total_tokens": 2203
+          }
+        },
+        {
+          "batch_start": 520,
+          "count": 10,
+          "request_id": "6614bbcc-f8e3-9903-91a9-8b166e4879b6",
+          "usage": {
+            "total_tokens": 2161
+          }
+        },
+        {
+          "batch_start": 530,
+          "count": 10,
+          "request_id": "82302e34-aaf2-9b70-abfc-8b1446c2c890",
+          "usage": {
+            "total_tokens": 1977
+          }
+        },
+        {
+          "batch_start": 540,
+          "count": 10,
+          "request_id": "416669c0-9080-984b-8f05-25e0738caa44",
+          "usage": {
+            "total_tokens": 2351
+          }
+        },
+        {
+          "batch_start": 550,
+          "count": 10,
+          "request_id": "f6767f37-a98c-9e8a-b84a-fba123db6643",
+          "usage": {
+            "total_tokens": 2531
+          }
+        },
+        {
+          "batch_start": 560,
+          "count": 10,
+          "request_id": "61292123-eb87-9d63-9fdd-e1568694a623",
+          "usage": {
+            "total_tokens": 2274
+          }
+        },
+        {
+          "batch_start": 570,
+          "count": 10,
+          "request_id": "d09ef375-9e4a-9cb2-8afb-dc9f7e89d647",
+          "usage": {
+            "total_tokens": 1990
+          }
+        },
+        {
+          "batch_start": 580,
+          "count": 10,
+          "request_id": "72145dd1-0407-9d61-8091-215ecf2f4f18",
+          "usage": {
+            "total_tokens": 1765
+          }
+        },
+        {
+          "batch_start": 590,
+          "count": 10,
+          "request_id": "04813376-0a73-9509-8bd0-fcf968dd1c9d",
+          "usage": {
+            "total_tokens": 1704
+          }
+        },
+        {
+          "batch_start": 600,
+          "count": 10,
+          "request_id": "6ab61205-db61-963e-9267-294e4388e548",
+          "usage": {
+            "total_tokens": 1769
+          }
+        },
+        {
+          "batch_start": 610,
+          "count": 10,
+          "request_id": "2b1e09fe-f75d-99ad-bd75-fb51157a3922",
+          "usage": {
+            "total_tokens": 1681
+          }
+        },
+        {
+          "batch_start": 620,
+          "count": 10,
+          "request_id": "7732e94a-e92d-950c-acda-d9e504350792",
+          "usage": {
+            "total_tokens": 1759
+          }
+        },
+        {
+          "batch_start": 630,
+          "count": 10,
+          "request_id": "75c09bd3-9d5a-9b46-9ca5-e24f000437a0",
+          "usage": {
+            "total_tokens": 985
+          }
+        },
+        {
+          "batch_start": 640,
+          "count": 10,
+          "request_id": "e724a788-cd33-96aa-995c-8e355aaed47e",
+          "usage": {
+            "total_tokens": 1592
+          }
+        },
+        {
+          "batch_start": 650,
+          "count": 10,
+          "request_id": "9a9bdeb8-61bd-952f-90d1-a4e1f39fd08f",
+          "usage": {
+            "total_tokens": 2042
+          }
+        },
+        {
+          "batch_start": 660,
+          "count": 10,
+          "request_id": "60cceeb7-53e2-9770-8263-60cc2fb221e4",
+          "usage": {
+            "total_tokens": 1920
+          }
+        },
+        {
+          "batch_start": 670,
+          "count": 10,
+          "request_id": "df33b1b4-062b-95b8-8fa1-bae85c76bd30",
+          "usage": {
+            "total_tokens": 1141
+          }
+        },
+        {
+          "batch_start": 680,
+          "count": 10,
+          "request_id": "46d3de82-d7ab-99b0-9ca5-6a736b0555f9",
+          "usage": {
+            "total_tokens": 2601
+          }
+        },
+        {
+          "batch_start": 690,
+          "count": 10,
+          "request_id": "64268725-394c-95ed-9fc5-0a38ab390c34",
+          "usage": {
+            "total_tokens": 1547
+          }
+        },
+        {
+          "batch_start": 700,
+          "count": 10,
+          "request_id": "b28e0b1a-95e1-9baf-a52a-ada5cf30205c",
+          "usage": {
+            "total_tokens": 1694
+          }
+        },
+        {
+          "batch_start": 710,
+          "count": 3,
+          "request_id": "261ecbf6-47b3-9695-8c12-7a12dc45c56e",
+          "usage": {
+            "total_tokens": 480
+          }
+        }
+      ],
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "chunk_count": 713
+    }
+  }
+}

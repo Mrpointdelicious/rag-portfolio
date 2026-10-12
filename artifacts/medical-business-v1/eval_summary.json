@@ -1,0 +1,253 @@
+{
+  "schema_version": "medical-business-baseline-v1",
+  "clinical_approval": false,
+  "independent_human_review": "pending",
+  "selection": "fixed hybrid_rerank; no tuning",
+  "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+  "seal": {
+    "schema_version": "medical-business-gold-seal-v1",
+    "frozen_at": "2026-10-12T02:43:25.286887+00:00",
+    "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+    "case_count": 40,
+    "split_counts": {
+      "dev": 24,
+      "heldout": 16
+    },
+    "category_counts": {
+      "discovery": 5,
+      "measurement": 5,
+      "applicability": 5,
+      "comparison": 5,
+      "version": 5,
+      "followup": 5,
+      "unavailable": 5,
+      "routing": 5
+    },
+    "dev_cases_sha256": "7a0451a3273612db8fa019c4eb189c14f62dc8a19b57258fade603361016a20e",
+    "dev_gold_sha256": "0b1e687f1a6409bb6d87ff7d8a0e84056e3a3aed94b06b7e8330d91f1bb97023",
+    "heldout_cases_sha256": "3ed7ebf015fd7ee96aed0fbc8366862877c3e5aa8a6bc16cf1d35a5e5496b93e",
+    "heldout_gold_sha256": "730c259498607d085b56c74b26e426919149c1d5197cef247294a53a00a11c11",
+    "source_authoring": "Codex offline source reading; exact normalized source anchors",
+    "independent_human_review": "pending",
+    "clinical_approval": false,
+    "protocol": {
+      "strategy": "hybrid_rerank",
+      "strategy_selection": "none; fixed existing default",
+      "top_k": 5,
+      "retrieval_budget": 4000,
+      "tokenizer": "cl100k_base",
+      "agent_context_budget": 12000,
+      "agent_budget_unit": "UTF-8 bytes upper bound",
+      "heldout_policy": "one execution after dev; no tuning of model, prompt, retrieval or Gold",
+      "multi_turn_retrieval": "prior user turns + current user question; no answer or Gold query expansion",
+      "semantic_grading": "independent human pending; deterministic evidence/trace checks separate",
+      "faults": "explicit harness injected modes reported separately from real no-answer queries"
+    }
+  },
+  "splits": {
+    "dev": {
+      "conditions": 24,
+      "turns": 27,
+      "retrieval": {
+        "answerable_turns": 22,
+        "executed_answerable_turns": 22,
+        "complete_at5": 19,
+        "budget_complete": 17,
+        "not_retrieved": {
+          "needs_patient_data_and_clinical_review": 2,
+          "fault_condition_agent_track_only": 2,
+          "out_of_domain_scope": 1
+        },
+        "model_calls": {
+          "embedding": 22,
+          "rerank": 22
+        }
+      },
+      "agent": {
+        "answerable_turns": 22,
+        "returned_complete": 18,
+        "visible_complete": 17,
+        "status_counts": {
+          "partial": 13,
+          "succeeded": 11,
+          "unavailable": 3
+        },
+        "model_calls": 50,
+        "knowledge_requests": 32,
+        "retrieval_model_calls": {
+          "embedding": 27,
+          "rerank": 27
+        },
+        "p50_ms": 5627.657399978489,
+        "p95_ms": 9131.052799988538,
+        "semantic_task_completion": "NOT_ASSESSED_independent_human_pending"
+      },
+      "categories": {
+        "discovery": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 3,
+          "returned_complete": 3,
+          "visible_complete": 3
+        },
+        "measurement": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 3,
+          "returned_complete": 3,
+          "visible_complete": 2
+        },
+        "applicability": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 3,
+          "returned_complete": 2,
+          "visible_complete": 2
+        },
+        "comparison": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 3,
+          "returned_complete": 1,
+          "visible_complete": 1
+        },
+        "version": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 3,
+          "returned_complete": 2,
+          "visible_complete": 2
+        },
+        "followup": {
+          "conditions": 3,
+          "turns": 6,
+          "answerable_turns": 6,
+          "returned_complete": 6,
+          "visible_complete": 6
+        },
+        "unavailable": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 0,
+          "returned_complete": 0,
+          "visible_complete": 0
+        },
+        "routing": {
+          "conditions": 3,
+          "turns": 3,
+          "answerable_turns": 1,
+          "returned_complete": 1,
+          "visible_complete": 1
+        }
+      },
+      "owned_processes_stopped": true
+    },
+    "heldout": {
+      "conditions": 16,
+      "turns": 18,
+      "retrieval": {
+        "answerable_turns": 15,
+        "executed_answerable_turns": 15,
+        "complete_at5": 11,
+        "budget_complete": 10,
+        "not_retrieved": {
+          "fault_condition_agent_track_only": 1,
+          "needs_patient_data_and_clinical_review": 1,
+          "out_of_domain_scope": 1
+        },
+        "model_calls": {
+          "embedding": 15,
+          "rerank": 15
+        }
+      },
+      "agent": {
+        "answerable_turns": 15,
+        "returned_complete": 11,
+        "visible_complete": 10,
+        "status_counts": {
+          "partial": 8,
+          "succeeded": 7,
+          "failed": 1,
+          "unavailable": 2
+        },
+        "model_calls": 35,
+        "knowledge_requests": 26,
+        "retrieval_model_calls": {
+          "embedding": 21,
+          "rerank": 21
+        },
+        "p50_ms": 6605.929200013634,
+        "p95_ms": 17032.245900016278,
+        "semantic_task_completion": "NOT_ASSESSED_independent_human_pending"
+      },
+      "categories": {
+        "discovery": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 2,
+          "returned_complete": 1,
+          "visible_complete": 0
+        },
+        "measurement": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 2,
+          "returned_complete": 2,
+          "visible_complete": 2
+        },
+        "applicability": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 2,
+          "returned_complete": 2,
+          "visible_complete": 2
+        },
+        "comparison": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 2,
+          "returned_complete": 0,
+          "visible_complete": 0
+        },
+        "version": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 2,
+          "returned_complete": 2,
+          "visible_complete": 2
+        },
+        "followup": {
+          "conditions": 2,
+          "turns": 4,
+          "answerable_turns": 4,
+          "returned_complete": 3,
+          "visible_complete": 3
+        },
+        "unavailable": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 0,
+          "returned_complete": 0,
+          "visible_complete": 0
+        },
+        "routing": {
+          "conditions": 2,
+          "turns": 2,
+          "answerable_turns": 1,
+          "returned_complete": 1,
+          "visible_complete": 1
+        }
+      },
+      "owned_processes_stopped": true
+    }
+  },
+  "limitations": [
+    "Coverage measures exact authored anchors, not semantic answer correctness.",
+    "Gold and source/answer annotations are Codex authored; independent review pending.",
+    "Heldout uses new task conditions within reviewed sources, not unseen-source generalization.",
+    "Operator-only synthetic context; actual patient remote knowledge path not tested.",
+    "Help domain is explicitly absent; help boundary tests do not validate a product FAQ.",
+    "Provider traffic overlapped independent runs; elapsed times are descriptive, not performance gains.",
+    "Fault-injected cases are separate from actual provider outages and retrieval no-answer ability."
+  ]
+}

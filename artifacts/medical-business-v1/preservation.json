@@ -1,0 +1,28 @@
+{
+  "legacy": {
+    "files": 157,
+    "changed": [],
+    "snapshot_sha256": "fabfd54416b91f3ba9ef13e9c45d50fb3201dd11a14d6a89f6181ffdea027412"
+  },
+  "iteration_start": {
+    "files": 48,
+    "byte_identical": 46,
+    "documented_updates": [
+      "eval/public_medical_corpus_v1/README.md",
+      "eval/public_medical_corpus_v1/regression_backlog.json"
+    ],
+    "backlog_changes_limited_to_execution_registration": true,
+    "snapshot_sha256": "9843f30aab6cd67314ea5e0faf806eae350d30b5386c66fe2377fead1615c05e"
+  },
+  "meta_head": "ee489a40f83b7fdc261c7b59c27f7f88bd7306df",
+  "meta_status_matches_start": true,
+  "untracked_preexisting_meta_paths": [
+    "?? docs/acceptance/business-eval-2026-10-11/",
+    "?? docs/acceptance/contract-eval-2026-10-11/",
+    "?? docs/business-rag-eval-plan.md",
+    "?? docs/business-rag-eval-results.md",
+    "?? docs/business-rag-improvement-plan.md",
+    "?? docs/contract-business-eval-results.md"
+  ],
+  "status": "PASS"
+}

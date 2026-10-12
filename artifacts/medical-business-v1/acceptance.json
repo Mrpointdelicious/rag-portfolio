@@ -1,0 +1,55 @@
+{
+  "schema_version": "medical-business-acceptance-v1",
+  "recorded_at": "2026-10-12T03:19:58.244005+00:00",
+  "base_head": "224ac082726f39ed4b35be4471dc44f68802747b",
+  "branch": "codex/public-medical-corpus-v1",
+  "overall": "PARTIAL",
+  "technical_delivery": "PASS",
+  "clinical_approval": false,
+  "independent_human_review": "pending",
+  "production_changed": false,
+  "checks": [
+    {
+      "name": "ruff",
+      "exit": 0,
+      "log_sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "name": "ruff-format",
+      "exit": 0,
+      "log_sha256": "ff49d11bbadf3e713af94acf60f6c2d6298532c28849d0eaaa7028a332f7bae7"
+    },
+    {
+      "name": "git-diff-check",
+      "exit": 0,
+      "log_sha256": "fbbe233b25fcfc397f817e34cbeba049c91bb7a087a526841c0d4881d3f7b106"
+    }
+  ],
+  "sealed_dataset_check": {
+    "questions_and_private_gold_pins": "PASS",
+    "verified_anchor_assignments": 59,
+    "unique_verified_source_spans": 45
+  },
+  "isolated_postgres": {
+    "passed": 283,
+    "warnings": 2,
+    "cleanup_complete": true,
+    "report_sha256": "8a9de1c63fdf1a71a10822475e069f2795be588e3bfa9ba54979a15aa97103df",
+    "suite_log_sha256": "ddeb254016d167e6e4cd6fe612435435588a906a88b714fa870320c92ff5c26a"
+  },
+  "package_audit_sha256": "0617f101221ea7277f47946d8dff6f3ba203abc7c575cff55c7c573c0472788c",
+  "preservation_sha256": "0ec369d05ab2a9850695cc80efd611f60edc62020f5700e0866485515f26c317",
+  "business_conditions": 40,
+  "business_turns": 45,
+  "original_regressions": 50,
+  "deferred_backlog_tested": 12,
+  "targeted_backlog_fixes": false,
+  "open_items": [
+    "Original twelve incomplete coverage cases retained without targeted fixes.",
+    "Answerable bibliography question declined before retrieval.",
+    "Help scope exclusion paraphrased as no retrieval hit.",
+    "Expired evidence not re-fetched; invalid draft citation blocked, task unfinished.",
+    "Independent Gold and full-answer semantic/clinical review pending."
+  ],
+  "performance_claim": "none; latency descriptive and runs overlap provider traffic"
+}

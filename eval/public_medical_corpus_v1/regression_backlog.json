@@ -1,0 +1,220 @@
+{
+  "schema_version": "public-medical-regression-backlog-v1",
+  "registered_on": "2026-10-12",
+  "name": "Public Medical Corpus v1 已打开的12道待改进回归题",
+  "user_decision": "全部保留为待改进问题集合，在接下来的回归测试中测试。现阶段不再针对改进。",
+  "status": "deferred_known_failure",
+  "targeted_fix_requested": false,
+  "purpose": "known_case_regression_only",
+  "case_count": 12,
+  "original_split_counts": {
+    "dev": 7,
+    "heldout": 5
+  },
+  "regression_execution": {
+    "required_for": "future medical retrieval candidate regressions",
+    "execution_status": "all_12_tested_in_medical_business_v1",
+    "runner_integration": "tools/eval_medical_business.py regressions",
+    "latest_report": "artifacts/medical-business-v1/fixed_regression_report.json"
+  },
+  "baseline": {
+    "strategy": "hybrid_rerank",
+    "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+    "index_sha256": "b3c83b4d8087b087f41926383c10bed19487aed067fd51599b02ac2f6c1ab8f9",
+    "failure_cases_path": "artifacts/public-medical-corpus-v1/failure_cases.json",
+    "failure_cases_file_sha256": "9afefce9d8d183a86a40707e56f7cc34904edc7d488a31bd70808b67e4e4a5ce",
+    "eval_summary_path": "artifacts/public-medical-corpus-v1/eval_summary.json",
+    "eval_summary_file_sha256": "644bf3284f0d1451e1ab5ba004e5956f4a88e31436880b25ef9fa185f5dd2427",
+    "gold_seal_path": "eval/public_medical_corpus_v1/seal.json",
+    "gold_seal_file_sha256": "011417afff4ff841236f6844b99f959faf2465e356a4ff6974ca6949579788ea",
+    "dev_gold_file_sha256": "6c67eb88f22fd9586b6cda8e032f8aa2f4685a0c14114a8866b34dc3b3b00b87",
+    "heldout_gold_file_sha256": "ca8a76c494f1026c914466243e26220f795aaaeebc643856a933981f7fa20712",
+    "top_k": 5,
+    "budget_tokens": 4000,
+    "tokenizer": "cl100k_base",
+    "complete_coverage_at5_n": 0,
+    "budget_complete_coverage_n": 0
+  },
+  "policy": {
+    "membership": "Keep all 12 cases, including after any future improvement; append run outcomes separately.",
+    "gold": "Resolve evidence groups from original sealed Gold. Do not alter historical questions, anchors, rankings or scores.",
+    "evaluation_role": "All cases are opened regressions. Original split is provenance, never a new holdout claim.",
+    "scope": "Run the full original 50-case suite as regressions and report this subset separately; preserve other suites under their own protocols.",
+    "known_failure_handling": "Report baseline, current coverage and delta. Existing incomplete coverage is deferred, not resolved or silently excluded.",
+    "missing_result_handling": "Mark not_tested or execution_error explicitly; never count a skipped case as passing.",
+    "required_per_case_fields": [
+      "case_id",
+      "run_id",
+      "strategy",
+      "corpus_sha256",
+      "index_sha256",
+      "groups_total",
+      "groups_covered_at5",
+      "complete_coverage_at5",
+      "budget_complete_coverage",
+      "context_tokens",
+      "baseline_delta",
+      "execution_status"
+    ],
+    "new_corpus": "Version and review source/segment/anchor mapping first. Changed corpus scores are separate from the original public-corpus baseline.",
+    "new_holdout": "Freeze independent new questions before new development retrieval. No reuse of these opened cases as unseen evaluation."
+  },
+  "cases": [
+    {
+      "case_id": "pmv1-dev-01",
+      "question": "NEW01 综述最后纳入多少项研究？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-01",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-02",
+      "question": "NEW01 综述检索的发表年份范围是什么？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-02",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-03",
+      "question": "NEW01 涵盖哪两类机器人步态设备？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-03",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-09",
+      "question": "NEW02 的患者和评估者是否实施盲法？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-09",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-20",
+      "question": "比较 NEW02 和 NEW03 的组间结论：是否都证明机器人优于常规？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-20",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 2,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-24",
+      "question": "NEW04 的同侧运动与步态关系可以直接解释成训练的因果疗效吗？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-24",
+      "baseline": {
+        "groups_covered_at5": 1,
+        "groups_total": 2,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-dev-27",
+      "question": "NEW05 的平均985步与10有氧分钟是观察到的剂量还是规定处方？",
+      "original_split": "dev",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/dev.jsonl#pmv1-dev-27",
+      "baseline": {
+        "groups_covered_at5": 1,
+        "groups_total": 2,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-heldout-01",
+      "question": "比较 NEW02 与 NEW03 的主要结局指标，相同吗？",
+      "original_split": "heldout",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/heldout.jsonl#pmv1-heldout-01",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 2,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-heldout-02",
+      "question": "比较 NEW02 与 NEW03 的结局评估盲法，是否一致？",
+      "original_split": "heldout",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/heldout.jsonl#pmv1-heldout-02",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 2,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-heldout-06",
+      "question": "NEW06 高等级结论主要针对哪种疾病，能直接推广所有神经疾病吗？",
+      "original_split": "heldout",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/heldout.jsonl#pmv1-heldout-06",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-heldout-07",
+      "question": "D161 最后纳入多少临床试验？",
+      "original_split": "heldout",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/heldout.jsonl#pmv1-heldout-07",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    },
+    {
+      "case_id": "pmv1-heldout-08",
+      "question": "D161 为什么还需要按卒中时间等条件更严格的试验？",
+      "original_split": "heldout",
+      "status": "deferred_known_failure",
+      "gold_reference": "eval/public_medical_corpus_v1/heldout.jsonl#pmv1-heldout-08",
+      "baseline": {
+        "groups_covered_at5": 0,
+        "groups_total": 1,
+        "complete_coverage_at5": false,
+        "budget_complete_coverage": false
+      }
+    }
+  ]
+}

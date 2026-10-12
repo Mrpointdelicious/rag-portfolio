@@ -50,8 +50,10 @@ Hit 指单块完整覆盖任一 acceptable 证据锚点；MRR 取第一次这种
 
 真实失败也保留：第一次 harness 配置超时30秒违反 MetaAgent 最大15秒，配置阶段拒绝；第二次6题采用默认 help-only scope，health 被拒绝；修正隔离测试配置为显式 health 后第三次执行。没有修改 MetaAgent 源码。当前 scope 拒绝原因丢失的修复涉及其现有 adapter，本任务按只读边界仅记录。
 
-## 验收与后续定点修复
+## 验收与后续安排
 
 271 项 pytest（含独立 PostgreSQL 容器）通过，19 项新语料检查覆盖许可、重复作品、PDF/XML定位、Gold指纹、索引漂移、跨来源选择、患者/范围门控及签名契约；ruff check/format、实际 sdist/wheel 构建和 Docker context 内容审查已执行。原始日志和包指纹见 `acceptance.json`、`package_audit.json`；两个依赖弃用警告保留。
 
-下一轮先做独立人工复核，重点处理 NEW01 概况事实、NEW03 主要结局/盲法、D161 纳入数量/异质性及多篇比较的漏检。再另建 v2 Gold/release 开发摘要/方法/结果的证据取舍与通用无答案判别；不得在本轮 heldout 上继续调参。本次不把检索覆盖、Agent诚实说明缺口、临床回答批准混为一个“通过率”。
+2026-10-12用户决定：全部12道未完整覆盖题转入[固定回归与待改进集合](public-medical-corpus-v1-review-questions.md)，本阶段暂缓定点修复。这一决定替代首次收口时“下一轮先修上述漏检”的优先级安排；首次分数、Gold和排名不变。未来逐题重跑只算已打开题集回归，另建新保留集评估新方向，不得在本轮heldout上继续调参后宣称盲测提升。
+
+下一步建议转向[完整知识库服务化与业务评测](public-medical-next-iteration.md)。独立Gold/语义复核仍需完成；本次不把检索覆盖、Agent诚实说明缺口、临床回答批准混为一个“通过率”。

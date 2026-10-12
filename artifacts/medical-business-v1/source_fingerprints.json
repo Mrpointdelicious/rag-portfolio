@@ -1,0 +1,48 @@
+{
+  "candidate_files": {
+    "src/rag_portfolio/public_medical_retrieval.py": "239eee469529b40434470cee6c2b09eaaaf5cc8ca42493870e41fd5771a16750",
+    "src/rag_portfolio/medical_release.py": "dc1828f8919c4d894e89070cadaacab6c1b5a03cbcf49599f8017239889dcb8c",
+    "src/rag_portfolio/medical_release_service.py": "4a39728799f04b59c1ef8c6b5a5a963faccc7b3aeb496a1037f3382f0f2a6ef9",
+    "tools/eval_medical_business.py": "516d3a7dc76acc0ce3a210c5344f43b94f1377ec4f0cf2c3c7e53bd49d4b48d2",
+    "tools/finalize_medical_business.py": "06d1d446b32359caa9847bb2abad6f9938cf7903a17bf5d54a932b49dbc2195f",
+    "tools/freeze_medical_business.py": "86d70b7c48456e9c0ca5e730c2ead161f55e7f00bcf294d278a4af039bd8baa6",
+    "tools/medical_business_agent.py": "c27d69b46dbdac4e079bd3bffc821c6c761373ab4c4cc13507071c2eb0f1a44b",
+    "tools/report_medical_business.py": "c09fbe378afe32e58b96e013f9d740e5da6128306de496c3aadd589810989c20",
+    "tools/review_medical_business.py": "f97c1f45ba0a2b41b62a4e3ae5d15743ac89a20990d3ece4b60414252caa5101",
+    "tools/medical_release.py": "e39e53f92110cc2f06e763793a85e2910c315c8a1816d50695bd0eac98982686",
+    "tools/serve_medical_release.py": "3c30e9770757ab346f14bdbf26b36fbe35812e3bfe79c5b10b60d2730b27f711",
+    "tools/verify_medical_release.py": "2cf87ba4abf37dff8a44e504b901a0e439f8c01acdb080be39e86b4d91be97a9"
+  },
+  "meta_agent_head": "ee489a40f83b7fdc261c7b59c27f7f88bd7306df",
+  "meta_runtime": {
+    "src/meta_agent/agent/runtime.py": "ea3f884285631984d114eb896ad06529997124e7f02ab04ea932180ad2ff9c5c",
+    "src/meta_agent/domains/knowledge.py": "e39f6440d74adfff1c5a20b05511b9a9a2369c1ed5f9f5c4ff703c49a9486ad8",
+    "src/meta_agent/domains/knowledge_citations.py": "ffdc42dca14bbcc5baf202f65d844ea8b49beae3e2ea365be3230a7a625088dd",
+    "src/meta_agent/prompts/templates/business_grounding.v9.md": "b4dc391994a2d9faec02b375ea5433e42d99511890eb7b645c9ef0b2b307df12"
+  },
+  "run_configuration": {
+    "dev": {
+      "model": "deepseek:deepseek-chat",
+      "prompt_bundle": "business-grounded-v9",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "budget": {
+        "context": 12000,
+        "unit": "UTF-8 bytes upper bound",
+        "model_calls": 8
+      }
+    },
+    "heldout": {
+      "model": "deepseek:deepseek-chat",
+      "prompt_bundle": "business-grounded-v9",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "budget": {
+        "context": 12000,
+        "unit": "UTF-8 bytes upper bound",
+        "model_calls": 8
+      }
+    }
+  },
+  "fingerprint_scope": "candidate delivery files; MetaAgent pinned by unchanged Git HEAD"
+}

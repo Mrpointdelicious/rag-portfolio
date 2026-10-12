@@ -36,10 +36,10 @@ def input_text(chunk):
     return f"{chunk['document_id']} | {chunk['title']} | {chunk['section']}\n{chunk['text']}"
 
 
-async def build_index(corpus, output: Path):
-    validate_corpus(corpus)
-    if corpus["corpus_id"] != "medical_public_v1":
-        raise ValueError("External embeddings restricted to reviewed public prose")
+async def build_index(corpus, output: Path, *, processing_approval=None):
+    from rag_portfolio.medical_release import processing_gate
+
+    processing_gate(corpus, processing_approval)
     if output.exists():
         raise ValueError("Index is immutable; use a new index version")
     adapter = EmbeddingAdapter(Settings())
@@ -162,8 +162,13 @@ def context_pack(top, corpus, budget=4000, *, expanded=False):
 
 
 class PublicMedicalRetriever:
-    def __init__(self, corpus, index):
+    def __init__(self, corpus, index, *, processing_approval=None, route=None):
+        from rag_portfolio.medical_release import processing_gate
+
+        processing_gate(corpus, processing_approval)
         validate_index(corpus, index)
+        self.processing_approval = processing_approval
+        self.route = route or boundary
         self.corpus, self.index = corpus, index
         self.chunks = {c["chunk_id"]: c for c in corpus["chunks"]}
         self.bm25 = LocalBM25Retriever({UUID(k): input_text(c) for k, c in self.chunks.items()})
@@ -181,6 +186,9 @@ class PublicMedicalRetriever:
 
     async def retrieve(self, query, budget=4000):
         # Recheck mutable in-memory inputs before every query as well as at startup.
+        from rag_portfolio.medical_release import processing_gate
+
+        processing_gate(self.corpus, self.processing_approval)
         validate_index(self.corpus, self.index)
         sparse = await self.bm25.search(query, limit=20)
         vector = normalize(await self.embedding.embed_query(query))
@@ -215,7 +223,7 @@ class PublicMedicalRetriever:
             }
         return {
             "query": query,
-            "boundary": boundary(query),
+            "boundary": self.route(query),
             "embedding": embedding_meta,
             "rerank": rerank_meta,
             "actual_model_calls": {"embedding": 1, "rerank": 1},
