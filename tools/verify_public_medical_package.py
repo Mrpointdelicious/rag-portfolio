@@ -138,6 +138,8 @@ def main(*, local=LOCAL, output=None):
         "eval/public_medical_corpus_v1",
         "artifacts/medical-business-v1",
         "eval/medical_business_v1",
+        "artifacts/medical-business-v2",
+        "eval/medical_business_v2",
     ]:
         paths.extend(p for p in (ROOT / directory).rglob("*") if p.is_file())
     paths.extend((ROOT / "src/rag_portfolio").glob("public_medical*.py"))

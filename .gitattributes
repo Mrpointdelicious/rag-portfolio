@@ -8,3 +8,6 @@ eval/public_medical_corpus_v1/*.jsonl -text
 eval/medical_business_v1/*.json -text
 eval/medical_business_v1/*.jsonl -text
 artifacts/medical-business-v1/*.json -text
+eval/medical_business_v2/*.json -text
+eval/medical_business_v2/*.jsonl -text
+artifacts/medical-business-v2/*.json -text

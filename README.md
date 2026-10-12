@@ -120,3 +120,5 @@ docs/                  # 架构、开发路线、来源及验证记录
 [公开医学Corpus v1](docs/public-medical-corpus-v1-design.md)已完成7篇公开正文的实时Hybrid/重排及MetaAgent隔离联调，[评测结果](docs/public-medical-corpus-v1-eval.md)保留全部限制。首轮12道未完整覆盖题已登记为[固定回归与待改进集合](docs/public-medical-corpus-v1-review-questions.md)，本阶段暂缓定点修复。[后续方案](docs/public-medical-next-iteration.md)中的完整知识库服务化与业务评测已按下述候选基线实施。
 
 [合并知识库与业务基线v1](docs/medical-business-v1-results.md)已完成14篇/713块的真实Hybrid候选、版本撤销/回滚、40条件/45轮MetaAgent基线及原50题固定回归。新保留集15轮有证据任务中，10轮必要锚点完整进入最终模型上下文；这不是答案准确率。完整业务验收PARTIAL，旧12题继续暂缓修复。[运行方法](docs/medical-business-v1-runbook.md)。
+
+[v2方案](docs/medical-business-v2-plan.md)已完成失败原因保真、过期证据有限恢复、可信发布能力及独立运营试点。[实施结果](docs/medical-business-v2-results.md)：工程检查通过，业务验收PARTIAL，C不晋级；旧12题继续保留回归。真实患者尚未接入，[生产接入评估](docs/real-patient-production-design-assessment.md)建议下一轮先做主体授权、模型出口控制与合成患者预发验证。

@@ -41,6 +41,7 @@ exclude = [
   "/outputs/**", "/.local/**", "/doc/**", "/medical_corpus_v1/**",
   "/artifacts/public-medical-corpus-v1/**",
   "/artifacts/medical-business-v1/**",
+  "/artifacts/medical-business-v2/**", "/eval/medical_business_v2/**",
 ]
 
 [tool.pytest.ini_options]

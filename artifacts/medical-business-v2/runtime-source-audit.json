@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "container": "medical-internal-v2-agent-1",
+      "image": "sha256:1bc26d3598d0c367f4f995943999648e18d82b952f27593df7da62c4da96cf1c",
+      "source_files": 102,
+      "mismatches": [],
+      "status": "running",
+      "health": "healthy"
+    },
+    {
+      "container": "medical-internal-v2-rag-1",
+      "image": "sha256:97e3fdff453845699175aadefca1b0775f9153c2a64e46ea1798d30992632a10",
+      "source_files": 58,
+      "mismatches": [],
+      "status": "running",
+      "health": "healthy"
+    }
+  ],
+  "clinical_approval": false
+}

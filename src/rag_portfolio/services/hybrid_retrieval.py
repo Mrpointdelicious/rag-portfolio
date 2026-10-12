@@ -322,6 +322,8 @@ class HybridPipeline:
         start = time.monotonic()
         dense, sparse, degradation, calls = [], [], [], {"embedding": 0, "rerank": 0}
         stages = {
+            "source_kind": "synthetic_technical_documents",
+            "loaded_domains": sorted({d.domain for d in self.corpus.documents}),
             "embedding_model": self.index.embedding_model,
             "dimension": self.index.embedding_dimension,
         }

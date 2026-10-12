@@ -1,0 +1,32 @@
+{
+  "meta_packages": [],
+  "images": [
+    {
+      "tag": "medical-rag:internal-v2",
+      "image_id": "sha256:97e3fdff453845699175aadefca1b0775f9153c2a64e46ea1798d30992632a10",
+      "forbidden": [],
+      "credential_matches": []
+    },
+    {
+      "tag": "medical-metaagent:internal-v2",
+      "image_id": "sha256:1bc26d3598d0c367f4f995943999648e18d82b952f27593df7da62c4da96cf1c",
+      "forbidden": [],
+      "credential_matches": []
+    }
+  ],
+  "clinical_approval": false,
+  "credential_scan": {
+    "files": 693,
+    "matches": [],
+    "values_logged": false
+  },
+  "legacy_preservation": {
+    "files": 157,
+    "changed": []
+  },
+  "v1_preservation": {
+    "files": 47,
+    "changed": []
+  },
+  "status": "FAIL"
+}

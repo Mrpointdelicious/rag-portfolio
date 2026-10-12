@@ -1,0 +1,61 @@
+name: medical-internal-v2
+services:
+  db:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pilot
+      POSTGRES_DB: pilot
+      POSTGRES_PASSWORD_FILE: /run/pilot/pg-password.txt
+    volumes:
+      - pilot-db:/var/lib/postgresql/data
+      - ${PILOT_DIR}/pg-password.txt:/run/pilot/pg-password.txt:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U pilot -d pilot"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    logging: &logging
+      driver: json-file
+      options: {max-size: 5m, max-file: '3'}
+  rag:
+    image: medical-rag:internal-v2
+    build: {context: '${RAG_REPO}', dockerfile: Dockerfile.medical}
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment: {MEDICAL_PILOT_CONFIG: /run/pilot/config.json}
+    volumes:
+      - ${PILOT_DIR}:/run/pilot:ro
+      - ${PILOT_DIR}/bundle:/data:ro
+      - ${RAG_REPO}/.env:/run/model-config/.env:ro
+      - ${PILOT_DIR}/logs:/var/log/pilot
+    ports: ['127.0.0.1:${RAG_PORT}:8000']
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready',timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    logging: *logging
+  agent:
+    image: medical-metaagent:internal-v2
+    build: {context: '${META_REPO}', target: runtime}
+    command: [uvicorn, meta_agent.pilot:create_app, --factory, --host, 0.0.0.0, --port, '8080', --workers, '1', --no-access-log]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp]
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      db: {condition: service_healthy}
+      rag: {condition: service_healthy}
+    environment: {MEDICAL_PILOT_CONFIG: /run/pilot/config.json}
+    volumes:
+      - ${PILOT_DIR}:/run/pilot:ro
+      - ${META_REPO}/.env:/run/model-config/.env:ro
+    ports: ['127.0.0.1:${AGENT_PORT}:8080']
+    logging: *logging
+volumes:
+  pilot-db:

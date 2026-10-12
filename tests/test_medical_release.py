@@ -221,6 +221,54 @@ def fake_retriever(monkeypatch, *, during=None):
 
 
 @pytest.mark.asyncio
+async def test_readiness_stats_and_generation_change_fail_closed(tmp_path, bundles, monkeypatch):
+    from rag_portfolio.medical_release_service import create_release_app
+
+    registry = setup_registry(tmp_path, bundles)
+    registry.transition("combined", "validate")
+    registry.transition("combined", "activate")
+
+    # A revoke then rollback to the same active ID must discard an in-flight result too.
+    def change_generation():
+        state = registry.read()
+        registry._save(state, "audit_generation_change", "combined")
+
+    fake_retriever(monkeypatch, during=change_generation)
+    token = "t" * 40
+    app = create_release_app(registry.path, token, trace_limit=1)
+    c, i = bundles["combined"][3:]
+    headers = {
+        "Authorization": "Bearer " + token,
+        "X-Tenant-ID": "medical-business-v1",
+        "X-Actor-Role": "operator",
+        "X-Patient-Context": "false",
+    }
+    body = dict(
+        request_id=str(uuid4()),
+        query="Synthetic source prose",
+        domain="health",
+        scope_key="medical-business-v1",
+        corpus_version=c["release"],
+        corpus_sha256=c["corpus_sha256"],
+        index_sha256=i["index_sha256"],
+        strategy="hybrid_rerank",
+        context_budget=12000,
+    )
+    async with httpx.AsyncClient(
+        transport=httpx.ASGITransport(app=app), base_url="http://owned"
+    ) as client:
+        assert (await client.get("/health/ready")).json()["corpus_sha256"] == c["corpus_sha256"]
+        assert (await client.get("/internal/stats")).status_code == 401
+        assert (
+            await client.post("/v1/experimental/hybrid/retrieve", json=body, headers=headers)
+        ).status_code == 409
+        stats = (await client.get("/internal/stats", headers=headers)).json()
+        assert stats["active"] == 0 and stats["http_statuses"] == {"409": 1}
+        registry.transition("combined", "revoke")
+        assert (await client.get("/health/ready")).status_code == 503
+
+
+@pytest.mark.asyncio
 async def test_service_pins_scope_signature_and_rollback(tmp_path, bundles, monkeypatch):
     from rag_portfolio.medical_release_service import create_release_app
 

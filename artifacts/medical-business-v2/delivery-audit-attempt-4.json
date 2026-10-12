@@ -1,0 +1,49 @@
+{
+  "meta_packages": [
+    {
+      "name": "meta_agent-1.0.0-py3-none-any.whl",
+      "sha256": "ca659c2613b35f4c3e43962dc3ee397857dbb840b16391ff5e008c7f98f4476f",
+      "forbidden": [],
+      "credential_matches": [],
+      "pilot_ui_packaged": true
+    },
+    {
+      "name": "meta_agent-1.0.0.tar.gz",
+      "sha256": "b3847efdc0a0dbd786dbf40d47e68036f381679849210d9b5bbd13e722c72669",
+      "forbidden": [
+        "meta_agent-1.0.0/docs/acceptance/contract-eval-2026-10-11/unit-tests.xml"
+      ],
+      "credential_matches": [],
+      "pilot_ui_packaged": true
+    }
+  ],
+  "images": [
+    {
+      "tag": "medical-rag:internal-v2",
+      "image_id": "sha256:97e3fdff453845699175aadefca1b0775f9153c2a64e46ea1798d30992632a10",
+      "forbidden": [],
+      "credential_matches": []
+    },
+    {
+      "tag": "medical-metaagent:internal-v2",
+      "image_id": "sha256:1bc26d3598d0c367f4f995943999648e18d82b952f27593df7da62c4da96cf1c",
+      "forbidden": [],
+      "credential_matches": []
+    }
+  ],
+  "clinical_approval": false,
+  "credential_scan": {
+    "files": 696,
+    "matches": [],
+    "values_logged": false
+  },
+  "legacy_preservation": {
+    "files": 157,
+    "changed": []
+  },
+  "v1_preservation": {
+    "files": 47,
+    "changed": []
+  },
+  "status": "FAIL"
+}

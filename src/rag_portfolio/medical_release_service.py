@@ -23,11 +23,12 @@ from rag_portfolio.services.hybrid_contract import (
 TENANT = "medical-business-v1"
 
 
-def create_release_app(registry_path, token, *, fault_file=None):
+def create_release_app(registry_path, token, *, fault_file=None, max_inflight=2, trace_limit=1000):
     if len(token) < 32:
         raise ValueError("Distinct ephemeral token required")
     registry = ReleaseRegistry(registry_path)
     clients = {}
+    query_lock = asyncio.Lock()
 
     @asynccontextmanager
     async def lifespan(app):
@@ -39,6 +40,50 @@ def create_release_app(registry_path, token, *, fault_file=None):
 
     app = FastAPI(lifespan=lifespan)
     app.state.calls = []
+    app.state.stats = {"requests": 0, "active": 0, "rejected_busy": 0, "http_statuses": {}}
+
+    @app.middleware("http")
+    async def bounded_requests(request, call_next):
+        retrieval = request.url.path == "/v1/experimental/hybrid/retrieve"
+        stats = app.state.stats
+        if retrieval and stats["active"] >= max_inflight:
+            stats["rejected_busy"] += 1
+            return JSONResponse({"code": "service_busy"}, 429)
+        if retrieval:
+            stats["active"] += 1
+            stats["requests"] += 1
+        try:
+            response = await call_next(request)
+            if retrieval:
+                key = str(response.status_code)
+                stats["http_statuses"][key] = stats["http_statuses"].get(key, 0) + 1
+            return response
+        finally:
+            if retrieval:
+                stats["active"] -= 1
+                del app.state.calls[:-trace_limit]
+
+    @app.get("/health/ready")
+    async def ready():
+        try:
+            entry, _, generation = registry.active()
+            return {
+                "status": "ready",
+                "release_id": entry["release_id"],
+                "generation": generation,
+                "corpus_sha256": entry["corpus_sha256"],
+                "index_sha256": entry["index_sha256"],
+                "provider_probe": "not_performed",
+                "clinical_approval": False,
+            }
+        except (OSError, ValueError, KeyError):
+            return JSONResponse({"status": "not_ready", "reason": "release_unavailable"}, 503)
+
+    @app.get("/internal/stats")
+    async def stats(request: Request):
+        if not hmac.compare_digest(request.headers.get("authorization", ""), "Bearer " + token):
+            return JSONResponse({"code": "unauthorized"}, 401)
+        return app.state.stats
 
     @app.get("/health/live")
     async def live():
@@ -98,6 +143,8 @@ def create_release_app(registry_path, token, *, fault_file=None):
         if fault == "provider_unavailable":
             call["code"] = "provider_unavailable"
             return JSONResponse({"code": "provider_unavailable"}, 503)
+        if fault in {"permission_denied", "version_unavailable"}:
+            return JSONResponse({"code": fault}, 403 if fault == "permission_denied" else 409)
         if fault == "timeout":
             await asyncio.sleep(16)
             call["code"] = "injected_timeout"
@@ -109,7 +156,9 @@ def create_release_app(registry_path, token, *, fault_file=None):
                     clients[key] = PublicMedicalRetriever(
                         corpus, index, processing_approval=approval, route=route
                     )
-                actual = await clients[key].retrieve(q.query)
+                # Provider adapters expose last-call metadata; serialize use of that state.
+                async with query_lock:
+                    actual = await clients[key].retrieve(q.query)
             except (ValueError, RuntimeError):
                 call["code"] = "provider_unavailable"
                 return JSONResponse({"code": "provider_unavailable"}, 503)
@@ -126,7 +175,7 @@ def create_release_app(registry_path, token, *, fault_file=None):
                 ):
                     packed.append(snippet)
         current = registry.read()
-        if current["active"] != entry["release_id"]:
+        if current["active"] != entry["release_id"] or current["generation"] != generation:
             call["code"] = "release_changed_during_request"
             return JSONResponse({"code": "release_changed_during_request"}, 409)
         code = "ok" if packed else ("no_hits" if gate == "retrieve" else gate)
@@ -161,6 +210,8 @@ def create_release_app(registry_path, token, *, fault_file=None):
                 "release_id": entry["release_id"],
                 "generation": generation,
                 "public_prose_only": corpus["corpus_id"] == "medical_public_v1",
+                "source_kind": "published_medical_literature",
+                "loaded_domains": ["health"],
                 "injected_fault": fault,
             },
             evidence=packed,
@@ -171,6 +222,8 @@ def create_release_app(registry_path, token, *, fault_file=None):
             canonical({k: v for k, v in value.items() if k != "signature"}),
             hashlib.sha256,
         ).hexdigest()
+        if fault == "signature_invalid":
+            value["signature"] = "0" * 64
         call.update(
             code=code,
             selected_refs=[s.doc_ref for s in packed],
