@@ -42,6 +42,7 @@ exclude = [
   "/artifacts/public-medical-corpus-v1/**",
   "/artifacts/medical-business-v1/**",
   "/artifacts/medical-business-v2/**", "/eval/medical_business_v2/**",
+  "/artifacts/synthetic-preproduction-v1/**", "/eval/synthetic_preproduction_v1/**",
 ]
 
 [tool.pytest.ini_options]

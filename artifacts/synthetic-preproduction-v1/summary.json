@@ -1,0 +1,1593 @@
+{
+  "schema_version": "synthetic-preproduction-v1-results",
+  "contract_execution": "real owned TCP HTTP; synthetic records/sources; controlled generator stub",
+  "contract_status": "PASS",
+  "seal": {
+    "acceptance": "All engineering assertions pass; zero unauthorized access, outbound patient fields, invalid source publication, or literature values as patient facts; positives complete",
+    "case_count": 60,
+    "cases_sha256": "5c50c69915ba9e4650e2b479a4cffa3410cc142c86e92eb388aa42a4c87f9e04",
+    "clinical_approval": false,
+    "frozen_at": "2026-10-12T07:15:29.667122+00:00",
+    "group_counts": {
+      "boundaries": 20,
+      "facts": 20,
+      "identity": 20
+    },
+    "schema_version": "synthetic-preproduction-v1"
+  },
+  "conditions": 60,
+  "passed": 60,
+  "groups": {
+    "identity": 20,
+    "facts": 20,
+    "boundaries": 20
+  },
+  "rows": [
+    {
+      "case_id": "identity-01",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "identity",
+      "scenario": "self_access",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "positive_record_completed": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-02",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "identity",
+      "scenario": "assigned_clinician",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "positive_record_completed": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-03",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "missing_token",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-04",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "bad_signature",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-05",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "expired_token",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-06",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "future_token",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-07",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "wrong_audience",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-08",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "unknown_issuer",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-09",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "excessive_ttl",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-10",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "cross_tenant",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-11",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "unassigned_patient",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-12",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "forged_role",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-13",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 422,
+      "group": "identity",
+      "scenario": "client_identity_field",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 422,
+      "initial_http": 422,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-14",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "wrong_purpose",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-15",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "wrong_session",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-16",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "revoked_grant",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-17",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "old_grant_after_regrant",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-18",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "operator_access",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-19",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "identity",
+      "scenario": "direct_patient_wrong_audience",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "identity-20",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "identity",
+      "scenario": "switch_patient_old_session",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "first_patient_allowed": true,
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-01",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "valid_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-02",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "missing_value",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-03",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "null_value",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-04",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "placeholder_zero",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-05",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "observed_zero",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-06",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "missing_unit",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-07",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "stale_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-08",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "future_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-09",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "undated_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-10",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "uncertain_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-11",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "no_measurement",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "missing_is_explicit": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-12",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "same_name_patient_isolation",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "same_display_name": true,
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-13",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 502,
+      "group": "facts",
+      "scenario": "malformed_number",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 502,
+      "initial_http": 502,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-14",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 502,
+      "group": "facts",
+      "scenario": "numeric_string",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 502,
+      "initial_http": 502,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-15",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "unknown_unit",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-16",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "facts",
+      "scenario": "backend_subject_conflict",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-17",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 503,
+      "group": "facts",
+      "scenario": "patient_backend_outage",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 503,
+      "initial_http": 503,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-18",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 404,
+      "group": "facts",
+      "scenario": "patient_not_found",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 404,
+      "initial_http": 404,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-19",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 502,
+      "group": "facts",
+      "scenario": "unexpected_backend_field",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 502,
+      "initial_http": 502,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "facts-20",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "facts",
+      "scenario": "restart_persistence",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "fresh_app_reads_persisted_run": true,
+        "expected_http": true,
+        "state_matches_record": true,
+        "value_not_invented": true,
+        "right_patient": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "no_generation_or_retrieval_for_patient_record": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-01",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "boundaries",
+      "scenario": "approved_concept",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "positive_literature_completed": true,
+        "no_generated_claims_published": true,
+        "patient_separate_from_literature": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-02",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 422,
+      "group": "boundaries",
+      "scenario": "unknown_concept",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 422,
+      "initial_http": 422,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "rejected_before_outbound": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-03",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 422,
+      "group": "boundaries",
+      "scenario": "free_query_rejected",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 422,
+      "initial_http": 422,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "rejected_before_outbound": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-04",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 422,
+      "group": "boundaries",
+      "scenario": "privacy_canary_rejected",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 422,
+      "initial_http": 422,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "rejected_before_outbound": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-05",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 401,
+      "group": "boundaries",
+      "scenario": "direct_rag_wrong_audience",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 401,
+      "initial_http": 401,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-06",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "boundaries",
+      "scenario": "rag_revoked_grant",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 403,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-07",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 502,
+      "group": "boundaries",
+      "scenario": "bad_source_signature",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 502,
+      "initial_http": 502,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-08",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "corpus_mismatch",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 409,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-09",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "index_mismatch",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 409,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-10",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 502,
+      "group": "boundaries",
+      "scenario": "bad_source_hash",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 502,
+      "initial_http": 502,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-11",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 410,
+      "group": "boundaries",
+      "scenario": "expired_source",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 410,
+      "initial_http": 410,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-12",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "revoked_release",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 409,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-13",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "revoked_during_generation",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 409,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-14",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "boundaries",
+      "scenario": "revoked_during_sse",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "accepted_precedes_revocation": true,
+        "revocation_blocks_remaining_stream": true,
+        "expected_http": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-15",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 403,
+      "group": "boundaries",
+      "scenario": "revoked_before_replay",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 403,
+      "initial_http": 200,
+      "assertions": {
+        "no_replayed_result": true,
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-16",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "release_revoked_before_replay",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 200,
+      "assertions": {
+        "no_replayed_result": true,
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-17",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 409,
+      "group": "boundaries",
+      "scenario": "release_revoked_before_citation",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 409,
+      "initial_http": 200,
+      "assertions": {
+        "no_replayed_result": true,
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-18",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "boundaries",
+      "scenario": "literature_not_patient_fact",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "positive_literature_completed": true,
+        "no_generated_claims_published": true,
+        "patient_separate_from_literature": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-19",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 422,
+      "group": "boundaries",
+      "scenario": "prescription_task_rejected",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 422,
+      "initial_http": 422,
+      "assertions": {
+        "expected_http": true,
+        "no_fact_or_source_in_error": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true,
+        "rejected_before_outbound": true
+      },
+      "passed": true,
+      "patient_calls": 0,
+      "retrieval_calls": 0,
+      "generation_calls": 0,
+      "generation_payload_hashes": [],
+      "clinical_approval": false
+    },
+    {
+      "case_id": "boundaries-20",
+      "data": "self_authored_synthetic_only",
+      "expected_http": 200,
+      "group": "boundaries",
+      "scenario": "combined_sources_separate",
+      "semantic": "NOT_ASSESSED",
+      "actual_http": 200,
+      "initial_http": 200,
+      "assertions": {
+        "expected_http": true,
+        "positive_literature_completed": true,
+        "no_generated_claims_published": true,
+        "patient_separate_from_literature": true,
+        "minimal_generation_payload": true,
+        "no_patient_identifiers_or_values_in_generation": true
+      },
+      "passed": true,
+      "patient_calls": 1,
+      "retrieval_calls": 1,
+      "generation_calls": 1,
+      "generation_payload_hashes": [
+        "cd7a76fe0ef4b0bcadcf462b9d670958d06a191b6b097463244be9e5ccac2e98"
+      ],
+      "clinical_approval": false
+    }
+  ],
+  "live": {
+    "status": "PASS_engineering_semantic_pending",
+    "clinical_approval": false,
+    "semantic": "NOT_ASSESSED",
+    "patient_data_sent_to_models": false,
+    "execution": "Dedicated contract; live approved corpus, Hybrid/Reranker and generation",
+    "checks": {
+      "http_200": true,
+      "patient_record_preserved": true,
+      "live_sources_returned": true,
+      "no_generated_claims_published": true,
+      "no_patient_canaries_in_observed_provider_bodies": true,
+      "real_generation": true,
+      "real_embedding_rerank": true,
+      "live_citation_resolves": true
+    },
+    "http": 200,
+    "release": {
+      "release_id": "combined-business-v1",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+      "generation": 14
+    },
+    "retrievals": [
+      {
+        "actual_model_calls": {
+          "embedding": 1,
+          "rerank": 1
+        },
+        "embedding": {
+          "request_id": "af8b30de-3361-9275-b62c-918c9ca8cba7",
+          "usage": {
+            "total_tokens": 26
+          }
+        },
+        "rerank": {
+          "request_id": "17bbf3e2-a57b-9ad8-8868-a49afb2ea7ed",
+          "usage": {
+            "prompt_tokens": 8928,
+            "total_tokens": 8928
+          }
+        }
+      }
+    ],
+    "provider_requests": [
+      {
+        "host": "maas.qianwenaiapi.com",
+        "body_sha256": "d0d5e6ef04e823c63f087ab6313e68cec80396d02d5a4818a91bf25577a16fd7"
+      },
+      {
+        "host": "maas.qianwenaiapi.com",
+        "body_sha256": "3cf2a5a1439d38baec5de52a34e7d06362dfd6a53b54edc904af5c68ea2013ba"
+      },
+      {
+        "host": "api.deepseek.com",
+        "body_sha256": "0437ce416962c65ba951a81f7c81e2511a99f24f1122e62588cd96b721f0d311"
+      }
+    ]
+  },
+  "full_suites": {
+    "execution": "real owned ephemeral PostgreSQL; no existing DB contacted",
+    "port": 20289,
+    "steps": [
+      {
+        "step": "create",
+        "exit": 0
+      },
+      {
+        "step": "rag-isolated-suite",
+        "exit": 0
+      },
+      {
+        "step": "meta-isolated-suite",
+        "exit": 0
+      },
+      {
+        "step": "remove-owned-container",
+        "exit": 0
+      }
+    ],
+    "cleanup_complete": true
+  },
+  "delivery_audit": {
+    "packages": [
+      {
+        "repo": "rag",
+        "name": "rag_portfolio-0.1.0-py3-none-any.whl",
+        "sha256": "6892393292dd70c196684d9781968c14e10bb66bacd9608f5642a6c485d7966c",
+        "new_module_packaged": true,
+        "forbidden": [],
+        "credential_matches": []
+      },
+      {
+        "repo": "rag",
+        "name": "rag_portfolio-0.1.0.tar.gz",
+        "sha256": "ad38e36deb6f7b37544b009e1b7175a4f9c0694b3bb4a1b29cc5cd571961621c",
+        "new_module_packaged": true,
+        "forbidden": [],
+        "credential_matches": []
+      },
+      {
+        "repo": "meta",
+        "name": "meta_agent-1.0.0-py3-none-any.whl",
+        "sha256": "a6a55c11d81ffe71d07de4c0560bc7d92c9b010edbe4d0ef2ad9891b91993b38",
+        "new_module_packaged": true,
+        "forbidden": [],
+        "credential_matches": []
+      },
+      {
+        "repo": "meta",
+        "name": "meta_agent-1.0.0.tar.gz",
+        "sha256": "6373368dde214a70812e72feca9e863b9cbd60af06a774bf53b44cb1521f52f0",
+        "new_module_packaged": true,
+        "forbidden": [],
+        "credential_matches": []
+      }
+    ],
+    "preservation": {
+      "rag": {
+        "files": 312,
+        "changed": []
+      },
+      "meta": {
+        "files": 263,
+        "changed": []
+      }
+    },
+    "credential_matches": [],
+    "clinical_approval": false,
+    "private_capture_contains_existing_keys": false,
+    "status": "PASS"
+  },
+  "clinical_approval": false,
+  "business_acceptance": "NOT_ASSESSED; prior v2 PARTIAL retained",
+  "promotion": "NOT_READY for real patients or production",
+  "independent_review": "NOT_ASSESSED",
+  "limitations": [
+    "Native Agent and existing AI WebAPI policy wiring remains pending.",
+    "60 conditions use synthetic fixtures and a controlled generator over real HTTP.",
+    "Separate live check uses real models; one smoke run cannot measure answer accuracy.",
+    "Generated claims stay private for review; patient record display is deterministic.",
+    "Fresh app/SQLite persistence is tested; production failover is pending.",
+    "Real identity issuance, patient relationships, TLS, rate limits, retention/deletion and independent clinical review remain required.",
+    "Revocation checks future publication and replay; delivered data cannot be recalled.",
+    "Prior 12 retrieval failures, E09/B07 and pending semantic review remain unchanged."
+  ],
+  "engineering": "PASS"
+}
