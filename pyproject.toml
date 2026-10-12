@@ -45,6 +45,7 @@ exclude = [
   "/artifacts/synthetic-preproduction-v1/**", "/eval/synthetic_preproduction_v1/**",
   "/artifacts/synthetic-native-v2/**", "/eval/synthetic_native_v2/**",
   "/artifacts/shared-authority-v3/**", "/eval/shared_authority_v3/**",
+  "/artifacts/project-identity-v4/**", "/eval/project_identity_v4/**",
 ]
 
 [tool.pytest.ini_options]

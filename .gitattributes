@@ -20,3 +20,7 @@ artifacts/synthetic-native-v2/*.json -text
 eval/shared_authority_v3/*.json -text
 eval/shared_authority_v3/*.jsonl -text
 artifacts/shared-authority-v3/*.json -text
+eval/project_identity_v4/*.json -text
+eval/project_identity_v4/*.jsonl -text
+eval/project_identity_v4/*.sql -text
+artifacts/project-identity-v4/*.json -text

@@ -1,0 +1,83 @@
+{
+  "packages": [
+    {
+      "repo": "rag",
+      "file": "rag_portfolio-0.1.0-py3-none-any.whl",
+      "sha256": "6892393292dd70c196684d9781968c14e10bb66bacd9608f5642a6c485d7966c",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "rag",
+      "file": "rag_portfolio-0.1.0.tar.gz",
+      "sha256": "73d824bef24617db8b11dd17223035703691b67610f5e33847fc4d3155fbfed7",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "meta",
+      "file": "meta_agent-1.0.0-py3-none-any.whl",
+      "sha256": "dadcfba1aa9f1d183539d21b7156f49c7eecec3c375ddae6db99aa6587579d65",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    },
+    {
+      "repo": "meta",
+      "file": "meta_agent-1.0.0.tar.gz",
+      "sha256": "eca4bb1f3e5fa578a13792cc3048b6474c1279c22ffc047bdf90dbe3dd52bd23",
+      "forbidden": [],
+      "credential_matches": [],
+      "expected_module": true
+    }
+  ],
+  "contexts": [
+    {
+      "repo": "rag",
+      "forbidden": [],
+      "credential_matches": [],
+      "built": true,
+      "removed": true,
+      "files": 379
+    },
+    {
+      "repo": "meta",
+      "forbidden": [],
+      "credential_matches": [],
+      "built": true,
+      "removed": true,
+      "files": 359
+    }
+  ],
+  "preservation": {
+    "database_and_login_sources": {
+      "files": 15,
+      "changed": []
+    },
+    "rag": {
+      "files": 347,
+      "changed": []
+    },
+    "meta": {
+      "files": 391,
+      "changed": []
+    },
+    "backend": {
+      "files": 189,
+      "changed": []
+    }
+  },
+  "credential_matches": [],
+  "clinical_approval": false,
+  "configured_values_logged": false,
+  "private_preservation": {
+    "v3_review": true,
+    "approved_combined_corpus": true,
+    "business_dense_index": true
+  },
+  "v2_review_queue_preserved": true,
+  "private_evidence_existing_key_matches": [],
+  "status": "PASS"
+}

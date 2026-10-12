@@ -1,0 +1,9 @@
+{
+  "schema": "project-identity-v4",
+  "frozen_at": "2026-10-12T11:48:03.057284+00:00",
+  "cases_sha256": "01e8bed2b85c3616631c1ca505933807ac8ea3a8b58eeb44adebbcc77c20ac1f",
+  "case_count": 51,
+  "synthetic_only": true,
+  "clinical_approval": false,
+  "policy": "project identity only; recent open consultation <= 7 days; no plan-only grant"
+}

@@ -1,0 +1,10 @@
+{
+  "cases_sha256": "4bf45143200844dca8fd7e3a6b8962e08e3dad80c1a830f07001160d1e5a5db7",
+  "case_count": 5,
+  "frozen_at": "2026-10-12T12:04:45.086371+00:00",
+  "sources": {
+    "D:/Project/JS.CloudPlatform.WebApi/JS.WebCore.Services/SysUserInfoServices.cs": "7f1311a3a21ac38f50d8e06f96a7be41854062f985b30ce6f79e73d64acf6971",
+    "D:/Project/JS.CloudPlatform.WebApi/JS.WebCore.Api/Controllers/SysUserInfoController.cs": "382211548551434633832a7305a819b88c79eed31cbf617065952110ecda2a2a"
+  },
+  "reason": "Account approval lifecycle discovered during source review; accept only Status=1"
+}

@@ -1,0 +1,51 @@
+{"id": "P01", "condition": "valid project JWT patient obtains own project session"}
+{"id": "P02", "condition": "doctor with active same-tenant consultation obtains session"}
+{"id": "P03", "condition": "missing JWT denied"}
+{"id": "P04", "condition": "wrong signature denied"}
+{"id": "P05", "condition": "algorithm none denied"}
+{"id": "P06", "condition": "wrong issuer denied"}
+{"id": "P07", "condition": "wrong audience denied"}
+{"id": "P08", "condition": "expired JWT denied"}
+{"id": "P09", "condition": "future nbf denied"}
+{"id": "P10", "condition": "ambiguous UserId list denied"}
+{"id": "P11", "condition": "jti UserId mismatch denied"}
+{"id": "P12", "condition": "school zero user denied"}
+{"id": "P13", "condition": "token role claim cannot grant doctor role"}
+{"id": "P14", "condition": "client actor role injection rejected"}
+{"id": "P15", "condition": "unknown tenant alias denied"}
+{"id": "P16", "condition": "other tenant membership cannot grant access"}
+{"id": "P17", "condition": "unrelated doctor denied"}
+{"id": "P18", "condition": "patient cannot read another patient"}
+{"id": "P19", "condition": "operator role denied"}
+{"id": "P20", "condition": "deleted user denied"}
+{"id": "P21", "condition": "unknown account status denied"}
+{"id": "P22", "condition": "disabled tenant denied"}
+{"id": "P23", "condition": "deleted tenant denied"}
+{"id": "P24", "condition": "missing actor membership denied"}
+{"id": "P25", "condition": "disabled patient membership denied"}
+{"id": "P26", "condition": "role from another tenant denied"}
+{"id": "P27", "condition": "disabled role binding denied"}
+{"id": "P28", "condition": "deleted role definition denied"}
+{"id": "P29", "condition": "unknown role enable denied"}
+{"id": "P30", "condition": "closed consultation alone denied"}
+{"id": "P31", "condition": "disabled consultation denied"}
+{"id": "P32", "condition": "wrong-tenant consultation denied"}
+{"id": "P33", "condition": "stale open consultation denied"}
+{"id": "P34", "condition": "future consultation date denied"}
+{"id": "P35", "condition": "sentinel consultation date denied"}
+{"id": "P36", "condition": "plan alone does not grant ongoing care access"}
+{"id": "P37", "condition": "duplicate active memberships fail closed"}
+{"id": "P38", "condition": "duplicate role bindings fail closed"}
+{"id": "P39", "condition": "current project binding does not translate old IDs"}
+{"id": "P40", "condition": "legacy robot mapping and name fallback unavailable"}
+{"id": "P41", "condition": "read-only SQL user cannot write patient table"}
+{"id": "P42", "condition": "fresh introspection observes closed consultation"}
+{"id": "P43", "condition": "reopened consultation never revives observed revoked token"}
+{"id": "P44", "condition": "new session after regrant succeeds"}
+{"id": "P45", "condition": "old session cannot change generation"}
+{"id": "P46", "condition": "database outage returns sanitized 503"}
+{"id": "P47", "condition": "authority restart retains revocation"}
+{"id": "P48", "condition": "native record uses actual linked dotnet controller with zero model calls"}
+{"id": "P49", "condition": "revocation blocks native snapshot events and dotnet access"}
+{"id": "P50", "condition": "old and ambiguous request routes unavailable"}
+{"id": "P51", "condition": "backend and database documentation remain unchanged"}

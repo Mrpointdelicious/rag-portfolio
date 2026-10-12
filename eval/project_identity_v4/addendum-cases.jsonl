@@ -1,0 +1,5 @@
+{"id": "P52", "condition": "pending doctor status zero denied"}
+{"id": "P53", "condition": "inactive patient status zero denied"}
+{"id": "P54", "condition": "primary business mismatch denied despite membership"}
+{"id": "P55", "condition": "delegated lifetime cannot exceed parent JWT expiry"}
+{"id": "P56", "condition": "non-global role from another tenant denied"}

@@ -128,3 +128,5 @@ docs/                  # 架构、开发路线、来源及验证记录
 [原生单Agent合成接入v2](docs/synthetic-native-v2-results.md)把策略接入原生工具循环、缓存、模型与发布检查，验证IReGo/IReTour响应映射；专用入口不自动挂载到默认应用。真实患者和生产仍为NOT_READY，原业务待改进集合继续保留。
 
 [共享授权与.NET合成联调v3](docs/shared-authority-v3-results.md)完成实际.NET控制器主体契约、共享PostgreSQL授权、原生患者运行的进程恢复及物理清理验证，41项固定条件通过。真实登录、租户/跨库映射、实际业务Repository和独立临床审核仍待完成，生产接入继续NOT_READY。
+
+[project数据库授权适配v4](docs/project-identity-v4-results.md)新增实际JWT格式验证、机构角色与近期未结束问诊复核，明确当前project患者ID空间。真实MySQL表结构、原生Agent和.NET控制器的贯穿验证使用合成数据；实际后端逐查询归属约束和持续授权账本仍待完成，真实患者继续NOT_READY。

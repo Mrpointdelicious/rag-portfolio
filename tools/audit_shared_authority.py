@@ -23,6 +23,19 @@ def save(path, value):
     path.write_bytes((json.dumps(value, ensure_ascii=False, indent=2) + "\n").encode())
 
 
+def private_pin_matches(pin):
+    path = Path(pin["path"])
+    if field := pin.get("canonical_field"):
+        from rag_portfolio.public_medical import canonical
+
+        value = json.loads(path.read_bytes())
+        actual = hashlib.sha256(
+            canonical({k: v for k, v in value.items() if k != field})
+        ).hexdigest()
+        return value[field] == pin["sha256"] == actual
+    return sha(path) == pin["sha256"]
+
+
 def blocked(name):
     return (
         forbidden(name)
@@ -36,6 +49,8 @@ def blocked(name):
                 "shared_authority_v3/",
                 "shared-authority-v3/",
                 "preproduction/patient-tools/",
+                "project_identity_v4/",
+                "project-identity-v4/",
             ]
         )
         or name.endswith(".sqlite")
@@ -47,8 +62,9 @@ def main(args):
     if out.exists():
         raise ValueError("Preserve audit attempts")
     out.mkdir(parents=True)
-    before = json.loads((ROOT / ".local/shared_authority_v3/predecessor.json").read_bytes())
-    roots = {k: Path(v["root"]) for k, v in before.items()}
+    predecessor = getattr(args, "predecessor", ROOT / ".local/shared_authority_v3/predecessor.json")
+    before = json.loads(predecessor.read_bytes())
+    roots = {k: Path(v["root"]) for k, v in before.items() if "root" in v}
     secrets = [
         v.encode()
         for name, root in roots.items()
@@ -79,6 +95,17 @@ def main(args):
             "src/meta_agent/preprod_native.py",
         },
         "backend": set(),
+    }
+    allowed = getattr(args, "allowed", allowed)
+    source_pins = {**before.get("sources", {}), **getattr(args, "extra_sources", {})}
+    if source_pins:
+        report["preservation"]["database_and_login_sources"] = dict(
+            files=len(source_pins),
+            changed=[p for p, pin in source_pins.items() if sha(Path(p)) != pin],
+        )
+    report["private_preservation"] = {
+        name: private_pin_matches(pin)
+        for name, pin in getattr(args, "private_preservation", {}).items()
     }
     for name, root in roots.items():
         protected = {n: pin for n, pin in before[name]["hashes"].items() if n not in allowed[name]}
@@ -122,7 +149,9 @@ def main(args):
                     entries = {m.name: archive.extractfile(m).read() for m in archive if m.isfile()}
             else:
                 continue
-            module = "preprod_shared.py" if name == "meta" else "preproduction_service.py"
+            module = getattr(args, "expected_modules", {}).get(
+                name, "preprod_shared.py" if name == "meta" else "preproduction_service.py"
+            )
             report["packages"].append(
                 dict(
                     repo=name,
@@ -186,10 +215,16 @@ def main(args):
         sha(ROOT / ".local/synthetic_native_v2/review/full-answer-records.json")
         == prior["review"]["private_sha256"]
     )
-    local = ROOT / ".local/shared_authority_v3"
+    local = getattr(args, "local", ROOT / ".local/shared_authority_v3")
     private = [
         p
         for p in local.glob("contracts-run-*/*")
+        if p.name in {"private-http-review.json", "model-inputs.jsonl", "model-outputs.jsonl"}
+    ]
+    private += list(local.glob("review/full-answer-records.json"))
+    private += [
+        p
+        for p in local.glob("v3-regression/*")
         if p.name in {"private-http-review.json", "model-inputs.jsonl", "model-outputs.jsonl"}
     ]
     report["private_evidence_existing_key_matches"] = [
@@ -203,6 +238,7 @@ def main(args):
             and not report["credential_matches"]
             and not report["private_evidence_existing_key_matches"]
             and report["v2_review_queue_preserved"]
+            and all(report["private_preservation"].values())
             and all(not v["changed"] for v in report["preservation"].values())
             and all(
                 not p["forbidden"] and not p["credential_matches"] and p["expected_module"]

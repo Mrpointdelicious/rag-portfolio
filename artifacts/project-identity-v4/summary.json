@@ -1,0 +1,571 @@
+{
+  "schema": "project-identity-v4-results",
+  "engineering": "PASS",
+  "business": "PARTIAL",
+  "real_patient": "NOT_READY",
+  "promotion": "NOT_PROMOTED",
+  "synthetic_only": true,
+  "clinical_approval": false,
+  "actual_supplier_requests": 0,
+  "production_deployed": false,
+  "existing_patient_database_contacted": false,
+  "existing_login_key_loaded": false,
+  "source_data_rows_copied": 0,
+  "policy": {
+    "data_generation": "project-20260915",
+    "patient_id": "project.dbuser.Id",
+    "account_status": 1,
+    "membership_enable": 0,
+    "role_enable": 0,
+    "doctor_relation": "same-tenant open consultation created within 7 days",
+    "relation_window_is_engineering_policy": true,
+    "name_phone_oldid_fallback": false,
+    "plan_only_grant": false,
+    "observed_revocation_monotonic": true,
+    "all_transient_revocations_detected": false
+  },
+  "contract": {
+    "total": 56,
+    "passed": 56,
+    "cases": [
+      {
+        "id": "P01",
+        "condition": "valid project JWT patient obtains own project session",
+        "passed": true,
+        "evidence": {
+          "http_status": 200
+        }
+      },
+      {
+        "id": "P02",
+        "condition": "doctor with active same-tenant consultation obtains session",
+        "passed": true,
+        "evidence": {
+          "http_status": 200
+        }
+      },
+      {
+        "id": "P03",
+        "condition": "missing JWT denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P04",
+        "condition": "wrong signature denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P05",
+        "condition": "algorithm none denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P06",
+        "condition": "wrong issuer denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P07",
+        "condition": "wrong audience denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P08",
+        "condition": "expired JWT denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P09",
+        "condition": "future nbf denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P10",
+        "condition": "ambiguous UserId list denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P11",
+        "condition": "jti UserId mismatch denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P12",
+        "condition": "school zero user denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 401
+        }
+      },
+      {
+        "id": "P13",
+        "condition": "token role claim cannot grant doctor role",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P14",
+        "condition": "client actor role injection rejected",
+        "passed": true,
+        "evidence": {
+          "http_status": 422
+        }
+      },
+      {
+        "id": "P15",
+        "condition": "unknown tenant alias denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P16",
+        "condition": "other tenant membership cannot grant access",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P17",
+        "condition": "unrelated doctor denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P18",
+        "condition": "patient cannot read another patient",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P19",
+        "condition": "operator role denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P20",
+        "condition": "deleted user denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P21",
+        "condition": "unknown account status denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P22",
+        "condition": "disabled tenant denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P23",
+        "condition": "deleted tenant denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P24",
+        "condition": "missing actor membership denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P25",
+        "condition": "disabled patient membership denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P26",
+        "condition": "role from another tenant denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P27",
+        "condition": "disabled role binding denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P28",
+        "condition": "deleted role definition denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P29",
+        "condition": "unknown role enable denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P30",
+        "condition": "closed consultation alone denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P31",
+        "condition": "disabled consultation denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P32",
+        "condition": "wrong-tenant consultation denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P33",
+        "condition": "stale open consultation denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P34",
+        "condition": "future consultation date denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P35",
+        "condition": "sentinel consultation date denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P36",
+        "condition": "plan alone does not grant ongoing care access",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P37",
+        "condition": "duplicate active memberships fail closed",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P38",
+        "condition": "duplicate role bindings fail closed",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P39",
+        "condition": "current project binding does not translate old IDs",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "P40",
+        "condition": "legacy robot mapping and name fallback unavailable",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "P41",
+        "condition": "read-only SQL user cannot write patient table",
+        "passed": true,
+        "evidence": {
+          "write_denied": true,
+          "password_read_denied": true
+        }
+      },
+      {
+        "id": "P42",
+        "condition": "fresh introspection observes closed consultation",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P43",
+        "condition": "reopened consultation never revives observed revoked token",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P44",
+        "condition": "new session after regrant succeeds",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "P45",
+        "condition": "old session cannot change generation",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P46",
+        "condition": "database outage returns sanitized 503",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "P47",
+        "condition": "authority restart retains revocation",
+        "passed": true,
+        "evidence": {}
+      },
+      {
+        "id": "P48",
+        "condition": "native record uses actual linked dotnet controller with zero model calls",
+        "passed": true,
+        "evidence": {
+          "http_status": 200,
+          "model_calls": 0,
+          "backend_service": "synthetic_fixture",
+          "controller_source": "actual_linked_source"
+        }
+      },
+      {
+        "id": "P49",
+        "condition": "revocation blocks native snapshot events and dotnet access",
+        "passed": true,
+        "evidence": {
+          "http_statuses": [
+            403,
+            403,
+            403
+          ]
+        }
+      },
+      {
+        "id": "P50",
+        "condition": "old and ambiguous request routes unavailable",
+        "passed": true,
+        "evidence": {
+          "http_statuses": [
+            404,
+            403,
+            403,
+            404
+          ]
+        }
+      },
+      {
+        "id": "P51",
+        "condition": "backend and database documentation remain unchanged",
+        "passed": true,
+        "evidence": {
+          "backend_files": 189,
+          "source_files": 13
+        }
+      },
+      {
+        "id": "P52",
+        "condition": "pending doctor status zero denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P53",
+        "condition": "inactive patient status zero denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P54",
+        "condition": "primary business mismatch denied despite membership",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      },
+      {
+        "id": "P55",
+        "condition": "delegated lifetime cannot exceed parent JWT expiry",
+        "passed": true,
+        "evidence": {
+          "http_status": 200
+        }
+      },
+      {
+        "id": "P56",
+        "condition": "non-global role from another tenant denied",
+        "passed": true,
+        "evidence": {
+          "http_status": 403
+        }
+      }
+    ],
+    "cleanup_complete": true,
+    "seal": {
+      "schema": "project-identity-v4",
+      "frozen_at": "2026-10-12T11:48:03.057284+00:00",
+      "cases_sha256": "01e8bed2b85c3616631c1ca505933807ac8ea3a8b58eeb44adebbcc77c20ac1f",
+      "case_count": 51,
+      "synthetic_only": true,
+      "clinical_approval": false,
+      "policy": "project identity only; recent open consultation <= 7 days; no plan-only grant"
+    },
+    "addendum_seal": {
+      "cases_sha256": "4bf45143200844dca8fd7e3a6b8962e08e3dad80c1a830f07001160d1e5a5db7",
+      "case_count": 5,
+      "frozen_at": "2026-10-12T12:04:45.086371+00:00",
+      "sources": {
+        "D:/Project/JS.CloudPlatform.WebApi/JS.WebCore.Services/SysUserInfoServices.cs": "7f1311a3a21ac38f50d8e06f96a7be41854062f985b30ce6f79e73d64acf6971",
+        "D:/Project/JS.CloudPlatform.WebApi/JS.WebCore.Api/Controllers/SysUserInfoController.cs": "382211548551434633832a7305a819b88c79eed31cbf617065952110ecda2a2a"
+      },
+      "reason": "Account approval lifecycle discovered during source review; accept only Status=1"
+    },
+    "schema_seal": {
+      "schema_sha256": "94118715642880d456c2156113539560db1e1bb027304ffd29c25aab02449ee3",
+      "tables": 7,
+      "source": "dump-project-202609201008.sql",
+      "data_rows_copied": 0
+    }
+  },
+  "attempts": {
+    "contracts-run-1": {
+      "status": "FAIL",
+      "passed": 0,
+      "expected": 51
+    },
+    "contracts-run-2": {
+      "status": "PASS",
+      "passed": 51,
+      "expected": 51
+    },
+    "contracts-run-3": {
+      "status": "PASS",
+      "passed": 56,
+      "expected": 56
+    }
+  },
+  "audit_attempts": {
+    "delivery-audit-1": "FAIL",
+    "delivery-audit-2": "FAIL",
+    "delivery-audit-3": "PASS",
+    "delivery-audit-final": "PASS"
+  },
+  "regressions": {
+    "shared_authority_v3": {
+      "passed": 41,
+      "total": 41
+    },
+    "full_suite": {
+      "rag": 284,
+      "meta": 404
+    }
+  },
+  "linked_dotnet": {
+    "controller_source": "actual_AI_WebApi_source",
+    "business_repository": "synthetic_fixture",
+    "actual_production_host_tested": false
+  },
+  "new_review": {
+    "records": 2,
+    "controlled_regression": true,
+    "project_record_model_calls": 0,
+    "independent_review": "NOT_ASSESSED",
+    "private_sha256": "65202e820f184df488c18c61d6fb7d26ff8b950de8c0fa0332e6d7abd4399730"
+  },
+  "preserved_issues": [
+    "original 12 incomplete queries",
+    "E09",
+    "B07",
+    "heldout anchor misses",
+    "historical independent review queues"
+  ],
+  "remaining_production_gates": [
+    "Real backend per-route authorization and tenant/record ownership SQL",
+    "Durable authorization lifecycle and monotonic revocation events",
+    "Unique login session identity and logout revocation",
+    "Verified current database and migrated report-to-patient provenance",
+    "Managed credentials, TLS, actual .NET host and dependency remediation",
+    "Capacity and independent clinical review"
+  ]
+}
