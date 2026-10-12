@@ -1,0 +1,30 @@
+{
+  "schema_version": "public-medical-gold-seal-v1",
+  "frozen_at": "2026-10-12T01:23:24.537070+00:00",
+  "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+  "dev_sha256": "6c67eb88f22fd9586b6cda8e032f8aa2f4685a0c14114a8866b34dc3b3b00b87",
+  "heldout_sha256": "ca8a76c494f1026c914466243e26220f795aaaeebc643856a933981f7fa20712",
+  "dev_count": 36,
+  "heldout_count": 14,
+  "independent_human_review": "pending",
+  "clinical_approval": false,
+  "protocol": {
+    "budget_tokens": 4000,
+    "tokenizer": "cl100k_base",
+    "top_k": 5,
+    "retriever_depth": 20,
+    "rerank_depth": 30,
+    "rrf_k": 60,
+    "strategy_order": [
+      "bm25",
+      "dense",
+      "hybrid",
+      "hybrid_rerank",
+      "coverage",
+      "context_expanded"
+    ],
+    "selection": "max dev budget_complete_coverage; tie by complete_coverage_at5; tie by mrr_at5; then declared strategy order",
+    "heldout_policy": "one final evaluation after dev selection; no heldout tuning",
+    "negative_gate": "patient data/prescription phrases -> needs_patient_data; unavailable Chinese guideline -> out_of_public_scope; otherwise retrieval threshold not calibrated"
+  }
+}

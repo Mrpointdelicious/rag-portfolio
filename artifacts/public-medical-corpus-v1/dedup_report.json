@@ -1,0 +1,50 @@
+{
+  "file_vs_work": [
+    {
+      "id": "D041",
+      "sha256": "8a0387606a06001f41dda253877b26ad6edc636d69c238e7eddd0516e458ac55",
+      "normalized_text_sha256": "7167ff5a57e71ddb93da2272b8a62870393aa361265ef28cfc061881bf584fda",
+      "pages": 9
+    },
+    {
+      "id": "D102",
+      "sha256": "ac13ebc16e312a0cb052be28855b149dbcff3177bec64716c9be2d7e2c6b3761",
+      "normalized_text_sha256": "7167ff5a57e71ddb93da2272b8a62870393aa361265ef28cfc061881bf584fda",
+      "pages": 9
+    }
+  ],
+  "D041_D102_same_normalized_text": true,
+  "decision": "D102 excluded as duplicate work; D041 retained unchanged",
+  "reference_edges": [
+    {
+      "source": "NEW01",
+      "target": "D161",
+      "relation": "cites; not an independent participant cohort",
+      "reference_id": "B8-medicina-60-00620",
+      "doi": "10.3390/brainsci13010092"
+    },
+    {
+      "source": "NEW02",
+      "target": "D173",
+      "relation": "cites; not an independent participant cohort",
+      "reference_id": "B19-bioengineering-10-00585",
+      "doi": "10.23736/s1973-9087.21.06887-8"
+    },
+    {
+      "source": "NEW06",
+      "target": "D173",
+      "relation": "cites; not an independent participant cohort",
+      "reference_id": "B9-jcm-13-06616",
+      "doi": "10.23736/s1973-9087.21.06887-8"
+    },
+    {
+      "source": "D161",
+      "target": "NEW03",
+      "relation": "cites; not an independent participant cohort",
+      "reference_id": "B39-brainsci-13-00092",
+      "doi": "10.1371/journal.pone.0229707"
+    }
+  ],
+  "cohort_note": "Citation links do not establish participant disjointness; review/RCT nesting must not be summed as independent patients; no clinical evidence aggregation performed",
+  "independent_cohort_count": null
+}

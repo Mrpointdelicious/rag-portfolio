@@ -1,0 +1,59 @@
+{
+  "packages": [
+    {
+      "name": "rag_portfolio-0.1.0-py3-none-any.whl",
+      "sha256": "3a2e9dc77da5d838a2cf671e7855184ba1cdd22d0d7e26d1022992131f4c97eb",
+      "file_count": 59,
+      "forbidden": [],
+      "medical_modules": [
+        "rag_portfolio/public_medical.py",
+        "rag_portfolio/public_medical_retrieval.py",
+        "rag_portfolio/public_medical_service.py"
+      ]
+    },
+    {
+      "name": "rag_portfolio-0.1.0.tar.gz",
+      "sha256": "9c579beebfc19759668cf64c151d256d675d4cbf8a0bdfa11d0a733410f295cf",
+      "file_count": 240,
+      "forbidden": [],
+      "medical_modules": [
+        "rag_portfolio-0.1.0/eval/public_medical_corpus_v1/README.md",
+        "rag_portfolio-0.1.0/eval/public_medical_corpus_v1/candidates.json",
+        "rag_portfolio-0.1.0/eval/public_medical_corpus_v1/dev.jsonl",
+        "rag_portfolio-0.1.0/eval/public_medical_corpus_v1/heldout.jsonl",
+        "rag_portfolio-0.1.0/eval/public_medical_corpus_v1/seal.json",
+        "rag_portfolio-0.1.0/src/rag_portfolio/public_medical.py",
+        "rag_portfolio-0.1.0/src/rag_portfolio/public_medical_retrieval.py",
+        "rag_portfolio-0.1.0/src/rag_portfolio/public_medical_service.py",
+        "rag_portfolio-0.1.0/tests/test_public_medical.py",
+        "rag_portfolio-0.1.0/tools/audit_public_medical.py",
+        "rag_portfolio-0.1.0/tools/collect_public_medical.py",
+        "rag_portfolio-0.1.0/tools/eval_public_medical.py",
+        "rag_portfolio-0.1.0/tools/finalize_public_medical.py",
+        "rag_portfolio-0.1.0/tools/freeze_public_medical_gold.py",
+        "rag_portfolio-0.1.0/tools/prepare_public_medical.py",
+        "rag_portfolio-0.1.0/tools/public_medical_agent.py",
+        "rag_portfolio-0.1.0/tools/report_public_medical.py",
+        "rag_portfolio-0.1.0/tools/review_public_medical_core_claims.py",
+        "rag_portfolio-0.1.0/tools/serve_public_medical.py",
+        "rag_portfolio-0.1.0/tools/verify_public_medical_package.py"
+      ]
+    }
+  ],
+  "docker_context": {
+    "kind": "real COPY-context build and export inspection; no application container runtime claimed",
+    "owned_tag": "codex-public-medical-context-49a356700464",
+    "built": true,
+    "file_count": 383,
+    "forbidden": [],
+    "public_corpus_in_context": false,
+    "owned_resources_removed": true
+  },
+  "credential_scan": {
+    "files": 44,
+    "actual_configured_secret_matches": [],
+    "values_logged": false
+  },
+  "clinical_approval": false,
+  "status": "PASS"
+}

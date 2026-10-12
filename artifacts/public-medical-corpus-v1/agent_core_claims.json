@@ -1,0 +1,163 @@
+{
+  "reviewer": "Codex source/answer reading; independent human pending",
+  "clinical_approval": false,
+  "denominator": "16 selected answered core units; one required NEW03 own-result unit unfilled; excludes extra Discussion facts and repeated summaries",
+  "selection": "post-execution technical annotation; not a blinded general answer quality score",
+  "source_trace_sha256": "36fe3152c58d69ac1fa82c06956370db5021d3485f59c517267d80a8cdfd52e1",
+  "units": [
+    {
+      "case_id": "S01",
+      "claim_unit": "38人",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0013-c000",
+      "source_text_sha256": "883e774fa6c37de8d1e7eb2f25f2a365811e734e17ae92f1f867fe1557347a9d",
+      "verbatim_anchor": "The remaining 38",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "病程小于6个月",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0000-c000",
+      "source_text_sha256": "102abec984648f692ffdcc4b9dd4afd507166973dcaa28be90f41fa833af1726",
+      "verbatim_anchor": "whose stroke onsets were <6 months",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "实验17对照21",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0013-c000",
+      "source_text_sha256": "883e774fa6c37de8d1e7eb2f25f2a365811e734e17ae92f1f867fe1557347a9d",
+      "verbatim_anchor": "The experimental group had 17 participants",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "连续4周",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0006-c001",
+      "source_text_sha256": "d19cc1ae49ed03f7c3b20244521d0384549c6760784465a30b5686eb9895d0e0",
+      "verbatim_anchor": "Both groups were trained for 4 consecutive weeks",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "对照每周5天常规",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0006-c000",
+      "source_text_sha256": "68fd4f1667a0743122aa75ace926f91c75aad302c96db82e74849ce3e244aaf1",
+      "verbatim_anchor": "5 days a week",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "实验每周3天机器人2天常规",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0006-c000",
+      "source_text_sha256": "68fd4f1667a0743122aa75ace926f91c75aad302c96db82e74849ce3e244aaf1",
+      "verbatim_anchor": "3 days a week and regular rehabilitation programs 2 days a week",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "每日总训练时长相同",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0006-c001",
+      "source_text_sha256": "d19cc1ae49ed03f7c3b20244521d0384549c6760784465a30b5686eb9895d0e0",
+      "verbatim_anchor": "total training time for each day was the same",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S01",
+      "claim_unit": "患者和评估者未盲",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0006-c000",
+      "source_text_sha256": "68fd4f1667a0743122aa75ace926f91c75aad302c96db82e74849ce3e244aaf1",
+      "verbatim_anchor": "Neither the patients nor the assessors were blinded",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S02",
+      "claim_unit": "NEW02部分组间结局更优",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new02@public-v1-xml-b1089df79bef#s0015-c000",
+      "source_text_sha256": "4f7e0044e2c5d63c8459e788a4cbf2084ffab727462f8ef7d9164ff1b92b5065",
+      "verbatim_anchor": "experimental group outperformed the control group",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S03",
+      "claim_unit": "平均985步",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new05@public-v1-xml-9c12e447cd4c#s0002-c000",
+      "source_text_sha256": "94a6a88752b8109e0b58c1979b775c118d6762ef0d436576824321d3660e9fb8",
+      "verbatim_anchor": "985(SD579) steps",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S03",
+      "claim_unit": "平均10有氧分钟",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new05@public-v1-xml-9c12e447cd4c#s0002-c000",
+      "source_text_sha256": "94a6a88752b8109e0b58c1979b775c118d6762ef0d436576824321d3660e9fb8",
+      "verbatim_anchor": "a mean of 10(SD11) aerobic minutes",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S03",
+      "claim_unit": "R平方0.003关联可忽略",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new05@public-v1-xml-9c12e447cd4c#s0002-c000",
+      "source_text_sha256": "94a6a88752b8109e0b58c1979b775c118d6762ef0d436576824321d3660e9fb8",
+      "verbatim_anchor": "negligible (R2 = 0.003)",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S03",
+      "claim_unit": "这些是群体观察均值而非个人处方",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new05@public-v1-xml-9c12e447cd4c#s0002-c000",
+      "source_text_sha256": "94a6a88752b8109e0b58c1979b775c118d6762ef0d436576824321d3660e9fb8",
+      "verbatim_anchor": "Participants had a mean",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S04",
+      "claim_unit": "去重前1110项48099人",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new06@public-v1-xml-afe39def1eee#s0021-c000",
+      "source_text_sha256": "ce5b2760bfe74d5294bbbe07a97c00d552e183e0f4e3f974e5066f4d26fcb0f1",
+      "verbatim_anchor": "1110 and the number of participants was 48,099",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S04",
+      "claim_unit": "去重后341项14522人",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new06@public-v1-xml-afe39def1eee#s0021-c000",
+      "source_text_sha256": "ce5b2760bfe74d5294bbbe07a97c00d552e183e0f4e3f974e5066f4d26fcb0f1",
+      "verbatim_anchor": "341 RCTs were included in SRs involving 14,522 participants",
+      "citation_present_in_answer": true
+    },
+    {
+      "case_id": "S04",
+      "claim_unit": "重叠综述计数不能相加当独立人群",
+      "manual_technical_label": "supported",
+      "source_doc_ref": "new06@public-v1-xml-afe39def1eee#s0011-c000",
+      "source_text_sha256": "1b843c7ee0d6071ca2ff3a0cded3518a4c4653f02b40908f3d43bf31a85025b0",
+      "verbatim_anchor": "To avoid double counting outcome data",
+      "citation_present_in_answer": true
+    }
+  ],
+  "metrics": {
+    "answered_core_units": 16,
+    "source_supported": 16,
+    "source_support_rate": 1.0,
+    "contradicted": 0,
+    "missing_citation_in_annotated_units": 0,
+    "required_result_unit_unfilled": 1,
+    "boundary_reason_errors": 1
+  },
+  "limits": "Rates apply only to annotated core units. All-prose fact-error/missing-citation counts and clinical correctness remain unassessed."
+}

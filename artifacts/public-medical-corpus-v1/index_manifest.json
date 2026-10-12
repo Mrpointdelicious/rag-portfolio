@@ -1,0 +1,279 @@
+{
+  "schema_version": "public-medical-index-v1",
+  "index_version": "medical-public-v1-dense-1",
+  "corpus_id": "medical_public_v1",
+  "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+  "model": "qwen3.7-text-embedding",
+  "dimension": 1024,
+  "distance": "cosine",
+  "input": "document_id|title|section|text-v1",
+  "provider_calls": [
+    {
+      "batch_start": 0,
+      "count": 10,
+      "request_id": "61b72102-41c8-9b1f-89cc-f1140cae2a2a",
+      "usage": {
+        "total_tokens": 1680
+      }
+    },
+    {
+      "batch_start": 10,
+      "count": 10,
+      "request_id": "d026bb79-ceb6-9c87-90e0-1dfab7c95bc8",
+      "usage": {
+        "total_tokens": 1601
+      }
+    },
+    {
+      "batch_start": 20,
+      "count": 10,
+      "request_id": "40114aaf-719c-93b2-ba00-827bd6757675",
+      "usage": {
+        "total_tokens": 1863
+      }
+    },
+    {
+      "batch_start": 30,
+      "count": 10,
+      "request_id": "64595976-f634-9198-8e97-d4f4f94e7d78",
+      "usage": {
+        "total_tokens": 2080
+      }
+    },
+    {
+      "batch_start": 40,
+      "count": 10,
+      "request_id": "56d687d2-cc9e-9258-bc2f-8625fbed6e86",
+      "usage": {
+        "total_tokens": 1849
+      }
+    },
+    {
+      "batch_start": 50,
+      "count": 10,
+      "request_id": "73573e65-0061-97cd-a133-bf648b4d5290",
+      "usage": {
+        "total_tokens": 2061
+      }
+    },
+    {
+      "batch_start": 60,
+      "count": 10,
+      "request_id": "9c8c4234-dfc2-9f31-8af5-adaa63ad1b40",
+      "usage": {
+        "total_tokens": 2145
+      }
+    },
+    {
+      "batch_start": 70,
+      "count": 10,
+      "request_id": "b5249d5c-0c5b-91d4-8f8d-2f3b6c33159a",
+      "usage": {
+        "total_tokens": 2155
+      }
+    },
+    {
+      "batch_start": 80,
+      "count": 10,
+      "request_id": "b3539954-d382-9ef0-a9e2-21a0acf45106",
+      "usage": {
+        "total_tokens": 2204
+      }
+    },
+    {
+      "batch_start": 90,
+      "count": 10,
+      "request_id": "ea682c11-7ca7-93a5-9a0a-b09613dc10cb",
+      "usage": {
+        "total_tokens": 2247
+      }
+    },
+    {
+      "batch_start": 100,
+      "count": 10,
+      "request_id": "52a83639-2fe8-9f11-8a27-8ccbbd316e32",
+      "usage": {
+        "total_tokens": 2201
+      }
+    },
+    {
+      "batch_start": 110,
+      "count": 10,
+      "request_id": "7206369a-adfb-9cf5-aa1c-6dcadd82e01d",
+      "usage": {
+        "total_tokens": 2391
+      }
+    },
+    {
+      "batch_start": 120,
+      "count": 10,
+      "request_id": "7889d178-7ce4-958f-9f06-90ea2993ad34",
+      "usage": {
+        "total_tokens": 2356
+      }
+    },
+    {
+      "batch_start": 130,
+      "count": 10,
+      "request_id": "23b5f687-48cc-90ea-bbca-76ace5234daf",
+      "usage": {
+        "total_tokens": 2164
+      }
+    },
+    {
+      "batch_start": 140,
+      "count": 10,
+      "request_id": "b8c2299f-d76e-9986-809f-6ee8f1f62249",
+      "usage": {
+        "total_tokens": 1687
+      }
+    },
+    {
+      "batch_start": 150,
+      "count": 10,
+      "request_id": "aff4f287-1706-93c4-b8eb-c72a38df9dca",
+      "usage": {
+        "total_tokens": 1950
+      }
+    },
+    {
+      "batch_start": 160,
+      "count": 10,
+      "request_id": "caab61c4-351a-9bea-ae2b-58bb1436c933",
+      "usage": {
+        "total_tokens": 1659
+      }
+    },
+    {
+      "batch_start": 170,
+      "count": 10,
+      "request_id": "a5662594-d9f4-9fab-95fc-5e72f9c41fd8",
+      "usage": {
+        "total_tokens": 1825
+      }
+    },
+    {
+      "batch_start": 180,
+      "count": 10,
+      "request_id": "7f7f2357-0e7a-9328-ad36-2fb74abff871",
+      "usage": {
+        "total_tokens": 1387
+      }
+    },
+    {
+      "batch_start": 190,
+      "count": 10,
+      "request_id": "ed11ee43-3c44-9547-802c-50f9f967fa1c",
+      "usage": {
+        "total_tokens": 1814
+      }
+    },
+    {
+      "batch_start": 200,
+      "count": 10,
+      "request_id": "0ed2ba66-0994-9ffd-93b2-6c61beedb775",
+      "usage": {
+        "total_tokens": 1053
+      }
+    },
+    {
+      "batch_start": 210,
+      "count": 10,
+      "request_id": "91c7e4e0-67f0-916e-a346-190f605658e0",
+      "usage": {
+        "total_tokens": 1831
+      }
+    },
+    {
+      "batch_start": 220,
+      "count": 10,
+      "request_id": "25f7815e-7933-92da-bd85-329f27c9fb19",
+      "usage": {
+        "total_tokens": 2053
+      }
+    },
+    {
+      "batch_start": 230,
+      "count": 10,
+      "request_id": "9a7e254d-87fe-96bb-9f18-4740321f8eef",
+      "usage": {
+        "total_tokens": 1554
+      }
+    },
+    {
+      "batch_start": 240,
+      "count": 10,
+      "request_id": "d11daeeb-2584-9c46-b948-a77b1fdc679b",
+      "usage": {
+        "total_tokens": 1760
+      }
+    },
+    {
+      "batch_start": 250,
+      "count": 10,
+      "request_id": "e4b18232-b63b-948a-a9f9-518a914e69dc",
+      "usage": {
+        "total_tokens": 2115
+      }
+    },
+    {
+      "batch_start": 260,
+      "count": 10,
+      "request_id": "1b45556c-1046-9c27-81ae-b439dec6a679",
+      "usage": {
+        "total_tokens": 1575
+      }
+    },
+    {
+      "batch_start": 270,
+      "count": 10,
+      "request_id": "d5f3e7a0-4d38-9921-bbcf-f056923945ec",
+      "usage": {
+        "total_tokens": 1845
+      }
+    },
+    {
+      "batch_start": 280,
+      "count": 10,
+      "request_id": "31992877-2b58-920b-8058-ec1a1ba796fb",
+      "usage": {
+        "total_tokens": 1920
+      }
+    },
+    {
+      "batch_start": 290,
+      "count": 10,
+      "request_id": "09699965-fc1a-9dc2-a494-f9df672b13b8",
+      "usage": {
+        "total_tokens": 1848
+      }
+    },
+    {
+      "batch_start": 300,
+      "count": 10,
+      "request_id": "b53af792-9653-91dc-a194-97e13dcfcb12",
+      "usage": {
+        "total_tokens": 1930
+      }
+    },
+    {
+      "batch_start": 310,
+      "count": 10,
+      "request_id": "bfc395cf-8edd-94b3-bec6-b91ee68e529d",
+      "usage": {
+        "total_tokens": 2124
+      }
+    },
+    {
+      "batch_start": 320,
+      "count": 3,
+      "request_id": "aeb8d3aa-58a4-991a-a66f-92fa3d5c8383",
+      "usage": {
+        "total_tokens": 527
+      }
+    }
+  ],
+  "index_sha256": "b3c83b4d8087b087f41926383c10bed19487aed067fd51599b02ac2f6c1ab8f9",
+  "chunk_count": 323,
+  "storage": "ignored local normalized vectors; exact cosine scan, no Qdrant dependency"
+}

@@ -37,7 +37,10 @@ medical = [
 packages = ["src/rag_portfolio"]
 
 [tool.hatch.build.targets.sdist]
-exclude = ["/outputs/**"]
+exclude = [
+  "/outputs/**", "/.local/**", "/doc/**", "/medical_corpus_v1/**",
+  "/artifacts/public-medical-corpus-v1/**",
+]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

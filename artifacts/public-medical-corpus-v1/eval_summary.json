@@ -1,0 +1,250 @@
+{
+  "started_at": "2026-10-12T01:26:18.052675+00:00",
+  "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+  "index_sha256": "b3c83b4d8087b087f41926383c10bed19487aed067fd51599b02ac2f6c1ab8f9",
+  "gold_seal": {
+    "schema_version": "public-medical-gold-seal-v1",
+    "frozen_at": "2026-10-12T01:23:24.537070+00:00",
+    "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+    "dev_sha256": "6c67eb88f22fd9586b6cda8e032f8aa2f4685a0c14114a8866b34dc3b3b00b87",
+    "heldout_sha256": "ca8a76c494f1026c914466243e26220f795aaaeebc643856a933981f7fa20712",
+    "dev_count": 36,
+    "heldout_count": 14,
+    "independent_human_review": "pending",
+    "clinical_approval": false,
+    "protocol": {
+      "budget_tokens": 4000,
+      "tokenizer": "cl100k_base",
+      "top_k": 5,
+      "retriever_depth": 20,
+      "rerank_depth": 30,
+      "rrf_k": 60,
+      "strategy_order": [
+        "bm25",
+        "dense",
+        "hybrid",
+        "hybrid_rerank",
+        "coverage",
+        "context_expanded"
+      ],
+      "selection": "max dev budget_complete_coverage; tie by complete_coverage_at5; tie by mrr_at5; then declared strategy order",
+      "heldout_policy": "one final evaluation after dev selection; no heldout tuning",
+      "negative_gate": "patient data/prescription phrases -> needs_patient_data; unavailable Chinese guideline -> out_of_public_scope; otherwise retrieval threshold not calibrated"
+    }
+  },
+  "status": "DONE_technical_eval_human_review_pending",
+  "splits": {
+    "dev": {
+      "bm25": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.0,
+        "hit_at5": 0.21875,
+        "mrr_at5": 0.07916666666666666,
+        "complete_coverage_at5": 0.15625,
+        "budget_complete_coverage": 0.15625,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 3,
+        "max_context_tokens": 2846
+      },
+      "dense": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.1875,
+        "hit_at5": 0.40625,
+        "mrr_at5": 0.2546875,
+        "complete_coverage_at5": 0.375,
+        "budget_complete_coverage": 0.375,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2890
+      },
+      "hybrid": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.125,
+        "hit_at5": 0.40625,
+        "mrr_at5": 0.215625,
+        "complete_coverage_at5": 0.34375,
+        "budget_complete_coverage": 0.34375,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2986
+      },
+      "hybrid_rerank": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.59375,
+        "hit_at5": 0.84375,
+        "mrr_at5": 0.7135416666666666,
+        "complete_coverage_at5": 0.78125,
+        "budget_complete_coverage": 0.78125,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2894
+      },
+      "coverage": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.59375,
+        "hit_at5": 0.84375,
+        "mrr_at5": 0.7135416666666666,
+        "complete_coverage_at5": 0.78125,
+        "budget_complete_coverage": 0.78125,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2894
+      },
+      "context_expanded": {
+        "answerable_n": 32,
+        "negative_n": 4,
+        "hit_at1": 0.59375,
+        "hit_at5": 0.84375,
+        "mrr_at5": 0.7135416666666666,
+        "complete_coverage_at5": 0.78125,
+        "budget_complete_coverage": 0.78125,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 3958
+      }
+    },
+    "heldout": {
+      "bm25": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.0,
+        "hit_at5": 0.1,
+        "mrr_at5": 0.025,
+        "complete_coverage_at5": 0.1,
+        "budget_complete_coverage": 0.1,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 3,
+        "max_context_tokens": 2470
+      },
+      "dense": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.2,
+        "hit_at5": 0.4,
+        "mrr_at5": 0.2833333333333333,
+        "complete_coverage_at5": 0.4,
+        "budget_complete_coverage": 0.4,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2719
+      },
+      "hybrid": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.1,
+        "hit_at5": 0.4,
+        "mrr_at5": 0.195,
+        "complete_coverage_at5": 0.3,
+        "budget_complete_coverage": 0.3,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2487
+      },
+      "hybrid_rerank": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.1,
+        "hit_at5": 0.5,
+        "mrr_at5": 0.2833333333333333,
+        "complete_coverage_at5": 0.5,
+        "budget_complete_coverage": 0.5,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2925
+      },
+      "coverage": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.1,
+        "hit_at5": 0.5,
+        "mrr_at5": 0.3,
+        "complete_coverage_at5": 0.5,
+        "budget_complete_coverage": 0.5,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 2925
+      },
+      "context_expanded": {
+        "answerable_n": 10,
+        "negative_n": 4,
+        "hit_at1": 0.1,
+        "hit_at5": 0.5,
+        "mrr_at5": 0.3,
+        "complete_coverage_at5": 0.5,
+        "budget_complete_coverage": 0.6,
+        "input_gate_negative_refused": 4,
+        "input_gate_false_refusal": 0,
+        "raw_retrieval_negative_with_hits": 4,
+        "max_context_tokens": 3997
+      }
+    }
+  },
+  "errors": [],
+  "selected_strategy": "hybrid_rerank",
+  "finished_at": "2026-10-12T01:26:49.426620+00:00",
+  "category_metrics": {
+    "dev": {
+      "answer_with_citations": {
+        "n": 32,
+        "input_gate_refused": 0,
+        "selected_budget_complete": 25
+      },
+      "no_answer_in_public_corpus": {
+        "n": 2,
+        "input_gate_refused": 2,
+        "selected_budget_complete": 0
+      },
+      "missing_patient_data": {
+        "n": 2,
+        "input_gate_refused": 2,
+        "selected_budget_complete": 0
+      }
+    },
+    "heldout": {
+      "answer_with_citations": {
+        "n": 10,
+        "input_gate_refused": 0,
+        "selected_budget_complete": 5
+      },
+      "no_answer_in_public_corpus": {
+        "n": 2,
+        "input_gate_refused": 2,
+        "selected_budget_complete": 0
+      },
+      "missing_patient_data": {
+        "n": 2,
+        "input_gate_refused": 2,
+        "selected_budget_complete": 0
+      }
+    }
+  },
+  "raw_attempts_preserved": true,
+  "provider_request_counts": {
+    "document_embedding_batches": 33,
+    "query_embedding": 50,
+    "rerank": 50
+  },
+  "metric_limits": [
+    "Gold authored by Codex directly from sources; independent human pending",
+    "Exact spans may undercount valid paraphrases elsewhere; preferred anchors are a subset of acceptable",
+    "Heldout-14 contains a taxonomy defect: Parkinson false-premise question labelled missing_patient_data; refusal reported by sealed label, not silently corrected",
+    "Input boundary rules are not a general no-answer confidence model",
+    "Source IDs appear explicitly in questions; not an unprompted source-routing benchmark"
+  ]
+}

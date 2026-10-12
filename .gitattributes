@@ -2,3 +2,6 @@
 fixtures/hybrid_demo/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 tests/fixtures/hybrid_eval/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 docs/acceptance/hybrid-2026-10-11/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/public-medical-corpus-v1/*.json -text
+eval/public_medical_corpus_v1/*.json -text
+eval/public_medical_corpus_v1/*.jsonl -text

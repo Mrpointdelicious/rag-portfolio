@@ -1,0 +1,128 @@
+{
+  "schema_version": "public-medical-acceptance-v1",
+  "recorded_at": "2026-10-12T01:50:16.959719+00:00",
+  "overall": "PARTIAL",
+  "technical_checks": "PASS",
+  "clinical_approval": false,
+  "branch": "codex/public-medical-corpus-v1",
+  "base_head": "5621efe83129fd6c29586ca5daab4d7b175207f4",
+  "datasets": [
+    {
+      "corpus_id": "medical_combined_v1",
+      "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+      "work_count": 14,
+      "chunk_count": 713,
+      "segment_count": 318,
+      "release": "medical_combined_v1-prose-2",
+      "approved_scope": "technical_evaluation_nonclinical",
+      "clinical_approval": false
+    },
+    {
+      "corpus_id": "medical_public_v1",
+      "corpus_sha256": "1a7ee6eac727938e5f872520778d12c6417a921a54b240a9883cbc7b3759d0ee",
+      "work_count": 7,
+      "chunk_count": 323,
+      "segment_count": 251,
+      "release": "medical_public_v1-prose-1",
+      "approved_scope": "technical_evaluation_nonclinical",
+      "clinical_approval": false
+    }
+  ],
+  "done": [
+    "Six specified new works: six real PDFs plus six real JATS; D161 new formats same work",
+    "D041/D102 normalized-body dedup and old-eight resource review",
+    "Separate corpus/release/index/scope and resource/text fingerprints",
+    "50 source-authored sealed Gold, 36dev/14heldout",
+    "Live six-strategy retrieval; 33 document embedding batches plus50 query embeddings plus50 reranks",
+    "Unchanged MetaAgent Runtime real TCP Evidence/FactBuilder integration on public prose",
+    "Legacy157 file hashes unchanged",
+    "271 pytest passed including owned PostgreSQL; 19 new checks",
+    "Actual wheel/sdist and Docker context inspection; configured secret matches zero"
+  ],
+  "partial": [
+    "Independent human legal/Gold/Chinese clinical review pending",
+    "Selected reranker budget complete coverage dev25/32, heldout5/10; twelve failures preserved",
+    "Agent3/4 requested research cases complete; one partial; two boundaries withheld but one reason lost",
+    "Only16 selected core answer units annotated; all-prose error/missing-citation rates not complete",
+    "Heldout-14 taxonomy defect retained for v2 review; no frozen-Gold rewrite",
+    "39/49 preferred anchors exact PDF-aligned; ten remain XML-only"
+  ],
+  "blocked": [
+    {
+      "item": "Combined14 external-model Dense/Hybrid/Rerank",
+      "reason": "Old rights-held prose is not approved for provider upload; local BM25 only"
+    },
+    {
+      "item": "Clinical release/approval",
+      "reason": "No clinician signoff or patient-measurement Gold"
+    },
+    {
+      "item": "MetaAgent boundary-reason repair",
+      "reason": "MetaAgent source is read only in this task; adapter drops unavailable reason"
+    }
+  ],
+  "checks": [
+    {
+      "name": "ruff",
+      "exit": 0,
+      "log_sha256": "a4443afdcfb6d7363adb285762515ccf7cf50473b1a05c20c1a50f6bed4d26b0"
+    },
+    {
+      "name": "ruff-format",
+      "exit": 0,
+      "log_sha256": "e333cad605dae1c5c76aa4590f5b96b5bc8b4c36989df2d0e78b7a6ac045f689"
+    }
+  ],
+  "database": {
+    "suite": "271 passed, 2 dependency deprecation warnings",
+    "result": {
+      "execution": "real owned ephemeral PostgreSQL; no existing DB contacted",
+      "port": 33760,
+      "steps": [
+        {
+          "step": "create",
+          "exit": 0
+        },
+        {
+          "step": "rag-isolated-suite",
+          "exit": 0
+        },
+        {
+          "step": "remove-owned-container",
+          "exit": 0
+        }
+      ],
+      "cleanup_complete": true
+    }
+  },
+  "package_audit_sha256": "21fca40b4581cae02c1cee880518064ef69c1f4778a9bd94a622105571586022",
+  "preservation": {
+    "baseline_sha256": "fabfd54416b91f3ba9ef13e9c45d50fb3201dd11a14d6a89f6181ffdea027412",
+    "file_count": 157,
+    "changed": [],
+    "unchanged": true,
+    "old_corpus": "8 PDFs / 102 pages / 736 chunks; v1/v2/v3 source/Gold/ranking/reports immutable"
+  },
+  "eval_summary_sha256": "644bf3284f0d1451e1ab5ba004e5956f4a88e31436880b25ef9fa185f5dd2427",
+  "agent_review_sha256": "c3475182bf24ec822f47b0e8d5d508dff95375a2ea1f852c367c4e47692d9ff3",
+  "meta_agent": {
+    "head": "ee489a40f83b7fdc261c7b59c27f7f88bd7306df",
+    "expected_head": "ee489a40f83b7fdc261c7b59c27f7f88bd7306df",
+    "head_unchanged": true,
+    "preexisting_untracked_count": 6,
+    "source_files_modified": false
+  },
+  "side_effects": {
+    "push": false,
+    "merge": false,
+    "production_db_contact": false,
+    "existing_services_modified": false,
+    "owned_test_processes_and_containers_cleaned": true
+  },
+  "review_questions": [
+    "D041/D102 work dedup and review/RCT participant overlap",
+    "Resource rights/public-prose boundary and D001 differing layout",
+    "PDF physical pages versus XML paragraph/XPath coordinates",
+    "Retrieval complete coverage versus Agent supported claims, missing results and reason loss"
+  ]
+}

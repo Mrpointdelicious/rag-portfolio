@@ -12,3 +12,6 @@ doc/selected
 doc/unselected
 doc/backup_manifest.json
 doc/backup_index.md
+medical_corpus_v1
+artifacts/public-medical-corpus-v1
+eval/public_medical_corpus_v1

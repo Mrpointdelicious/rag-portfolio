@@ -1,5 +1,7 @@
 # RAG Portfolio
 
+新增[公开医学 Corpus v1](docs/public-medical-corpus-v1-design.md)：保留旧八篇，收集六篇指定论文，形成14篇本地合并库与7篇经审 prose 公开库；50题独立 Gold、六路真实检索及 MetaAgent 隔离回答已运行。[EVAL](docs/public-medical-corpus-v1-eval.md)保留漏检、原因传递和人工复核待办，未获得临床批准。复现入口见设计文档，实际审查包见 [acceptance.json](artifacts/public-medical-corpus-v1/acceptance.json)。
+
 新增 [MetaAgent Integration Spike](docs/integration-spike-validation.md)：默认关闭的隔离只读演示检索，已完成真实模型→RAG→Evidence→引用回答验证；保留部分失败、审批边界和未验证项。正式 `/v1/retrieve` 仍为501，不代表P2-E或医学生产发布完成。
 
 面向简历和技术面试展示的 RAG 工程项目。目标是构建一套可复现的知识库问答系统，展示文档治理、混合检索、证据引用、可靠发布与评测能力。

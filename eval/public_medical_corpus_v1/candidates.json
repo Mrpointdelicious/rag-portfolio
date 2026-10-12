@@ -1,0 +1,197 @@
+{
+  "schema_version": "candidate-manifest-v1",
+  "created_at": "2026-10-12",
+  "status": "planning_artifact_not_actual_download_or_import",
+  "purpose": "Publicly reproducible technical RAG corpus, not clinical approval",
+  "historical_baseline": {
+    "experiment": "medical_rehab_v3",
+    "pdf_count": 8,
+    "page_count": 102,
+    "chunk_count": 736,
+    "immutable": true
+  },
+  "datasets": [
+    {
+      "id": "medical_combined_v1",
+      "candidate_count": 14,
+      "publishing": "local/isolated only unless all rights verified"
+    },
+    {
+      "id": "medical_public_v1",
+      "candidate_count": 6,
+      "publishing": "per-asset license audit required"
+    }
+  ],
+  "original_eight": [
+    {
+      "source_id": "D001",
+      "working_title": "2024 脑卒中立位平衡康复指南",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D003",
+      "working_title": "2024 脑卒中中西医结合康复指南",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D041",
+      "working_title": "2025 脑卒中智能康复技术专家共识",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "verify D041 versus D102"
+    },
+    {
+      "source_id": "D129",
+      "working_title": "可穿戴外骨骼与卒中步态系统综述",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D161",
+      "working_title": "机器人辅助步态与卒中平衡系统综述",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D173",
+      "working_title": "卒中机器人步态康复指南系统综述",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D040",
+      "working_title": "中国脑卒中康复治疗指南，2011 完全版",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    },
+    {
+      "source_id": "D042",
+      "working_title": "中国膝骨关节炎康复治疗指南，2023 版",
+      "doi": null,
+      "pmcid": null,
+      "license_status": "not_yet_verified",
+      "public_redistribution": "hold",
+      "work_level_dedup": "pending"
+    }
+  ],
+  "additional_six": [
+    {
+      "candidate_id": "NEW01",
+      "title": "A Comprehensive Review: Robot-Assisted Treatments for Gait Rehabilitation in Stroke Patients",
+      "doi": "10.3390/medicina60040620",
+      "pmcid": "PMC11052271",
+      "publisher": "MDPI",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11052271/",
+      "year": 2024,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11052271/",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    },
+    {
+      "candidate_id": "NEW02",
+      "title": "Therapeutic Effects of Robotic-Exoskeleton-Assisted Gait Rehabilitation and Predictive Factors of Significant Improvements in Stroke Patients: A Randomized Controlled Trial",
+      "doi": "10.3390/bioengineering10050585",
+      "pmcid": "PMC10215135",
+      "publisher": "MDPI",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10215135/",
+      "year": 2023,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10215135/",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    },
+    {
+      "candidate_id": "NEW03",
+      "title": "A randomized controlled study incorporating an electromechanical gait machine, the Hybrid Assistive Limb, in gait training of patients with severe limitations in walking in the subacute phase after stroke",
+      "doi": "10.1371/journal.pone.0229707",
+      "pmcid": null,
+      "publisher": "PLOS ONE",
+      "article_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229707",
+      "year": 2020,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0229707",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    },
+    {
+      "candidate_id": "NEW04",
+      "title": "Ipsilateral lower limb motor performance and its association with gait after stroke",
+      "doi": "10.1371/journal.pone.0297074",
+      "pmcid": null,
+      "publisher": "PLOS ONE",
+      "article_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297074",
+      "year": 2024,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0297074",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    },
+    {
+      "candidate_id": "NEW05",
+      "title": "Aerobic minutes and step number remain low in inpatient stroke rehabilitation",
+      "doi": "10.1371/journal.pone.0328930",
+      "pmcid": null,
+      "publisher": "PLOS ONE",
+      "article_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0328930",
+      "year": 2025,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0328930",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    },
+    {
+      "candidate_id": "NEW06",
+      "title": "Effectiveness of Robotic Devices for Medical Rehabilitation: An Umbrella Review",
+      "doi": "10.3390/jcm13216616",
+      "pmcid": "PMC11546060",
+      "publisher": "MDPI",
+      "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11546060/",
+      "year": 2024,
+      "article_license": "CC BY 4.0",
+      "license_evidence_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11546060/",
+      "license_status": "article_page_verified_asset_review_pending",
+      "download_status": "not_downloaded",
+      "sha256": null,
+      "clinical_approval": false,
+      "selection": "user_approved_candidate"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "index_version": "medical-combined-v1-bm25-2",
+  "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+  "kind": "real local BM25; no external models",
+  "chunk_count": 713,
+  "checks": [
+    {
+      "query": "D040 中国脑卒中康复治疗指南 2011 2012",
+      "expected_work": "D040",
+      "top5_document_ids": [
+        "D040",
+        "D040",
+        "D040",
+        "D040",
+        "D040"
+      ],
+      "hit": true
+    },
+    {
+      "query": "D042 中国膝骨关节炎康复治疗指南 2023 2024",
+      "expected_work": "D042",
+      "top5_document_ids": [
+        "D042",
+        "D042",
+        "D042",
+        "D042",
+        "D042"
+      ],
+      "hit": true
+    },
+    {
+      "query": "D041 脑卒中 智能 康复 共识",
+      "expected_work": "D041",
+      "top5_document_ids": [
+        "D041",
+        "D041",
+        "D041",
+        "D041",
+        "D041"
+      ],
+      "hit": true
+    }
+  ],
+  "dense_hybrid_rerank": "BLOCKED for rights-held old prose; public-only evaluation separate"
+}

@@ -1,0 +1,357 @@
+{
+  "selected_strategy": "hybrid_rerank",
+  "retrieval_failures": [
+    {
+      "case_id": "pmv1-dev-01",
+      "question": "NEW01 综述最后纳入多少项研究？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "7c94c795-ab2a-598a-b81a-c0e459bf2959",
+          "score": 0.9366542222949976
+        },
+        {
+          "chunk_id": "61de6fd3-20a5-53f8-a859-61b6e1682288",
+          "score": 0.6792412050111307
+        },
+        {
+          "chunk_id": "522a3bca-9f69-5841-918d-fcedeb52b552",
+          "score": 0.6143614600360684
+        },
+        {
+          "chunk_id": "75f63e96-04af-55fd-9449-8de2e8f00dce",
+          "score": 0.46420586431288346
+        },
+        {
+          "chunk_id": "bc693577-8904-5a00-81d5-679a31518394",
+          "score": 0.4531916554615675
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-02",
+      "question": "NEW01 综述检索的发表年份范围是什么？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "201912a7-c79f-5ce6-96bf-ba33611d6c4b",
+          "score": 0.9910821405378409
+        },
+        {
+          "chunk_id": "9386d7bf-f69f-5eec-8bd8-38bb630b2395",
+          "score": 0.5241932041746837
+        },
+        {
+          "chunk_id": "7c94c795-ab2a-598a-b81a-c0e459bf2959",
+          "score": 0.45665083507477916
+        },
+        {
+          "chunk_id": "75f63e96-04af-55fd-9449-8de2e8f00dce",
+          "score": 0.43520318841709793
+        },
+        {
+          "chunk_id": "880f90aa-506c-5b4a-bfec-329305d71a30",
+          "score": 0.42909647520171623
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-03",
+      "question": "NEW01 涵盖哪两类机器人步态设备？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "01d10fcc-f524-59a5-9fbb-c1f536a26943",
+          "score": 0.9630488834221377
+        },
+        {
+          "chunk_id": "2ce8c3a5-7fa0-580f-9f70-aa9affb31060",
+          "score": 0.9311952579397595
+        },
+        {
+          "chunk_id": "06c40578-b575-589c-aa82-171b01dc4f5c",
+          "score": 0.9295150053192462
+        },
+        {
+          "chunk_id": "a9fa6236-27bd-5342-8b6d-d9a7ba365c76",
+          "score": 0.9022214927505839
+        },
+        {
+          "chunk_id": "5067603c-90fb-5598-8f8a-a74519ae807f",
+          "score": 0.8880046176273729
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-09",
+      "question": "NEW02 的患者和评估者是否实施盲法？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "252bae4a-99fd-503f-ad56-6887de77bf5b",
+          "score": 0.8404502353443951
+        },
+        {
+          "chunk_id": "3cac0aec-abde-53f2-9f6a-b50a608810f2",
+          "score": 0.6410182138975797
+        },
+        {
+          "chunk_id": "106398fa-3e88-55e7-b22f-1ee60757be39",
+          "score": 0.6183197350153063
+        },
+        {
+          "chunk_id": "7e2531d3-cf6d-5fa2-af5e-3efe836efa2e",
+          "score": 0.6151920436896785
+        },
+        {
+          "chunk_id": "2547c68f-b138-5305-8341-a3e702342b32",
+          "score": 0.6114098499367258
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-20",
+      "question": "比较 NEW02 和 NEW03 的组间结论：是否都证明机器人优于常规？",
+      "groups_covered_at5": 0,
+      "groups_total": 2,
+      "top5": [
+        {
+          "chunk_id": "6937dc92-f5da-569b-8964-708fcfdc7e97",
+          "score": 0.8928780873279099
+        },
+        {
+          "chunk_id": "8c4c9bec-1a55-564b-a5f8-005cb5c91aed",
+          "score": 0.8616418246511296
+        },
+        {
+          "chunk_id": "02a0472b-e43f-528b-b0fc-68dcdf448b01",
+          "score": 0.8568303299341673
+        },
+        {
+          "chunk_id": "09098e42-0ae6-5a20-ad9f-86b7ccf50119",
+          "score": 0.8227875102049366
+        },
+        {
+          "chunk_id": "c197a882-e1fc-5636-87f8-1b2323860164",
+          "score": 0.8043755403842796
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-24",
+      "question": "NEW04 的同侧运动与步态关系可以直接解释成训练的因果疗效吗？",
+      "groups_covered_at5": 1,
+      "groups_total": 2,
+      "top5": [
+        {
+          "chunk_id": "a15d34f1-e44c-53da-a0cc-4132a9b9f818",
+          "score": 0.9851645989907323
+        },
+        {
+          "chunk_id": "ff5f8605-312c-554b-ac29-2f22a6e760bf",
+          "score": 0.9405565382203169
+        },
+        {
+          "chunk_id": "7e7a985f-21b1-5b1a-819a-f96d5e28dbf0",
+          "score": 0.9363387311915541
+        },
+        {
+          "chunk_id": "dfb2a827-4ca3-5c27-b058-d2bfd703fa39",
+          "score": 0.9249391554647299
+        },
+        {
+          "chunk_id": "5a031e05-dcfa-5e98-8633-c8b60a1485f8",
+          "score": 0.9144545253546836
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-dev-27",
+      "question": "NEW05 的平均985步与10有氧分钟是观察到的剂量还是规定处方？",
+      "groups_covered_at5": 1,
+      "groups_total": 2,
+      "top5": [
+        {
+          "chunk_id": "c4e5e9d6-c14e-5247-82d5-3093d2442bfb",
+          "score": 0.9698559372284411
+        },
+        {
+          "chunk_id": "38e43af0-8a74-50c3-91e9-115dc7045852",
+          "score": 0.9004550194623102
+        },
+        {
+          "chunk_id": "d108d865-01e9-5ca5-bf4d-aa09952f5701",
+          "score": 0.8104731264206052
+        },
+        {
+          "chunk_id": "39bd7ef4-0218-5f23-b98b-ca452051d1bc",
+          "score": 0.7765318066143669
+        },
+        {
+          "chunk_id": "3c8d9854-b00b-5faf-94e0-76600c8d43f5",
+          "score": 0.7720330280990151
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-heldout-01",
+      "question": "比较 NEW02 与 NEW03 的主要结局指标，相同吗？",
+      "groups_covered_at5": 0,
+      "groups_total": 2,
+      "top5": [
+        {
+          "chunk_id": "106398fa-3e88-55e7-b22f-1ee60757be39",
+          "score": 0.8174834478660451
+        },
+        {
+          "chunk_id": "f7fa4bd4-3696-575d-86df-eacc7be31485",
+          "score": 0.6890587274491801
+        },
+        {
+          "chunk_id": "a28e0956-8205-5a30-81a0-0466c87bd936",
+          "score": 0.6486658722303859
+        },
+        {
+          "chunk_id": "97b6f970-23fd-5173-978e-da10fcc8845a",
+          "score": 0.6273740994747974
+        },
+        {
+          "chunk_id": "f81e0bd7-4cca-5bce-9a34-8549b3cbaac5",
+          "score": 0.6244172261345129
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-heldout-02",
+      "question": "比较 NEW02 与 NEW03 的结局评估盲法，是否一致？",
+      "groups_covered_at5": 0,
+      "groups_total": 2,
+      "top5": [
+        {
+          "chunk_id": "f7fa4bd4-3696-575d-86df-eacc7be31485",
+          "score": 0.5473995320212254
+        },
+        {
+          "chunk_id": "b7c8f8cb-6265-5d64-a905-24f58baee88c",
+          "score": 0.4758186000797978
+        },
+        {
+          "chunk_id": "252bae4a-99fd-503f-ad56-6887de77bf5b",
+          "score": 0.4624000445897694
+        },
+        {
+          "chunk_id": "c197a882-e1fc-5636-87f8-1b2323860164",
+          "score": 0.45338331982330105
+        },
+        {
+          "chunk_id": "1bba28f1-b32b-51fe-a94e-f930bc365d69",
+          "score": 0.4163745665212253
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-heldout-06",
+      "question": "NEW06 高等级结论主要针对哪种疾病，能直接推广所有神经疾病吗？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "690b8269-c3f9-5482-8207-c6f6071900b6",
+          "score": 0.879864108643628
+        },
+        {
+          "chunk_id": "8fbb2b61-2a64-558e-9bb7-48e3c82b7f4c",
+          "score": 0.8423746822092695
+        },
+        {
+          "chunk_id": "e11f852d-2f6e-5212-aead-5b972712ee38",
+          "score": 0.7279106959544535
+        },
+        {
+          "chunk_id": "33fa46d0-c9a0-5382-a554-0c07817b6f1d",
+          "score": 0.7074523953591039
+        },
+        {
+          "chunk_id": "376ee8b4-5f91-53fd-a11e-6fc787817c2d",
+          "score": 0.6945922135612457
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-heldout-07",
+      "question": "D161 最后纳入多少临床试验？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "522a3bca-9f69-5841-918d-fcedeb52b552",
+          "score": 0.8463934387619272
+        },
+        {
+          "chunk_id": "0fe303c9-f0f0-57ab-ba3d-a907a021ff69",
+          "score": 0.622459239337906
+        },
+        {
+          "chunk_id": "9386d7bf-f69f-5eec-8bd8-38bb630b2395",
+          "score": 0.6091690736946195
+        },
+        {
+          "chunk_id": "51f629e2-3d66-5f34-9cd0-3eba0a256b03",
+          "score": 0.516917055661833
+        },
+        {
+          "chunk_id": "3cac0aec-abde-53f2-9f6a-b50a608810f2",
+          "score": 0.48992178824743016
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    },
+    {
+      "case_id": "pmv1-heldout-08",
+      "question": "D161 为什么还需要按卒中时间等条件更严格的试验？",
+      "groups_covered_at5": 0,
+      "groups_total": 1,
+      "top5": [
+        {
+          "chunk_id": "54a5ebf0-5848-53b2-a841-1b9e54c4e483",
+          "score": 0.9743390000578698
+        },
+        {
+          "chunk_id": "1ae8f26e-3fa9-5cb1-8984-7f6d9d644fb0",
+          "score": 0.902201075865432
+        },
+        {
+          "chunk_id": "51f629e2-3d66-5f34-9cd0-3eba0a256b03",
+          "score": 0.7294135607063079
+        },
+        {
+          "chunk_id": "e0c252d4-9dac-50d4-9873-e0a0fcab9379",
+          "score": 0.6658009359306806
+        },
+        {
+          "chunk_id": "92f836e6-b751-5224-92bb-4cc5a2c888c2",
+          "score": 0.6445667304879467
+        }
+      ],
+      "reason": "Exact acceptable anchor group missing; no post-heldout repair/tuning"
+    }
+  ],
+  "gold_followup": {
+    "case_id": "pmv1-heldout-14",
+    "issue": "False-premise/disease mixture labelled missing_patient_data by question authoring heuristic; retain frozen Gold; independent reviewer should correct in v2"
+  }
+}

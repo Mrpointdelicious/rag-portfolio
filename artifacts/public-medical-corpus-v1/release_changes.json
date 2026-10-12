@@ -1,0 +1,10 @@
+{
+  "recorded_at": "2026-10-12T01:46:00.213227+00:00",
+  "prior_combined_release": "medical_combined_v1-prose-1",
+  "prior_sha256": "45dfb33da039b9c034403306bc8e69a4cb2a2928702db288e62a449a518b1f49",
+  "current_combined_release": "medical_combined_v1-prose-2",
+  "current_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+  "reason": "D041 author initially mistranscribed as Gu Ying; PDF physical page1 verifies Pan Yu, Zhang Hao, Xie Qing, Jiang Shan, Liu Shaxin; corrected metadata in prose-2",
+  "prior_release_retained_locally": true,
+  "public_corpus_gold_and_index_unchanged": true
+}
