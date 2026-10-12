@@ -124,3 +124,5 @@ docs/                  # 架构、开发路线、来源及验证记录
 [v2方案](docs/medical-business-v2-plan.md)已完成失败原因保真、过期证据有限恢复、可信发布能力及独立运营试点。[实施结果](docs/medical-business-v2-results.md)：工程检查通过，业务验收PARTIAL，C不晋级；旧12题继续保留回归。真实患者尚未接入，[生产接入评估](docs/real-patient-production-design-assessment.md)建议下一轮先做主体授权、模型出口控制与合成患者预发验证。
 
 [合成患者预发v1](docs/synthetic-preproduction-v1-results.md)已实现专用授权/出口/撤销契约原型：冻结60项工程条件通过，另有真实Hybrid/Reranker/生成链路检查。原生Agent与既有患者后端尚未接通这些新策略，真实患者和生产仍不接入；此前业务问题与待审集合继续保留。
+
+[原生单Agent合成接入v2](docs/synthetic-native-v2-results.md)把策略接入原生工具循环、缓存、模型与发布检查，验证IReGo/IReTour响应映射；专用入口不自动挂载到默认应用。真实患者和生产仍为NOT_READY，原业务待改进集合继续保留。

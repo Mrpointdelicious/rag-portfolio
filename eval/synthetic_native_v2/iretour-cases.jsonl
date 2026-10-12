@@ -1,0 +1,6 @@
+{"case_id": "T01", "expected_http": 200, "scenario": "iretour_unit_unknown"}
+{"case_id": "T02", "expected_http": 200, "scenario": "iretour_no_result"}
+{"case_id": "T03", "expected_http": 502, "scenario": "iretour_invalid_registry"}
+{"case_id": "T04", "expected_http": 502, "scenario": "iretour_patient_ref_conflict"}
+{"case_id": "T05", "expected_http": 502, "scenario": "iretour_invalid_contract"}
+{"case_id": "T06", "expected_http": 200, "scenario": "iretour_plan_only_not_measurement"}

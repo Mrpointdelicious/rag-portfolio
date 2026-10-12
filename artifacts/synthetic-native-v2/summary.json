@@ -1,0 +1,905 @@
+{
+  "engineering": "PASS",
+  "production": "NOT_READY",
+  "promotion": "NOT_PROMOTED",
+  "business": "PARTIAL",
+  "clinical": "NOT_ASSESSED",
+  "native_cases": [
+    {
+      "case_id": "N01",
+      "expected_http": 200,
+      "scenario": "combined_positive",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N02",
+      "expected_http": 200,
+      "scenario": "record_local_only",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N03",
+      "expected_http": 200,
+      "scenario": "literature_positive",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N04",
+      "expected_http": 200,
+      "scenario": "profile_cache_positive",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 4,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 2,
+      "passed": true
+    },
+    {
+      "case_id": "N05",
+      "expected_http": 200,
+      "scenario": "history_minimization",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 4,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 2,
+      "passed": true
+    },
+    {
+      "case_id": "N06",
+      "expected_http": 200,
+      "scenario": "patient_value_distinct_from_paper",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N07",
+      "expected_http": 422,
+      "scenario": "free_query_rejected",
+      "http": 422,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N08",
+      "expected_http": 422,
+      "scenario": "patient_override_rejected",
+      "http": 422,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N09",
+      "expected_http": 403,
+      "scenario": "wrong_session",
+      "http": 403,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N10",
+      "expected_http": 403,
+      "scenario": "cross_patient_snapshot",
+      "http": 403,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N11",
+      "expected_http": 403,
+      "scenario": "revoked_before_start",
+      "http": 403,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N12",
+      "expected_http": 403,
+      "scenario": "revoked_before_model",
+      "http": 403,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N13",
+      "expected_http": 403,
+      "scenario": "revoked_before_publish",
+      "http": 403,
+      "positive_native_completed": false,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N14",
+      "expected_http": 403,
+      "scenario": "revoked_snapshot",
+      "http": 403,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N15",
+      "expected_http": 403,
+      "scenario": "revoked_citation",
+      "http": 403,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N16",
+      "expected_http": 403,
+      "scenario": "revoked_replay",
+      "http": 403,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N17",
+      "expected_http": 200,
+      "scenario": "revoked_during_sse",
+      "http": 200,
+      "positive_native_completed": true,
+      "subsequent_event_blocked": true,
+      "passed": true
+    },
+    {
+      "case_id": "N18",
+      "expected_http": 403,
+      "scenario": "new_grant_old_session",
+      "http": 403,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N19",
+      "expected_http": 200,
+      "scenario": "new_grant_fresh_cache",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 4,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 2,
+      "passed": true
+    },
+    {
+      "case_id": "N20",
+      "expected_http": 409,
+      "scenario": "source_generation_snapshot",
+      "http": 409,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N21",
+      "expected_http": 409,
+      "scenario": "source_generation_publish",
+      "http": 409,
+      "positive_native_completed": false,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N22",
+      "expected_http": 502,
+      "scenario": "source_signature",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 1,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N23",
+      "expected_http": 502,
+      "scenario": "source_hash",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 1,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N24",
+      "expected_http": 502,
+      "scenario": "source_pin",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 1,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N25",
+      "expected_http": 502,
+      "scenario": "source_expiry",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 1,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N26",
+      "expected_http": 502,
+      "scenario": "patient_ref_conflict",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N27",
+      "expected_http": 200,
+      "scenario": "patient_unit_unknown",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N28",
+      "expected_http": 200,
+      "scenario": "patient_placeholder_zero",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N29",
+      "expected_http": 200,
+      "scenario": "patient_real_zero",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N30",
+      "expected_http": 502,
+      "scenario": "stored_result_tamper",
+      "http": 502,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N31",
+      "expected_http": 404,
+      "scenario": "checkpoint_resume_unexposed",
+      "http": 404,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N32",
+      "expected_http": 200,
+      "scenario": "snapshot_after_factory_reconstruction",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N33",
+      "expected_http": 502,
+      "scenario": "query_from_model_rejected",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 1,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N34",
+      "expected_http": 502,
+      "scenario": "cache_tamper",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "N35",
+      "expected_http": 401,
+      "scenario": "expired_subject",
+      "http": 401,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "N36",
+      "expected_http": 403,
+      "scenario": "native_scope_policy_conflict",
+      "http": 403,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "T01",
+      "expected_http": 200,
+      "scenario": "iretour_unit_unknown",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "T02",
+      "expected_http": 200,
+      "scenario": "iretour_no_result",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    },
+    {
+      "case_id": "T03",
+      "expected_http": 502,
+      "scenario": "iretour_invalid_registry",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "T04",
+      "expected_http": 502,
+      "scenario": "iretour_patient_ref_conflict",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "T05",
+      "expected_http": 502,
+      "scenario": "iretour_invalid_contract",
+      "http": 502,
+      "positive_native_completed": false,
+      "model_calls": 0,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 0,
+      "passed": true
+    },
+    {
+      "case_id": "T06",
+      "expected_http": 200,
+      "scenario": "iretour_plan_only_not_measurement",
+      "http": 200,
+      "positive_native_completed": true,
+      "model_calls": 2,
+      "patient_field_leaks": 0,
+      "knowledge_requests": 1,
+      "passed": true
+    }
+  ],
+  "v1_security_regression": {
+    "status": "PASS",
+    "cases": 60
+  },
+  "live": {
+    "live-run-1": {
+      "status": "PASS_engineering_semantic_pending",
+      "clinical_approval": false,
+      "semantic": "NOT_ASSESSED",
+      "patient_data_sent_to_models": false,
+      "execution": "Native ApplicationService + create_agent; owned TCP + live approved Hybrid/Reranker/model",
+      "checks": {
+        "http_200": true,
+        "patient_record_preserved": true,
+        "live_sources_returned": true,
+        "no_generated_claims_published": true,
+        "no_patient_canaries_in_observed_provider_bodies": true,
+        "real_generation": true,
+        "real_embedding_rerank": true,
+        "native_agent_completed": true,
+        "native_agent_model_calls": true,
+        "native_tools_used": true,
+        "live_citation_resolves": true
+      },
+      "http": 200,
+      "release": {
+        "release_id": "combined-business-v1",
+        "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+        "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+        "generation": 14
+      },
+      "retrievals": [
+        {
+          "actual_model_calls": {
+            "embedding": 1,
+            "rerank": 1
+          },
+          "embedding": {
+            "request_id": "7d591662-f23a-932d-b47b-9c174c8caa62",
+            "usage": {
+              "total_tokens": 26
+            }
+          },
+          "rerank": {
+            "request_id": "ee62586d-8152-9003-8b35-9ca5c45f0b9c",
+            "usage": {
+              "prompt_tokens": 8928,
+              "total_tokens": 8928
+            }
+          }
+        }
+      ],
+      "provider_requests": [
+        {
+          "host": "api.deepseek.com",
+          "body_sha256": "6ebbbde7220d87a72cb54bf21ede56190228b5bc4e24d66dcc9d0387f3d38b34"
+        },
+        {
+          "host": "maas.qianwenaiapi.com",
+          "body_sha256": "d0d5e6ef04e823c63f087ab6313e68cec80396d02d5a4818a91bf25577a16fd7"
+        },
+        {
+          "host": "maas.qianwenaiapi.com",
+          "body_sha256": "3cf2a5a1439d38baec5de52a34e7d06362dfd6a53b54edc904af5c68ea2013ba"
+        },
+        {
+          "host": "api.deepseek.com",
+          "body_sha256": "4e12469c025e5fce48d58bb9ed44111d9889429b96277f9de1547e6a27cd5b1e"
+        }
+      ]
+    },
+    "live-run-2": {
+      "status": "PASS_engineering_semantic_pending",
+      "clinical_approval": false,
+      "semantic": "NOT_ASSESSED",
+      "patient_data_sent_to_models": false,
+      "execution": "Native ApplicationService + create_agent; owned TCP + approved Hybrid/model",
+      "checks": {
+        "http_200": true,
+        "patient_record_preserved": true,
+        "live_sources_returned": true,
+        "no_generated_claims_published": true,
+        "no_patient_canaries_in_observed_provider_bodies": true,
+        "real_generation": true,
+        "real_embedding_rerank": true,
+        "native_agent_completed": true,
+        "native_agent_model_calls": true,
+        "native_tools_used": true,
+        "live_citation_resolves": true
+      },
+      "http": 200,
+      "release": {
+        "release_id": "combined-business-v1",
+        "corpus_sha256": "0253a1c5453eb8ea9b4cc8d02cd49989c7b1f3f5dc956ff3774a1a5a3d33dace",
+        "index_sha256": "10e58204c4f25f1464bab5588fe38a5646594274fa452d70f6c4ccf0b2ee0b76",
+        "generation": 14
+      },
+      "retrievals": [
+        {
+          "actual_model_calls": {
+            "embedding": 1,
+            "rerank": 1
+          },
+          "embedding": {
+            "request_id": "000e4fe7-c892-9aa8-b79f-fcfd7459d584",
+            "usage": {
+              "total_tokens": 26
+            }
+          },
+          "rerank": {
+            "request_id": "21f247a6-1b05-9acc-b0ef-be94bed7e1cf",
+            "usage": {
+              "prompt_tokens": 8928,
+              "total_tokens": 8928
+            }
+          }
+        }
+      ],
+      "provider_requests": [
+        {
+          "host": "api.deepseek.com",
+          "body_sha256": "6ebbbde7220d87a72cb54bf21ede56190228b5bc4e24d66dcc9d0387f3d38b34"
+        },
+        {
+          "host": "maas.qianwenaiapi.com",
+          "body_sha256": "d0d5e6ef04e823c63f087ab6313e68cec80396d02d5a4818a91bf25577a16fd7"
+        },
+        {
+          "host": "maas.qianwenaiapi.com",
+          "body_sha256": "3cf2a5a1439d38baec5de52a34e7d06362dfd6a53b54edc904af5c68ea2013ba"
+        },
+        {
+          "host": "api.deepseek.com",
+          "body_sha256": "4e12469c025e5fce48d58bb9ed44111d9889429b96277f9de1547e6a27cd5b1e"
+        }
+      ]
+    }
+  },
+  "full_suite": {
+    "rag_passed": 284,
+    "meta_passed": 364,
+    "owned_cleanup": true,
+    "raw_sha256": "bd01889d20e3d75ecad042e9b47f3befa93a50595b28cf6014e5fc0606021726"
+  },
+  "medical_regressions": {
+    "v1-dev-run-1": {
+      "run": "v1-dev-run-1",
+      "turns": 27,
+      "status": "DONE_execution_semantic_review_pending",
+      "nonempty_answers": 27,
+      "empty_cases": [],
+      "model_calls": 51,
+      "tool_calls": 36,
+      "runtime_status_counts": {
+        "partial": 13,
+        "succeeded": 11,
+        "unavailable": 3
+      },
+      "invalid_reference_publications": 0,
+      "recoveries": [],
+      "failure_reasons": {
+        "no_hits": 2,
+        "service_unavailable": 1,
+        "scope_excluded": 2
+      },
+      "source_kinds": {
+        "published_medical_literature": 31
+      },
+      "elapsed_ms": 165455.12499997858,
+      "raw_sha256": "8958d16e4a2d29614db20551fec34603f6eb53659e62c5d608bd5fe4ed26d672",
+      "semantic": "NOT_ASSESSED",
+      "selected_anchors": null
+    },
+    "v1-held-run-1": {
+      "run": "v1-held-run-1",
+      "turns": 18,
+      "status": "DONE_execution_semantic_review_pending",
+      "nonempty_answers": 18,
+      "empty_cases": [],
+      "model_calls": 34,
+      "tool_calls": 23,
+      "runtime_status_counts": {
+        "partial": 5,
+        "succeeded": 12,
+        "unavailable": 1
+      },
+      "invalid_reference_publications": 0,
+      "recoveries": [
+        {
+          "case_id": "mbv1-followup-04",
+          "turn": 2,
+          "trigger": "known_expired_reference",
+          "query": "机器人步态与平衡训练 系统综述 平衡指标",
+          "domain": "health",
+          "attempts": 1,
+          "model_calls_before": 1,
+          "tool_calls_before": 0,
+          "status": "regenerated_pending_audit",
+          "tool_code": "ok",
+          "new_refs": [
+            "d161@combined-v1-pdf-2203df063fcb#s0008-c000",
+            "d161@combined-v1-pdf-2203df063fcb#s0001-c001",
+            "d161@combined-v1-pdf-2203df063fcb#s0002-c004",
+            "d161@combined-v1-pdf-2203df063fcb#s0007-c003",
+            "d161@combined-v1-pdf-2203df063fcb#s0007-c004"
+          ],
+          "model_calls_after": 2,
+          "final_audit": "passed"
+        }
+      ],
+      "failure_reasons": {
+        "unknown_failure": 1,
+        "scope_excluded": 1
+      },
+      "source_kinds": {
+        "published_medical_literature": 21
+      },
+      "elapsed_ms": 128943.91749994247,
+      "raw_sha256": "65004c629dd4200f378f998965a96c2f2207e48bf2b392428f1108cf08df87d5",
+      "semantic": "NOT_ASSESSED",
+      "selected_anchors": null
+    },
+    "v2-dev-run-1": {
+      "run": "v2-dev-run-1",
+      "turns": 18,
+      "status": "DONE_execution_semantic_review_pending",
+      "nonempty_answers": 18,
+      "empty_cases": [],
+      "model_calls": 34,
+      "tool_calls": 20,
+      "runtime_status_counts": {
+        "partial": 4,
+        "succeeded": 9,
+        "unavailable": 4,
+        "failed": 1
+      },
+      "invalid_reference_publications": 0,
+      "recoveries": [
+        {
+          "case_id": "expiry-dev-positive",
+          "turn": 2,
+          "trigger": "known_expired_reference",
+          "query": "inpatient stroke rehabilitation aerobic minutes and step number remain low study inclusion criteria ambulation ability",
+          "domain": "health",
+          "attempts": 1,
+          "model_calls_before": 1,
+          "tool_calls_before": 0,
+          "status": "regenerated_pending_audit",
+          "tool_code": "ok",
+          "new_refs": [
+            "new05@combined-v1-xml-9c12e447cd4c#s0021-c000",
+            "new05@combined-v1-xml-9c12e447cd4c#s0001-c000",
+            "new05@combined-v1-xml-9c12e447cd4c#s0002-c000",
+            "new05@combined-v1-xml-9c12e447cd4c#s0009-c000",
+            "new05@combined-v1-xml-9c12e447cd4c#s0029-c000"
+          ],
+          "model_calls_after": 2,
+          "final_audit": "passed"
+        },
+        {
+          "case_id": "expiry-dev-negative",
+          "turn": 2,
+          "trigger": "known_expired_reference",
+          "query": "inpatient stroke rehabilitation aerobic minutes step number remain low study inclusion criteria ambulation ability",
+          "domain": "health",
+          "attempts": 1,
+          "model_calls_before": 1,
+          "tool_calls_before": 0,
+          "status": "requery_unavailable",
+          "tool_code": "rag_unavailable",
+          "new_refs": [],
+          "final_audit": "fallback_without_claims"
+        }
+      ],
+      "failure_reasons": {
+        "scope_excluded": 1,
+        "service_unavailable": 2,
+        "unprojected": 1,
+        "version_unavailable": 1,
+        "integrity_failed": 1
+      },
+      "source_kinds": {
+        "published_medical_literature": 14
+      },
+      "elapsed_ms": 83718.87639994384,
+      "raw_sha256": "fe80632fbf2bd4aa145cd7781a5746d32f6e5201fe3abf55bce2bec7d3e82b86",
+      "semantic": "NOT_ASSESSED",
+      "selected_anchors": {
+        "assignments": 11,
+        "returned": 11,
+        "model_visible": 11,
+        "misses": [],
+        "meaning": "Selected span coverage, not full task coverage or semantic support"
+      }
+    },
+    "v2-held-run-1": {
+      "run": "v2-held-run-1",
+      "turns": 18,
+      "status": "DONE_execution_semantic_review_pending",
+      "nonempty_answers": 17,
+      "empty_cases": [
+        "bibliography-heldout-negative:t1"
+      ],
+      "model_calls": 35,
+      "tool_calls": 21,
+      "runtime_status_counts": {
+        "partial": 4,
+        "failed": 1,
+        "unavailable": 3,
+        "succeeded": 10
+      },
+      "invalid_reference_publications": 0,
+      "recoveries": [],
+      "failure_reasons": {
+        "scope_excluded": 2,
+        "unknown_failure": 1,
+        "unprojected": 1,
+        "permission_denied": 1
+      },
+      "source_kinds": {
+        "published_medical_literature": 16
+      },
+      "elapsed_ms": 105070.76420003432,
+      "raw_sha256": "4e090bb2a6e4a206e4b32c6f53bdf20cf7a43a9fd45bdcf0f48d8e3a7bb501ca",
+      "semantic": "NOT_ASSESSED",
+      "selected_anchors": {
+        "assignments": 11,
+        "returned": 9,
+        "model_visible": 9,
+        "misses": [
+          "partial-heldout-positive",
+          "support-heldout-positive"
+        ],
+        "meaning": "Selected span coverage, not full task coverage or semantic support"
+      }
+    }
+  },
+  "original50": {
+    "cases": 50,
+    "answerable": 42,
+    "complete": 30,
+    "backlog_tested": 12,
+    "backlog_still_incomplete": [
+      "pmv1-dev-01",
+      "pmv1-dev-02",
+      "pmv1-dev-03",
+      "pmv1-dev-09",
+      "pmv1-dev-20",
+      "pmv1-dev-24",
+      "pmv1-dev-27",
+      "pmv1-heldout-01",
+      "pmv1-heldout-02",
+      "pmv1-heldout-06",
+      "pmv1-heldout-07",
+      "pmv1-heldout-08"
+    ],
+    "raw_sha256": "ca19b01f512c5f2df0ee0f4225900d5224750e47eea4cbe78497b8b82492359d"
+  },
+  "contracts_regression": {
+    "C": {
+      "turns": 19,
+      "original_pass": 17,
+      "existing_errata_pass": 19
+    },
+    "B": {
+      "turns": 17,
+      "original_pass": 16,
+      "existing_errata_pass": 16
+    }
+  },
+  "E_regression": [
+    {
+      "case": "E02-1",
+      "tools": 2,
+      "nonempty": true,
+      "model_calls": 2
+    },
+    {
+      "case": "E09-1",
+      "tools": 0,
+      "nonempty": true,
+      "model_calls": 1
+    },
+    {
+      "case": "E02-2",
+      "tools": 2,
+      "nonempty": true,
+      "model_calls": 2
+    },
+    {
+      "case": "E09-2",
+      "tools": 2,
+      "nonempty": true,
+      "model_calls": 2
+    },
+    {
+      "case": "E02-3",
+      "tools": 2,
+      "nonempty": true,
+      "model_calls": 2
+    },
+    {
+      "case": "E09-3",
+      "tools": 2,
+      "nonempty": true,
+      "model_calls": 2
+    }
+  ],
+  "review": {
+    "new_full_records": 125,
+    "new_units": 1097,
+    "status": "NOT_ASSESSED",
+    "private_sha256": "2b2a4958c30a5a784c8623a52d80f994503162199b843085f528d1f44e99940d",
+    "prior_review_dataset_relabelled": false
+  },
+  "backend_contract": {
+    "read_only": true,
+    "working_tree_head": "116cd85162c01f2d7fe573b26f6862f3132763a2",
+    "some_files_uncommitted": true,
+    "files": {
+      "AI_WebApi.Model/DTOs/AITools/PatientLayerDtos.cs": "935397fe61992e7e37353465e0d02bd740a7ffc8764b28b2ecd323cca7a83a2f",
+      "AI_WebApi.Services/AITools/PatientLayerService.cs": "b0da19bab9e388860314c7375bcb937dbf456dbfd150c1e8b62d9b1827f2755a",
+      "AI_WebApi.Model/DTOs/AITools/IReTourSessionDtos.cs": "281df77bfcbafc5689e18c839c0177ebb9b4840fafda1c48fe563256378fc057",
+      "AI_WebApi.Services/AITools/IReTour/IReTourSummaryParsers.cs": "fe261a3409a8d97a5781b39a12978d302793e9181a0859fa99a68b8aed9c6c9c",
+      "AI_WebApi.Model/DTOs/AITools/IReGoSessionDtos.cs": "4a60cfe2dfb13c54aded6321cdad3b1c2b430c27109d8bde5cace174ae3a5624"
+    }
+  },
+  "remaining": [
+    "Shared real identity/tenant/patient authority and .NET enforcement",
+    "Production DB native policy integration, process restore and revocation consistency",
+    "Physical retention/deletion and network/TLS/rate limits",
+    "Independent semantic/clinical acceptance",
+    "Deferred original12, E09/B07 and existing297 reviews remain open",
+    "New opened heldout anchor miss partial-heldout-positive; support-heldout-positive remains",
+    "Current IReTour gait_speed unit unconfirmed; require trusted business mapping"
+  ]
+}

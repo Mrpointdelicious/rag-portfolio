@@ -14,3 +14,6 @@ artifacts/medical-business-v2/*.json -text
 eval/synthetic_preproduction_v1/*.json -text
 eval/synthetic_preproduction_v1/*.jsonl -text
 artifacts/synthetic-preproduction-v1/*.json -text
+eval/synthetic_native_v2/*.json -text
+eval/synthetic_native_v2/*.jsonl -text
+artifacts/synthetic-native-v2/*.json -text

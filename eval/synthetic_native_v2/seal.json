@@ -1,0 +1,8 @@
+{
+  "acceptance": "All fixed cases pass including positive completions; no patient fields in actual model inputs, no unauthorized replay, no invalid source publication; no clinical approval",
+  "case_count": 36,
+  "cases_sha256": "491cc35209d962d0272e658fa03b481cec3b706c1a3686502c19ba858fd0e5ec",
+  "engineering_only": true,
+  "frozen_at": "2026-10-12T08:11:15.544552+00:00",
+  "schema_version": "synthetic-native-v2"
+}
