@@ -64,13 +64,20 @@ services:
 
   worker:
     profiles: [app]
-    image: rag-portfolio:local
-    pull_policy: never
+    build:
+      context: .
+      args:
+        UV_EXTRAS: --extra ingestion
+    image: rag-portfolio-worker:local
     env_file: .env
-    environment: *app_environment
+    environment:
+      <<: *app_environment
+      # Local host artifact paths from .env do not exist in the container.
+      RAG_DOCLING_ARTIFACTS_PATH: ${RAG_CONTAINER_DOCLING_ARTIFACTS_PATH:-}
     command: ["rag-worker"]
     volumes:
       - assets:/app/data
+      - docling_models:/home/app/.cache/huggingface
     depends_on:
       migrate:
         condition: service_completed_successfully
@@ -79,3 +86,4 @@ volumes:
   postgres_data:
   qdrant_data:
   assets:
+  docling_models:

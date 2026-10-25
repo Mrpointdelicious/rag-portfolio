@@ -90,6 +90,13 @@ class ReviewService:
         )
         chunks = await self._persist_chunks(version, chunking)
         await self.session.flush()
+        from rag_portfolio.db.models import KnowledgeBase, SourceDocument
+        from rag_portfolio.services.scene_catalog import propose
+
+        kb = await self.session.get(KnowledgeBase, version.kb_id)
+        source = await self.session.get(SourceDocument, version.document_id)
+        if kb.space_id and source.external_key == "hospital-scene-guide":
+            await propose(self.session, self.actor, kb.id, version.id)
         return ApprovalResult(version, tuple(chunks))
 
     async def reject_version(
@@ -138,6 +145,24 @@ class ReviewService:
         if version.expires_at is not None and version.expires_at <= datetime.now(UTC):
             raise DocumentServiceError("version_expired")
         verify_version_hashes(version)
+        ingestion_revision = version.metadata_json.get("attributes", {}).get("ingestion_revision")
+        if ingestion_revision:
+            from rag_portfolio.services.chunking import text_hash
+
+            chunks = list(
+                await self.session.scalars(
+                    select(DocumentChunk)
+                    .where(
+                        DocumentChunk.version_id == version.id,
+                        DocumentChunk.tenant_id == self.actor.tenant_id,
+                        DocumentChunk.chunker_version == ingestion_revision,
+                    )
+                    .order_by(DocumentChunk.ordinal)
+                )
+            )
+            if not chunks or any(text_hash(chunk.text) != chunk.content_hash for chunk in chunks):
+                raise DocumentServiceError("ingestion_chunks_missing_or_corrupt")
+            return chunks
         document_format = version.metadata_json.get("format")
         if document_format not in {"markdown", "text"}:
             raise DocumentServiceError("unsupported_document_format", 422)

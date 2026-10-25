@@ -32,6 +32,14 @@ async def live():
     return {"status": "ok", "service": "rag-portfolio"}
 
 
+@health.get("/health/processing")
+async def processing(request: Request):
+    from rag_portfolio.services.worker_status import processing_status
+
+    state = processing_status(request.app.state.settings)
+    return JSONResponse(state, status_code=200 if state["status"] == "ready" else 503)
+
+
 @health.get("/health/ready")
 async def ready(request: Request):
     async def postgres():
@@ -39,7 +47,7 @@ async def ready(request: Request):
             revisions = (
                 await connection.scalars(text("SELECT version_num FROM alembic_version"))
             ).all()
-            if revisions != ["0001"]:
+            if revisions != ["0002"]:
                 raise RuntimeError("schema_mismatch")
 
     async def check(operation):
@@ -146,7 +154,15 @@ async def get_job(job_id: UUID, principal: Admin, db: Session):
     "/retrieve",
     response_model=RetrieveResponse,
     tags=["Retrieval"],
-    responses={501: {"description": "M3 retrieval pipeline is not implemented yet"}},
 )
-async def retrieve(body: RetrieveRequest, principal: Reader):
-    raise HTTPException(501, "retrieval_not_implemented")
+async def retrieve(body: RetrieveRequest, request: Request, principal: Reader):
+    from rag_portfolio.services.retrieval import retrieve as run_retrieval
+
+    return await run_retrieval(
+        request.app.state.database,
+        request.app.state.vector,
+        request.app.state.settings,
+        principal,
+        body,
+        request.state.request_id,
+    )

@@ -1,19 +1,24 @@
-name: rag-integration-spike
 services:
-  rag-demo:
-    image: rag-portfolio:integration-spike
-    build:
-      context: .
-    ports: ["127.0.0.1:18092:8000"]
+  api:
+    volumes:
+      - ./data:/app/data
     environment:
-      RAG_ENVIRONMENT: test
-      RAG_DEMO_RETRIEVAL_ENABLED: "true"
-      RAG_DEMO_TOKEN: ${INTEGRATION_RAG_TOKEN:?set a fresh demo token}
-      RAG_DEMO_CORPUS_PATH: /demo/corpus.json
-      RAG_DEMO_CORPUS_SHA256: c0dd46b4b04077c72dc7c599656b0ede7d59f068421a0d09ead010e8c87173b7
-    volumes: ["./fixtures/integration_demo:/demo:ro"]
-    healthcheck:
-      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/live', timeout=3)"]
-      interval: 5s
-      timeout: 4s
-      retries: 10
+      RAG_POSTGRES_HOST: rag-portfolio-postgres-1
+      RAG_QDRANT_URL: http://rag-portfolio-qdrant-1:6333
+      TIKTOKEN_CACHE_DIR: /app/data/tokenizers
+    networks:
+      default:
+      metaagent:
+        aliases: [rag-portfolio-api]
+  worker:
+    volumes:
+      - ./data:/app/data
+    environment:
+      RAG_POSTGRES_HOST: rag-portfolio-postgres-1
+      RAG_QDRANT_URL: http://rag-portfolio-qdrant-1:6333
+      TIKTOKEN_CACHE_DIR: /app/data/tokenizers
+
+networks:
+  metaagent:
+    external: true
+    name: metaagent-runtime_default

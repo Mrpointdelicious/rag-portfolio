@@ -1,0 +1,9 @@
+{
+  "version": "qwen37-relevance-v1",
+  "rerank_model": "qwen3.7-text-rerank",
+  "dataset_sha256": "d2400bd43c8d6108fb642348a4327021bc49259eae0de69ead4515c2bcd9dc90",
+  "thresholds": {
+    "hospital_kb": 0.502267,
+    "rehab_kb": 0.569351
+  }
+}

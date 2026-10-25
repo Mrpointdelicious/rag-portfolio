@@ -1,0 +1,702 @@
+[
+  {
+    "id": "health-negative-00",
+    "domain": "health",
+    "query": "量子计算机的纠错阈值是多少？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "health-negative-01",
+    "domain": "health",
+    "query": "如何证明黎曼猜想？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-02",
+    "domain": "health",
+    "query": "今天比特币实时价格是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-03",
+    "domain": "health",
+    "query": "明天上海天气如何？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-04",
+    "domain": "health",
+    "query": "Python怎样实现快速排序？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-05",
+    "domain": "health",
+    "query": "如何配置Kubernetes集群？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "health-negative-06",
+    "domain": "health",
+    "query": "宇宙微波背景辐射是什么？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-07",
+    "domain": "health",
+    "query": "如何烘焙一只巧克力蛋糕？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-08",
+    "domain": "health",
+    "query": "法国大革命发生在哪一年？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-09",
+    "domain": "health",
+    "query": "怎样给汽车更换机油？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-10",
+    "domain": "health",
+    "query": "今年世界杯谁会夺冠？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "health-negative-11",
+    "domain": "health",
+    "query": "怎样计算房屋贷款利息？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-12",
+    "domain": "health",
+    "query": "如何学习古典吉他和弦？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-13",
+    "domain": "health",
+    "query": "上海到巴黎的最新机票价格是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-14",
+    "domain": "health",
+    "query": "如何制作一份公司财务报表？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-15",
+    "domain": "health",
+    "query": "太阳系有多少颗行星？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "health-negative-16",
+    "domain": "health",
+    "query": "怎样设计数据库的B树索引？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-17",
+    "domain": "health",
+    "query": "如何申请日本旅游签证？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-18",
+    "domain": "health",
+    "query": "怎么搭建一个电子商务网站？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-19",
+    "domain": "health",
+    "query": "红烧牛肉应该放哪些调料？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-20",
+    "domain": "health",
+    "query": "生成一首关于月亮的诗。",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "health-negative-21",
+    "domain": "health",
+    "query": "如何使用Photoshop替换照片背景？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-22",
+    "domain": "health",
+    "query": "钢筋混凝土桥梁如何设计？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-23",
+    "domain": "health",
+    "query": "帮我预测下周股票价格。",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-negative-24",
+    "domain": "health",
+    "query": "圆周率的前一百位是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-00",
+    "domain": "health",
+    "query": "脑卒中立位平衡障碍有哪些评定方法？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "health-positive-01",
+    "domain": "health",
+    "query": "Berg平衡量表的项目和评分范围是什么？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-02",
+    "domain": "health",
+    "query": "PASS量表如何评估脑卒中患者的姿势控制？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-03",
+    "domain": "health",
+    "query": "Tinetti量表包含哪些评估内容？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-04",
+    "domain": "health",
+    "query": "脑卒中后站立平衡训练有哪些方法？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-05",
+    "domain": "health",
+    "query": "脑卒中康复指南如何建议步行训练？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "health-positive-06",
+    "domain": "health",
+    "query": "机器人辅助步态训练对脑卒中患者的平衡有什么影响？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-07",
+    "domain": "health",
+    "query": "可穿戴外骨骼对卒中后步态康复的证据有哪些？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-08",
+    "domain": "health",
+    "query": "膝骨关节炎康复治疗指南如何建议运动治疗？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-09",
+    "domain": "health",
+    "query": "膝骨关节炎患者的肌力训练有哪些建议？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-10",
+    "domain": "health",
+    "query": "卒中康复中的任务导向训练有哪些推荐？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "health-positive-11",
+    "domain": "health",
+    "query": "智能康复技术在脑卒中治疗中有哪些应用？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-12",
+    "domain": "health",
+    "query": "脑卒中中西医结合康复指南包含哪些康复方法？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-13",
+    "domain": "health",
+    "query": "卒中后步行障碍的机器人辅助训练证据是否充分？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-14",
+    "domain": "health",
+    "query": "脑卒中后平衡评估时BBS和PASS有什么区别？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-15",
+    "domain": "health",
+    "query": "膝骨关节炎康复如何开展患者教育？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "health-positive-16",
+    "domain": "health",
+    "query": "外骨骼训练改善卒中后步行速度的研究结论是什么？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-17",
+    "domain": "health",
+    "query": "脑卒中康复治疗指南如何看待早期康复？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-18",
+    "domain": "health",
+    "query": "脑卒中后平衡训练与跌倒风险评估的相关依据是什么？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-19",
+    "domain": "health",
+    "query": "机器人步态训练改善卒中平衡的系统综述结论是什么？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-20",
+    "domain": "health",
+    "query": "脑卒中智能康复共识如何看待可穿戴设备？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "health-positive-21",
+    "domain": "health",
+    "query": "膝骨关节炎康复运动中的有氧训练有哪些依据？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-22",
+    "domain": "health",
+    "query": "立位平衡障碍临床评估包含哪些常用量表？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-23",
+    "domain": "health",
+    "query": "脑卒中康复中步态训练的研究局限有哪些？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "health-positive-24",
+    "domain": "health",
+    "query": "卒中后姿势稳定性和行走能力的康复证据有哪些？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-00",
+    "domain": "help",
+    "query": "量子计算机的纠错阈值是多少？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "help-negative-01",
+    "domain": "help",
+    "query": "如何证明黎曼猜想？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-02",
+    "domain": "help",
+    "query": "今天比特币实时价格是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-03",
+    "domain": "help",
+    "query": "明天上海天气如何？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-04",
+    "domain": "help",
+    "query": "Python怎样实现快速排序？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-05",
+    "domain": "help",
+    "query": "如何配置Kubernetes集群？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "help-negative-06",
+    "domain": "help",
+    "query": "宇宙微波背景辐射是什么？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-07",
+    "domain": "help",
+    "query": "如何烘焙一只巧克力蛋糕？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-08",
+    "domain": "help",
+    "query": "法国大革命发生在哪一年？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-09",
+    "domain": "help",
+    "query": "怎样给汽车更换机油？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-10",
+    "domain": "help",
+    "query": "今年世界杯谁会夺冠？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "help-negative-11",
+    "domain": "help",
+    "query": "怎样计算房屋贷款利息？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-12",
+    "domain": "help",
+    "query": "如何学习古典吉他和弦？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-13",
+    "domain": "help",
+    "query": "上海到巴黎的最新机票价格是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-14",
+    "domain": "help",
+    "query": "如何制作一份公司财务报表？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-15",
+    "domain": "help",
+    "query": "太阳系有多少颗行星？",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "help-negative-16",
+    "domain": "help",
+    "query": "怎样设计数据库的B树索引？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-17",
+    "domain": "help",
+    "query": "如何申请日本旅游签证？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-18",
+    "domain": "help",
+    "query": "怎么搭建一个电子商务网站？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-19",
+    "domain": "help",
+    "query": "红烧牛肉应该放哪些调料？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-20",
+    "domain": "help",
+    "query": "生成一首关于月亮的诗。",
+    "relevant": false,
+    "split": "validation"
+  },
+  {
+    "id": "help-negative-21",
+    "domain": "help",
+    "query": "如何使用Photoshop替换照片背景？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-22",
+    "domain": "help",
+    "query": "钢筋混凝土桥梁如何设计？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-23",
+    "domain": "help",
+    "query": "帮我预测下周股票价格。",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-negative-24",
+    "domain": "help",
+    "query": "圆周率的前一百位是多少？",
+    "relevant": false,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-00",
+    "domain": "help",
+    "query": "岳阳医院的接待大厅在哪里，有什么功能？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "help-positive-01",
+    "domain": "help",
+    "query": "岳阳医院的挂号大厅在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-02",
+    "domain": "help",
+    "query": "岳阳医院的展示区在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-03",
+    "domain": "help",
+    "query": "岳阳医院的问诊中心在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-04",
+    "domain": "help",
+    "query": "岳阳医院的问诊大厅在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-05",
+    "domain": "help",
+    "query": "岳阳医院的物理治疗诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "help-positive-06",
+    "domain": "help",
+    "query": "岳阳医院的作业治疗诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-07",
+    "domain": "help",
+    "query": "岳阳医院的吞咽康复诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-08",
+    "domain": "help",
+    "query": "岳阳医院的言语康复诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-09",
+    "domain": "help",
+    "query": "岳阳医院的精神康复诊疗室1在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-10",
+    "domain": "help",
+    "query": "岳阳医院的精神康复诊疗室2在哪里，有什么功能？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "help-positive-11",
+    "domain": "help",
+    "query": "岳阳医院的运动认知康复诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-12",
+    "domain": "help",
+    "query": "岳阳医院的情绪康复诊疗室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-13",
+    "domain": "help",
+    "query": "岳阳医院的诊疗中心在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-14",
+    "domain": "help",
+    "query": "岳阳医院的诊疗大厅在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-15",
+    "domain": "help",
+    "query": "岳阳医院的下肢康复诊疗室2号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "help-positive-16",
+    "domain": "help",
+    "query": "岳阳医院的下肢康复诊疗室1号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-17",
+    "domain": "help",
+    "query": "岳阳医院的上肢康复诊疗室2号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-18",
+    "domain": "help",
+    "query": "岳阳医院的上肢康复诊疗室1号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-19",
+    "domain": "help",
+    "query": "岳阳医院的智能步道康复室1号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-20",
+    "domain": "help",
+    "query": "岳阳医院的智能步道康复室2号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "validation"
+  },
+  {
+    "id": "help-positive-21",
+    "domain": "help",
+    "query": "岳阳医院的智能步道康复室3号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-22",
+    "domain": "help",
+    "query": "岳阳医院的智能步道康复室4号在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-23",
+    "domain": "help",
+    "query": "岳阳医院的评估中心在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  },
+  {
+    "id": "help-positive-24",
+    "domain": "help",
+    "query": "岳阳医院的其它评估室在哪里，有什么功能？",
+    "relevant": true,
+    "split": "calibration"
+  }
+]

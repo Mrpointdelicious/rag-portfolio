@@ -1,0 +1,14 @@
+{
+  "hospital_kb": {
+    "threshold": 0.502267,
+    "calibration_cases": 40,
+    "validation_cases": 10,
+    "validation_correct": 10
+  },
+  "rehab_kb": {
+    "threshold": 0.569351,
+    "calibration_cases": 40,
+    "validation_cases": 10,
+    "validation_correct": 10
+  }
+}

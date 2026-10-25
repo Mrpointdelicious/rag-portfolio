@@ -148,6 +148,7 @@ class DocumentChunk(Identity, Tenant, Created, Base):
     ordinal: Mapped[int]
     parent_chunk_id: Mapped[UUID | None]
     section_path: Mapped[str] = mapped_column(Text)
+    provenance_json: Mapped[dict] = mapped_column(JSONB, server_default=text("'{}'::jsonb"))
     text: Mapped[str] = mapped_column(Text)
     content_hash: Mapped[str] = mapped_column(Text)
     token_count: Mapped[int]
@@ -191,6 +192,7 @@ class KnowledgeRelease(Identity, Tenant, Created, Base):
     requested_effective_at: Mapped[datetime]
     activated_at: Mapped[datetime | None]
     retired_at: Mapped[datetime | None]
+    manifest_json: Mapped[dict] = mapped_column(JSONB, server_default=text("'{}'::jsonb"))
 
 
 class ReleaseDocument(Tenant, Base):

@@ -1,0 +1,16 @@
+ARG RUNTIME_IMAGE=rag-portfolio:local
+FROM ${RUNTIME_IMAGE}
+USER root
+RUN /usr/local/bin/python -m pip install --no-cache-dir uv==0.11.16
+COPY pyproject.toml uv.lock /tmp/rag-spec/
+RUN cd /tmp/rag-spec && uv export --locked --no-dev --no-emit-project --extra ingestion --extra medical --no-hashes > /tmp/all-requirements.txt
+# PDF parsing runs on CPU here. Keep locked package versions while avoiding CUDA
+# runtime packages that the CPU wheels neither need nor use.
+RUN /usr/local/bin/python -c "from pathlib import Path; p=Path('/tmp/all-requirements.txt'); lines=p.read_text().splitlines(); Path('/tmp/cpu-requirements.txt').write_text('\n'.join(s for s in lines if not s.startswith(('nvidia-', 'cuda-')))+'\n')"
+RUN uv pip install --python /app/.venv/bin/python --torch-backend cpu -r /tmp/cpu-requirements.txt
+ARG BUILD_REVISION=development
+ENV RAG_BUILD_REVISION=${BUILD_REVISION}
+COPY --chown=app:app src /app/src
+COPY --chown=app:app migrations /app/migrations
+USER app
+CMD ["rag-worker"]

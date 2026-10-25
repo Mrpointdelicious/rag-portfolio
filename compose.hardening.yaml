@@ -1,0 +1,11 @@
+# API and worker must run the same source revision and share the asset/heartbeat volume.
+# docker compose -f compose.yaml -f compose.integration.yaml -f compose.hardening.yaml up -d --no-deps --no-build api worker
+services:
+  api:
+    image: rag-portfolio:hardening-20261023
+    pull_policy: never
+    command: ["rag-api", "--host", "0.0.0.0", "--port", "8000"]
+  worker:
+    image: rag-portfolio:hardening-20261023
+    pull_policy: never
+    command: ["rag-worker"]

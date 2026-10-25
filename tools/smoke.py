@@ -59,9 +59,15 @@ def main() -> None:
         response = client.post(
             "/v1/retrieve",
             headers=reader,
-            json={"kb_ids": [existing["id"]], "queries": [{"q": "framework probe"}]},
+            json={
+                "kb_ids": [existing["id"]],
+                "queries": [{"q": "framework probe"}],
+                "strategy": "sparse",
+                "rerank": False,
+            },
         )
-        assert response.status_code == 501
+        response.raise_for_status()
+        assert "evidence" in response.json() and response.json()["trace_id"]
         print(
             "PASS: readiness, authentication, KB registration, "
             "idempotency, worker, retrieval boundary"

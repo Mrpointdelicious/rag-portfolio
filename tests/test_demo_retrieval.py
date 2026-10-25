@@ -195,13 +195,3 @@ def test_disabled_and_production_and_invalid_configuration():
     ]:
         with pytest.raises(ValidationError):
             Settings(_env_file=None, **{**settings().model_dump(), **update})
-    # The official release API remains explicitly unimplemented.
-    client = TestClient(
-        create_app(Settings(_env_file=None, environment="test", service_token=TOKEN))
-    )
-    response = client.post(
-        "/v1/retrieve",
-        json={"kb_ids": [str(uuid4())], "queries": [{"q": "x"}]},
-        headers={"Authorization": f"Bearer {TOKEN}"},
-    )
-    assert response.status_code == 501

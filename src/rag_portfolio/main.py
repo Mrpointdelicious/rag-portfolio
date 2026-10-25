@@ -5,15 +5,21 @@ from uuid import UUID, uuid4
 from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
+from qdrant_client.http.exceptions import ResponseHandlingException, UnexpectedResponse
 from sqlalchemy.exc import SQLAlchemyError
 from starlette.exceptions import HTTPException
 
 from rag_portfolio import __version__
+from rag_portfolio.adapters.embedding import EmbeddingAdapterError
 from rag_portfolio.adapters.vector import QdrantConnection
 from rag_portfolio.api.demo import router as demo_router
+from rag_portfolio.api.knowledge import router as knowledge_router
+from rag_portfolio.api.knowledge_search import router as knowledge_search_router
 from rag_portfolio.api.routes import health, router
+from rag_portfolio.api.scenes import router as scene_router
 from rag_portfolio.config import Settings
 from rag_portfolio.db.session import Database
+from rag_portfolio.services.documents import DocumentServiceError
 
 logger = logging.getLogger(__name__)
 
@@ -56,7 +62,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
 
     def error(request: Request, status: int, code: str, **extra):
         return JSONResponse(
-            {"error": {"code": code, **extra}, "request_id": str(request.state.request_id)},
+            {
+                "error": {"code": code, "retryable": status in (429, 502, 503, 504), **extra},
+                "request_id": str(request.state.request_id),
+            },
             status_code=status,
         )
 
@@ -78,7 +87,23 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
         return error(request, 503, "database_unavailable")
 
+    @app.exception_handler(DocumentServiceError)
+    async def document_error(request: Request, exc: DocumentServiceError):
+        return error(request, exc.status_code, exc.code)
+
+    @app.exception_handler(EmbeddingAdapterError)
+    @app.exception_handler(ResponseHandlingException)
+    @app.exception_handler(UnexpectedResponse)
+    async def provider_error(request: Request, exc: Exception):
+        logger.warning(
+            "provider_unavailable request=%s type=%s", request.state.request_id, type(exc).__name__
+        )
+        return error(request, 503, "provider_unavailable")
+
     app.include_router(health)
     app.include_router(router)
     app.include_router(demo_router)
+    app.include_router(knowledge_router)
+    app.include_router(knowledge_search_router)
+    app.include_router(scene_router)
     return app

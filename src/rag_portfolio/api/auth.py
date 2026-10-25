@@ -25,11 +25,20 @@ async def authenticate(
     supplied = credentials.credentials if credentials else ""
     admin = settings.admin_token.get_secret_value()
     reader = settings.service_token.get_secret_value()
+    agent = settings.agent_token.get_secret_value()
     if supplied and admin and compare_digest(supplied, admin):
         return Principal(settings.tenant_id, "service-admin", True, ())
     if supplied and reader and compare_digest(supplied, reader):
         return Principal(
             settings.tenant_id, "service-reader", False, tuple(settings.read_scope_keys)
+        )
+    if supplied and agent and compare_digest(supplied, agent):
+        return Principal(
+            settings.tenant_id,
+            "metaagent-reader",
+            False,
+            tuple(settings.agent_scope_keys),
+            settings.agent_audience,
         )
     raise HTTPException(401, "unauthorized", headers={"WWW-Authenticate": "Bearer"})
 
